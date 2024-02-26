@@ -1,0 +1,23 @@
+{
+    "items": [
+      {
+        "image": "/images/serv-icon1.png",
+        "title": "E-commerce Solutions",
+        "text": "Sell more online with our expert solutions. We help you launch, manage, and grow your thriving online store.",
+        "link": "/services/service-1"
+      },
+      {
+        "image": "/images/serv-icon2.png",
+        "title": "Website Development",
+        "text": "Create a website that reflects your brand and drives results. We offer beautiful design, user-friendly functionality, and SEO optimization.",
+        "link": "/services/service-2"
+      },
+      {
+        "image": "/images/serv-icon3.png",
+        "title": "Studio Services",
+        "text": "Showcase your products in the best light. We provide professional product and model photography services.",
+        "link": "/services/service-3"
+      }
+    ]
+  }
+  

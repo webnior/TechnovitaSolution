@@ -1,0 +1,24 @@
+
+{
+    "title": "Ecommerce & Creative Powerhouse: Grow Your Brand, Sell More Online",
+    "subtitle": "Welcome to Technovita Solution",
+    "number": {
+      "value": "5+",
+      "label": "Years of E-commerce Creative Expertise"
+    },
+    "items": [
+      {
+        "title": "We Elevate Your E-commerce Journey",
+        "text": "From listings to sales, we empower your online store success. We craft captivating content, manage accounts effectively, and boost sales across platforms."
+      },
+      {
+        "title": "Your One-Stop Shop for Growth",
+        "text": "Let us handle the heavy lifting. We provide comprehensive e-commerce solutions, studio services, and website development to streamline your operations and fuel your brand's growth.",
+        "button": {
+          "label": "Explore Our Services",
+          "link": "/services"
+        }
+      }
+    ]
+  }
+  
