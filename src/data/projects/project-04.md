@@ -1,7 +1,7 @@
 ---
 #preview
-title: Business Card Logo
-image: /images/project-4.jpg
+title: Clothing Photography
+image: /images/clothing-photography.png
 category: Design
 category_slug: design
 type: Marketing, Rendering, 3D Design

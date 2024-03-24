@@ -22,5 +22,11 @@
     "files": [
       "static/chunks/src_components_sliders_Ticker_jsx.js"
     ]
+  },
+  "projects.jsx -> @components/ProjectsGrid": {
+    "id": "projects.jsx -> @components/ProjectsGrid",
+    "files": [
+      "static/chunks/src_components_ProjectsGrid_jsx.js"
+    ]
   }
 }

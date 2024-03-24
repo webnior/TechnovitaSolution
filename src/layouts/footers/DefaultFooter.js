@@ -22,7 +22,10 @@ const DefaultFooter = () => {
                             {/* Description */}
                             <div className="onovo-text onovo-text-white">
                                 <h5>Information</h5>
-                                <p style={{"opacity": "0.6"}}>From the moment our company was founded, we have helped our clients find exceptional solutions <strong>for their businesses</strong>. </p>
+                                {/* <p style={{"opacity": "0.6"}}>From the moment our company was founded, we have helped our clients find exceptional solutions <strong>for their businesses</strong>. </p> */}
+                                <p style={{"opacity": "0.6"}}>Technovita empowers businesses to thrive online.
+Grow your business with Technovita.</p>
+
                             </div>
 
                         </div>
@@ -31,10 +34,10 @@ const DefaultFooter = () => {
                             {/* Description */}
                             <div className="onovo-text onovo-text-white">
                                 <h5>Get in Touch</h5>
-                                <p style={{"opacity": "0.6"}}>Baird House, 15-17 St Cross St <br />London EC1N 8UW </p>
+                                <p style={{"opacity": "0.6"}}> D-41, C Block, Sector 59, Noida, <br /> Uttar Pradesh 201301 </p>
                                 <p style={{"opacity": "0.6"}}>
-                                    <a href="tel:+10204302973" className="onovo-lnk lnk--white" target="_blank">+ 1 (020) 430 2973</a><br />
-                                    <a href="mailto:username@domain.com" className="onovo-lnk lnk--white" target="_blank">username@domain.com</a>
+                                    <a href="tel:+91 7451073504" className="onovo-lnk lnk--white" target="_blank">+91 7451073504</a><br />
+                                    <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a>
                                 </p>
                             </div>
 

@@ -26,7 +26,7 @@ const PartnersSection = ( { paddingTop } ) => {
                                 <span className="image">
                                     <img decoding="async" src={item.image} width="285" height="200" alt={item.alt} />
                                 </span>
-                                <span className="label onovo-white-black">Visit Website</span>
+                                <span className="label onovo-white-black">Visit Store</span>
                             </a>
                         </div>
                     </div>
