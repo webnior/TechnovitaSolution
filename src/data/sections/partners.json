@@ -1,46 +1,46 @@
 {
     "subtitle": "Fantastic and Premium Clients",
-    "title": "We Have Had the Pleasure of <br/>Working with Some Clients",
+    "title": "We Have Had the Pleasure of <br/>Working with Some best Ecommerce Brands",
     "items": [
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.myntra.com/leo's-fitness-shoes-regular-casual-shoes?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-leo%27s-fitness-shoes-regular-casual-shoes&rawQuery=Leo%27s%20Fitness%20Shoes%20Regular%20Casual%20Shoes",
+            "label": "Visit Store",
             "image": "/images/brand1.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.myntra.com/fansarmy?rawQuery=fansarmy",
+            "label": "Visit Store",
             "image": "/images/brand2.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.myntra.com/gavin-paris?extra_search_param=isautosuggestentry%3atrue%3a%3aid%3a2297-gavin-paris&rawQuery=Gavin%20Paris",
+            "label": "Visit Store",
             "image": "/images/brand3.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.myntra.com/belavine?rawQuery=belavine",
+            "label": "Visit Store",
             "image": "/images/brand4.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.myntra.com/tesmare?rawQuery=tesmare",
+            "label": "Visit Store",
             "image": "/images/brand5.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.ajio.com/search/?text=klemor",
+            "label": "Visit Store",
             "image": "/images/brand6.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
+            "link": "https://www.ajio.com/search/?text=gendafool",
+            "label": "Visit Store",
             "image": "/images/brand7.png"
         },
         {
-            "link": "https://google.com",
-            "label": "Visit Website",
-            "image": "/images/brand2.png"
+            "link": "https://www.ajio.com/search/?text=SAV%20JEWELS",
+            "label": "Visit Store",
+            "image": "/images/brand8.png"
         }
     ]
 }

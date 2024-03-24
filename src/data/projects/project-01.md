@@ -1,18 +1,18 @@
 ---
 #preview
-title: Museums Art Concept
-image: /images/project-n01-3-1200x900.jpg
-category: Branding
-category_slug: branding
-type: Art Direction, Branding, Interactive Design
+title: Myntra Photoshoot
+image: /images/myntra-photography.png
+category: Services
+category_slug: clothing-photography
+type: E-commerce Photography
 team: Thomas Jackki
-date: 2021-2023
+date: 2023-2024
 
 #full details
 details:
     items:
         - label: "Client:"
-          value: John Smith
+          value: fans army
 
         - label: "Start:"
           value: Dec 18, 2022
@@ -21,7 +21,7 @@ details:
           value: Mar 18, 2023
         
         - label: "Website:"
-          value: bslthemes.com
+          value: https://www.myntra.com/fansarmy?rawQuery=fansarmy
 
 gallery: 
     items:
@@ -46,30 +46,45 @@ gallery:
 additional:
     heading: Project Result
     content: "
-      <p>Our immediate goal is to complete the testing phase and achieve the certification, which will allow us to bring our product to market by the end of the year. We are actively engaging with waste to energy operators, concrete manufacturers, and the wider construction industry.</p>
-      <ul>
-        <li>
-          Far curiosity incommode now led smallness allowance.
-        </li>
-        <li>
-          Favour bed assure son things yet.
-        </li>
-        <li>
-          She consisted consulted elsewhere happiness.
-        </li>
-      </ul>
+      <p>Our immediate goal is to complete the photoshoot and editing to achieve the high quality product images the client needs to boost their online sales. We are actively engaging with fashion brands, ecommerce sites, and influencers to demonstrate our expertise in clothing photography Partner with Technovita Solution and transform your product presentations. Our professional photoshoots deliver stunning, high-quality images that grab attention, boost click-through rates, and convert viewers into customers. We elevate your brand perception, streamline the process, and offer cost-effective solutions to maximize your online sales potential. Let's create captivating visuals that showcase your products in their best light – contact us today!.</p>
+
+<ul>
+
+  <li>
+    Capturing the texture and drape of fabrics to showcase the garments.
+  </li>
+
+  <li>
+    Lighting and angles to highlight design details and flatter different body types.
+  </li>
+
+  <li> 
+    Posing models to best display the garments for lifestyle ecommerce images.
+  </li>
+
+</ul>
+
     "
 ---
 
-### Description
 
-Most innovative and successful builders and real estate enterprises in the country, has been selected for the design-build expansion of Air sides A and E at Tampa International Airport. This expansion will support Hillsborough County Aviation Authority and Tampa International Airport as they project up to 38.8 million annual passengers, 402,000 tons of cargo per year and 344,000 annual aircraft operations.
+### Captivate Myntra Shoppers with Technovita's Product Photoshoot Services
 
-Global demand for a Circular Economy solution is already high, with global concrete manufacturers engaging with us to **develop specific testing programms**.
+**Elevate your brand and boost sales on Myntra with Technovita Solution's professional product photoshoot services.** We understand the importance of high-quality product images for Myntra sellers. Compelling visuals are essential for grabbing attention, showcasing product details, and driving conversions.
 
-###### Project Requirement
+**Here's what Technovita Solution can offer you:**
 
-- Far curiosity incommode now led smallness allowance.
-- Favour bed assure son things yet.
-- She consisted consulted elsewhere happiness.
-- Widow downs you new shade drift hopes small.s
+* **Studio Expertise:** Our team of experienced photographers utilizes professional lighting setups and backdrops to create stunning product visuals.
+* **Product Focus:** We meticulously capture every detail of your clothing, accessories, or other merchandise, ensuring clarity and highlighting key features.
+* **E-commerce Optimization:** We adhere to Myntra's image size and format requirements, ensuring your photos are ready for seamless upload.
+* **Increased Sales Potential:** High-quality product images have been proven to increase click-through rates, improve brand perception, and ultimately drive sales.
+
+**Why Choose Technovita Solution?**
+
+* **Experienced Professionals:** Our photographers have a keen eye for detail and a deep understanding of e-commerce product photography.
+* **Efficient Workflow:** We streamline the photoshoot process to ensure timely delivery of your images.
+* **Cost-Effective Solutions:** We offer competitive pricing packages to suit your budget.
+
+**Boost Your Myntra Presence Today!**
+
+Contact Technovita Solution to discuss your product photography needs. Let us help you create captivating visuals that will make your products stand out on Myntra and convert viewers into satisfied customers.

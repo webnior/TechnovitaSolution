@@ -1,8 +1,8 @@
 {
     "settings": {
-        "siteName": "Onovo",
+        "siteName": "Technovita Solution",
         "preloader": true,
-        "formspreeURL": "https://formspree.io/f/your_api_key",
+        "formspreeURL": "https://formspree.io/f/xjvnrono",
         "portfolio": {
             "categories": [
                 {
@@ -36,23 +36,8 @@
                 "link": "/",
                 "children": [
                     {
-                        "label": "Creative Agency",
+                        "label": "Technovita Home",
                         "link": "/",
-                        "children": 0
-                    },
-                    {
-                        "label": "Digital Agency",
-                        "link": "/index-2",
-                        "children": 0
-                    },
-                    {
-                        "label": "Creative Portfolio",
-                        "link": "/index-3",
-                        "children": 0
-                    },
-                    {
-                        "label": "Fullscreen Parallax",
-                        "link": "/index-4",
                         "children": 0
                     }
                 ]
@@ -182,41 +167,41 @@
         },
         "gallery": [
             {
-                "image": "/images/post5-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post1-footer.png",
+                "title": "technovita amazon seller services",
                 "alt": "image"
             },
             {
-                "image": "/images/post4-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post2-footer.png",
+                "title": "technovita flipkart seller services",
                 "alt": "image"
             },
             {
-                "image": "/images/post3-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post3-footer.png",
+                "title": "technovita meesho seller services",
                 "alt": "image"
             },
             {
-                "image": "/images/post4-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post4-footer.png",
+                "title": "technovita ajio seller services",
                 "alt": "image"
             },
             {
-                "image": "/images/post1-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post5-footer.png",
+                "title": "technovita shopify seller services",
                 "alt": "image"
             },
             {
-                "image": "/images/post6-1024x683.jpg",
-                "title": "image",
+                "image": "/images/post6-footer.png",
+                "title": "technovita myntra seller services",
                 "alt": "image"
             }
         ],
-        "copy": "© 2023 ONOVO by <a href='https://bslthemes.com' target='blank' class='onovo-lnk lnk--white'>bslthemes Team</a>. All rights reserved."
+        "copy": "© 2019-2024 Technovita Solution. All rights reserved."
     },
     "social": [
         {
-            "link": "https://facebook.com",
+            "link": "https://www.facebook.com/profile.php?id=100078880413401",
             "icon": "fab fa-facebook",
             "title": "Facebook"
         },
@@ -226,7 +211,7 @@
             "title": "Twitter"
         },
         {
-            "link": "https://linkedin.com",
+            "link": "https://www.linkedin.com/company/technovita-solution321?originalSubdomain=in",
             "icon": "fab fa-linkedin",
             "title": "Linkedin"
         }

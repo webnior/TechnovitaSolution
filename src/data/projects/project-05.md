@@ -1,7 +1,7 @@
 ---
 #preview
-title: Flower Store Mobile App
-image: /images/project-3-1200x750.jpg
+title: Model Shoot
+image: /images/model-photography.png
 category: Interactive
 category_slug: interactive
 type: Marketing, Rendering, 3D Design

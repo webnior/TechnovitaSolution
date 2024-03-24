@@ -1,7 +1,7 @@
 ---
 #preview
-title: Headphones 3D Rendering
-image: /images/project-2-1200x988.jpg
+title: Product Photography
+image: /images/product-photography.png
 category: Design
 category_slug: design
 type: UI/UX Design, Branding, Logo Design

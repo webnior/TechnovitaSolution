@@ -13,7 +13,6 @@ import { circleText } from "@common/utilits";
 import ServicesSection from "@components/sections/Services";
 import AboutSection from "@components/sections/About";
 import ShowcaseSection from "@components/sections/Showcase";
-import TeamSection from "@components/sections/Team";
 import VideoSection from "@components/sections/Video";
 import CountersSection from "@components/sections/Counters";
 import CallToActionSection from "@components/sections/CallToAction";
@@ -37,11 +36,10 @@ const Home1 = (props) => {
         <AboutSection />
         <TickerSlider />
         <ShowcaseSection projects={props.projects} />
-        <TeamSection team={props.team} />
         <TestimonialSlider />
         <VideoSection />
         <CountersSection />
-        <CallToActionSection />
+        {/* <CallToActionSection /> */}
         <LatestPostsSection posts={props.posts} />
         <PartnersSection />
       </>
