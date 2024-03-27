@@ -112,10 +112,10 @@ const PostsDetail = ( props ) => {
 									{/* Tags */}
 									<div className="onovo-post-tags">
 										<span>Tags: </span>
-										<a href="#" onClick={(e) => {e.preventDefault();}}>branding</a>
-										<a href="#" onClick={(e) => {e.preventDefault();}}>design</a>
-										<a href="#" onClick={(e) => {e.preventDefault();}}>development</a>
-										<a href="#" onClick={(e) => {e.preventDefault();}}>web</a>
+										<a href="#" onClick={(e) => {e.preventDefault();}}>Seller Registration</a>
+										<a href="#" onClick={(e) => {e.preventDefault();}}>Seller sales boost</a>
+										<a href="#" onClick={(e) => {e.preventDefault();}}>Seller product listing</a>
+										<a href="#" onClick={(e) => {e.preventDefault();}}>sales boost </a>
 									</div>
 
 									{/* Social*/}
@@ -224,11 +224,11 @@ const PostsDetail = ( props ) => {
 										</div>
 										<div className="comment-item__content">
 											<div className="comment-item__top">
-												<div className="comment-item__name">Lisa Brown</div>
+												<div className="comment-item__name">Anurag singh</div>
 												<div className="comment-item__sent">April 2, 2023</div>
 											</div>
 											<div className="comment-item__text">
-												<p>We are actively engaging with waste to energy operators, concrete manufacturers, and the wider construction industry.</p>
+												<p>"I recently used Technovita Solution's e-commerce seller services and I'm incredibly impressed! Their expertise, particularly in  product listing, marketing, was invaluable. They helped me get everything set up smoothly and efficiently, and I was able to launch my store on time.  Highly recommend them to anyone looking for top-notch e-commerce seller support!"</p>
 											</div>
 											<div className="comment-item__reply">
 												<a className="comment-reply-link" href="#" onClick={(e) => {e.preventDefault();}}>Reply</a>
@@ -245,11 +245,11 @@ const PostsDetail = ( props ) => {
 										</div>
 										<div className="comment-item__content">
 											<div className="comment-item__top">
-												<div className="comment-item__name">Sofia Morrison</div>
-												<div className="comment-item__sent">April 2, 2023</div>
+												<div className="comment-item__name">Sofia </div>
+												<div className="comment-item__sent">januray 2, 2024</div>
 											</div>
 											<div className="comment-item__text">
-												<p>Most innovative and successful builders and real estate enterprises in the country, has been selected for the design-build expansion of Airsides A and E at Tampa International Airport.</p>
+												<p>"Technovita Solution's e-commerce seller services were a game-changer for me! Not only did they streamline the setup process, but they also helped me launch my products on over 5 major platforms, including Myntra, Ajio, and Nykaa! Their expertise in multi-platform integration saved me tons of time and ensured a seamless launch across the board. If you're looking to expand your reach and sell on multiple channels, Technovita Solution is the way to go!"</p>
 											</div>
 											<div className="comment-item__reply">
 												<a className="comment-reply-link" href="#" onClick={(e) => {e.preventDefault();}}>Reply</a>

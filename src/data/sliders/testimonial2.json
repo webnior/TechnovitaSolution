@@ -1,20 +1,21 @@
 {
     "bg_image": "/images/testi-bg.jpg",
     "items": [
-        {
-            "name": "Thomas Smith",
-            "role": "Customer Support",
-            "text": "Their high level of customer service complemented their technical expertise. They were responsive, supportive, and communicative. Their dedication to the project was impressive."
-        },
-        {
-            "name": "Mike Cameron",
-            "role": "Code Quality",
-            "text": "Their high level of customer service complemented their technical expertise. They were responsive, supportive, and communicative. Their dedication to the project was impressive."
-        },
-        {
-            "name": "Jessica Brown",
-            "role": "Design Quality",
-            "text": "Their high level of customer service complemented their technical expertise. They were responsive, supportive, and communicative. Their dedication to the project was impressive."
-        }
+      {
+        "name": "Priya Sharma",
+        "role": "Business  Owner",
+        "text": "Technovita Solution truly impressed me with their expertise and dedication. Their customer service was exceptional - they were always responsive, supportive, and kept me informed throughout the project. I highly recommend them!"
+      },
+      {
+        "name": "Rahul Kapoor",
+        "role": "Business  owner",
+        "text": "Technovita Solution's team went above and beyond to understand my needs and deliver a solution that exceeded my expectations. Their technical skills are top-notch, and their communication was clear and concise. They are a valuable partner for any e-commerce business."
+      },
+      {
+        "name": "Aisha Patel",
+        "role": "Business Owner",
+        "text": "Working with Technovita Solution was a smooth and positive experience. They listened carefully to my vision and goals, and then developed a strategic plan to help me achieve them. Their marketing strategies are innovative and effective, and I've seen a significant increase in sales since working with them."
+      }
     ]
-}
+  }
+  
