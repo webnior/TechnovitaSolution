@@ -7,23 +7,23 @@ import { Formik } from 'formik';
 const Contact = () => {
   const faqData = {
     "title": "Client’s FAQ",
-    "subtitle": "Solving Business Problems <br>is An Everyday",
+    "subtitle": "Solving Business Problems <br>is An Everyday Task for Us",
     "items": [
         {
-            "title": "Secure Management and Workforce?",
-            "text": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+            "title": "What services does Technovita Solution offer?",
+            "text": "Technovita Solution offers a comprehensive range of services designed to drive awareness, engagement, and conversions for e-commerce portals. Our services include Catalogue Creation, Account Management, Sales Boost Services, Content Writing, Branding, Website Designing and Development, SEO, SMM, SEM, ORM, and SMO. We also provide original website content writing, blog writing, and strategic marketing solutions across various industry verticals."
         },
         {
-            "title": "Logistics Workforce on Track?",
-            "text": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+            "title": "How can Technovita Solution help boost my e-commerce sales?",
+            "text": "At Technovita Solution, we employ a combination of digital marketing strategies, including SEO, SMM, SEM, and targeted content creation to drive traffic and increase conversions for your e-commerce portal. Our Sales Boost Services are tailored to enhance your online presence, attract potential customers, and improve overall sales performance through data-driven marketing and continuous optimization."
         },
         {
-            "title": "Online Courses & Certification?",
-            "text": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+            "title": "What makes Technovita Solution different from other digital marketing agencies?",
+            "text": "Technovita Solution stands out due to our integrated approach and specialized teams in Catalogue Creation, Account Management, and Digital Marketing. We focus on delivering quality results through continuous improvement and a deep understanding of contemporary culture and customer needs. Our mission is to enrich your business with relevant strategies and provide a compelling value experience that transforms your business seamlessly."
         },
         {
-            "title": "Figures and data representative of an organization's?",
-            "text": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+            "title": "How does Technovita Solution ensure quality in its services?",
+            "text": "Quality consciousness is one of our core values at Technovita Solution. We ensure quality by employing a team of passionate experts in content writing, digital marketing, design, and advertising. Our approach involves deep analysis, strategic planning, and continuous improvement to meet and exceed client expectations. We strive to deliver the best possible results by understanding the target audience and aligning our efforts with your business goals."
         }
     ]
   }
@@ -181,8 +181,8 @@ const Contact = () => {
                             <ul>
                                 <li>
                                     <h5>Contact Info</h5>
-                                    <a href="tel:+10204302973" className="onovo-lnk lnk--white" target="_blank">+ 1 (020) 430 2973</a><br/>
-                                    <a href="mailto:username@domain.com" className="onovo-lnk lnk--white" target="_blank">username@domain.com</a>
+                                    <a href="tel:+917451073504" className="onovo-lnk lnk--white" target="_blank">+91 7451073504</a><br/>
+                                    <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a>
                                     
                                     <div className="onovo-social-1 onovo-social-active" style={{"marginTop": "10px"}}>
                                         <ul>
@@ -197,13 +197,10 @@ const Contact = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <h5>Houston</h5>
-                                    <div>2001 N. Clybourn Avenue Suite 202, <br/>Block D, IL 60614</div>
+                                    <h5>D-41, C Block,</h5>
+                                    <div> Sector 59, <br/>Noida, Uttar Pradesh 201301</div>
                                 </li>
-                                <li>
-                                    <h5>Los Angeles</h5>
-                                    <div>2001 N. Clybourn Avenue Suite 202</div>
-                                </li>
+                               
                             </ul>
                         </div>
 

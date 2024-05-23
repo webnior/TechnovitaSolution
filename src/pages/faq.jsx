@@ -9,22 +9,22 @@ const FAQ = () => {
   const Content = {
     "items": [
       {
-        "heading": "Secure Management and Workforce?",
-        "content": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+          "title": "What services does Technovita Solution offer?",
+          "text": "Technovita Solution offers a comprehensive range of services designed to drive awareness, engagement, and conversions for e-commerce portals. Our services include Catalogue Creation, Account Management, Sales Boost Services, Content Writing, Branding, Website Designing and Development, SEO, SMM, SEM, ORM, and SMO. We also provide original website content writing, blog writing, and strategic marketing solutions across various industry verticals."
       },
       {
-        "heading": "Logistics Workforce on Track?",
-        "content": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+          "title": "How can Technovita Solution help boost my e-commerce sales?",
+          "text": "At Technovita Solution, we employ a combination of digital marketing strategies, including SEO, SMM, SEM, and targeted content creation to drive traffic and increase conversions for your e-commerce portal. Our Sales Boost Services are tailored to enhance your online presence, attract potential customers, and improve overall sales performance through data-driven marketing and continuous optimization."
       },
       {
-        "heading": "Online Courses & Certification?",
-        "content": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+          "title": "What makes Technovita Solution different from other digital marketing agencies?",
+          "text": "Technovita Solution stands out due to our integrated approach and specialized teams in Catalogue Creation, Account Management, and Digital Marketing. We focus on delivering quality results through continuous improvement and a deep understanding of contemporary culture and customer needs. Our mission is to enrich your business with relevant strategies and provide a compelling value experience that transforms your business seamlessly."
       },
       {
-        "heading": "Figures and data representative of an organization's?",
-        "content": "Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Etiam ante ex fermentum litora aorquper conuauris ine odi. Duis sed odio sit amet nibh vulputate cursus a sit tellus a odio tincdunt ilm auctor Class apten sociosqu a ds Et iam ante ex fermentum litora aorquper conuauris ine odi."
+          "title": "How does Technovita Solution ensure quality in its services?",
+          "text": "Quality consciousness is one of our core values at Technovita Solution. We ensure quality by employing a team of passionate experts in content writing, digital marketing, design, and advertising. Our approach involves deep analysis, strategic planning, and continuous improvement to meet and exceed client expectations. We strive to deliver the best possible results by understanding the target audience and aligning our efforts with your business goals."
       }
-    ]
+  ]
   }
 
   return (
