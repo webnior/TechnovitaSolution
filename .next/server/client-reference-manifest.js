@@ -1606,6 +1606,21 @@ self.__RSC_MANIFEST={
       "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/splitting/dist/splitting.css",
       "name": "default",
       "chunks": []
+    },
+    "/Users/mukeshbagaria/Downloads/Techno/Technovita-com/node_modules/swiper/modules/navigation.css#": {
+      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/swiper/modules/navigation.css",
+      "name": "default",
+      "chunks": []
+    },
+    "/Users/mukeshbagaria/Downloads/Techno/Technovita-com/node_modules/swiper/modules/pagination.css#": {
+      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/swiper/modules/pagination.css",
+      "name": "default",
+      "chunks": []
+    },
+    "/Users/mukeshbagaria/Downloads/Techno/Technovita-com/node_modules/swiper/swiper.css#": {
+      "id": "./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[1]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[15].use[2]!./node_modules/swiper/swiper.css",
+      "name": "default",
+      "chunks": []
     }
   }
 }

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import Layouts from "@layouts/Layouts";
 
-import { getSortedTeamData } from "@library/team";
 import { getSortedServicesData } from "@library/services";
 
 import { circleText } from "@common/utilits";
@@ -113,12 +112,10 @@ const About = (props) => {
 export default About;
 
 export async function getStaticProps() {
-  const allTeam = getSortedTeamData();
   const allServices = getSortedServicesData();
 
   return {
     props: {
-      team: allTeam,
 	  services: allServices
     }
   }

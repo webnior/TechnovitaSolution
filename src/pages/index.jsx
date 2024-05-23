@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 
 import { getSortedPostsData } from "@library/posts";
 import { getSortedProjectsData } from "@library/projects";
-import { getSortedTeamData } from "@library/team";
 
 import { circleText } from "@common/utilits";
 
@@ -51,13 +50,11 @@ export default Home1;
 export async function getStaticProps() {
   const allPosts = getSortedPostsData();
   const allProjects = getSortedProjectsData();
-  const allTeam = getSortedTeamData();
 
   return {
     props: {
       posts: allPosts,
       projects: allProjects,
-      team: allTeam
     }
   }
 }

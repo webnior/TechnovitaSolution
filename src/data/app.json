@@ -52,31 +52,6 @@
                         "children": 0
                     },
                     {
-                        "label": "Team",
-                        "link": "/team",
-                        "children": 0
-                    },
-                    {
-                        "label": "Team Detail",
-                        "link": "/team/team-1",
-                        "children": 0
-                    },
-                    {
-                        "label": "Services",
-                        "link": "/services",
-                        "children": 0
-                    },
-                    {
-                        "label": "Service Detail",
-                        "link": "/services/service-1",
-                        "children": 0
-                    },
-                    {
-                        "label": "Pricing Plans",
-                        "link": "/pricing",
-                        "children": 0
-                    },
-                    {
                         "label": "FAQ",
                         "link": "/faq",
                         "children": 0
@@ -90,36 +65,6 @@
                     {
                         "label": "Projects Grid",
                         "link": "/projects",
-                        "children": 0
-                    },
-                    {
-                        "label": "Projects List",
-                        "link": "/projects-2",
-                        "children": 0
-                    },
-                    {
-                        "label": "Projects Side",
-                        "link": "/projects-3",
-                        "children": 0
-                    },
-                    {
-                        "label": "Projects Masonry",
-                        "link": "/projects-4",
-                        "children": 0
-                    },
-                    {
-                        "label": "Projects 3 Column",
-                        "link": "/projects-5",
-                        "children": 0
-                    },
-                    {
-                        "label": "Gallery",
-                        "link": "/gallery",
-                        "children": 0
-                    },
-                    {
-                        "label": "Project Detail",
-                        "link": "/projects/project-01",
                         "children": 0
                     }
                 ]

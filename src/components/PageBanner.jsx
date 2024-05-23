@@ -46,11 +46,7 @@ const PageBanner = ({ pageTitle, pageDesc }) => {
 								<Link href="/services">Services</Link>
 							</li>
 							}
-							{asPath.indexOf('/team/') != -1 &&
-							<li>
-								<Link href="/team">Team</Link>
-							</li>
-							}
+		
 							<li className="current">
 								<span>{pageTitle}</span>
 							</li>
