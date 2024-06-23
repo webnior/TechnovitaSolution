@@ -43,6 +43,68 @@
                 ]
             },
             {
+                "label": "Seller Docs",
+                "link": "https://sellerguide.technovitasolution.in/seller-services",
+                "children": [
+                    {
+                        "label": "Seller Guide ",
+                        "link": "https://sellerguide.technovitasolution.in/seller-services",
+                        "children": 0
+                    }
+                ]
+            },
+            {
+                "label": "Seller Calculators",
+                "link": "https://sellerguide.technovitasolution.in/calculator",
+                "children": [
+                    {
+                        "label": "Amazon Seller Calculator",
+                        "link": "https://sellerguide.technovitasolution.in/calculator/amazon",
+                        "children": 0
+                    },
+                    {
+                        "label":"Flipkart seller Calculator",
+                        "link":"https://sellerguide.technovitasolution.in/calculator/flipkart",
+                        "children":1
+                    },
+                    {
+                        "label":"Myntra seller Calculator",
+                        "link":"https://sellerguide.technovitasolution.in/calculator/myntra",
+                        "children":2
+                    },
+                    {
+                        "label":"Ajio seller Calculator",
+                        "link":"https://sellerguide.technovitasolution.in/calculator/ajio",
+                        "children":3
+                    }
+                    
+                ]
+            },
+            
+            {
+                "label": "Projects",
+                "link": "/projects",
+                "children": [
+                    {
+                        "label": "Projects Grid",
+                        "link": "/projects",
+                        "children": 0
+                    }
+                ]
+            },
+           
+            {
+                "label": "Blog",
+                "link": "/blog",
+                "children": [
+                    {
+                        "label": "Technovita Blog",
+                        "link": "/blog",
+                        "children": 0
+                    }
+                ]
+            },
+            {
                 "label": "About",
                 "link": "/about",
                 "children": [
@@ -59,36 +121,14 @@
                 ]
             },
             {
-                "label": "Projects",
-                "link": "/projects",
-                "children": [
-                    {
-                        "label": "Projects Grid",
-                        "link": "/projects",
-                        "children": 0
-                    }
-                ]
-            },
-            {
-                "label": "Blog",
-                "link": "/blog",
-                "children": [
-                    {
-                        "label": "Technovita Blog",
-                        "link": "/blog",
-                        "children": 0
-                    }
-                ]
-            },
-            {
                 "label": "Contact Us",
                 "link": "/contact",
                 "children": 0
             }
         ],
         "button": {
-            "label": "Showcase",
-            "link": "/projects"
+            "label": "SellerGuide",
+            "link": "https://sellerguide.technovitasolution.in/seller-services"
         },
         "button2": {
             "label": "Start a Project",
