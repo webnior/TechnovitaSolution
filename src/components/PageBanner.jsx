@@ -17,9 +17,7 @@ const PageBanner = ({ pageTitle, pageDesc }) => {
 				<div className="container">
 					<h1 className="onovo-title-1  onovo-text-white">
 						<span>{pageTitle}</span>
-						<span className="onovo-sep word">
-							<i className="sep-img" style={{"backgroundImage": "url(/images/title_icon.svg)"}} />
-						</span>
+						
 					</h1>
 					{pageDesc != "" &&
 					<div className="onovo-subtitle-2  onovo-text-white">
