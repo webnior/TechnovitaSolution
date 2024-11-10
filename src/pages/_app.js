@@ -12,7 +12,15 @@ register();
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <h1>website is under maintainance</h1>
+      <Head>
+          {/* seo begin */}
+          <title>{appData.settings.siteName}</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="HandheldFriendly" content="true" />
+          <meta name="author" content="Mukesh Kumar Bagaria" />
+          {/* seo end */}        
+      </Head>
+      <Component {...pageProps} />
     </>
   );
 }
