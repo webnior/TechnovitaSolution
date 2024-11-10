@@ -49,8 +49,8 @@ accordion:
 additional:
   enabled: 1
   content: "
-    <h3>Why Choose TechNova Studio?</h3>
-    <p>At **TechNova Studio**, we offer high-quality product photography services for businesses of all sizes. Our expert photographers, advanced equipment, and post-production skills ensure that your product images stand out in the competitive eCommerce marketplace.</p>
+    <h3>Why Choose Technovita Studio?</h3>
+    <p>At **Technovita Studio**, we offer high-quality product photography services for businesses of all sizes. Our expert photographers, advanced equipment, and post-production skills ensure that your product images stand out in the competitive eCommerce marketplace.</p>
     <ul>
       <li>Professional photographers experienced in various product categories.</li>
       <li>High-end studio equipment for sharp, detailed images.</li>
