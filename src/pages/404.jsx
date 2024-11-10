@@ -7,7 +7,7 @@ const E404 = () => {
         <div className="container page-404__container">
           <div className="page-404__num">404</div>
           <h3 className="page-404__title">Page not found</h3>
-          <div className="page-404__text onovo-text">We are unable to find the page you are looking for.</div>
+          <div className="page-404__text onovo-text">We are unable to find the page you are looking for please check the url once again.</div>
           
           <form role="search" method="get" className="search-form" action="https://onovo.bslthemes.com/" onSubmit={(e) => {e.preventDefault();}}>
             <label>
