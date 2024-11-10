@@ -2,7 +2,7 @@
 # preview details
 image: "/images/studio-main.webp"
 icon: "/images/serv-icon-product-photography.png"
-title: "eCommerce Product Photography Services"
+title: "ECommerce Product Photography Services"
 short: "Professional photography services for all your eCommerce needs – from fashion to electronics, we’ve got you covered."
 
 # full details
