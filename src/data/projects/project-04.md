@@ -11,36 +11,36 @@ date: 2021-2023
 #full details
 details:
     items:
-        - label: "Client:"
-          value: John Smith
+        - label: "connectUs:"
+          value: +91 7451073504
 
-        - label: "Start:"
-          value: Dec 18, 2022
+        - label: "email:"
+          value: info@technovitasolution.com
         
-        - label: "Ending:"
-          value: Mar 18, 2023
+        - label: "whatsapp 👈:"
+          value: +91 7451073504
         
         - label: "Website:"
-          value: bslthemes.com
+          value: WWW.technovitasolution.com
 
 gallery: 
     items:
-        - image: /images/project-2-2-1200x982.jpg
+        - image: /images/myntra-1.jpeg
+          alt: "myntra-photoshoot"
+
+        - image: /images/myntra-2.jpg
           alt: "image"
 
-        - image: /images/project-2-1200x988.jpg
-          alt: "image"
-
-        - image: /images/project-4.jpg
+        - image: /images/myntra-3.jpg
           alt: "image"
         
-        - image: /images/project-3-1200x750.jpg
+        - image: /images/myntra-4.jpg
           alt: "image"
 
-        - image: /images/project-1-1080x800.jpg
+        - image: /images/myntra-5.jpg
           alt: "image"
         
-        - image: /images/project-8-1080x800.jpg
+        - image: /images/myntra-6.png
           alt: "image"
 
 additional:
