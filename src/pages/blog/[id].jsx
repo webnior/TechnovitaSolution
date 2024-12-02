@@ -245,7 +245,7 @@ const PostsDetail = ( props ) => {
 										</div>
 										<div className="comment-item__content">
 											<div className="comment-item__top">
-												<div className="comment-item__name">Sofia </div>
+												<div className="comment-item__name">abhinav </div>
 												<div className="comment-item__sent">januray 2, 2024</div>
 											</div>
 											<div className="comment-item__text">
