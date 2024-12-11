@@ -2,7 +2,7 @@
 #preview
 title: 'Become an Ajio Seller: A Step-by-Step Guide to Registration and Product Listing'
 date: '2024-04-02'
-image: "/images/ajio-seller-guide.png"
+image: "/images/ajio-blog.png"
 short: "A Comprehensive Guide to Registration and Product Listing on Ajio Seller Central..."
 category:
     - ajio

@@ -1,7 +1,7 @@
 ---
 title: 'Become an Amazon Seller in India: A Detailed Guide'
 date: '2024-03-02'
-image: "/images/amazon-seller-guide.png"
+image: "/images/amazon-blog.png"
 short: "Ambleton: Behind the Branding of High Calgary's Community Most innovative and successful builders and real estate..."
 category:
     - Amazon

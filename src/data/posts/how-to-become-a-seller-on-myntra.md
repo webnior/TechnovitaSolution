@@ -1,7 +1,7 @@
 ---
 title: 'Guide to Becoming a Myntra Seller: Your Ultimate Selling Success Guide'
 date: '2024-02-02'
-image: "/images/myntra-seller-guide.png"
+image: "/images/myntra-blog.png"
 short: "Discover the ultimate guide to becoming a successful seller on Myntra, India's leading fashion e-commerce platform..."
 category:
     - myntra
