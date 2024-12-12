@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+/* Your existing global styles can go here */
+
 /* image popup */
 img.mfp-img {
     box-shadow: 0 0 8px rgb(0 0 0 / 60%);
@@ -12,3 +18,5 @@ img.mfp-img {
     top: -110px;
     right: -24px;
 }
+
+
