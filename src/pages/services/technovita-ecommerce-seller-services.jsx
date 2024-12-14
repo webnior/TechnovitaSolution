@@ -3,6 +3,7 @@
 import React,{ useState, useRef } from "react";
 import { motion ,AnimatePresence} from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import Link from 'next/link';
 
 import {
   MessageCircle,
@@ -109,53 +110,62 @@ const services = [
     icon: <Settings className="w-8 h-8" />,
     title: "Account Management",
     description: "Comprehensive management of your e-commerce presence across Amazon, Flipkart, Myntra, Nykaa, Ajio, FirstCry, eBay, and Alibaba.",
-    highlights: ["24/7 Account Monitoring", "Inventory Management", "Order Processing"]
+    highlights: ["24/7 Account Monitoring", "Inventory Management", "Order Processing"],
+    link: "/services/ecommerce-seller-account-management"
   },
   {
     icon: <Upload className="w-8 h-8" />,
     title: "Platform Onboarding",
     description: "Streamlined onboarding process for new e-commerce platforms with expert guidance and support throughout the journey.",
-    highlights: ["Documentation Support", "Quick Setup", "Compliance Handling"]
+    highlights: ["Documentation Support", "Quick Setup", "Compliance Handling"],
+    link: "/services/platform-onboarding"
   },
   {
     icon: <Store className="w-8 h-8" />,
     title: "Store Setup & Branding",
     description: "Professional store design and branding that captures your unique identity across all marketplace platforms.",
-    highlights: ["Brand Store Design", "Visual Merchandising", "Content Strategy"]
+    highlights: ["Brand Store Design", "Visual Merchandising", "Content Strategy"],
+    link: "/services/store-setup-branding"
   },
   {
     icon: <CreditCard className="w-8 h-8" />,
     title: "Payment Reconciliation",
     description: "Accurate tracking and reconciliation of payments across multiple e-commerce platforms for streamlined financial management.",
-    highlights: ["Payment Tracking", "Dispute Resolution", "Financial Reporting"]
+    highlights: ["Payment Tracking", "Dispute Resolution", "Financial Reporting"],
+    link: "/services/payment-reconciliation"
   },
   {
     icon: <Target className="w-8 h-8" />,
     title: "Platform Advertising",
     description: "Strategic advertising campaigns across all major e-commerce platforms to maximize visibility and sales.",
-    highlights: ["PPC Management", "Campaign Optimization", "ROI Tracking"]
+    highlights: ["PPC Management", "Campaign Optimization", "ROI Tracking"],
+    link: "/services/platform-advertising"
   },
   {
     icon: <Search className="w-8 h-8" />,
     title: "Organic Growth & SEO",
     description: "Comprehensive SEO and optimization strategies to improve your store's visibility and organic rankings.",
-    highlights: ["Keyword Optimization", "Content Enhancement", "Search Rankings"]
+    highlights: ["Keyword Optimization", "Content Enhancement", "Search Rankings"],
+    link: "/services/organic-growth-seo"
   },
   {
     icon: <FileCheck className="w-8 h-8" />,
     title: "Brand Documentation",
     description: "Expert assistance with brand documentation preparation and approval processes across platforms.",
-    highlights: ["Document Preparation", "Brand Registry", "Approval Support"]
+    highlights: ["Document Preparation", "Brand Registry", "Approval Support"],
+    link: "/services/brand-documentation"
   },
   {
     icon: <Headphones className="w-8 h-8" />,
     title: "E-commerce Consultation",
     description: "Professional consultation services for all aspects of e-commerce business growth and optimization.",
-    highlights: ["Strategy Planning", "Growth Consulting", "Market Analysis"]
+    highlights: ["Strategy Planning", "Growth Consulting", "Market Analysis"],
+    link: "/services/ecommerce-consultation"
   }
 ];
 const ServiceCard = ({ service, index }) => {
   return (
+    <Link href={service.link}>
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -208,6 +218,7 @@ const ServiceCard = ({ service, index }) => {
         Learn More <ArrowRight className="ml-2 w-4 h-4" />
       </motion.div>
     </motion.div>
+     </Link>
   );
 };
 
