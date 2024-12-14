@@ -518,25 +518,27 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white 
-                px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
-              >
-                <Phone className="w-5 h-5" /> 
-                <span className="font-semibold">Instant Call</span>
-              </motion.button>
+            <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={() => window.location.href = 'tel:+917451073504'}
+  className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white 
+  px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+>
+  <Phone className="w-5 h-5" /> 
+  <span className="font-semibold">Instant Call</span>
+</motion.button>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white 
-                px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
-              >
-                <MessageCircle className="w-5 h-5" /> 
-                <span className="font-semibold">WhatsApp Connect</span>
-              </motion.button>
+<motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  onClick={() => window.location.href = 'https://wa.me/917451073504?text=hi%20i%20want%20to%20know%20more%20about%20ecommerce%20services'}
+  className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white 
+  px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+>
+  <MessageCircle className="w-5 h-5" /> 
+  <span className="font-semibold">WhatsApp Connect</span>
+</motion.button>
             </div>
           </motion.div>
 
@@ -877,31 +879,32 @@ const CTASection2 = () => (
         and beyond. Let our experts handle the complexities while you focus on growing your brand.
       </p>
       <div className="flex justify-center">
-        <motion.button
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          whileHover={{ 
-            scale: 1.02,
-            transition: { duration: 0.2 }
-          }}
-          whileTap={{ scale: 0.98 }}
-          className={`
-            px-12 py-5 rounded-lg font-bold text-xl
-            bg-gradient-to-r from-[#F5A841] to-orange-500 
-            text-white shadow-lg 
-            transition-all duration-300
-            hover:shadow-xl
-            relative overflow-hidden
-            flex items-center justify-center space-x-3
-          `}
-        >
-          <Sparkles className="w-6 h-6" />
-          <span>START YOUR GROWTH JOURNEY</span>
-          <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-          
-          {/* Animated gradient border */}
-          <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 background-animate" />
-        </motion.button>
+      <motion.button
+  initial={{ opacity: 0, scale: 0.95 }}
+  animate={{ opacity: 1, scale: 1 }}
+  whileHover={{ 
+    scale: 1.02,
+    transition: { duration: 0.2 }
+  }}
+  whileTap={{ scale: 0.98 }}
+  onClick={() => window.location.href = 'tel:+917451073504'}
+  className={`
+    px-12 py-5 rounded-lg font-bold text-xl
+    bg-gradient-to-r from-[#F5A841] to-orange-500 
+    text-white shadow-lg 
+    transition-all duration-300
+    hover:shadow-xl
+    relative overflow-hidden
+    flex items-center justify-center space-x-3
+  `}
+>
+  <Sparkles className="w-6 h-6" />
+  <span>START YOUR GROWTH JOURNEY</span>
+  <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+  
+  {/* Animated gradient border */}
+  <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 background-animate" />
+</motion.button>
       </div>
     </div>
   </section>
