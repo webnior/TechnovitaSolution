@@ -11,11 +11,16 @@ module.exports = {
   important: true,
   theme: {
     extend: {
-      // You can extend the default theme here
-      colors: {
-        // Add your custom colors if needed
+      keyframes: {
+        twinkle: {
+          '0%, 100%': { opacity: 0.7 },
+          '50%': { opacity: 0.2 }
+        }
       },
-    },
+      animation: {
+        twinkle: 'twinkle 3s infinite'
+      }
+    }
   },
   // This ensures Tailwind doesn't purge styles from your existing CSS
   safelist: [
