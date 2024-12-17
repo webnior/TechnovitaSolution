@@ -1,5 +1,7 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useRef} from 'react';
+import emailjs from '@emailjs/browser';
+
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   Store, 
@@ -18,12 +20,172 @@ import {
   Phone,
   Sparkles,
   Globe,
-  ChevronDown
+  ChevronDown,
+  Loader2,
+  Copy,
+  Calendar
 } from 'lucide-react';
 import Footer from "@components/Footer";
 
+//consulation button 
+const ConsultationButton = () => {
+  const [copied, setCopied] = useState(false);
+  const phoneNumber = '+917451073504';
+
+  const handleClick = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = `tel:${phoneNumber}`;
+    } else {
+      navigator.clipboard.writeText(phoneNumber)
+        .then(() => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 2000);
+        })
+        .catch(err => console.error('Failed to copy:', err));
+    }
+  };
+
+  return (
+    <div className="flex justify-center items-center w-full mt-8">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={handleClick}
+        className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold 
+                   hover:bg-gray-100 transition-all duration-300
+                   flex items-center justify-center gap-2
+                   shadow-lg hover:shadow-xl"
+      >
+        {copied ? (
+          <>
+            <Check className="w-5 h-5" />
+            Number Copied!
+          </>
+        ) : (
+          <>
+            {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
+              <Phone className="w-5 h-5" />
+            ) : (
+              <Copy className="w-5 h-5" />
+            )}
+            Get Your Free E-commerce Consultation
+          </>
+        )}
+      </motion.button>
+    </div>
+  );
+};
+
+//second consulation button 
+const ConsultationButtons = () => {
+  const [copiedWhite, setCopiedWhite] = useState(false);
+  const [copiedGradient, setCopiedGradient] = useState(false);
+  const phoneNumber = '+917451073504';
+
+  const handleClick = (buttonType) => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.location.href = `tel:${phoneNumber}`;
+    } else {
+      navigator.clipboard.writeText(phoneNumber)
+        .then(() => {
+          if (buttonType === 'white') {
+            setCopiedWhite(true);
+            setTimeout(() => setCopiedWhite(false), 2000);
+          } else {
+            setCopiedGradient(true);
+            setTimeout(() => setCopiedGradient(false), 2000);
+          }
+        })
+        .catch(err => console.error('Failed to copy:', err));
+    }
+  };
+
+  return (
+    <div className="space-y-8">
+      {/* Gradient Button */}
+      <div className="flex justify-center items-center w-full">
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => handleClick('gradient')}
+          className={`
+            bg-gradient-to-r from-orange-600 to-amber-600 
+            text-white rounded-lg py-4 px-8 font-bold 
+            hover:from-orange-700 hover:to-amber-700 
+            transition-all duration-300
+            flex items-center justify-center gap-2
+          `}
+        >
+          {copiedGradient ? (
+            <>
+              <Check className="w-5 h-5" />
+              <span>Number Copied!</span>
+            </>
+          ) : (
+            <>
+              {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
+                <>
+                  <Phone className="w-5 h-5" />
+                  <span>Schedule a Consultation</span>
+                </>
+              ) : (
+                <>
+                  <Calendar className="w-5 h-5" />
+                  <span>Schedule a Consultation</span>
+                </>
+              )}
+            </>
+          )}
+        </motion.button>
+      </div>
+    </div>
+  );
+};
+
+const SuccessMessage = () => (
+  <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+  >
+     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <div className="bg-white p-8 rounded-xl shadow-2xl max-w-md mx-4 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-green-400 to-blue-500" />
+          <div className="text-center">
+            <div className="mx-auto w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
+              <CheckCircle className="w-10 h-10 text-green-500" />
+            </div>
+            <h3 className="text-2xl font-bold text-gray-800 mb-2">Amazing! 🎉</h3>
+            <p className="text-gray-600 mb-4">
+              Your journey to e-commerce account Management  starts now! Our experts will contact you within 24 hours.
+            </p>
+            <div className="text-sm text-gray-500">
+              <p>✓ Personalized Account Manager</p>
+              <p>✓ Platform-Specific Optimization</p>
+              <p>✓ Revenue Acceleration Plan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </motion.div>
+);
+
 const MarketplaceMasterHero = () => {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
+  const form = useRef(null);
+  const [formData, setFormData] = useState({
+    companyName: '',
+    phoneNumber: '',
+    countryCode: '+91'
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const platforms = [
     { name: 'Flipkart', logo: '/flipkart-logo.svg', icon: Store },
@@ -35,7 +197,7 @@ const MarketplaceMasterHero = () => {
     { name: 'Tata Cliq', logo: '/tata-cliq-logo.svg', icon: Store },
     { name: 'FirstCry', logo: '/firstcry-logo.svg', icon: Store },
     { name: 'AZA Fashion', logo: '/aza-fashion-logo.svg', icon: Store }
-];
+  ];
 
   const togglePlatform = (platformName) => {
     setSelectedPlatforms(prev => 
@@ -43,6 +205,58 @@ const MarketplaceMasterHero = () => {
         ? prev.filter(p => p !== platformName)
         : [...prev, platformName]
     );
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!formData.companyName || !formData.phoneNumber) return;
+    
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const templateParams = {
+        businessName: formData.companyName,
+        phoneNumber: `${formData.countryCode} ${formData.phoneNumber}`,
+        selected_platforms: selectedPlatforms.join(', ') || 'None selected'
+      };
+
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      );
+
+      console.log('SUCCESS!', result.text);
+      setShowSuccess(true);
+      
+      // Reset form
+      setFormData({
+        companyName: '',
+        phoneNumber: '',
+        countryCode: '+91'
+      });
+      setSelectedPlatforms([]);
+
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        setShowSuccess(false);
+      }, 5000);
+    } catch (error) {
+      console.error('FAILED...', error);
+      setSubmitError('Failed to submit. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -120,7 +334,7 @@ const MarketplaceMasterHero = () => {
               <p className="text-gray-600">Get a comprehensive performance audit</p>
             </div>
             
-            <form className="space-y-4">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="companyName" className="block text-sm font-medium text-gray-700 mb-1">
                   Company Name
@@ -128,37 +342,67 @@ const MarketplaceMasterHero = () => {
                 <input
                   type="text"
                   id="companyName"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleChange}
                   className="block w-full rounded-lg border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 transition-all duration-300 ease-in-out"
                   placeholder="Your Marketplace Brand"
+                  required
                 />
               </div>
               
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">
                   Contact Number
                 </label>
                 <div className="flex">
-                  <select className="w-24 mr-2 rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500">
-                    <option>+91</option>
-                    <option>+1</option>
-                    <option>+44</option>
+                  <select
+                    name="countryCode"
+                    value={formData.countryCode}
+                    onChange={handleChange}
+                    className="w-24 mr-2 rounded-lg border-gray-300 focus:border-orange-500 focus:ring-orange-500"
+                  >
+                    <option value="+91">+91</option>
+                    <option value="+1">+1</option>
+                    <option value="+44">+44</option>
                   </select>
                   <input
                     type="tel"
-                    id="phone"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
                     className="flex-1 rounded-lg border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500 transition-all duration-300 ease-in-out"
                     placeholder="Phone Number"
+                    required
                   />
                 </div>
               </div>
               
               <motion.button
+                type="submit"
+                disabled={isSubmitting}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-3 px-4 font-bold hover:from-orange-700 hover:to-amber-700 flex items-center justify-center transition-all duration-300"
+                className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-3 px-4 font-bold hover:from-orange-700 hover:to-amber-700 flex items-center justify-center transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Request Free Audit <ArrowRight className="ml-2" />
+                {isSubmitting ? (
+                  <div className="flex items-center space-x-2">
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    <span>Processing...</span>
+                  </div>
+                ) : (
+                  <>
+                    Request Free Audit <ArrowRight className="ml-2" />
+                  </>
+                )}
               </motion.button>
+
+              {submitError && (
+                <div className="text-center text-red-500 mt-2">
+                  {submitError}
+                </div>
+              )}
             </form>
 
             <div className="mt-4 text-center text-xs text-gray-500">
@@ -207,9 +451,15 @@ const MarketplaceMasterHero = () => {
           ))}
         </motion.div>
       </div>
+
+      {/* Success Message Modal */}
+      {showSuccess && <SuccessMessage />}
     </div>
   );
 };
+
+
+
 
 const ServiceCard = ({ platform, isVisible }) => {
   const features = [
@@ -365,13 +615,7 @@ const AccountManagementServices = () => {
           <p className="text-gray-700 mb-8">
             Join thousands of successful sellers who trust our account management services
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-4 px-8 font-bold hover:from-orange-700 hover:to-amber-700 transition-all duration-300"
-          >
-            Schedule a Consultation
-          </motion.button>
+          <ConsultationButtons/>
         </motion.div>
       </div>
     </motion.section>
@@ -498,13 +742,7 @@ const TechnoVitaValueProposition = () => {
           <p className="text-white text-xl mb-8">
             Our dedicated seller account management services are designed to optimize your online business, providing comprehensive solutions that drive growth, efficiency, and profitability across e-commerce platforms.
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold hover:bg-gray-100 transition-all duration-300"
-          >
-            Get Your Free E-commerce Consultation
-          </motion.button>
+        <ConsultationButton/>
         </motion.div>
       </div>
     </motion.section>
