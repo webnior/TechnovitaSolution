@@ -79,34 +79,23 @@ const ConsultationButton = () => {
 };
 
 //second consulation button 
+
 const ConsultationButtons = () => {
-  const [copiedWhite, setCopiedWhite] = useState(false);
   const [copiedGradient, setCopiedGradient] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const phoneNumber = '+917451073504';
 
-  // Move the user agent check to useEffect
-  useEffect(() => {
-    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
-  }, []);
-
-  const handleClick = (buttonType) => {
-    if (typeof window === 'undefined') return;
-
-    if (isMobile) {
-      window.location.href = `tel:${phoneNumber}`;
-    } else {
-      navigator.clipboard.writeText(phoneNumber)
+  const handleClick = () => {
+    // Try to copy the number first
+    if (typeof window !== 'undefined') {
+      window.navigator.clipboard.writeText(phoneNumber)
         .then(() => {
-          if (buttonType === 'white') {
-            setCopiedWhite(true);
-            setTimeout(() => setCopiedWhite(false), 2000);
-          } else {
-            setCopiedGradient(true);
-            setTimeout(() => setCopiedGradient(false), 2000);
-          }
+          setCopiedGradient(true);
+          setTimeout(() => setCopiedGradient(false), 2000);
         })
-        .catch(err => console.error('Failed to copy:', err));
+        .catch(() => {
+          // If copying fails (e.g., on mobile), try to call
+          window.location.href = `tel:${phoneNumber}`;
+        });
     }
   };
 
@@ -117,7 +106,7 @@ const ConsultationButtons = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={() => handleClick('gradient')}
+          onClick={handleClick}
           className={`
             bg-gradient-to-r from-orange-600 to-amber-600 
             text-white rounded-lg py-4 px-8 font-bold 
@@ -133,17 +122,8 @@ const ConsultationButtons = () => {
             </>
           ) : (
             <>
-              {isMobile ? (
-                <>
-                  <Phone className="w-5 h-5" />
-                  <span>Schedule a Consultation</span>
-                </>
-              ) : (
-                <>
-                  <Calendar className="w-5 h-5" />
-                  <span>Schedule a Consultation</span>
-                </>
-              )}
+              <Calendar className="w-5 h-5" />
+              <span>Schedule a Consultation</span>
             </>
           )}
         </motion.button>
