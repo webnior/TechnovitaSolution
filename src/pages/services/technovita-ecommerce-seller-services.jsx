@@ -118,7 +118,7 @@ const services = [
     title: "Platform Onboarding",
     description: "Streamlined onboarding process for new e-commerce platforms with expert guidance and support throughout the journey.",
     highlights: ["Documentation Support", "Quick Setup", "Compliance Handling"],
-    link: "/services/platform-onboarding"
+    link: "/services/ecommerce-seller-onboarding"
   },
   {
     icon: <Store className="w-8 h-8" />,
