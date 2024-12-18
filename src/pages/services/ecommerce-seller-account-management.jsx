@@ -27,86 +27,131 @@ import {
 } from 'lucide-react';
 import Footer from "@components/Footer";
 
-//consulation button 
-// const ConsultationButton = () => {
-//   const [copied, setCopied] = useState(false);
-//   const phoneNumber = '+917451073504';
+// Helper function to detect client-side environment
+const useIsMounted = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  return isMounted;
+};
 
-//   const handleClick = () => {
-//     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+// Helper function to detect mobile
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(/iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent));
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+  
+  return isMobile;
+};
 
-//     if (isMobile) {
-//       window.location.href = `tel:${phoneNumber}`;
-//     } else {
-//       navigator.clipboard.writeText(phoneNumber)
-//         .then(() => {
-//           setCopied(true);
-//           setTimeout(() => setCopied(false), 2000);
-//         })
-//         .catch(err => console.error('Failed to copy:', err));
-//     }
-//   };
-
-//   return (
-//     <div className="flex justify-center items-center w-full mt-8">
-//       <motion.button
-//         whileHover={{ scale: 1.05 }}
-//         whileTap={{ scale: 0.95 }}
-//         onClick={handleClick}
-//         className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold 
-//                    hover:bg-gray-100 transition-all duration-300
-//                    flex items-center justify-center gap-2
-//                    shadow-lg hover:shadow-xl"
-//       >
-//         {copied ? (
-//           <>
-//             <Check className="w-5 h-5" />
-//             Number Copied!
-//           </>
-//         ) : (
-//           <>
-//             {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
-//               <Phone className="w-5 h-5" />
-//             ) : (
-//               <Copy className="w-5 h-5" />
-//             )}
-//             Get Your Free E-commerce Consultation
-//           </>
-//         )}
-//       </motion.button>
-//     </div>
-//   );
-// };
-
-//second consulation button 
-
-const ConsultationButtons = () => {
-  const [copiedGradient, setCopiedGradient] = useState(false);
+// Single consultation button
+const ConsultationButton = () => {
+  const [copied, setCopied] = useState(false);
+  const isMounted = useIsMounted();
+  const isMobile = useIsMobile();
   const phoneNumber = '+917451073504';
 
-  const handleClick = () => {
-    // Try to copy the number first
-    if (typeof window !== 'undefined') {
-      window.navigator.clipboard.writeText(phoneNumber)
-        .then(() => {
-          setCopiedGradient(true);
-          setTimeout(() => setCopiedGradient(false), 2000);
-        })
-        .catch(() => {
-          // If copying fails (e.g., on mobile), try to call
-          window.location.href = `tel:${phoneNumber}`;
-        });
+  const handleClick = async () => {
+    if (!isMounted) return;
+
+    if (isMobile) {
+      window.location.href = `tel:${phoneNumber}`;
+    } else {
+      try {
+        await window.navigator.clipboard.writeText(phoneNumber);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
     }
   };
 
+  if (!isMounted) {
+    return null; // Return null on server-side
+  }
+
+  return (
+    <div className="flex justify-center items-center w-full mt-8">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        onClick={handleClick}
+        className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold 
+                   hover:bg-gray-100 transition-all duration-300
+                   flex items-center justify-center gap-2
+                   shadow-lg hover:shadow-xl"
+      >
+        {copied ? (
+          <>
+            <Check className="w-5 h-5" />
+            Number Copied!
+          </>
+        ) : (
+          <>
+            {isMobile ? (
+              <Phone className="w-5 h-5" />
+            ) : (
+              <Copy className="w-5 h-5" />
+            )}
+            Get Your Free E-commerce Consultation
+          </>
+        )}
+      </motion.button>
+    </div>
+  );
+};
+
+// Multiple consultation buttons
+const ConsultationButtons = () => {
+  const [copiedWhite, setCopiedWhite] = useState(false);
+  const [copiedGradient, setCopiedGradient] = useState(false);
+  const isMounted = useIsMounted();
+  const isMobile = useIsMobile();
+  const phoneNumber = '+917451073504';
+
+  const handleClick = async (buttonType) => {
+    if (!isMounted) return;
+
+    if (isMobile) {
+      window.location.href = `tel:${phoneNumber}`;
+    } else {
+      try {
+        await window.navigator.clipboard.writeText(phoneNumber);
+        if (buttonType === 'white') {
+          setCopiedWhite(true);
+          setTimeout(() => setCopiedWhite(false), 2000);
+        } else {
+          setCopiedGradient(true);
+          setTimeout(() => setCopiedGradient(false), 2000);
+        }
+      } catch (err) {
+        console.error('Failed to copy:', err);
+      }
+    }
+  };
+
+  if (!isMounted) {
+    return null; // Return null on server-side
+  }
+
   return (
     <div className="space-y-8">
-      {/* Gradient Button */}
       <div className="flex justify-center items-center w-full">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={handleClick}
+          onClick={() => handleClick('gradient')}
           className={`
             bg-gradient-to-r from-orange-600 to-amber-600 
             text-white rounded-lg py-4 px-8 font-bold 
@@ -122,8 +167,17 @@ const ConsultationButtons = () => {
             </>
           ) : (
             <>
-              <Calendar className="w-5 h-5" />
-              <span>Schedule a Consultation</span>
+              {isMobile ? (
+                <>
+                  <Phone className="w-5 h-5" />
+                  <span>Schedule a Consultation</span>
+                </>
+              ) : (
+                <>
+                  <Calendar className="w-5 h-5" />
+                  <span>Schedule a Consultation</span>
+                </>
+              )}
             </>
           )}
         </motion.button>
@@ -131,6 +185,7 @@ const ConsultationButtons = () => {
     </div>
   );
 };
+
 
 const SuccessMessage = () => (
   <motion.div 
