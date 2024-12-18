@@ -28,55 +28,55 @@ import {
 import Footer from "@components/Footer";
 
 //consulation button 
-const ConsultationButton = () => {
-  const [copied, setCopied] = useState(false);
-  const phoneNumber = '+917451073504';
+// const ConsultationButton = () => {
+//   const [copied, setCopied] = useState(false);
+//   const phoneNumber = '+917451073504';
 
-  const handleClick = () => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+//   const handleClick = () => {
+//     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    if (isMobile) {
-      window.location.href = `tel:${phoneNumber}`;
-    } else {
-      navigator.clipboard.writeText(phoneNumber)
-        .then(() => {
-          setCopied(true);
-          setTimeout(() => setCopied(false), 2000);
-        })
-        .catch(err => console.error('Failed to copy:', err));
-    }
-  };
+//     if (isMobile) {
+//       window.location.href = `tel:${phoneNumber}`;
+//     } else {
+//       navigator.clipboard.writeText(phoneNumber)
+//         .then(() => {
+//           setCopied(true);
+//           setTimeout(() => setCopied(false), 2000);
+//         })
+//         .catch(err => console.error('Failed to copy:', err));
+//     }
+//   };
 
-  return (
-    <div className="flex justify-center items-center w-full mt-8">
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        onClick={handleClick}
-        className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold 
-                   hover:bg-gray-100 transition-all duration-300
-                   flex items-center justify-center gap-2
-                   shadow-lg hover:shadow-xl"
-      >
-        {copied ? (
-          <>
-            <Check className="w-5 h-5" />
-            Number Copied!
-          </>
-        ) : (
-          <>
-            {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
-              <Phone className="w-5 h-5" />
-            ) : (
-              <Copy className="w-5 h-5" />
-            )}
-            Get Your Free E-commerce Consultation
-          </>
-        )}
-      </motion.button>
-    </div>
-  );
-};
+//   return (
+//     <div className="flex justify-center items-center w-full mt-8">
+//       <motion.button
+//         whileHover={{ scale: 1.05 }}
+//         whileTap={{ scale: 0.95 }}
+//         onClick={handleClick}
+//         className="bg-white text-orange-600 rounded-lg py-4 px-8 font-bold 
+//                    hover:bg-gray-100 transition-all duration-300
+//                    flex items-center justify-center gap-2
+//                    shadow-lg hover:shadow-xl"
+//       >
+//         {copied ? (
+//           <>
+//             <Check className="w-5 h-5" />
+//             Number Copied!
+//           </>
+//         ) : (
+//           <>
+//             {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
+//               <Phone className="w-5 h-5" />
+//             ) : (
+//               <Copy className="w-5 h-5" />
+//             )}
+//             Get Your Free E-commerce Consultation
+//           </>
+//         )}
+//       </motion.button>
+//     </div>
+//   );
+// };
 
 //second consulation button 
 
