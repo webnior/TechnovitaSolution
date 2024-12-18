@@ -82,10 +82,16 @@ const ConsultationButton = () => {
 const ConsultationButtons = () => {
   const [copiedWhite, setCopiedWhite] = useState(false);
   const [copiedGradient, setCopiedGradient] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const phoneNumber = '+917451073504';
 
+  // Move the user agent check to useEffect
+  useEffect(() => {
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
+  }, []);
+
   const handleClick = (buttonType) => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (typeof window === 'undefined') return;
 
     if (isMobile) {
       window.location.href = `tel:${phoneNumber}`;
@@ -127,7 +133,7 @@ const ConsultationButtons = () => {
             </>
           ) : (
             <>
-              {/iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? (
+              {isMobile ? (
                 <>
                   <Phone className="w-5 h-5" />
                   <span>Schedule a Consultation</span>
