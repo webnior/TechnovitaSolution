@@ -3,6 +3,10 @@ import Head from 'next/head';
 import SellerOnboardingHero from '@components/SellerOnboardingHero';
 import SellerOnboardingProcess from '@components/SellerOnboardingProcess';
 import OnboardingBenefits from '@components/OnboardingBenefits';
+import SellerOnboardingFaq from '@components/SellerOnboardingFaq';
+import SellerOnboardingCTA from '@components/SellerOnboardingCTA';
+
+
 import Footer from '@components/Footer';
 
 const SellerOnboardingPage = () => {
@@ -17,6 +21,8 @@ const SellerOnboardingPage = () => {
         <SellerOnboardingHero />
         <SellerOnboardingProcess />
         <OnboardingBenefits />
+        <SellerOnboardingCTA/>
+        <SellerOnboardingFaq/>
         {/* Add more sections as needed */}
       </main>
       <Footer />
