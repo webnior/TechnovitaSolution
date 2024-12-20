@@ -125,14 +125,14 @@ const services = [
     title: "Store Setup & Branding",
     description: "Professional store design and branding that captures your unique identity across all marketplace platforms.",
     highlights: ["Brand Store Design", "Visual Merchandising", "Content Strategy"],
-    link: "/services/store-setup-branding"
+    link: "/services/ecommerce-store-setup-and-branding-services"
   },
   {
     icon: <CreditCard className="w-8 h-8" />,
     title: "Payment Reconciliation",
     description: "Accurate tracking and reconciliation of payments across multiple e-commerce platforms for streamlined financial management.",
     highlights: ["Payment Tracking", "Dispute Resolution", "Financial Reporting"],
-    link: "/services/payment-reconciliation"
+    link: "/services/ecommerce-payment-reconciliation"
   },
   {
     icon: <Target className="w-8 h-8" />,

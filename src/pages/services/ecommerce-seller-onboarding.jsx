@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import SellerOnboardingHero from '@components/SellerOnboardingHero';
-import SellerOnboardingProcess from '@components/SellerOnboardingProcess';
-import OnboardingBenefits from '@components/OnboardingBenefits';
-import SellerOnboardingFaq from '@components/SellerOnboardingFaq';
-import SellerOnboardingCTA from '@components/SellerOnboardingCTA';
+import SellerOnboardingHero from '@/src/components/selleronboarding/SellerOnboardingHero';
+import SellerOnboardingProcess from '@/src/components/selleronboarding/SellerOnboardingProcess';
+import OnboardingBenefits from '@/src/components/selleronboarding/OnboardingBenefits';
+import SellerOnboardingFaq from '@/src/components/selleronboarding/SellerOnboardingFaq';
+import SellerOnboardingCTA from '@/src/components/selleronboarding/SellerOnboardingCTA';
 
 
 import Footer from '@components/Footer';
