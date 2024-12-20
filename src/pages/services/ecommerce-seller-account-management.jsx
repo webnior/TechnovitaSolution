@@ -26,6 +26,7 @@ import {
   Calendar
 } from 'lucide-react';
 import Footer from "@components/Footer";
+import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 
 // Helper function to detect client-side environment
 const useIsMounted = () => {
@@ -1086,6 +1087,8 @@ const AccountManagementContentSection = () => {
 
 const EcommerceSellerPage = () => {
   return (
+    <ProtectedContentWrapper>
+    <main>
     <div className="min-h-screen bg-white">
       <MarketplaceMasterHero />
       <AccountManagementServices />
@@ -1095,6 +1098,8 @@ const EcommerceSellerPage = () => {
       <FAQSection/>
       <Footer/>
     </div>
+    </main>
+    </ProtectedContentWrapper>
   );
 };
 

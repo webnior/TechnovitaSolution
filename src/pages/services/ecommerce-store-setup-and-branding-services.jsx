@@ -6,6 +6,7 @@ import StoreBrandingServices from '@/src/components/storeSetupAndBranding/StoreB
 import StoreSetupProcess from '@/src/components/storeSetupAndBranding/StoreSetupProcess';
 import StoreCaseStudiesAndFAQ from '@/src/components/storeSetupAndBranding/StoreCaseStudiesAndFAQ';
 import Footer from '@components/Footer';
+import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 
 const StoreSetupAndBrandingPage = () => {
   return (
@@ -22,7 +23,8 @@ const StoreSetupAndBrandingPage = () => {
   />
 </Head>
 
-
+<ProtectedContentWrapper>
+    <main>
       {/* Main Content */}
       <StoreSetupHero />
       <SotrePlatformServices />
@@ -30,6 +32,9 @@ const StoreSetupAndBrandingPage = () => {
       <StoreSetupProcess />
       <StoreCaseStudiesAndFAQ />
       <Footer />
+      </main>
+      </ProtectedContentWrapper>
+      
       </>
   );
 };

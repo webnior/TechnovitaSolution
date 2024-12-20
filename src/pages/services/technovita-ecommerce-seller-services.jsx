@@ -1,6 +1,6 @@
 "use client";
 
-import React,{ useState, useRef } from "react";
+import React,{ useState, useRef, } from "react";
 import { motion ,AnimatePresence} from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ import {
   FileCheck,
   Headphones, 
 } from "lucide-react";
-
+import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 
 const ServiceReasons = [
     {
@@ -925,6 +925,9 @@ const CTASection2 = () => (
 //footer
 <Footer/>
 
+
+
+
 export default function TechnovitaLandingPage() {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
   const [openFaq, setOpenFaq] = useState(null);
@@ -943,6 +946,7 @@ export default function TechnovitaLandingPage() {
   };
 
   return (
+    <ProtectedContentWrapper>
     <main className="bg-white">
     
     <HeroSection/>
@@ -1069,5 +1073,6 @@ export default function TechnovitaLandingPage() {
       {/* Footer */}
       <Footer/>
     </main>
+     </ProtectedContentWrapper>
   );
 }

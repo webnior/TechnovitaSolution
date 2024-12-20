@@ -6,6 +6,7 @@ import ReconciliationBenefits from '@/src/components/payment-reconciliation/Reco
 import PaymentReconciliationCTA from '@/src/components/payment-reconciliation/PaymentReconciliationCTA';
 import PaymentReconciliationFAQ from '@/src/components/payment-reconciliation/PaymentReconciliationFAQ';
 import Footer from '@components/Footer';
+import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
 
 const PaymentReconciliationPage = () => {
   return (
@@ -21,14 +22,17 @@ const PaymentReconciliationPage = () => {
         content="payment reconciliation services, payment reconciliation, reconciliation of payments, payment reconciliation software, e-commerce payment reconciliation, commerce reconciliation software, automated payment reconciliation" 
       />
     </Head>
-
+    <ProtectedContentWrapper>
       {/* Main Content */}
+      <main>
       <PaymentReconciliationHero />
       <PaymentReconciliationServices />
       <ReconciliationBenefits />
       <PaymentReconciliationCTA />
       <PaymentReconciliationFAQ />
       <Footer />
+      </main>
+      </ProtectedContentWrapper>
       </>
   );
 };

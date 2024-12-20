@@ -5,6 +5,7 @@ import SellerOnboardingProcess from '@/src/components/selleronboarding/SellerOnb
 import OnboardingBenefits from '@/src/components/selleronboarding/OnboardingBenefits';
 import SellerOnboardingFaq from '@/src/components/selleronboarding/SellerOnboardingFaq';
 import SellerOnboardingCTA from '@/src/components/selleronboarding/SellerOnboardingCTA';
+import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 
 
 import Footer from '@components/Footer';
@@ -17,15 +18,16 @@ const SellerOnboardingPage = () => {
         <meta name="description" content="Streamline your seller onboarding process across multiple e-commerce platforms. Quick setup, secure process, and 24/7 support for your online business." />
         <meta name="keywords" content="seller onboarding, account creation, e-commerce, Amazon, Flipkart, Myntra, Ajio, Nykaa, Meesho, JioMart, AZA Fashion" />
       </Head>
+        <ProtectedContentWrapper>
       <main>
         <SellerOnboardingHero />
         <SellerOnboardingProcess />
         <OnboardingBenefits />
         <SellerOnboardingCTA/>
         <SellerOnboardingFaq/>
-        {/* Add more sections as needed */}
-      </main>
       <Footer />
+      </main>
+        </ProtectedContentWrapper>
     </>
   );
 };
