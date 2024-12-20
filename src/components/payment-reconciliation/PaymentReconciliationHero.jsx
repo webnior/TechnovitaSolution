@@ -9,12 +9,43 @@ const PaymentReconciliationHero = () => {
     phone: '',
     platform: 'Amazon'
   });
+  const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success' | 'error'
 
-  const platforms = ['Amazon', 'Flipkart', 'Meesho', 'Myntra', 'Nykaa', 'AJIO','Other'];
+  const platforms = ['Amazon', 'Flipkart', 'Meesho', 'Myntra', 'Nykaa', 'AJIO', 'Other'];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
+    setStatus('submitting');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: 'paymentReconciliation',...formData
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
+      setStatus('success');
+      setFormData({
+        companyName: '',
+        email: '',
+        phone: '',
+        platform: 'Amazon'
+      });
+
+      // Reset success message after 3 seconds
+      setTimeout(() => setStatus('idle'), 3000);
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('error');
+    }
   };
 
   return (
@@ -109,11 +140,30 @@ const PaymentReconciliationHero = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-3 px-4 font-bold hover:from-orange-700 hover:to-amber-700 transition-all duration-300"
+                disabled={status === 'submitting'}
+                className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-3 px-4 font-bold hover:from-orange-700 hover:to-amber-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Start Free Trial
-                <ArrowRight className="inline-block ml-2 w-5 h-5" />
+                {status === 'submitting' ? (
+                  'Submitting...'
+                ) : (
+                  <>
+                    Start Free Trial
+                    <ArrowRight className="inline-block ml-2 w-5 h-5" />
+                  </>
+                )}
               </button>
+
+              {/* Status messages */}
+              {status === 'success' && (
+                <div className="text-green-600 text-center font-medium">
+                  Thank you! We'll be in touch soon.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="text-red-600 text-center font-medium">
+                  Something went wrong. Please try again.
+                </div>
+              )}
             </form>
           </motion.div>
         </div>

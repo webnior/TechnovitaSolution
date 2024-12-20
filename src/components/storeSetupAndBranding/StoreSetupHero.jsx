@@ -15,6 +15,7 @@ const StoreSetupHero = () => {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
   const [showSuccess, setShowSuccess] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState('');
   const [formData, setFormData] = useState({
     businessName: '',
     email: '',
@@ -45,20 +46,40 @@ const StoreSetupHero = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError('');
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setShowSuccess(true);
-    setIsSubmitting(false);
-    
-    // Reset form
-    setFormData({
-      businessName: '',
-      email: '',
-      phoneNumber: '',
-      countryCode: '+91'
-    });
-    setSelectedPlatforms([]);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: 'storeSetup',
+          ...formData,
+          selectedPlatforms
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to submit form');
+      }
+
+      setShowSuccess(true);
+      
+      // Reset form
+      setFormData({
+        businessName: '',
+        email: '',
+        phoneNumber: '',
+        countryCode: '+91'
+      });
+      setSelectedPlatforms([]);
+    } catch (error) {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -178,6 +199,12 @@ const StoreSetupHero = () => {
                   />
                 </div>
               </div>
+
+              {error && (
+                <div className="text-red-600 text-center text-sm">
+                  {error}
+                </div>
+              )}
 
               <motion.button
                 type="submit"
