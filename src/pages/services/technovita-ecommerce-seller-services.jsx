@@ -139,7 +139,7 @@ const services = [
     title: "Platform Advertising",
     description: "Strategic advertising campaigns across all major e-commerce platforms to maximize visibility and sales.",
     highlights: ["PPC Management", "Campaign Optimization", "ROI Tracking"],
-    link: "/services/platform-advertising"
+    link: "/services/ecommerce-advertising-services"
   },
   {
     icon: <Search className="w-8 h-8" />,
