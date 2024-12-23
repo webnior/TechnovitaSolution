@@ -31,6 +31,8 @@ import {
 } from "lucide-react";
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
+import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+
 // Hero Section Component with enhanced UI
 const PlatformAdvertisingHero = () => {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
