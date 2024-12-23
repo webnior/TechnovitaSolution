@@ -5,6 +5,7 @@ import { motion ,AnimatePresence} from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import Footer from "@components/Footer";
+import Head from 'next/head';
 import {
   MessageCircle,
   CheckCircle,
@@ -285,8 +286,7 @@ const SuccessMessage = () => (
     </div>
   </div>
 );
-
- const ContactForm=() =>{
+const ContactForm = () => {
   const form = useRef(null);
   const [formData, setFormData] = useState({
     businessName: '',
@@ -313,9 +313,9 @@ const SuccessMessage = () => (
       if (!form.current) return;
 
       const result = await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '', 
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '', 
-        form.current, 
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        form.current,
         {
           publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
         }
@@ -323,8 +323,7 @@ const SuccessMessage = () => (
 
       console.log('SUCCESS!', result.text);
       setShowSuccess(true);
-      
-      // Reset form and hide success message
+
       setTimeout(() => {
         setShowSuccess(false);
         setFormData({
@@ -342,17 +341,17 @@ const SuccessMessage = () => (
   };
 
   return (
-    <div className="max-w-xl mx-auto p-5 mt-2 rounded-xl shadow-lg bg-gradient-to-br from-[#FAD5A5] to-white">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-2">
+    <div className="w-full max-w-xl mx-auto p-4 sm:p-5 mt-2 rounded-xl shadow-lg bg-gradient-to-br from-[#FAD5A5] to-white">
+      <div className="text-center mb-6 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
           Ready to Scale Your Business? 🚀
         </h2>
-        <p className="text-gray-600 max-w-md mx-auto">
+        <p className="text-sm sm:text-base text-gray-600 max-w-md mx-auto">
           Join hundreds of successful sellers who transformed their e-commerce journey
         </p>
       </div>
 
-      <form ref={form} onSubmit={handleSubmit} className="space-y-6">
+      <form ref={form} onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
         <div className="group">
           <input
             type="text"
@@ -360,7 +359,7 @@ const SuccessMessage = () => (
             value={formData.businessName}
             onChange={handleChange}
             placeholder="Business Name"
-            className="w-full p-4 rounded-lg border-2 border-gray-300 
+            className="w-full p-3 sm:p-4 text-sm sm:text-base rounded-lg border-2 border-gray-300 
             focus:border-[#F5A841] focus:ring-2 focus:ring-[#F5A841]/20 
             transition-all duration-300"
             required
@@ -374,7 +373,7 @@ const SuccessMessage = () => (
             value={formData.businessEmail}
             onChange={handleChange}
             placeholder="Business Email"
-            className="w-full p-4 rounded-lg border-2 border-gray-300 
+            className="w-full p-3 sm:p-4 text-sm sm:text-base rounded-lg border-2 border-gray-300 
             focus:border-[#F5A841] focus:ring-2 focus:ring-[#F5A841]/20 
             transition-all duration-300"
             required
@@ -388,7 +387,7 @@ const SuccessMessage = () => (
             value={formData.phoneNumber}
             onChange={handleChange}
             placeholder="Phone Number"
-            className="w-full p-4 rounded-lg border-2 border-gray-300 
+            className="w-full p-3 sm:p-4 text-sm sm:text-base rounded-lg border-2 border-gray-300 
             focus:border-[#F5A841] focus:ring-2 focus:ring-[#F5A841]/20 
             transition-all duration-300"
             required
@@ -399,7 +398,7 @@ const SuccessMessage = () => (
           type="submit"
           disabled={isSubmitting}
           className={`
-            w-full p-5 rounded-lg font-bold text-xl
+            w-full p-4 sm:p-5 rounded-lg font-bold text-lg sm:text-xl
             bg-gradient-to-r from-[#F5A841] to-orange-500 
             text-white shadow-lg 
             transition-all duration-300
@@ -413,30 +412,27 @@ const SuccessMessage = () => (
         >
           {isSubmitting ? (
             <div className="flex items-center space-x-2">
-              <Loader2 className="w-6 h-6 animate-spin" />
+              <Loader2 className="w-5 h-5 sm:w-6 sm:h-6 animate-spin" />
               <span>Processing...</span>
             </div>
           ) : (
             <div className="flex items-center space-x-2">
-              <Sparkles className="w-6 h-6" />
-              <span>LAUNCH YOUR SUCCESS STORY</span>
-              <ArrowRight className="w-6 h-6 animate-bounce" />
+              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6" />
+              <span className="text-sm sm:text-base">LAUNCH YOUR SUCCESS STORY</span>
+              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
             </div>
           )}
           
-          {/* Animated gradient border */}
           <div className="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 background-animate" />
         </button>
 
-        {/* Error message */}
         {submitError && (
-          <div className="text-center text-red-500 mt-2">
+          <div className="text-center text-red-500 mt-2 text-sm sm:text-base">
             {submitError}
           </div>
         )}
 
-        {/* Trust indicators */}
-        <div className="text-center text-sm text-gray-600 mt-4">
+        <div className="text-center text-xs sm:text-sm text-gray-600 mt-4">
           <p className="flex items-center justify-center gap-2">
             <CheckCircle className="w-4 h-4 text-green-500" />
             100% Secure & Confidential
@@ -445,7 +441,6 @@ const SuccessMessage = () => (
         </div>
       </form>
 
-      {/* Success Modal */}
       {showSuccess && <SuccessMessage />}
 
       <style jsx>{`
@@ -462,94 +457,88 @@ const SuccessMessage = () => (
       `}</style>
     </div>
   );
-}
-
+};
 
 const HeroSection = () => {
   const sellerBenefits = [
     {
-      icon: <Target className="w-6 h-6 text-[#F5A841]" />,
+      icon: <Target className="w-5 h-5 sm:w-6 sm:h-6 text-[#F5A841]" />,
       text: "Platform-Specific Optimization"
     },
     {
-      icon: <TrendingUp className="w-6 h-6 text-[#F5A841]" />,
+      icon: <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-[#F5A841]" />,
       text: "Revenue Growth Strategies"
     },
     {
-      icon: <ShoppingBag className="w-6 h-6 text-[#F5A841]" />,
+      icon: <ShoppingBag className="w-5 h-5 sm:w-6 sm:h-6 text-[#F5A841]" />,
       text: "Multi-Marketplace Management"
     }
   ];
 
   return (
-    <section 
-      className="w-screen h-screen max-w-full overflow-hidden"
-      style={{ 
-        minHeight: '100vh', 
-        maxWidth: '100vw',
-        backgroundColor: '#FFFFFF' 
-      }}
-    >
-      <div className="container mx-auto px-4 h-full">
-        <div className="grid md:grid-cols-2 gap-8 h-full items-center">
+    <section className="min-h-screen w-full overflow-x-hidden bg-white">
+      <div className="container mx-auto px-4 py-8 md:py-0">
+        <div className="flex min-h-screen flex-col gap-8 md:grid md:grid-cols-2 md:items-center">
           {/* Left Content Section */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 px-4"
+            className="space-y-6 px-2 md:px-4"
           >
             <div className="overflow-hidden">
-              <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 Unlock Your <span className="text-[#F5A841]">E-commerce Potential</span>
                 <br /> Across All Platforms
               </h1>
             </div>
 
-            <div className="bg-[#FFF4E6] p-6 rounded-xl shadow-lg">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                <Zap className="mr-3 text-[#F5A841]" />
+            <div className="bg-[#FFF4E6] p-4 sm:p-6 rounded-xl shadow-lg">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <Zap className="mr-2 sm:mr-3 w-5 h-5 sm:w-6 sm:h-6 text-[#F5A841]" />
                 Dominate Multiple Marketplaces
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="text-sm sm:text-base text-gray-700 mb-4">
                 From Flipkart to Amazon, Myntra to Ajio - we transform your online selling game with data-driven strategies and expert management.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
                 {sellerBenefits.map((benefit, index) => (
-                  <div 
-                    key={index} 
-                    className="flex items-center space-x-2 bg-white p-3 rounded-lg shadow-md"
+                  <div
+                    key={index}
+                    className="flex items-center space-x-2 bg-white p-2 sm:p-3 rounded-lg shadow-md"
                   >
                     {benefit.icon}
-                    <span className="text-sm font-medium">{benefit.text}</span>
+                    <span className="text-xs sm:text-sm font-medium">{benefit.text}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  onClick={() => window.location.href = 'tel:+917451073504'}
-  className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white 
-  px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
->
-  <Phone className="w-5 h-5" /> 
-  <span className="font-semibold">Instant Call</span>
-</motion.button>
+            <div className="flex flex-col space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.location.href = 'tel:+917451073504'}
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white
+                  px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg shadow-lg hover:shadow-xl 
+                  transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
+              >
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="font-semibold">Instant Call</span>
+              </motion.button>
 
-<motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  onClick={() => window.location.href = 'https://wa.me/917451073504?text=hi%20i%20want%20to%20know%20more%20about%20ecommerce%20services'}
-  className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white 
-  px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
->
-  <MessageCircle className="w-5 h-5" /> 
-  <span className="font-semibold">WhatsApp Connect</span>
-</motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.location.href = 'https://wa.me/917451073504?text=hi%20i%20want%20to%20know%20more%20about%20ecommerce%20services'}
+                className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white
+                  px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg shadow-lg hover:shadow-xl 
+                  transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
+              >
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                <span className="font-semibold">WhatsApp Connect</span>
+              </motion.button>
             </div>
           </motion.div>
 
@@ -558,7 +547,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center justify-center h-full px-4"
+            className="flex items-center justify-center h-full px-2 md:px-4"
           >
             <ContactForm />
           </motion.div>
@@ -567,7 +556,6 @@ const HeroSection = () => {
     </section>
   );
 };
-
 
 
 const ServiceSection = () => {
@@ -928,7 +916,7 @@ const CTASection2 = () => (
 
 
 
-export default function TechnovitaLandingPage() {
+export default function TechnovitaSellerPage() {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
   const [openFaq, setOpenFaq] = useState(null);
 
@@ -946,6 +934,39 @@ export default function TechnovitaLandingPage() {
   };
 
   return (
+    <>
+   
+     <Head>
+  <title>Ecommerce Services: Account Creation, Account Management & Branding | Technovita Solution</title>
+  <meta 
+    name="description" 
+    content="Expert ecommerce services: marketplace account management, store setup, payment reconciliation, onboarding assistance for Myntra/Ajio/Nykaa, branding & paid advertising. Transform your online business with Technovita Solutions." 
+  />
+  <meta 
+    name="keywords" 
+    content="ecommerce account management, payment reconciliation services, store setup assistance, marketplace onboarding, Myntra seller services, Ajio seller services, Nykaa seller services, paid advertising management, ecommerce branding solutions, marketplace integration, Technovita Solutions, ecommerce consulting, seller account setup, multichannel selling" 
+  />
+   <meta name="robots" content="index, follow" />
+ 
+
+ <meta property="og:title" content="Ecommerce Services: Account Creation, Account Management & Branding | Technovita Solution" />
+ <meta property="og:description" content="Expert ecommerce services: marketplace account management, store setup, payment reconciliation, onboarding assistance for Myntra/Ajio/Nykaa, branding & paid advertising. Transform your online business with Technovita Solutions" />
+ <meta property="og:type" content="website" />
+ <meta property="og:locale" content="en_IN" />
+ 
+
+ <meta name="twitter:card" content="summary_large_image" />
+ <meta name="twitter:title" content="Ecommerce Services: Account Creation, Account Management & Branding | Technovita Solution" />
+ <meta name="twitter:description" content="Expert ecommerce services: marketplace account management, store setup, payment reconciliation, onboarding assistance for Myntra/Ajio/Nykaa, branding & paid advertising. Transform your online business with Technovita Solutions"/>
+ 
+ 
+ <meta name="geo.region" content="IN" />
+ <meta name="geo.placename" content="India" />
+ <link rel="canonical" href="https://www.technovitasolution.in/services/technovita-ecommerce-seller-services" />
+ 
+
+</Head>
+ 
     <ProtectedContentWrapper>
     <main className="bg-white">
     
@@ -1071,9 +1092,10 @@ export default function TechnovitaLandingPage() {
      <FAQSection/>
 
       {/* Footer */}
-      <Footer/>
     </main>
+      <Footer/>
      </ProtectedContentWrapper>
+     </>
   );
 }
 

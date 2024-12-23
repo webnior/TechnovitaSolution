@@ -12,16 +12,22 @@ const PaymentReconciliationPage = () => {
   return (
     <>
     <Head>
-      <title>E-commerce Payment Reconciliation Software & Services | Automated Solution</title>
-      <meta 
-        name="description" 
-        content="Transform your e-commerce payment reconciliation process with our automated software. 99.9% accuracy, multi-platform support, and real-time analytics. Start free trial!" 
-      />
-      <meta 
-        name="keywords" 
-        content="payment reconciliation services, payment reconciliation, reconciliation of payments, payment reconciliation software, e-commerce payment reconciliation, commerce reconciliation software, automated payment reconciliation" 
-      />
-    </Head>
+ <title>Ecommerce Payment Reconciliation Services | Automated Reconciliation | Technovita</title>
+ <meta 
+   name="description" 
+   content="Professional payment reconciliation services for ecommerce businesses. Automated reconciliation solutions, payment tracking, report generation & banking integration. Streamline your marketplace payments today." 
+ />
+ <meta 
+   name="keywords" 
+   content="payment reconciliation services, ecommerce payment reconciliation, automated payment reconciliation, payment reconciliation software, online payment reconciliation, payment tracking, reconciliation process, marketplace payment reconciliation, ecommerce payment tracking, bank reconciliation services, payment report generation, payment processing reconciliation, automated reconciliation tools, payment settlement services, ecommerce financial services" 
+ />
+ <meta name="robots" content="index, follow" />
+ <meta property="og:title" content="Payment Reconciliation Services for Ecommerce | Automated Solutions" />
+ <meta property="og:description" content="Professional payment reconciliation services for ecommerce sellers. Automated solutions for tracking, reconciling & reporting marketplace payments. Streamline your payment processes." />
+ <meta property="og:type" content="website" />
+ <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-payment-reconciliation" />
+ <meta name="geo.region" content="IN" />
+</Head>
     <ProtectedContentWrapper>
       {/* Main Content */}
       <main>
@@ -30,8 +36,8 @@ const PaymentReconciliationPage = () => {
       <ReconciliationBenefits />
       <PaymentReconciliationCTA />
       <PaymentReconciliationFAQ />
-      <Footer />
       </main>
+      <Footer />
       </ProtectedContentWrapper>
       </>
   );

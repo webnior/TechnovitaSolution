@@ -11,16 +11,35 @@ import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 const StoreSetupAndBrandingPage = () => {
   return (
     <>
-   <Head>
-  <title>E-commerce Store Setup & Branding Services | Multi-Platform Solutions</title>
-  <meta 
-    name="description" 
-    content="Boost your e-commerce sales with professional store setup and branding services for Amazon, Flipkart, Nykaa, Myntra, Ajio, and more. Tailored solutions for sellers. Start now!" 
-  />
-  <meta 
-    name="keywords" 
-    content="ecommerce store setup services, online store creation for sellers, Amazon seller account setup, Flipkart seller onboarding assistance, Nykaa seller store design, Myntra seller branding services, Ajio seller account management, Aza Fashion seller support, Meesho seller store setup, professional ecommerce store development, seller branding and marketing solutions, ecommerce storefront customization" 
-  />
+  <Head>
+ <title>Professional Ecommerce Store Setup & Branding | Multi-Platform Services | Technovita</title>
+ <meta 
+   name="description" 
+   content="Complete ecommerce store setup and branding services for Amazon, Flipkart, Myntra & more. Expert storefront design, listing optimization & brand building solutions. Get started today!" 
+ />
+ <meta 
+   name="keywords" 
+   content="ecommerce store setup, marketplace branding services, Amazon storefront design, Flipkart store optimization, Myntra seller services, Ajio store setup, Nykaa seller solutions, professional store design, ecommerce branding, multi-platform setup, seller storefront customization, marketplace brand building, ecommerce launch services, store optimization services, seller branding solutions" 
+ />
+ <meta name="robots" content="index, follow" />
+ 
+
+ <meta property="og:title" content="Complete Ecommerce Store Setup & Branding Solutions" />
+ <meta property="og:description" content="Transform your online presence with professional store setup and branding across major marketplaces. Expert solutions for sellers ready to scale." />
+ <meta property="og:type" content="website" />
+ <meta property="og:locale" content="en_IN" />
+ 
+
+ <meta name="twitter:card" content="summary_large_image" />
+ <meta name="twitter:title" content="Professional Ecommerce Store Setup & Branding" />
+ <meta name="twitter:description" content="Launch your ecommerce business with expert store setup and branding services. Multi-platform solutions for growing sellers." />
+ 
+ 
+ <meta name="geo.region" content="IN" />
+ <meta name="geo.placename" content="India" />
+ <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-store-setup-and-branding-services" />
+ 
+
 </Head>
 
 <ProtectedContentWrapper>
@@ -31,8 +50,8 @@ const StoreSetupAndBrandingPage = () => {
       <StoreBrandingServices />
       <StoreSetupProcess />
       <StoreCaseStudiesAndFAQ />
-      <Footer />
       </main>
+      <Footer />
       </ProtectedContentWrapper>
       
       </>

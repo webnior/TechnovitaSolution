@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect ,useRef} from 'react';
 import emailjs from '@emailjs/browser';
-
+import Head from 'next/head';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   Store, 
@@ -1085,8 +1085,25 @@ const AccountManagementContentSection = () => {
     );
   };
 
-const EcommerceSellerPage = () => {
-  return (
+const EcommerceSellerManagementPage = () => {
+  return (<>
+  <Head>
+ <title>Seller Account Management Services | Ecommerce Experts | Technovita</title>
+ <meta 
+   name="description" 
+   content="Professional  seller account management services in India. Expert inventory management, order processing, permissions handling & Seller Central optimization. Get dedicated account managers for your ecommerce business." 
+ />
+ <meta 
+   name="keywords" 
+   content="amazon seller account management, seller central management, ecommerce account management services, amazon account manager, seller central inventory management, amazon order management, seller permissions management, ecommerce account management india, amazon seller services delhi, seller central optimization, professional account management, amazon seller support, ecommerce account experts, amazon business management, seller central consulting" 
+ />
+ <meta name="robots" content="index, follow" />
+ <meta property="og:title" content=" Seller Account Management Services | Ecommerce Account Management" />
+ <meta property="og:description" content="Professional  seller account management services. Expert inventory & order management, Seller Central optimization, and dedicated account managers for your ecommerce business." />
+ <meta property="og:type" content="website" />
+ <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-seller-account-management" />
+</Head>
+
     <ProtectedContentWrapper>
     <main>
     <div className="min-h-screen bg-white">
@@ -1096,11 +1113,12 @@ const EcommerceSellerPage = () => {
       <AccountManagementCTA/>
       <AccountManagementContentSection/>
       <FAQSection/>
-      <Footer/>
     </div>
     </main>
+      <Footer/>
     </ProtectedContentWrapper>
+    </>
   );
 };
 
-export default EcommerceSellerPage;
+export default EcommerceSellerManagementPage;
