@@ -36,6 +36,15 @@ const emailTemplates = {
       <p><strong>Selected Platforms:</strong> ${data.selectedPlatforms.join(', ')}</p>
     `
   }),
+  seoServices: (data) => ({
+    subject: 'New SEO Services Request',
+    html: `
+      <h2>New seoServices Request</h2>
+      <p><strong>Business Name:</strong> ${data.companyName}</p>
+      <p><strong>Email:</strong> ${data.email}</p>
+      <p><strong>Phone:</strong> ${data.countryCode} ${data.phoneNumber}</p>
+    `
+  }),
   // Add more templates for other forms
 };
 

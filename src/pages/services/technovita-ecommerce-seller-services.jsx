@@ -147,7 +147,7 @@ const services = [
     title: "Organic Growth & SEO",
     description: "Comprehensive SEO and optimization strategies to improve your store's visibility and organic rankings.",
     highlights: ["Keyword Optimization", "Content Enhancement", "Search Rankings"],
-    link: "/services/organic-growth-seo"
+    link: "/services/ecommerce-seo-services-and-organic-growth-strategies"
   },
   {
     icon: <FileCheck className="w-8 h-8" />,
