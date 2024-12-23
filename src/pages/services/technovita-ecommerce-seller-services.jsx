@@ -1076,3 +1076,5 @@ export default function TechnovitaLandingPage() {
      </ProtectedContentWrapper>
   );
 }
+
+
