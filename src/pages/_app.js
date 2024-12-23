@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import appData from "@data/app.json";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "../styles/scss/style.scss";
 import "../styles/globals.css";
 
@@ -65,6 +65,7 @@ function MyApp({ Component, pageProps }) {
         {/* seo end */}
       </Head>
       <Component {...pageProps} />
+      <SpeedInsights />
     </>
   );
 }
