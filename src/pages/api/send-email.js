@@ -15,17 +15,28 @@ const emailTemplates = {
     `
   }),
   
-  // Add more templates for other forms
   paymentReconciliation: (data) => ({
     subject: 'New Payment Reconciliation Service Request',
     html: `
-      <h2>New Trial Request</h2>
-      <p><strong>Company Name:</strong> ${data.companyName}</p>
-      <p><strong>Email:</strong> ${data.email}</p>
-      <p><strong>Phone:</strong> ${data.phone}</p>
-      <p><strong>Platform:</strong> ${data.platform}</p>
+    <h2>New Trial Request</h2>
+    <p><strong>Company Name:</strong> ${data.companyName}</p>
+    <p><strong>Email:</strong> ${data.email}</p>
+    <p><strong>Phone:</strong> ${data.phone}</p>
+    <p><strong>Platform:</strong> ${data.platform}</p>
     `
-  })
+  }),
+
+  advertismentServices: (data) => ({
+    subject: 'New Advertisment Services Request',
+    html: `
+      <h2>New Advertisment Request</h2>
+      <p><strong>Business Name:</strong> ${data.businessName}</p>
+      <p><strong>Email:</strong> ${data.email}</p>
+      <p><strong>Phone:</strong> ${data.countryCode} ${data.phoneNumber}</p>
+      <p><strong>Selected Platforms:</strong> ${data.selectedPlatforms.join(', ')}</p>
+    `
+  }),
+  // Add more templates for other forms
 };
 
 export default async function handler(req, res) {
