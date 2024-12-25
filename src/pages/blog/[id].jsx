@@ -16,6 +16,7 @@ import {
   RedditShareButton,
   TwitterShareButton
 } from "react-share";
+import ProtectedContentWrapper from "@/src/components/ProtectedContentWrapper";
 
 const PostsDetail = ( props ) => {
   
@@ -47,6 +48,7 @@ const PostsDetail = ( props ) => {
   console.log(shareUrl);
 
   return (
+	<ProtectedContentWrapper>
     <Layouts>
       <PageBanner pageTitle={postData.title} pageDesc={""} />
 
@@ -296,6 +298,7 @@ const PostsDetail = ( props ) => {
       
       <ImageView />
     </Layouts>
+	</ProtectedContentWrapper>
   );
 };
 export default PostsDetail;
