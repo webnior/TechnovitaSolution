@@ -154,7 +154,7 @@ const services = [
     title: "Brand Documentation",
     description: "Expert assistance with brand documentation preparation and approval processes across platforms.",
     highlights: ["Document Preparation", "Brand Registry", "Approval Support"],
-    link: "/services/brand-documentation"
+    link: "/services/brand-documentation-service"
   },
   {
     icon: <Headphones className="w-8 h-8" />,

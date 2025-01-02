@@ -45,6 +45,15 @@ const emailTemplates = {
       <p><strong>Phone:</strong> ${data.countryCode} ${data.phoneNumber}</p>
     `
   }),
+
+  brandDocumentation: (data) => ({
+    subject: 'New brand documention service Request',
+    html: `
+      <h2>New brand documention  Request</h2>
+      <p><strong>Business Name:</strong> ${data.brandName}</p>
+      <p><strong>Phone:</strong> ${data.countryCode} ${data.phoneNumber}</p>
+    `
+  }),
   // Add more templates for other forms
 };
 
