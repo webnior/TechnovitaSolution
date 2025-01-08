@@ -1,4 +1,4 @@
 node_modules
 .next/
 .env.local
-.codegpt
+.codegpt.next/cache/
