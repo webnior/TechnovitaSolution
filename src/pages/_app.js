@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import appData from "@data/app.json";
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import TechnovitaCTA from "@components/TechnovitaCTA";
 import "../styles/scss/style.scss";
 import "../styles/globals.css";
 
@@ -65,6 +66,8 @@ function MyApp({ Component, pageProps }) {
         {/* seo end */}
       </Head>
       <Component {...pageProps} />
+       {/* The CTA component that will appear on every page */}
+       <TechnovitaCTA />
       <SpeedInsights />
     </>
   );
