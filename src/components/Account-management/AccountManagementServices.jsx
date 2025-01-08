@@ -3,79 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { Store, ShoppingBag, Users, Shield, Settings, TrendingUp, Target, Shirt, Check } from 'lucide-react';
 
-// Multiple consultation buttons
-const ConsultationButtons = () => {
-  const [copiedWhite, setCopiedWhite] = useState(false);
-  const [copiedGradient, setCopiedGradient] = useState(false);
-  const isMounted = useIsMounted();
-  const isMobile = useIsMobile();
-  const phoneNumber = '+917451073504';
 
-  const handleClick = async (buttonType) => {
-    if (!isMounted) return;
-
-    if (isMobile) {
-      window.location.href = `tel:${phoneNumber}`;
-    } else {
-      try {
-        await window.navigator.clipboard.writeText(phoneNumber);
-        if (buttonType === 'white') {
-          setCopiedWhite(true);
-          setTimeout(() => setCopiedWhite(false), 2000);
-        } else {
-          setCopiedGradient(true);
-          setTimeout(() => setCopiedGradient(false), 2000);
-        }
-      } catch (err) {
-        console.error('Failed to copy:', err);
-      }
-    }
-  };
-
-  if (!isMounted) {
-    return null; // Return null on server-side
-  }
-
-  return (
-    <div className="space-y-8">
-      <div className="flex justify-center items-center w-full">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => handleClick('gradient')}
-          className={`
-            bg-gradient-to-r from-orange-600 to-amber-600 
-            text-white rounded-lg py-4 px-8 font-bold 
-            hover:from-orange-700 hover:to-amber-700 
-            transition-all duration-300
-            flex items-center justify-center gap-2
-          `}
-        >
-          {copiedGradient ? (
-            <>
-              <Check className="w-5 h-5" />
-              <span>Number Copied!</span>
-            </>
-          ) : (
-            <>
-              {isMobile ? (
-                <>
-                  <Phone className="w-5 h-5" />
-                  <span>Schedule a Consultation</span>
-                </>
-              ) : (
-                <>
-                  <Calendar className="w-5 h-5" />
-                  <span>Schedule a Consultation</span>
-                </>
-              )}
-            </>
-          )}
-        </motion.button>
-      </div>
-    </div>
-  );
-};
 // Platform data moved to a separate constant to improve maintainability
 const PLATFORMS_DATA = [
   {
