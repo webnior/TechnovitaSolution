@@ -210,8 +210,6 @@ const WhyTechnovita = () => {
   );
 };
 
-//service
-// Enhanced services array with blog links
 
 const ServicesSection = () => {
   const services = [
