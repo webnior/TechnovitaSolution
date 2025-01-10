@@ -1,5 +1,5 @@
 // components/Account-management/WhyChooseUs.js
-import WhatsAppCTA from '@/src/components/WhatsAppCTA';
+import WhatsAppCTA from '../WhatsappCTA';
 
 const WhyChooseUs = ({ config }) => {
   return (
