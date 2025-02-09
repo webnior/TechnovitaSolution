@@ -958,7 +958,7 @@ const SERVICES = [
     description: "Strategic AJIO seller account management focusing on brand building, inventory optimization, and sales acceleration.",
   },
   {
-    id: 'tata-cliq',
+    id: 'tatacliq',
     name: "Tata Cliq Account Management",
     description: "Comprehensive Tata Cliq seller account management to elevate your brand's visibility and performance in the competitive online marketplace.",
   },
@@ -968,7 +968,7 @@ const SERVICES = [
     description: "Dedicated FirstCry seller account management to help kids' brands maximize their marketplace potential and reach.",
   },
   {
-    id: 'aza-fashion',
+    id: 'aza',
     name: "AZA Fashion Account Management",
     description: "Specialized account management for AZA Fashion, focusing on luxury and designer brand representation and growth strategies.",
   }

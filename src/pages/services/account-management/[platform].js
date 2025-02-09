@@ -10,8 +10,7 @@ import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
 export default function PlatformServicePage() {
   const router = useRouter();
   
-  // Important: Add this console.log to debug
-  console.log('Current router query:', router.query);
+ 
   
   // Handle the case when the page is still being generated
   if (router.isFallback) {
@@ -20,9 +19,7 @@ export default function PlatformServicePage() {
 
   const { platform } = router.query;
   
-  // Important: Add this console.log to debug
-  console.log('Looking for platform:', platform);
-  console.log('Available pages:', Object.keys(accountManagementPages));
+ 
   
   const pageData = platform ? accountManagementPages[platform.toLowerCase()] : null;
 
@@ -61,15 +58,11 @@ export default function PlatformServicePage() {
 }
 
 export async function getStaticPaths() {
-  // Important: Add this console.log to debug
-  console.log('Generating static paths...');
   
   const paths = Object.keys(accountManagementPages).map(platform => ({
     params: { platform }
   }));
   
-  // Important: Add this console.log to debug
-  console.log('Generated paths:', paths);
 
   return {
     paths,
@@ -78,8 +71,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // Important: Add this console.log to debug
-  console.log('getStaticProps called with params:', params);
   
   const platform = params?.platform?.toLowerCase();
   
