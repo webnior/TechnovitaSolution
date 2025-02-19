@@ -1,16 +1,13 @@
-
-// pages/services/account-management/[platform].js
+// pages/services/ecommerce-seller-onboarding/[platform].js
 
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { accountManagementPages } from '@/src/data/servicePages/accountManagement';
-import { Hero, WhyChooseUs ,Features,Services,Process,Reviews,FAQ} from '@/src/components/services';
+import { sellerOnboardingPages } from '@/src/data/servicePages/sellerOnboarding';
+import { Hero, WhyChooseUs, Features, Services, Process, Reviews, FAQ } from '@/src/components/services';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
 
 export default function PlatformServicePage() {
   const router = useRouter();
-  
- 
   
   // Handle the case when the page is still being generated
   if (router.isFallback) {
@@ -19,16 +16,14 @@ export default function PlatformServicePage() {
 
   const { platform } = router.query;
   
- 
-  
-  const pageData = platform ? accountManagementPages[platform.toLowerCase()] : null;
+  const pageData = platform ? sellerOnboardingPages[platform.toLowerCase()] : null;
 
   // Handle case when pageData is not found
   if (!pageData) {
     return <div>Page not found</div>;
   }
 
-  const canonicalUrl = `https://technovitasolution.in/services/account-management/${platform}`;
+  const canonicalUrl = `https://technovitasolution.in/services/ecommerce-seller-onboarding/${platform}`;
 
   return (
     <>
@@ -43,26 +38,24 @@ export default function PlatformServicePage() {
         <meta property="og:url" content={canonicalUrl} />
       </Head>
       <ProtectedContentWrapper>
-      <div className="w-full bg-white">
-        <Hero config={pageData.heroConfig} />
-        <WhyChooseUs config={pageData.whyChooseUsConfig} />
-        <Features config={pageData.featuresConfig} />
-        <Services config={pageData.servicesConfig} />
-        <Process config={pageData.processConfig} />
-        <Reviews config={pageData.reviewConfig} />
-        <FAQ config={pageData.faqConfig} />
-      </div>
+        <div className="w-full bg-white">
+          <Hero config={pageData.heroConfig} />
+          <WhyChooseUs config={pageData.whyChooseUsConfig} />
+          <Features config={pageData.featuresConfig} />
+          <Services config={pageData.servicesConfig} />
+          <Process config={pageData.processConfig} />
+          <Reviews config={pageData.reviewConfig} />
+          <FAQ config={pageData.faqConfig} />
+        </div>
       </ProtectedContentWrapper>
     </>
   );
 }
 
 export async function getStaticPaths() {
-  
-  const paths = Object.keys(accountManagementPages).map(platform => ({
+  const paths = Object.keys(sellerOnboardingPages).map(platform => ({
     params: { platform }
   }));
-  
 
   return {
     paths,
@@ -71,10 +64,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  
   const platform = params?.platform?.toLowerCase();
   
-  if (!platform || !accountManagementPages[platform]) {
+  if (!platform || !sellerOnboardingPages[platform]) {
     return {
       notFound: true
     };
@@ -82,7 +74,7 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      pageData: accountManagementPages[platform]
+      pageData: sellerOnboardingPages[platform]
     },
     revalidate: 86400
   };

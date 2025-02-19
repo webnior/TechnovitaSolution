@@ -6,7 +6,7 @@ import OnboardingBenefits from '@/src/components/selleronboarding/OnboardingBene
 import SellerOnboardingFaq from '@/src/components/selleronboarding/SellerOnboardingFaq';
 import SellerOnboardingCTA from '@/src/components/selleronboarding/SellerOnboardingCTA';
 import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
-
+import SellerOnboardingServices from '@/src/components/selleronboarding/SellerOnboardingServices';
 
 import Footer from '@components/Footer';
 
@@ -45,6 +45,7 @@ const SellerOnboardingPage = () => {
         <ProtectedContentWrapper>
       <main>
         <SellerOnboardingHero />
+        <SellerOnboardingServices />
         <SellerOnboardingProcess />
         <OnboardingBenefits />
         <SellerOnboardingCTA/>
