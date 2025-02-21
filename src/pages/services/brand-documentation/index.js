@@ -30,6 +30,7 @@ import {
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from "@/src/components/ProtectedContentWrapper";
+import BrandDocumentationServices from '@/src/components/brandDocumentation/BrandDocumentationServices'
 // Hero Section Component
 const BrandHeroSection = () => {
     const [formData, setFormData] = useState({
@@ -845,6 +846,7 @@ export default function BrandDocumentationPage() {
 
       <main>
         <BrandHeroSection />
+        <BrandDocumentationServices/>
         <StatsSection />
         <ServicesSection />
         <BrandDocumentationCTA />

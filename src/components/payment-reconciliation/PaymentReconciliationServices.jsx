@@ -1,118 +1,118 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Check, Shield, BarChart2, Clock, DollarSign } from 'lucide-react';
+// Platform-specific Payment Reconciliation Services
+// Automated reconciliation solutions for e-commerce marketplaces
+import { 
+  Check
+} from 'lucide-react';
 
-const PaymentReconciliationServices = () => {
-  const services = [
-    {
-      platform: "Amazon",
-      features: [
-        "Automated settlement reconciliation for Amazon payments",
-        "Real-time marketplace fee validation",
-        "Return and refund tracking automation",
-        "FBA inventory reconciliation",
-        "Advanced Amazon fee structure analysis"
-      ]
-    },
-    {
-      platform: "Flipkart",
-      features: [
-        "Complete payment cycle monitoring",
-        "Automated commission reconciliation",
-        "Real-time order status tracking",
-        "Returns and cancellation management",
-        "Detailed settlement analysis"
-      ]
-    },
-    {
-      platform: "Meesho",
-      features: [
-        "End-to-end payment tracking",
-        "Automated marketplace reconciliation",
-        "Commission structure validation",
-        "Return payment monitoring",
-        "Real-time settlement updates"
-      ]
-    },
-    {
-      platform: "Myntra",
-      features: [
-        "Comprehensive payment reconciliation",
-        "Automated fee structure analysis",
-        "Return and exchange tracking",
-        "Real-time payment monitoring",
-        "Detailed financial reporting"
-      ]
-    },
-    {
-      platform: "Multi-Platform",
-      features: [
-        "Unified dashboard for all platforms",
-        "Cross-platform payment reconciliation",
-        "Consolidated reporting system",
-        "Centralized dispute management",
-        "Integrated analytics dashboard"
-      ]
-    }
-  ];
+const SERVICES = [
+  {
+    id: 'amazon',
+    name: "Amazon Payment Reconciliation",
+    description: "Automated payment reconciliation for Amazon including settlement analysis, FBA fee validation, refund tracking, and marketplace commission reconciliation.",
+  },
+  {
+    id: 'flipkart',
+    name: "Flipkart Payment Reconciliation",
+    description: "Comprehensive payment tracking for Flipkart including commission calculations, returns processing, shipping fee reconciliation, and settlement verification.",
+  },
+  {
+    id: 'meesho',
+    name: "Meesho Payment Reconciliation",
+    description: "End-to-end payment reconciliation for Meesho including margin calculations, return management, payment cycle tracking, and settlement analysis.",
+  },
+  {
+    id: 'myntra',
+    name: "Myntra Payment Reconciliation",
+    description: "Complete payment reconciliation for Myntra including commission structure analysis, returns processing, promotional deductions, and settlement tracking.",
+  },
+  {
+    id: 'nykaa',
+    name: "Nykaa Payment Reconciliation",
+    description: "Detailed payment reconciliation for Nykaa including commission validation, returns management, promotional adjustments, and settlement verification.",
+  },
+  {
+    id: 'ajio',
+    name: "AJIO Payment Reconciliation",
+    description: "Automated payment reconciliation for AJIO including commission calculations, returns processing, promotional deductions, and settlement analysis.",
+  },
+  {
+    id: 'tatacliq',
+    name: "Tata Cliq Payment Reconciliation",
+    description: "Comprehensive payment tracking for Tata Cliq including commission structure validation, returns management, and settlement reconciliation.",
+  },
+  {
+    id: 'firstcry',
+    name: "FirstCry Payment Reconciliation",
+    description: "End-to-end payment reconciliation for FirstCry including commission calculations, returns processing, and settlement verification.",
+  },
+  {
+    id: 'aza',
+    name: "AZA Payment Reconciliation",
+    description: "Detailed payment tracking for AZA including commission validation, returns management, and luxury segment fee reconciliation.",
+  }
+];
+
+const FEATURES = [
+  "Automated Settlement Analysis",
+  "Commission Reconciliation",
+  "Returns & Refunds Tracking",
+  "Fee Structure Validation",
+  "Real-time Payment Monitoring",
+  "Detailed Financial Reports"
+];
+
+const ServiceCard = ({ service }) => {
+  const handleClick = () => {
+    window.location.href = `/services/ecommerce-payment-reconciliation/${service.id}`;
+  };
 
   return (
-    <section className="py-20 bg-white">
+    <div 
+      onClick={handleClick}
+      className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+    >
+      <div className="flex items-center space-x-4 mb-6">
+        <div className="p-3 rounded-full bg-orange-100">
+          <div className="w-8 h-8 bg-orange-600 rounded-full" />
+        </div>
+        <h3 className="text-2xl font-bold text-gray-900">{service.name}</h3>
+      </div>
+      
+      <p className="text-gray-700 mb-6">{service.description}</p>
+      
+      <ul className="space-y-3 mb-6">
+        {FEATURES.map((feature) => (
+          <li key={feature} className="flex items-center space-x-2">
+            <Check className="w-5 h-5 text-orange-600" />
+            <span className="text-gray-700">{feature}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white rounded-lg py-3 px-4 font-bold text-center">
+        Track Payments
+      </div>
+    </div>
+  );
+};
+
+const PaymentReconciliationServices = () => {
+  return (
+    <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">
-            Platform-Specific E-commerce Payment Reconciliation Solutions
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Platform-Specific Payment Reconciliation
           </h2>
-          <p className="mt-4 text-xl text-gray-600">
-            Comprehensive payment reconciliation services tailored for every major e-commerce platform
+          <p className="text-xl text-gray-700">
+            Automate your e-commerce payment reconciliation with our platform-specific solutions for accurate financial tracking.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.platform}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100"
-            >
-              <div className="flex items-center gap-3 mb-6">
-                {service.platform === "Multi-Platform" ? (
-                  <BarChart2 className="w-8 h-8 text-orange-600" />
-                ) : (
-                  <Shield className="w-8 h-8 text-orange-600" />
-                )}
-                <h3 className="text-2xl font-bold text-gray-900">
-                  {service.platform} Reconciliation
-                </h3>
-              </div>
-
-              <ul className="space-y-4">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-600">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-8">
-                <button className="w-full bg-orange-50 text-orange-600 py-3 rounded-lg font-semibold hover:bg-orange-100 transition-colors duration-200">
-                  Learn More
-                </button>
-              </div>
-            </motion.div>
+          {SERVICES.map((service) => (
+            <ServiceCard key={service.id} service={service} />
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6">
-            Looking for a custom payment reconciliation solution?
-          </p>
-          <button className="bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors duration-200">
-            Contact Our Experts
-          </button>
         </div>
       </div>
     </section>

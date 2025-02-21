@@ -27,12 +27,12 @@ import {
   ChevronUp,
   CreditCard,
   HelpCircle,
-  ShieldCheck,
+  ShieldCheck
 } from "lucide-react";
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
-
+import ProductAdvertisingServices from '@/src/components/advertising/AdvertisingServices';
 // Hero Section Component with enhanced UI
 const PlatformAdvertisingHero = () => {
   const [selectedPlatforms, setSelectedPlatforms] = useState([]);
@@ -1006,6 +1006,7 @@ const EcommerceAdvertisingPage = () => {
         <main>
           <div className="bg-white">
             <PlatformAdvertisingHero />
+            <ProductAdvertisingServices/>
             <AdvertisingServices />
             <AdvertisingFeatures />
             <CaseStudies />

@@ -4509,7 +4509,5 @@ export const storeSetupPages = {
         ]
       }
     }
-  
-    // Add more service pages
   };
   

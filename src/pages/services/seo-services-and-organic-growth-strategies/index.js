@@ -26,7 +26,7 @@ import {
   Box,Clock,Users,Headphones,BarChart
 } from 'lucide-react';
 import Head from 'next/head';
-
+import OrganicGrowthSeoServices from '@/src/components/organicSeo/OrganicGrowthSeoServices'
 import Footer from '@/src/components/Footer';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
 
@@ -735,6 +735,7 @@ const EcommerceSEOPage = () => {
       <ProtectedContentWrapper>
       <main>
         <SeoHeroSection />
+        <OrganicGrowthSeoServices/>
         <StatsSection />
         <ServicesSection />
         <SeoServicesCTA/>

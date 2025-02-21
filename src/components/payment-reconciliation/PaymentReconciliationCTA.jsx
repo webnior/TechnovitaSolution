@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight, Shield, Clock, DollarSign } from 'lucide-react';
+import { Sparkles, ArrowRight, FileCheck, Users, BarChart } from 'lucide-react';
 
 const PaymentReconciliationCTA = () => {
   return (
@@ -20,21 +20,21 @@ const PaymentReconciliationCTA = () => {
               </div>
               
               <h2 className="text-4xl font-bold text-gray-900">
-                Limited Time Offer: 3 Months Free Trial
+                Expert Payment Reconciliation Services
               </h2>
               
               <p className="text-xl text-gray-600">
-                Experience the power of automated payment reconciliation with our extended free trial. No credit card required.
+                Let our experienced team handle your e-commerce payment reconciliation while you focus on growing your business.
               </p>
               
               <div className="space-y-4">
                 {[
-                  { icon: Shield, text: "Process unlimited transactions" },
-                  { icon: Clock, text: "24/7 priority support included" },
-                  { icon: DollarSign, text: "No setup or hidden fees" }
+                  { icon: FileCheck, text: "Detailed manual verification of transactions" },
+                  { icon: Users, text: "Dedicated reconciliation specialist" },
+                  { icon: BarChart, text: "Comprehensive reporting and insights" }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <feature.icon className="w-5 h-5 text-green-500" />
+                    <feature.icon className="w-5 h-5 text-orange-600" />
                     <span className="text-gray-700">{feature.text}</span>
                   </div>
                 ))}
@@ -42,7 +42,7 @@ const PaymentReconciliationCTA = () => {
               
               <div className="pt-6">
                 <button className="group bg-gradient-to-r from-orange-600 to-amber-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-orange-700 hover:to-amber-700 transition-all duration-300 flex items-center gap-2">
-                  Start Free Trial
+                  Schedule Consultation
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
@@ -53,38 +53,50 @@ const PaymentReconciliationCTA = () => {
               whileInView={{ opacity: 1, x: 0 }}
               className="bg-gradient-to-br from-orange-50 to-amber-50 p-12 flex items-center"
             >
-              <div className="space-y-8">
+              <div className="space-y-8 w-full">
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    What's Included:
+                    Our Service Includes:
                   </h3>
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center">✓</span>
-                      <span>Automated payment reconciliation</span>
+                      <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                      <span>Thorough transaction verification</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center">✓</span>
-                      <span>Real-time transaction monitoring</span>
+                      <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                      <span>Commission and fee reconciliation</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center">✓</span>
-                      <span>Advanced analytics dashboard</span>
+                      <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                      <span>Monthly detailed reports</span>
                     </li>
                     <li className="flex items-center gap-2">
-                      <span className="w-6 h-6 rounded-full bg-green-100 text-green-600 flex items-center justify-center">✓</span>
-                      <span>Multi-platform integration</span>
+                      <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                      <span>Discrepancy resolution support</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="bg-white p-6 rounded-xl shadow-lg">
                   <div className="text-center">
-                    <div className="text-sm text-gray-500">Regular Price</div>
-                    <div className="text-3xl font-bold text-gray-900 line-through">$299/month</div>
-                    <div className="text-sm text-gray-500 mt-4">Special Offer</div>
-                    <div className="text-4xl font-bold text-orange-600">FREE</div>
-                    <div className="text-sm text-gray-500">for 3 months</div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                      Why Choose Our Service?
+                    </h3>
+                    <ul className="text-left space-y-3">
+                      <li className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                        <span>Expert manual verification</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                        <span>Platform-specific expertise</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="w-6 h-6 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center">✓</span>
+                        <span>Dedicated support team</span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

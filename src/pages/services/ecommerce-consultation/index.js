@@ -30,6 +30,7 @@ import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
 import ConsultingFAQSection from '@/src/components/consulation/ConsultingFAQSection'
+import ConsultationServices from '@/src/components/consulation/ConsultationServices'
 // Hero Section Component with Updated Form
 const ConsultationHero = () => {
   const [formData, setFormData] = useState({
@@ -256,7 +257,7 @@ const ConsultationHero = () => {
 };
 
 // Updated Services Section Component
-const ConsultationServices = () => {
+const ConsultingServices = () => {
   const services = [
     {
       title: "Ecommerce Strategy & Planning",
@@ -551,8 +552,9 @@ const EcommerceConsultationPage = () => {
         <main>
           <div className="bg-white">
             <ConsultationHero />
+            <ConsultationServices/>
             <ConsultationStats />
-            <ConsultationServices />
+            <ConsultingServices />
             <ConsultationFeatures />
             <ConsultationCTA />
             <ConsultingFAQSection/>
