@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { paymentReconciliation } from '@/src/data/servicePages/paymentReconciliation';
 import { Hero, WhyChooseUs, Features, Services, Process, Reviews, FAQ } from '@/src/components/services';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 export default function PlatformServicePage() {
   const router = useRouter();
@@ -38,6 +39,13 @@ export default function PlatformServicePage() {
         <meta property="og:url" content={canonicalUrl} />
       </Head>
       <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Payment Reconciliation', href: '/services/ecommerce-payment-reconciliation' },
+            { name: platform, href: `/services/ecommerce-payment-reconciliation/${platform}` },
+          ]}
+        />
         <div className="w-full bg-white">
           <Hero config={pageData.heroConfig} />
           <WhyChooseUs config={pageData.whyChooseUsConfig} />

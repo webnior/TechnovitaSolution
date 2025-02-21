@@ -30,6 +30,7 @@ import {
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from "@/src/components/ProtectedContentWrapper";
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import BrandDocumentationServices from '@/src/components/brandDocumentation/BrandDocumentationServices'
 // Hero Section Component
 const BrandHeroSection = () => {
@@ -842,9 +843,14 @@ export default function BrandDocumentationPage() {
           content="Brand Documentation Services, E-commerce Brand Registry, Brand Approval Support, Myntra Brand Documentation, Ajio Seller Registration, Flipkart Brand Approval, Nykaa Seller Documentation"
         />
       </Head>
-      <ProtectedContentWrapper>
-
-      <main>
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Brand Documentation', href: '/services/brand-documentation' },
+            
+          ]}
+        /><main>
         <BrandHeroSection />
         <BrandDocumentationServices/>
         <StatsSection />

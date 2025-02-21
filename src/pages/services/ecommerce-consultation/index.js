@@ -29,6 +29,7 @@ import {
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import ConsultingFAQSection from '@/src/components/consulation/ConsultingFAQSection'
 import ConsultationServices from '@/src/components/consulation/ConsultationServices'
 // Hero Section Component with Updated Form
@@ -548,8 +549,14 @@ const EcommerceConsultationPage = () => {
           href="https://www.technovitasolution.in/services/ecommerce-consultation"
         />
       </Head>
-      <ProtectedContentWrapper>
-        <main>
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Ecommerce Consultation', href: '/services/ecommerce-consultation' },
+            
+          ]}
+        /><main>
           <div className="bg-white">
             <ConsultationHero />
             <ConsultationServices/>

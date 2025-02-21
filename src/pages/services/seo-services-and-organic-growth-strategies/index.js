@@ -29,6 +29,7 @@ import Head from 'next/head';
 import OrganicGrowthSeoServices from '@/src/components/organicSeo/OrganicGrowthSeoServices'
 import Footer from '@/src/components/Footer';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 const SeoHeroSection = () => {
   const [formData, setFormData] = useState({
@@ -732,8 +733,14 @@ const EcommerceSEOPage = () => {
           content="E-commerce SEO Services, Organic Growth Strategies, Amazon Store SEO, Flipkart Store SEO, Myntra Store SEO, Nykaa Store SEO, Product Page Optimization, E-commerce Store Ranking, Technical SEO for E-commerce"
         />
       </Head>
-      <ProtectedContentWrapper>
-      <main>
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Seo Services And Organic Growth Strategies', href: '/services/seo-services-and-organic-growth-strategies' },
+            
+          ]}
+        /><main>
         <SeoHeroSection />
         <OrganicGrowthSeoServices/>
         <StatsSection />

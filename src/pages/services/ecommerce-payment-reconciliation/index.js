@@ -7,6 +7,7 @@ import PaymentReconciliationCTA from '@/src/components/payment-reconciliation/Pa
 import PaymentReconciliationFAQ from '@/src/components/payment-reconciliation/PaymentReconciliationFAQ';
 import Footer from '@components/Footer';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 const PaymentReconciliationPage = () => {
   return (
@@ -28,8 +29,14 @@ const PaymentReconciliationPage = () => {
  <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-payment-reconciliation" />
  <meta name="geo.region" content="IN" />
 </Head>
-    <ProtectedContentWrapper>
-      {/* Main Content */}
+          <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Ecommerce Payment Reconciliation', href: '/services/ecommerce-payment-reconciliation' },
+            
+          ]}
+        />{/* Main Content */}
       <main>
       <PaymentReconciliationHero />
       <PaymentReconciliationServices />

@@ -33,6 +33,7 @@ import {
   Headphones, 
 } from "lucide-react";
 import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 const ServiceReasons = [
     {
@@ -967,8 +968,12 @@ export default function TechnovitaSellerPage() {
 
 </Head>
  
-    <ProtectedContentWrapper>
-    <main className="bg-white">
+          <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' }
+          ]}
+        /><main className="bg-white">
     
     <HeroSection/>
 
@@ -1098,5 +1103,3 @@ export default function TechnovitaSellerPage() {
      </>
   );
 }
-
-

@@ -32,6 +32,7 @@ import {
 import Head from "next/head";
 import Footer from "@/src/components/Footer";
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import ProductAdvertisingServices from '@/src/components/advertising/AdvertisingServices';
 // Hero Section Component with enhanced UI
 const PlatformAdvertisingHero = () => {
@@ -1002,8 +1003,14 @@ const EcommerceAdvertisingPage = () => {
           href="https://www.technovitasolution.in/services/ecommerce-advertising-services"
         />
       </Head>
-      <ProtectedContentWrapper>
-        <main>
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Ecommerce Advertising', href: '/services/ecommerce-advertising' },
+            
+          ]}
+        /><main>
           <div className="bg-white">
             <PlatformAdvertisingHero />
             <ProductAdvertisingServices/>

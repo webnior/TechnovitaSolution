@@ -28,6 +28,7 @@ import {
 } from 'lucide-react';
 import Footer from "@components/Footer";
 import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import Link from 'next/link';
 // Helper function to detect client-side environment
 const useIsMounted = () => {
@@ -1061,8 +1062,14 @@ const EcommerceSellerManagementPage = () => {
  <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-seller-account-management" />
 </Head>
 
-    <ProtectedContentWrapper>
-    <main>
+          <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Account Management', href: '/services/account-management' },
+            
+          ]}
+        /><main>
     <div className="min-h-screen bg-white">
       <MarketplaceMasterHero />
       <AccountManagementServices />

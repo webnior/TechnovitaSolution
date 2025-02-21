@@ -6,6 +6,7 @@ import OnboardingBenefits from '@/src/components/selleronboarding/OnboardingBene
 import SellerOnboardingFaq from '@/src/components/selleronboarding/SellerOnboardingFaq';
 import SellerOnboardingCTA from '@/src/components/selleronboarding/SellerOnboardingCTA';
 import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import SellerOnboardingServices from '@/src/components/selleronboarding/SellerOnboardingServices';
 
 import Footer from '@components/Footer';
@@ -42,8 +43,14 @@ const SellerOnboardingPage = () => {
   <link rel="canonical" href="https://www.technovitasolution.in/services/ecommerce-seller-onboarding" />
   
 </Head>
-        <ProtectedContentWrapper>
-      <main>
+              <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Ecommerce Seller Onboarding', href: '/services/ecommerce-seller-onboarding' },
+            
+          ]}
+        /><main>
         <SellerOnboardingHero />
         <SellerOnboardingServices />
         <SellerOnboardingProcess />

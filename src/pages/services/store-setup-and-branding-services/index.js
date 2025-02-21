@@ -7,6 +7,7 @@ import StoreSetupProcess from '@/src/components/storeSetupAndBranding/StoreSetup
 import StoreCaseStudiesAndFAQ from '@/src/components/storeSetupAndBranding/StoreCaseStudiesAndFAQ';
 import Footer from '@components/Footer';
 import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 import StoreSetupAndBrandingServices from '@/src/components/storeSetupAndBranding/StoreSetupAndBrandingServices';
 const StoreSetupAndBrandingPage = () => {
   return (
@@ -42,8 +43,14 @@ const StoreSetupAndBrandingPage = () => {
 
 </Head>
 
-<ProtectedContentWrapper>
-    <main>
+      <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Store Setup And Branding Services', href: '/services/store-setup-and-branding-services' },
+            
+          ]}
+        /><main>
       {/* Main Content */}
       <StoreSetupHero />
       <StoreSetupAndBrandingServices/>

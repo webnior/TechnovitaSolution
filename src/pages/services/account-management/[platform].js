@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { accountManagementPages } from '@/src/data/servicePages/accountManagement';
 import { Hero, WhyChooseUs ,Features,Services,Process,Reviews,FAQ} from '@/src/components/services';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 export default function PlatformServicePage() {
   const router = useRouter();
@@ -42,8 +43,14 @@ export default function PlatformServicePage() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
       </Head>
-      <ProtectedContentWrapper>
-      <div className="w-full bg-white">
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Account Management', href: '/services/account-management' },
+            { name: platform, href: `/services/account-management/${platform}` },
+          ]}
+        /><div className="w-full bg-white">
         <Hero config={pageData.heroConfig} />
         <WhyChooseUs config={pageData.whyChooseUsConfig} />
         <Features config={pageData.featuresConfig} />

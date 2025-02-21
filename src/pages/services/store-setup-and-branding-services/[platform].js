@@ -5,6 +5,7 @@ import Head from 'next/head';
 import { storeSetupPages } from '@/src/data/servicePages/storeSetup';
 import { Hero, WhyChooseUs, Features, Services, Process, Reviews, FAQ } from '@/src/components/services';
 import ProtectedContentWrapper from '@/src/components/ProtectedContentWrapper';
+import Breadcrumb from '@/src/components/common/Breadcrumb';
 
 export default function PlatformServicePage() {
   const router = useRouter();
@@ -37,8 +38,14 @@ export default function PlatformServicePage() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
       </Head>
-      <ProtectedContentWrapper>
-        <div className="w-full bg-white">
+            <ProtectedContentWrapper>
+        <Breadcrumb
+          items={[
+            { name: 'Services', href: '/services' },
+            { name: 'Store Setup And Branding Services', href: '/services/store-setup-and-branding-services' },
+            { name: platform, href: `/services/store-setup-and-branding-services/${platform}` },
+          ]}
+        /><div className="w-full bg-white">
           <Hero config={pageData.heroConfig} />
           <WhyChooseUs config={pageData.whyChooseUsConfig} />
           <Features config={pageData.featuresConfig} />
