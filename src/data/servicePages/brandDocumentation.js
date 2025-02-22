@@ -1,4991 +1,3188 @@
 //  src/data/servicePages/accountManagement.js
 export const brandDocumentation = {
     amazon: {
-      platform: "amazon",
-      title: "Amazon Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert Amazon Account Management Services",
-      metaDescription:
-        "Transform your Amazon business with our dedicated account managers and proven strategies. Expert Amazon seller account management services.",
-      metaKeywords:
-        "amazon account management services, amazon seller account management, amazon account manager",
-      heroConfig: {
-        badge: {
-          text: "Amazon Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "amazon",
+        title: "Amazon Brand Documentation & Consultation Services",
+        metaTitle: "Technovita Solution | Professional Amazon Brand Documentation & Consultation Services",
+        metaDescription: "Expert Amazon brand documentation and consultation services to establish, protect and grow your brand presence on Amazon. Comprehensive brand strategy and documentation support.",
+        metaKeywords: "amazon brand documentation, amazon brand consultation, amazon brand registry services, amazon brand protection, amazon brand strategy, amazon brand growth",
+        heroConfig: {
+            badge: {
+                text: "Amazon Brand Experts since 2018",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Amazon Brand Documentation & Consultation Services",
+            description: [
+                "Building a strong brand on Amazon requires expert guidance and meticulous documentation. At Technovita Solution, we provide comprehensive brand consultation services to help you establish, protect, and grow your brand presence on the world's largest marketplace.",
+                "Our team of certified brand specialists handles everything from initial brand registry documentation to ongoing brand protection and growth strategies. We ensure your brand documentation meets Amazon's exacting standards while positioning your brand for long-term success.",
+                "Whether you're launching a new brand or looking to strengthen your existing brand presence, our consultants provide the expertise and support needed to navigate Amazon's brand requirements and leverage brand-building opportunities effectively."
+            ],
+            stats: [
+                { label: "Brands Registered", value: "200+" },
+                { label: "Success Rate", value: "99%" },
+                { label: "Brand Protection", value: "100%" }
+            ]
         },
-        mainHeading: "Amazon Seller Account Management Services",
-        description: [
-          "Running an Amazon business can feel overwhelming. At Technovita Solution, we take the complexity out of Amazon selling. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your Amazon journey smooth and profitable.",
-          "Think of us as your dedicated Amazon team. We manage your Seller Central account, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified Amazon experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on Amazon, our experienced account managers at Technovita Solution know exactly what it takes to grow your business. We've helped hundreds of sellers across all categories increase their sales and build sustainable Amazon businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "500+" },
-          { label: "Retention Rate", value: "98%" },
-          { label: "Monthly Sales", value: "₹50M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "500+",
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "200+"
+            },
+            title: "Why Choose Technovita Solution for Your Amazon Brand Success",
+            description: "In the competitive Amazon marketplace, building and protecting your brand requires expert knowledge and meticulous attention to detail. Our comprehensive brand consultation services ensure your brand stands out while maintaining full compliance with Amazon's requirements.",
+            features: [
+                {
+                    title: "Brand Expertise",
+                    description: "Dedicated brand specialists with deep understanding of Amazon's brand requirements and best practices."
+                },
+                {
+                    title: "Documentation Mastery",
+                    description: "Comprehensive documentation support ensuring successful brand registry and protection."
+                },
+                {
+                    title: "Strategic Guidance",
+                    description: "Expert consultation on brand building, protection, and growth strategies specific to Amazon."
+                },
+                {
+                    title: "Proven Success",
+                    description: "99% success rate in brand registry applications and brand protection cases."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Amazon Success",
-        description:
-          "In today's competitive e-commerce landscape, mastering Amazon's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of Amazon's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing Amazon seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "98% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert amazon account management services focus on developing comprehensive growth strategies tailored to your business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the Amazon marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated amazon seller account management partner, we ensure your account stays healthy and compliant with Amazon's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our amazon account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your Amazon business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our amazon account management services near me, you get a dedicated team of specialists who understand your business inside and out. We act as an extension of your team, managing every aspect of your Amazon presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Amazon Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink: "/blog/The-Ultimate-Guide-to-Product-Listing-Optimization",
-            description:
-              "Transform your Amazon presence with our expert product listing optimization services. Our comprehensive approach ensures your products not only rank well but convert browsers into buyers, implementing data-driven strategies across all listing aspects:",
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Compelling, clear product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Benefit-focused bullet points that sell",
-                  "Keyword-rich descriptions for better indexing",
-                  "Competitor analysis and differentiation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Central Account Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-amazon",
-            description:
-              "As your trusted amazon account management agency, we provide comprehensive account setup and optimization services that set the foundation for your success:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Central account configuration",
-                  "Custom shipping and fulfillment strategy development",
-                  "Integration of marketing and advertising services",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our amazon seller account management services include advanced keyword research that drives organic traffic and improves visibility:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Data-driven keyword identification and analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "A+ Content Creation & Amazon Copywriting",
-            blogLink: "/blog/Content-Creation-Amazon-Copywriting-Guide",
-            description:
-              "Elevate your brand presence with our professional amazon account management services focused on creating compelling content:",
-            features: [
-              {
-                subtitle: "A+ Content Development",
-                points: [
-                  "Custom multimedia module design",
-                  "Brand story integration and storytelling",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Conversion-focused product descriptions",
-                  "SEO-optimized content creation",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "FBA Setup & Management",
-            blogLink: "/blog/FBA-Setup-Management-The-complete-Guide",
-            description:
-              "Our comprehensive amazon seller account management includes expert FBA optimization and management:",
-            features: [
-              {
-                subtitle: "FBA Operations",
-                points: [
-                  "Strategic inventory placement and management",
-                  "Shipping plan optimization and monitoring",
-                  "Cost reduction and efficiency improvement",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis and optimization",
-                  "Delivery performance monitoring",
-                  "Inventory turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Registry & Protection",
-            blogLink: "/blog/Brand-Registry-Protection-on-Amazon",
-            description:
-              "Protect and enhance your brand with our professional amazon account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Complete brand registry setup and management",
-                  "Intellectual property protection measures",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Access to exclusive brand tools and features",
-                  "Brand analytics utilization",
-                  "Enhanced content opportunities",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "LineChart",
-            title: "Inventory Management & Tracking",
-            blogLink: "/blog/Amazon-inventory-Management-Tracking",
-            description:
-              "Our amazon account management services include comprehensive inventory solution:",
-            features: [
-              {
-                subtitle: "Stock Management",
-                points: [
-                  "Real-time inventory monitoring",
-                  "Restock timing optimization",
-                  "Storage fee management",
-                ],
-              },
-              {
-                subtitle: "Performance Analytics",
-                points: [
-                  "Sales velocity tracking",
-                  "Inventory turnover analysis",
-                  "Seasonal demand planning",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "MessageSquare",
-            title: "Review Management & Optimization",
-            blogLink: "/blog/Amazon-Review-Management-Optimization",
-            description:
-              "Maintain a stellar reputation with our best amazon account management services focused on review optimization:",
-            features: [
-              {
-                subtitle: "Review Monitoring",
-                points: [
-                  "Proactive review solicitation strategies",
-                  "Negative feedback resolution",
-                  "Customer satisfaction improvement",
-                ],
-              },
-              {
-                subtitle: "Rating Enhancement",
-                points: [
-                  "Review analysis and trend identification",
-                  "Customer feedback implementation",
-                  "Product improvement recommendations",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "AlertTriangle",
-            title: "Account Reinstatement Services",
-            blogLink: "/blog/Amazon-Account-Reinstatement",
-            description:
-              "Our expert amazon account management team specializes in account recovery and reinstatement:",
-            features: [
-              {
-                subtitle: "Recovery Process",
-                points: [
-                  "Comprehensive account audit",
-                  "Policy violation analysis",
-                  "Custom plan of action development",
-                ],
-              },
-              {
-                subtitle: "Prevention Strategy",
-                points: [
-                  "Ongoing compliance monitoring",
-                  "Risk assessment and mitigation",
-                  "Policy update implementation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Activity",
-            title: "Seller Flex Program Management",
-            blogLink: "/blog/Amazon-Seller-Flex-Program",
-            description:
-              "Optimize your operations with our specialized amazon seller account management services for Seller Flex:",
-            features: [
-              {
-                subtitle: "Program Implementation",
-                points: [
-                  "Eligibility assessment and application",
-                  "Operational setup and optimization",
-                  "Delivery network integration",
-                ],
-              },
-              {
-                subtitle: "Performance Management",
-                points: [
-                  "Delivery metrics monitoring",
-                  "Cost efficiency optimization",
-                  "Customer satisfaction tracking",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Target",
-            title: "Competitor Analysis & Strategy",
-            blogLink: "/blog/Amazon-Competitor-Analysis-Strategy",
-            description:
-              "Stay ahead with our data-driven amazon account management analysis services:",
-            features: [
-              {
-                subtitle: "Market Analysis",
-                points: [
-                  "Comprehensive competitor research",
-                  "Price point optimization",
-                  "Market trend identification",
-                ],
-              },
-              {
-                subtitle: "Strategic Planning",
-                points: [
-                  "Competitive advantage development",
-                  "Market positioning strategy",
-                  "Growth opportunity identification",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Amazon Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our amazon account management process begins with a thorough analysis of your current Amazon presence. Our expert team conducts a comprehensive evaluation of your product listings, pricing strategies, advertising performance, and competitor positioning. We identify immediate opportunities for improvement and develop a customized strategy aligned with your business goals. This initial phase establishes clear benchmarks and sets the foundation for our amazon seller account management services.",
-            details: [
-              "Complete account health assessment",
-              "Competitor landscape analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted amazon account management agency, we implement necessary optimizations across your entire account structure. This phase focuses on strengthening your account foundation through systematic improvements to listings, backend settings, and operational workflows. Our team ensures every aspect of your amazon account managing process is optimized for maximum performance and compliance.",
-            details: [
-              "Listing optimization implementation",
-              "Backend keyword enhancement",
-              "Account settings refinement",
-              "Category-specific optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "With optimizations in place, we execute your customized growth strategy. Our best amazon account management services focus on expanding your market presence through strategic initiatives. We implement targeted campaigns, optimize inventory management, and enhance brand presence to drive sustainable growth on the platform.",
-            details: [
-              "Marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand registry optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Our amazon seller account management services include continuous monitoring of key performance indicators. We track crucial metrics, analyze trends, and make data-driven adjustments to optimize your account's performance. This proactive approach ensures we maintain momentum and quickly address any challenges that arise.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-          {
-            iconName: "Repeat",
-            title: "Continuous Improvement & Adaptation",
-            description:
-              "The amazon account management landscape constantly evolves, and so do our strategies. We continuously refine our approach based on performance data, market changes, and emerging opportunities. Our team stays updated with Amazon's latest features and requirements to ensure your account remains competitive and compliant.",
-            details: [
-              "Strategy refinement",
-              "Market trend adaptation",
-              "Policy compliance updates",
-              "Performance optimization",
-              "Growth strategy evolution",
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Long-term Success & Protection",
-            description:
-              "As your dedicated amazon account management partner, we focus on securing your long-term success. We implement protective measures to safeguard your account health while continuing to identify and capitalize on new growth opportunities. Our comprehensive approach ensures sustainable success on the Amazon marketplace.",
-            details: [
-              "Account health maintenance",
-              "Brand protection measures",
-              "Growth sustainability planning",
-              "Risk mitigation strategies",
-              "Long-term opportunity development",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "500+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Amazon Sellers Across India",
-          description:
-            "See why hundreds of Amazon sellers choose Technovita Solution for their account management needs",
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Strategy",
+                    description: "Our expert brand consultation services focus on developing comprehensive protection strategies to secure your brand's presence on Amazon. We implement robust measures to prevent unauthorized sellers and maintain brand integrity."
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Excellence",
+                    description: "As your dedicated brand documentation partner, we ensure all brand-related documentation meets Amazon's strict requirements. Our meticulous approach to documentation helps prevent registration delays and compliance issues."
+                },
+                {
+                    iconName: "Target",
+                    title: "Strategic Brand Growth",
+                    description: "Our brand specialists utilize advanced brand analytics and market insights to develop effective growth strategies. We help position your brand for sustainable success on the Amazon marketplace."
+                },
+                {
+                    iconName: "Users",
+                    title: "Dedicated Brand Team",
+                    description: "When you choose our brand consultation services, you get a dedicated team of brand specialists who understand your unique needs. We provide comprehensive support throughout your brand journey on Amazon."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Rajesh Kumar",
-            company: "RK Electronics India",
-            rating: 5,
-            review:
-              "Technovita Solution transformed our Amazon business completely. Their strategic approach helped us increase our sales by 300% in just 6 months. The dedicated account manager is always available and proactive in handling issues.",
-            position: "Business Owner",
-            location: "Delhi",
-          },
-          {
-            name: "Priya Sharma",
-            company: "Wellness India Pvt Ltd",
-            rating: 5,
-            review:
-              "We were struggling with Amazon compliance issues before partnering with Technovita. Their team not only resolved all our account problems but also helped us expand our product line successfully. Best Amazon account management service in India!",
-            position: "E-commerce Director",
-            location: "Mumbai",
-          },
-          {
-            name: "Vikram Patel",
-            company: "VR Lifestyle",
-            rating: 5,
-            review:
-              "The ROI with Technovita has been exceptional. Their deep understanding of Amazon's algorithm and market trends helped us achieve Best Seller status in our category. Highly recommended for serious Amazon sellers.",
-            position: "Founder",
-            location: "Bangalore",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.8,
-            totalReviews: 487,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.9,
-            totalReviews: 892,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.7,
-            totalReviews: 356,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Amazon Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your Amazon account management service include?",
-            answer:
-              "Our comprehensive Amazon account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, advertising campaign management, and performance analytics. We provide dedicated account managers who ensure your Amazon business operates smoothly across all aspects of the platform.",
-            keywords: [
-              "amazon account management services",
-              "account management amazon",
+        servicesConfig: {
+            title: "Comprehensive Amazon Brand Documentation & Consultation Services",
+            services: [
+                {
+                    iconName: "FileCheck",
+                    title: "Brand Registry Documentation",
+                    blogLink: "/blog/Amazon-Brand-Registry-Documentation-Guide",
+                    description: "Complete documentation support for Amazon Brand Registry enrollment:",
+                    features: [
+                        {
+                            subtitle: "Documentation Preparation",
+                            points: [
+                                "Trademark documentation review and preparation",
+                                "Brand assets organization and verification",
+                                "Application documentation compilation"
+                            ]
+                        },
+                        {
+                            subtitle: "Registration Support",
+                            points: [
+                                "Step-by-step application guidance",
+                                "Documentation submission management",
+                                "Follow-up and verification support"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Services",
+                    blogLink: "/blog/Amazon-Brand-Protection-Strategy",
+                    description: "Comprehensive brand protection strategy and implementation:",
+                    features: [
+                        {
+                            subtitle: "Protection Measures",
+                            points: [
+                                "Unauthorized seller monitoring",
+                                "Trademark infringement detection",
+                                "Counterfeit product identification"
+                            ]
+                        },
+                        {
+                            subtitle: "Enforcement Actions",
+                            points: [
+                                "Case documentation preparation",
+                                "Violation reporting management",
+                                "Resolution tracking and follow-up"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Star",
+                    title: "Brand Growth Strategy",
+                    blogLink: "/blog/Amazon-Brand-Growth-Strategies",
+                    description: "Strategic brand development and expansion services:",
+                    features: [
+                        {
+                            subtitle: "Brand Development",
+                            points: [
+                                "Brand identity enhancement",
+                                "Content strategy development",
+                                "Brand voice optimization"
+                            ]
+                        },
+                        {
+                            subtitle: "Growth Implementation",
+                            points: [
+                                "Market expansion planning",
+                                "Category penetration strategy",
+                                "Brand awareness campaigns"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Layout",
+                    title: "A+ Content Development",
+                    blogLink: "/blog/Amazon-A-Plus-Content-Guide",
+                    description: "Professional A+ content creation and optimization:",
+                    features: [
+                        {
+                            subtitle: "Content Creation",
+                            points: [
+                                "Brand story development",
+                                "Enhanced product descriptions",
+                                "Visual content optimization"
+                            ]
+                        },
+                        {
+                            subtitle: "Performance Optimization",
+                            points: [
+                                "Conversion rate analysis",
+                                "Content effectiveness tracking",
+                                "Continuous improvement implementation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Search",
+                    title: "Brand Analytics Consultation",
+                    blogLink: "/blog/Amazon-Brand-Analytics-Guide",
+                    description: "Comprehensive brand performance analysis and optimization:",
+                    features: [
+                        {
+                            subtitle: "Performance Analysis",
+                            points: [
+                                "Brand analytics interpretation",
+                                "Competitive analysis",
+                                "Market trend identification"
+                            ]
+                        },
+                        {
+                            subtitle: "Strategy Development",
+                            points: [
+                                "Data-driven recommendations",
+                                "Growth opportunity identification",
+                                "Performance optimization plans"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        processConfig: {
+            title: "Our Brand Consultation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Initial Brand Assessment",
+                    description: "Comprehensive evaluation of your brand's current status and documentation requirements",
+                    details: [
+                        "Brand documentation review",
+                        "Compliance assessment",
+                        "Protection needs analysis",
+                        "Growth opportunity identification",
+                        "Strategy development"
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Preparation",
+                    description: "Thorough preparation and organization of all required brand documentation",
+                    details: [
+                        "Trademark verification",
+                        "Brand asset compilation",
+                        "Documentation formatting",
+                        "Compliance checking",
+                        "Application preparation"
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Setup",
+                    description: "Implementation of comprehensive brand protection measures",
+                    details: [
+                        "Protection strategy development",
+                        "Monitoring system setup",
+                        "Enforcement process establishment",
+                        "Team training",
+                        "Response protocol creation"
+                    ]
+                },
+                {
+                    iconName: "Target",
+                    title: "Growth Strategy Implementation",
+                    description: "Execution of targeted brand growth initiatives",
+                    details: [
+                        "Market opportunity analysis",
+                        "Strategy deployment",
+                        "Performance monitoring",
+                        "Optimization implementation",
+                        "Results tracking"
+                    ]
+                },
+                {
+                    iconName: "BarChart",
+                    title: "Performance Monitoring",
+                    description: "Continuous tracking and optimization of brand performance",
+                    details: [
+                        "Metrics monitoring",
+                        "Performance analysis",
+                        "Strategy adjustment",
+                        "Growth tracking",
+                        "Report generation"
+                    ]
+                }
+            ]
+        },
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Brand Success Stories", "200+ Protected Brands"],
+                    className: "bg-blue-100 text-blue-600"
+                },
+                title: "Trusted by Leading Brands Across India",
+                description: "See why hundreds of brands choose Technovita Solution for their Amazon brand documentation and consultation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Amit Shah",
+                    company: "Lifestyle Brands India",
+                    rating: 5,
+                    review: "Technovita Solution's brand consultation services were instrumental in establishing our brand presence on Amazon. Their documentation expertise and strategic guidance helped us achieve Brand Registry status quickly and efficiently.",
+                    position: "Brand Director",
+                    location: "Mumbai"
+                },
+                {
+                    name: "Priya Reddy",
+                    company: "Natural Care Products",
+                    rating: 5,
+                    review: "The brand protection strategies implemented by Technovita have significantly reduced unauthorized sellers and improved our brand integrity on Amazon. Their ongoing support has been invaluable to our brand's growth.",
+                    position: "CEO",
+                    location: "Bangalore"
+                },
+                {
+                    name: "Rajesh Mehta",
+                    company: "Fashion Forward",
+                    rating: 5,
+                    review: "Outstanding brand consultation services! Their team's expertise in Amazon's brand requirements and documentation process made our brand registry application smooth and successful.",
+                    position: "Marketing Director",
+                    location: "Delhi"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Amazon account management agency improve my sales performance?",
-            answer:
-              "As a specialized Amazon account management agency, we implement data-driven strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing PPC campaigns, improving inventory turnover, and enhancing customer service metrics. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "amazon account management agency",
-              "amazon seller account management",
-            ],
-          },
-          {
-            iconName: "Globe",
-            question: "Do you offer international Amazon marketplace management?",
-            answer:
-              "Yes, we provide complete Amazon account handling for multiple international marketplaces. Our global account managers are well-versed in managing accounts across Amazon.com, Amazon.co.uk, Amazon.in, and other regional platforms. We help with marketplace-specific compliance, localization, and strategic expansion to new markets.",
-            keywords: [
-              "amazon global account manager",
-              "amazon marketplace account manager",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question:
-              "What makes your Amazon Seller Central account management unique?",
-            answer:
-              "Our Amazon Seller Central account management stands out through our comprehensive approach. We combine technical expertise in platform operations with strategic business insights. This includes automated inventory management, advanced analytics reporting, strategic pricing optimization, and proactive problem resolution. We maintain all crucial seller metrics to ensure account health and growth.",
-            keywords: [
-              "amazon seller central account management",
-              "seller central account management",
-            ],
-          },
-          {
-            iconName: "DollarSign",
-            question: "How do you handle Amazon advertising and PPC campaigns?",
-            answer:
-              "Our Amazon ads account managers specialize in creating and optimizing advertising campaigns that maximize ROI. We handle keyword research, bid management, campaign structure optimization, and performance tracking. Our team regularly analyzes advertising metrics to refine targeting and improve ad spend efficiency.",
-            keywords: [
-              "amazon ads manager account",
-              "amazon advertising",
-              "amazon ads account manager",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What strategic account management services do you provide?",
-            answer:
-              "As your strategic account manager for Amazon, we focus on long-term growth and market positioning. Our strategic account services include market analysis, competition monitoring, brand development, expansion planning, and performance optimization. We work closely with you to develop and implement strategies aligned with your business goals.",
-            keywords: [
-              "strategic account manager amazon",
-              "amazon strategic account services",
-            ],
-          },
-          {
-            iconName: "Briefcase",
-            question: "How do you support Amazon Business accounts?",
-            answer:
-              "Our Amazon business account manager services are tailored for B2B sellers. We help optimize your Business Prime presence, manage bulk pricing strategies, handle corporate customer relationships, and ensure compliance with B2B-specific requirements. We also assist with catalog management and business-focused marketing strategies.",
-            keywords: [
-              "amazon business account manager",
-              "manage amazon business account",
-            ],
-          },
-          {
-            iconName: "Users",
-            question:
-              "What support can I expect from your account management team?",
-            answer:
-              "You'll be assigned a dedicated Amazon account manager who serves as your primary point of contact. They provide regular performance updates, handle day-to-day account operations, and coordinate with our specialist teams for advertising, catalog management, and technical support. We offer responsive communication and proactive problem-solving.",
-            keywords: [
-              "amazon account manager service",
-              "account manager for amazon",
-            ],
-          },
-          {
-            iconName: "ShoppingCart",
-            question: "How do you handle FBA inventory management?",
-            answer:
-              "Our Amazon FBA account managers use advanced inventory management tools to optimize your FBA operations. We monitor stock levels, manage reorder points, analyze storage fees, and coordinate shipments. Our team ensures optimal inventory levels to avoid stockouts while minimizing storage costs.",
-            keywords: ["amazon fba account manager", "amazon account handling"],
-          },
-          {
-            iconName: "BookOpen",
-            question: "What experience do you have with Vendor Central accounts?",
-            answer:
-              "Our Amazon vendor account manager team has extensive experience managing Vendor Central relationships. We handle purchase order management, retail analytics, marketing programs, and vendor negotiations. Our services help optimize your vendor operations and maintain strong relationships with Amazon's retail team.",
-            keywords: [
-              "amazon vendor account manager",
-              "amazon account maintenance",
-            ],
-          },
-          {
-            iconName: "PieChart",
-            question: "How do you handle performance analytics and reporting?",
-            answer:
-              "We provide comprehensive Amazon online account management reporting including sales analytics, inventory performance, advertising metrics, and competitive analysis. Our customized dashboards offer real-time insights into your account's performance, and we deliver detailed monthly reports with actionable recommendations.",
-            keywords: [
-              "amazon online account management",
-              "amazon account management companies",
-            ],
-          },
-          {
-            iconName: "Clock",
-            question: "What is your response time for account issues?",
-            answer:
-              "As your Amazon online account manager, we provide rapid response to account issues, typically within 2-4 business hours. Our team monitors account health metrics continuously and takes proactive measures to prevent potential problems. We handle case management, policy compliance, and issue resolution efficiently.",
-            keywords: [
-              "amazon online account manager",
-              "amazon account maintenance",
-            ],
-          },
-          {
-            iconName: "Globe",
-            question: "Can you help with international marketplace expansion?",
-            answer:
-              "Yes, our global account management services help sellers expand into international Amazon marketplaces. We handle marketplace registration, listing translation, international compliance, and local market optimization. Our team guides you through the entire expansion process while managing your existing marketplace presence.",
-            keywords: [
-              "amazon marketplace account manager",
-              "amazon global account manager",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What specialized services do you offer for brand registered sellers?",
-            answer:
-              "For brand registered sellers, we provide enhanced content management, A+ content optimization, brand store development, and brand protection services. Our team leverages all available brand tools and features to strengthen your brand presence and drive customer engagement on Amazon.",
-            keywords: [
-              "amazon account management services",
-              "amazon seller account management services",
-            ],
-          },
-          {
-            iconName: "CreditCard",
-            question:
-              "What are your pricing models for account management services?",
-            answer:
-              "We offer flexible pricing models based on your business size and service needs. Options include percentage of sales, fixed monthly fees, or hybrid models. All our Amazon paid account management services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements.",
-            keywords: [
-              "amazon paid account management",
-              "amazon account management services",
-            ],
-          },
-        ],
-      },
-      // Add more sections as needed
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.9,
+                    totalReviews: 245,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.8,
+                    totalReviews: 389,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 178,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+        faqConfig: {
+            title: "Amazon Brand Documentation & Consultation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What documents do I need for Amazon Brand Registry?",
+                    answer: "Amazon Brand Registry requires several key documents including active registered trademark documentation, brand logo files, product images, and brand information. Our team helps prepare and organize all necessary documentation to ensure a smooth registration process.",
+                    keywords: ["brand registry documentation", "amazon brand registration"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you help protect my brand on Amazon?",
+                    answer: "We implement comprehensive brand protection measures including monitoring for unauthorized sellers, tracking trademark violations, and managing infringement cases. Our team provides proactive protection and swift response to any brand violations.",
+                    keywords: ["brand protection", "trademark protection", "unauthorized sellers"]
+                },
+                {
+                    iconName: "Target",
+                    question: "What brand growth strategies do you implement?",
+                    answer: "Our brand growth strategies encompass market expansion, category optimization, A+ content development, and brand awareness campaigns. We use data-driven approaches to identify and capitalize on growth opportunities specific to your brand.",
+                    keywords: ["brand growth", "market expansion", "brand strategy"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the brand registry process take?",
+                    answer: "The Amazon Brand Registry process typically takes 2-4 weeks from submission to approval, depending on documentation completeness and trademark status. Our team expedites the process by ensuring all documentation is properly prepared and submitted.",
+                    keywords: ["brand registry timeline", "registration process"]
+                },
+                {
+                    iconName: "Users",
+                    question: "What ongoing support do you provide after brand registry?",
+                    answer: "We provide continuous brand support including protection monitoring, growth strategy implementation, performance tracking, and regular optimization recommendations. Our team stays proactive in maintaining and enhancing your brand presence.",
+                    keywords: ["ongoing support", "brand maintenance", "brand optimization"]
+                },
+                {
+                    iconName: "BarChart",
+                    question: "How do you measure brand performance success?",
+                    answer: "We track multiple brand performance metrics including sales growth, market share, brand analytics, customer engagement, and protection effectiveness. Regular reports provide insights into performance and growth opportunities.",
+                    keywords: ["brand performance", "success metrics", "analytics"]
+                },
+                {
+                    iconName: "Globe",
+                    question: "Can you help with international brand expansion?",
+                    answer: "Yes, we provide comprehensive support for international brand expansion including market analysis, documentation for multiple marketplaces, and localization strategies. Our team guides you through the entire international brand registration process.",
+                    keywords: ["international expansion", "global brands", "market expansion"]
+                },
+                {
+                    iconName: "AlertTriangle",
+                    question: "How do you handle brand registry violations?",
+                    answer: "We have a structured process for handling violations including immediate case documentation, violation reporting, and follow-up management. Our team ensures swift resolution of any brand-related issues on Amazon.",
+                    keywords: ["violations", "brand protection", "case management"]
+                },
+                {
+                    iconName: "DollarSign",
+                    question: "What are your pricing models for brand services?",
+                    answer: "We offer flexible pricing models based on your brand's size and service needs. Options include fixed packages, customized service bundles, and ongoing management plans. We provide detailed quotes after assessing your specific requirements.",
+                    keywords: ["pricing", "service costs", "brand packages"]
+                },
+                {
+                    iconName: "Settings",
+                    question: "What technical support do you provide for brand tools?",
+                    answer: "We provide comprehensive support for all Amazon brand tools including Brand Registry console, Brand Analytics, A+ Content manager, and Sponsored Brands features. Our team ensures you maximize the benefits of all available brand tools.",
+                    keywords: ["technical support", "brand tools", "platform features"]
+                }
+            ]
+        }
     },
     flipkart: {
-      platform: "flipkart",
-      title: "Flipkart Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert Flipkart Account Management Services",
-      metaDescription:
-        "Transform your Flipkart business with our dedicated account managers and proven strategies. Expert Flipkart seller account management services.",
-      metaKeywords:
-        "flipkart account management services, flipkart seller account management, flipkart account manager",
-      heroConfig: {
-        badge: {
-          text: "Flipkart Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "flipkart",
+        title: "Flipkart Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Flipkart Brand Documentation Services",
+        metaDescription: "Expert Flipkart brand documentation services to establish and protect your brand identity. Comprehensive documentation management for Flipkart sellers.",
+        metaKeywords: "flipkart brand documentation, flipkart brand registry, flipkart brand protection documentation, flipkart trademark documentation",
+
+        heroConfig: {
+            badge: {
+                text: "Brand Documentation Experts since 2018",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Professional Flipkart Brand Documentation Services",
+            description: [
+                "Establishing and protecting your brand on Flipkart requires meticulous documentation and ongoing maintenance. At Technovita Solution, we specialize in handling all aspects of brand documentation to ensure your brand's success on Flipkart.",
+                "Our expert team manages everything from initial brand registry applications to trademark documentation, helping you build a strong brand presence while protecting your intellectual property rights on Flipkart.",
+                "With years of experience in Flipkart brand documentation, we've helped hundreds of sellers successfully register and protect their brands across various categories, ensuring compliance and maximizing brand value."
+            ],
+            stats: [
+                { label: "Brands Protected", value: "200+" },
+                { label: "Success Rate", value: "98%" },
+                { label: "Documentation Coverage", value: "100%" }
+            ]
         },
-        mainHeading: "Flipkart Seller Account Management Services",
-        description: [
-          "Running a Flipkart business can feel overwhelming. At Technovita Solution, we take the complexity out of Flipkart selling. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your Flipkart journey smooth and profitable.",
-          "Think of us as your dedicated Flipkart team. We manage your Seller Dashboard, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified Flipkart experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on Flipkart, our experienced account managers at Technovita Solution know exactly what it takes to grow your business. We've helped hundreds of sellers across all categories increase their sales and build sustainable Flipkart businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "400+" },
-          { label: "Retention Rate", value: "97%" },
-          { label: "Monthly Sales", value: "₹40M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "400+",
+
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "200+"
+            },
+            title: "Why Choose TechnovitaSolution for Flipkart Brand Documentation",
+            description: "In the complex world of e-commerce brand protection, proper documentation is crucial for long-term success. Our comprehensive brand documentation services ensure your brand maintains its integrity while maximizing its potential on Flipkart.",
+            features: [
+                {
+                    title: "Documentation Expertise",
+                    description: "Specialized team with deep knowledge of Flipkart's brand documentation requirements and trademark laws."
+                },
+                {
+                    title: "Complete Coverage",
+                    description: "End-to-end documentation services covering brand registry, trademark filing, and ongoing maintenance."
+                },
+                {
+                    title: "Legal Compliance",
+                    description: "Ensuring all brand documentation meets both Flipkart's requirements and Indian trademark laws."
+                },
+                {
+                    title: "Proven Track Record",
+                    description: "98% success rate in brand registry applications and trademark documentation."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Flipkart Success",
-        description:
-          "In today's competitive e-commerce landscape, mastering Flipkart's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of Flipkart's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing Flipkart seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "97% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert Flipkart account management services focus on developing comprehensive growth strategies tailored to your business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the Flipkart marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated Flipkart seller account management partner, we ensure your account stays healthy and compliant with Flipkart's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our Flipkart account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your Flipkart business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our Flipkart account management services near me, you get a dedicated team of specialists who understand your business inside and out. We act as an extension of your team, managing every aspect of your Flipkart presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Flipkart Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink:
-              "/blog/The-Ultimate-Guide-to-Flipkart-Product-Listing-Optimization",
-            description:
-              "Transform your Flipkart presence with our expert product listing optimization services. Our comprehensive approach ensures your products not only rank well but convert browsers into buyers:",
+
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Compelling, clear product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Benefit-focused bullet points that sell",
-                  "Keyword-rich descriptions for better indexing",
-                  "Competitor analysis and differentiation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Dashboard Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-flipkart",
-            description:
-              "As your trusted Flipkart account management agency, we provide comprehensive account setup and optimization services:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Dashboard configuration",
-                  "Smart fulfillment strategy development",
-                  "Integration of marketing and advertising services",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Flipkart-Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our Flipkart seller account management services include advanced keyword research that drives organic traffic:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Data-driven keyword identification and analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Rich Content Creation & Flipkart Copywriting",
-            blogLink: "/blog/Content-Creation-Flipkart-Copywriting-Guide",
-            description:
-              "Elevate your brand presence with our professional Flipkart account management services focused on content:",
-            features: [
-              {
-                subtitle: "Rich Content Development",
-                points: [
-                  "Enhanced product page design",
-                  "Brand story integration",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Conversion-focused product descriptions",
-                  "SEO-optimized content creation",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Smart Fulfillment Setup & Management",
-            blogLink: "/blog/Flipkart-Smart-Fulfillment-Guide",
-            description:
-              "Our comprehensive Flipkart seller account management includes expert fulfillment optimization:",
-            features: [
-              {
-                subtitle: "Smart Operations",
-                points: [
-                  "Strategic inventory placement",
-                  "Shipping plan optimization",
-                  "Cost reduction strategies",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis",
-                  "Delivery performance monitoring",
-                  "Inventory turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Protection & Growth",
-            blogLink: "/blog/Brand-Protection-on-Flipkart",
-            description:
-              "Protect and enhance your brand with our professional Flipkart account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Brand registry management",
-                  "Intellectual property protection",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Brand analytics utilization",
-                  "Enhanced content opportunities",
-                  "Brand visibility optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "LineChart",
-            title: "Inventory Management & Tracking",
-            blogLink: "/blog/Flipkart-inventory-Management-Tracking",
-            description:
-              "Our Flipkart account management services include comprehensive inventory solutions:",
-            features: [
-              {
-                subtitle: "Stock Management",
-                points: [
-                  "Real-time inventory monitoring",
-                  "Restock timing optimization",
-                  "Storage fee management",
-                ],
-              },
-              {
-                subtitle: "Performance Analytics",
-                points: [
-                  "Sales velocity tracking",
-                  "Inventory turnover analysis",
-                  "Seasonal demand planning",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "MessageSquare",
-            title: "Rating Management & Customer Service",
-            blogLink: "/blog/Flipkart-Rating-Management-Guide",
-            description:
-              "Maintain excellent ratings with our best Flipkart account management services:",
-            features: [
-              {
-                subtitle: "Rating Monitoring",
-                points: [
-                  "Proactive customer service strategies",
-                  "Negative feedback resolution",
-                  "Customer satisfaction improvement",
-                ],
-              },
-              {
-                subtitle: "Service Enhancement",
-                points: [
-                  "Customer feedback analysis",
-                  "Service quality improvement",
-                  "Response time optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "AlertTriangle",
-            title: "Account Reinstatement Services",
-            blogLink: "/blog/Flipkart-Account-Reinstatement",
-            description:
-              "Our expert Flipkart account management team specializes in account recovery:",
-            features: [
-              {
-                subtitle: "Recovery Process",
-                points: [
-                  "Comprehensive account audit",
-                  "Policy violation analysis",
-                  "Custom plan of action development",
-                ],
-              },
-              {
-                subtitle: "Prevention Strategy",
-                points: [
-                  "Ongoing compliance monitoring",
-                  "Risk assessment and mitigation",
-                  "Policy update implementation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Activity",
-            title: "Seller Plus Program Management",
-            blogLink: "/blog/Flipkart-Seller-Plus-Program",
-            description:
-              "Optimize your operations with our specialized Flipkart seller account management services:",
-            features: [
-              {
-                subtitle: "Program Implementation",
-                points: [
-                  "Eligibility assessment and application",
-                  "Operational setup and optimization",
-                  "Benefits maximization",
-                ],
-              },
-              {
-                subtitle: "Performance Management",
-                points: [
-                  "Metrics monitoring",
-                  "Cost efficiency optimization",
-                  "Service level maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Target",
-            title: "Competitor Analysis & Strategy",
-            blogLink: "/blog/Flipkart-Competitor-Analysis-Strategy",
-            description:
-              "Stay ahead with our data-driven Flipkart account management analysis services:",
-            features: [
-              {
-                subtitle: "Market Analysis",
-                points: [
-                  "Comprehensive competitor research",
-                  "Price point optimization",
-                  "Market trend identification",
-                ],
-              },
-              {
-                subtitle: "Strategic Planning",
-                points: [
-                  "Competitive advantage development",
-                  "Market positioning strategy",
-                  "Growth opportunity identification",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Flipkart Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our Flipkart account management process begins with a thorough analysis of your current presence. We identify immediate opportunities and develop a customized strategy aligned with your business goals.",
-            details: [
-              "Complete account health assessment",
-              "Competitor landscape analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted Flipkart account management agency, we implement necessary optimizations across your entire account structure.",
-            details: [
-              "Listing optimization implementation",
-              "Backend keyword enhancement",
-              "Account settings refinement",
-              "Category-specific optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "We execute your customized growth strategy through targeted campaigns, inventory management, and brand presence enhancement.",
-            details: [
-              "Marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Continuous monitoring of key performance indicators ensures we maintain momentum and quickly address challenges.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-          {
-            iconName: "Repeat",
-            title: "Continuous Improvement & Adaptation",
-            description:
-              "We continuously refine our approach based on performance data and market changes to ensure your account remains competitive.",
-            details: [
-              "Strategy refinement",
-              "Market trend adaptation",
-              "Policy compliance updates",
-              "Performance optimization",
-              "Growth strategy evolution",
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Long-term Success & Protection",
-            description:
-              "We focus on securing your long-term success while implementing protective measures to safeguard your account health.",
-            details: [
-              "Account health maintenance",
-              "Brand protection measures",
-              "Growth sustainability planning",
-              "Risk mitigation strategies",
-              "Long-term opportunity development",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "400+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Flipkart Sellers Across India",
-          description:
-            "See why hundreds of Flipkart sellers choose Technovita Solution for their account management needs",
+                {
+                    iconName: "FileText",
+                    title: "Comprehensive Documentation Management",
+                    description: "Our expert brand documentation services handle every aspect of your brand's paperwork and legal requirements on Flipkart, ensuring complete protection and compliance."
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Registry Support",
+                    description: "Full assistance with Flipkart's brand registry process, including application preparation, submission, and follow-up support to secure your brand rights."
+                },
+                {
+                    iconName: "CheckSquare",
+                    title: "Trademark Documentation",
+                    description: "Professional handling of all trademark-related documentation, from initial filing to maintenance and renewal processes."
+                },
+                {
+                    iconName: "Users",
+                    title: "Dedicated Documentation Team",
+                    description: "Access to experienced brand documentation specialists who understand both Flipkart's requirements and Indian trademark laws."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Amit Shah",
-            company: "AS Electronics",
-            rating: 5,
-            review:
-              "Technovita Solution revolutionized our Flipkart business. Their strategic approach helped us increase our sales by 250% in just 6 months. The dedicated account manager is always available and proactive.",
-            position: "Business Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Sneha Reddy",
-            company: "Fashion Hub India",
-            rating: 5,
-            review:
-              "We were facing constant challenges with Flipkart policies before partnering with Technovita. Their team not only resolved our issues but helped us become a top-rated seller. Best Flipkart account management service!",
-            position: "E-commerce Manager",
-            location: "Hyderabad",
-          },
-          {
-            name: "Suresh Patel",
-            company: "SP Lifestyle Store",
-            rating: 5,
-            review:
-              "The expertise Technovita brings to Flipkart selling is unmatched. They helped us optimize our listings and inventory management, resulting in a 180% increase in sales. Their understanding of Flipkart's algorithm is exceptional.",
-            position: "Managing Director",
-            location: "Ahmedabad",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.7,
-            totalReviews: 412,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.8,
-            totalReviews: 756,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.6,
-            totalReviews: 289,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Flipkart Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question:
-              "What does your Flipkart account management service include?",
-            answer:
-              "Our comprehensive Flipkart account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, advertising campaign management, and performance analytics. We provide dedicated account managers who ensure your Flipkart business operates smoothly across all aspects of the platform.",
-            keywords: [
-              "flipkart account management services",
-              "account management flipkart",
+
+        servicesConfig: {
+            title: "Complete Flipkart Brand Documentation Services",
+            services: [
+                {
+                    iconName: "FileText",
+                    title: "Brand Registry Documentation",
+                    blogLink: "/blog/Complete-Guide-to-Flipkart-Brand-Registry",
+                    description: "Comprehensive brand registry documentation services to establish and protect your brand on Flipkart:",
+                    features: [
+                        {
+                            subtitle: "Application Preparation",
+                            points: [
+                                "Detailed documentation review and organization",
+                                "Brand eligibility assessment",
+                                "Complete application compilation"
+                            ]
+                        },
+                        {
+                            subtitle: "Registration Support",
+                            points: [
+                                "Document submission management",
+                                "Application tracking and follow-up",
+                                "Resolution of documentation queries"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Trademark Documentation",
+                    blogLink: "/blog/Flipkart-Trademark-Documentation-Guide",
+                    description: "Expert handling of all trademark-related documentation requirements:",
+                    features: [
+                        {
+                            subtitle: "Trademark Filing",
+                            points: [
+                                "Comprehensive trademark search",
+                                "Application documentation preparation",
+                                "Filing process management"
+                            ]
+                        },
+                        {
+                            subtitle: "Maintenance",
+                            points: [
+                                "Renewal documentation tracking",
+                                "Usage evidence compilation",
+                                "Legal compliance monitoring"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Image",
+                    title: "Brand Asset Documentation",
+                    blogLink: "/blog/Managing-Brand-Assets-on-Flipkart",
+                    description: "Complete management of brand asset documentation:",
+                    features: [
+                        {
+                            subtitle: "Asset Organization",
+                            points: [
+                                "Logo file preparation and storage",
+                                "Brand guideline documentation",
+                                "Marketing material archives"
+                            ]
+                        },
+                        {
+                            subtitle: "Compliance Verification",
+                            points: [
+                                "Asset usage documentation",
+                                "Copyright verification",
+                                "Format compliance checking"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Initial Documentation Review",
+                    description: "Comprehensive analysis of existing brand documentation and requirements.",
+                    details: [
+                        "Document inventory assessment",
+                        "Gap analysis completion",
+                        "Requirement identification",
+                        "Priority documentation planning",
+                        "Timeline development"
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Preparation",
+                    description: "Thorough preparation of all required brand documentation.",
+                    details: [
+                        "Document compilation",
+                        "Format standardization",
+                        "Legal review completion",
+                        "Compliance verification",
+                        "Quality assurance checks"
+                    ]
+                },
+                {
+                    iconName: "Upload",
+                    title: "Submission and Filing",
+                    description: "Professional management of all documentation submissions.",
+                    details: [
+                        "Application submission",
+                        "Document filing management",
+                        "Progress tracking",
+                        "Follow-up coordination",
+                        "Status monitoring"
+                    ]
+                },
+                {
+                    iconName: "CheckSquare",
+                    title: "Verification and Approval",
+                    description: "Careful monitoring of documentation approval process.",
+                    details: [
+                        "Approval tracking",
+                        "Query resolution",
+                        "Documentation updates",
+                        "Compliance confirmation",
+                        "Final verification"
+                    ]
+                }
+            ]
+        },
+
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Client Success", "200+ Protected Brands"],
+                    className: "bg-blue-100 text-blue-600"
+                },
+                title: "Trusted by Leading Brands on Flipkart",
+                description: "See why hundreds of brands trust us with their documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Rajesh Kumar",
+                    company: "StyleMax Fashion",
+                    rating: 5,
+                    review: "Technovita Solution handled our brand documentation perfectly. Their expertise made the entire process smooth and hassle-free.",
+                    position: "Brand Manager",
+                    location: "Delhi"
+                },
+                {
+                    name: "Priya Sharma",
+                    company: "HomeCraft India",
+                    rating: 5,
+                    review: "Outstanding service in managing our trademark documentation. Their attention to detail and knowledge of Flipkart's requirements is impressive.",
+                    position: "Legal Head",
+                    location: "Bangalore"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Flipkart account management agency improve my sales performance?",
-            answer:
-              "As a specialized Flipkart account management agency, we implement data-driven strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing Smart Ads campaigns, improving inventory turnover, and enhancing customer service metrics. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "flipkart account management agency",
-              "flipkart seller account management",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question:
-              "What makes your Flipkart Seller Dashboard management unique?",
-            answer:
-              "Our Flipkart Seller Dashboard management stands out through our comprehensive approach. We combine technical expertise in platform operations with strategic business insights. This includes automated inventory management, advanced analytics reporting, strategic pricing optimization, and proactive problem resolution. We maintain all crucial seller metrics to ensure account health and growth.",
-            keywords: [
-              "flipkart seller dashboard management",
-              "seller dashboard management",
-            ],
-          },
-          {
-            iconName: "DollarSign",
-            question:
-              "How do you handle Flipkart advertising and Smart Ads campaigns?",
-            answer:
-              "Our Flipkart ads account managers specialize in creating and optimizing advertising campaigns that maximize ROI. We handle keyword research, bid management, campaign structure optimization, and performance tracking. Our team regularly analyzes advertising metrics to refine targeting and improve ad spend efficiency.",
-            keywords: [
-              "flipkart ads manager account",
-              "flipkart advertising",
-              "flipkart smart ads",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What strategic account management services do you provide?",
-            answer:
-              "As your strategic account manager for Flipkart, we focus on long-term growth and market positioning. Our strategic account services include market analysis, competition monitoring, brand development, expansion planning, and performance optimization. We work closely with you to develop and implement strategies aligned with your business goals.",
-            keywords: [
-              "strategic account manager flipkart",
-              "flipkart strategic account services",
-            ],
-          },
-          {
-            iconName: "Briefcase",
-            question: "How do you support Flipkart Plus sellers?",
-            answer:
-              "Our Flipkart Plus seller services are tailored for high-performance sellers. We help optimize your Plus seller benefits, manage performance metrics, handle customer service excellence, and ensure compliance with Plus-specific requirements. We also assist with catalog management and Plus-focused marketing strategies.",
-            keywords: [
-              "flipkart plus seller management",
-              "manage flipkart plus account",
-            ],
-          },
-          {
-            iconName: "Users",
-            question:
-              "What support can I expect from your account management team?",
-            answer:
-              "You'll be assigned a dedicated Flipkart account manager who serves as your primary point of contact. They provide regular performance updates, handle day-to-day account operations, and coordinate with our specialist teams for advertising, catalog management, and technical support. We offer responsive communication and proactive problem-solving.",
-            keywords: [
-              "flipkart account manager service",
-              "account manager for flipkart",
-            ],
-          },
-          {
-            iconName: "ShoppingCart",
-            question: "How do you handle Smart Fulfillment management?",
-            answer:
-              "Our Flipkart Smart Fulfillment managers use advanced inventory management tools to optimize your fulfillment operations. We monitor stock levels, manage reorder points, analyze storage fees, and coordinate shipments. Our team ensures optimal inventory levels to avoid stockouts while minimizing storage costs.",
-            keywords: ["flipkart smart fulfillment", "flipkart account handling"],
-          },
-          {
-            iconName: "PieChart",
-            question: "How do you handle performance analytics and reporting?",
-            answer:
-              "We provide comprehensive Flipkart online account management reporting including sales analytics, inventory performance, advertising metrics, and competitive analysis. Our customized dashboards offer real-time insights into your account's performance, and we deliver detailed monthly reports with actionable recommendations.",
-            keywords: [
-              "flipkart online account management",
-              "flipkart account management companies",
-            ],
-          },
-          {
-            iconName: "Clock",
-            question: "What is your response time for account issues?",
-            answer:
-              "As your Flipkart online account manager, we provide rapid response to account issues, typically within 2-4 business hours. Our team monitors account health metrics continuously and takes proactive measures to prevent potential problems. We handle case management, policy compliance, and issue resolution efficiently.",
-            keywords: [
-              "flipkart online account manager",
-              "flipkart account maintenance",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What specialized services do you offer for brand registered sellers?",
-            answer:
-              "For brand registered sellers, we provide enhanced content management, rich product content optimization, brand store development, and brand protection services. Our team leverages all available brand tools and features to strengthen your brand presence and drive customer engagement on Flipkart.",
-            keywords: [
-              "flipkart brand account management",
-              "flipkart seller brand services",
-            ],
-          },
-          {
-            iconName: "CreditCard",
-            question:
-              "What are your pricing models for account management services?",
-            answer:
-              "We offer flexible pricing models based on your business size and service needs. Options include percentage of sales, fixed monthly fees, or hybrid models. All our Flipkart account management services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements.",
-            keywords: [
-              "flipkart account management pricing",
-              "flipkart account management services",
-            ],
-          },
-          {
-            iconName: "Shield",
-            question: "How do you ensure account compliance and protection?",
-            answer:
-              "Our team stays updated with all Flipkart policies and guidelines, implementing proactive measures to maintain account health. We monitor performance metrics, handle policy updates, and ensure all listings and operations comply with Flipkart's requirements. Our approach includes regular account audits and risk assessment.",
-            keywords: [
-              "flipkart account compliance",
-              "flipkart seller protection",
-            ],
-          },
-          {
-            iconName: "Star",
-            question: "Can you help improve my seller ratings and reviews?",
-            answer:
-              "Yes, we implement comprehensive strategies to improve and maintain high seller ratings. This includes optimizing order processing, enhancing customer service, managing returns efficiently, and implementing feedback improvement programs. We monitor all metrics that impact your seller rating and take proactive steps to maintain excellence.",
-            keywords: [
-              "flipkart seller rating improvement",
-              "flipkart review management",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            question: "How do you handle seasonal sales and special events?",
-            answer:
-              "We provide specialized support for major Flipkart events like Big Billion Days and seasonal sales. This includes inventory preparation, pricing strategy, promotional planning, and campaign management. Our team helps you maximize opportunities during peak selling periods while maintaining operational efficiency.",
-            keywords: [
-              "flipkart seasonal sales management",
-              "flipkart special events",
-            ],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.8,
+                    totalReviews: 180,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.9,
+                    totalReviews: 245,
+                    className: "bg-[#4285f4]"
+                }
+            ]
+        },
+
+        faqConfig: {
+            title: "Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What brand documentation services do you provide?",
+                    answer: "We offer comprehensive brand documentation services including brand registry application preparation, trademark documentation, brand asset management, and ongoing compliance monitoring. Our services cover all aspects of documentation required for establishing and maintaining your brand presence on Flipkart.",
+                    keywords: ["brand documentation", "documentation services"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure documentation compliance?",
+                    answer: "Our team stays updated with Flipkart's documentation requirements and trademark laws. We implement a multi-step verification process, conduct regular audits, and maintain detailed documentation records to ensure ongoing compliance.",
+                    keywords: ["documentation compliance", "legal requirements"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the documentation process take?",
+                    answer: "The timeline varies depending on the type of documentation and current requirements. Typically, initial brand registry documentation takes 2-3 weeks, while trademark documentation can take 3-6 months. We manage the entire process and keep you updated on progress.",
+                    keywords: ["documentation timeline", "process duration"]
+                }
+            ]
+        }
     },
     nykaa: {
-      platform: "nykaa",
-      title: "Nykaa Account Management Services",
-      metaTitle: "Technovita Solution | Expert Nykaa Account Management Services",
-      metaDescription:
-        "Transform your Nykaa business with our dedicated account managers and proven strategies. Expert Nykaa seller account management services.",
-      metaKeywords:
-        "nykaa account management services, nykaa seller account management, nykaa account manager",
-      heroConfig: {
-        badge: {
-          text: "Nykaa Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "nykaa",
+        title: "Nykaa Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Nykaa Brand Documentation Services",
+        metaDescription: "Expert brand documentation services for Nykaa sellers. Comprehensive documentation management to ensure brand compliance and success.",
+        metaKeywords: "nykaa brand documentation, nykaa brand guidelines, nykaa documentation services, nykaa brand management",
+
+        heroConfig: {
+            badge: {
+                text: "Brand Documentation Experts since 2018",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Nykaa Brand Documentation Services",
+            description: [
+                "Creating and maintaining proper brand documentation on Nykaa is crucial for your beauty business success. At Technovita Solution, we specialize in developing comprehensive brand documentation that ensures consistency, compliance, and growth on the Nykaa platform.",
+                "Our expert team handles everything from initial brand guidelines to ongoing documentation management, including product specifications, marketing materials, and compliance documents. We ensure your brand presence on Nykaa is professional, consistent, and compliant with all marketplace requirements.",
+                "Whether you're launching a new beauty brand or looking to improve your existing documentation, our experienced documentation specialists understand what it takes to create successful brand documentation that supports your growth on Nykaa."
+            ],
+            stats: [
+                { label: "Brands Documented", value: "200+" },
+                { label: "Documentation Accuracy", value: "99.9%" },
+                { label: "Compliance Rate", value: "100%" }
+            ]
         },
-        mainHeading: "Nykaa Seller Account Management Services",
-        description: [
-          "Running a Nykaa business can feel overwhelming. At Technovita Solution, we take the complexity out of Nykaa selling. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your Nykaa journey smooth and profitable.",
-          "Think of us as your dedicated Nykaa team. We manage your Seller Portal, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified Nykaa experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on Nykaa, our experienced account managers at Technovita Solution know exactly what it takes to grow your beauty and wellness business. We've helped hundreds of sellers across all categories increase their sales and build sustainable Nykaa businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "300+" },
-          { label: "Retention Rate", value: "96%" },
-          { label: "Monthly Sales", value: "₹30M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "300+",
+
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "200+"
+            },
+            title: "Why Choose TechnovitaSolution for Your Nykaa Brand Documentation",
+            description: "In the competitive beauty and wellness marketplace, proper brand documentation is essential for maintaining brand integrity and ensuring compliance. Our comprehensive documentation services are designed to create and maintain all necessary brand documentation while supporting your growth on Nykaa.",
+            features: [
+                {
+                    title: "Documentation Expertise",
+                    description: "Specialized team with deep understanding of Nykaa's documentation requirements and beauty industry standards."
+                },
+                {
+                    title: "Compliance Focus",
+                    description: "Ensuring all brand documentation meets Nykaa's guidelines and regulatory requirements for beauty products."
+                },
+                {
+                    title: "Comprehensive Service",
+                    description: "End-to-end documentation management including creation, maintenance, and regular updates of all brand materials."
+                },
+                {
+                    title: "Quality Assurance",
+                    description: "Rigorous quality control processes ensuring 99.9% documentation accuracy and completeness."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Nykaa Success",
-        description:
-          "In today's competitive beauty and wellness e-commerce landscape, mastering Nykaa's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of Nykaa's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing Nykaa seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "96% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert Nykaa account management services focus on developing comprehensive growth strategies tailored to your beauty and wellness business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the Nykaa marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated Nykaa seller account management partner, we ensure your account stays healthy and compliant with Nykaa's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our Nykaa account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your Nykaa business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our Nykaa account management services near me, you get a dedicated team of specialists who understand your beauty and wellness business inside and out. We act as an extension of your team, managing every aspect of your Nykaa presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Nykaa Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink:
-              "/blog/The-Ultimate-Guide-to-Nykaa-Product-Listing-Optimization",
-            description:
-              "Transform your Nykaa presence with our expert product listing optimization services. Our comprehensive approach ensures your beauty and wellness products not only rank well but convert browsers into buyers:",
+
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Compelling, clear product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Benefit-focused bullet points that sell",
-                  "Ingredient and usage information optimization",
-                  "Competitor analysis and differentiation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Portal Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-nykaa",
-            description:
-              "As your trusted Nykaa account management agency, we provide comprehensive account setup and optimization services:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Portal configuration",
-                  "Beauty and wellness category optimization",
-                  "Integration of marketing and promotion tools",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Nykaa-Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our Nykaa seller account management services include advanced keyword research that drives organic traffic:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Beauty and wellness-specific keyword analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Enhanced Content Creation & Nykaa Copywriting",
-            blogLink: "/blog/Content-Creation-Nykaa-Copywriting-Guide",
-            description:
-              "Elevate your beauty brand presence with our professional Nykaa account management services focused on content:",
-            features: [
-              {
-                subtitle: "Enhanced Content Development",
-                points: [
-                  "Product page enhancement",
-                  "Brand story integration",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Beauty-focused product descriptions",
-                  "Ingredient and benefit highlighting",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Inventory & Fulfillment Management",
-            blogLink: "/blog/Nykaa-Inventory-Fulfillment-Guide",
-            description:
-              "Our comprehensive Nykaa seller account management includes expert fulfillment optimization:",
-            features: [
-              {
-                subtitle: "Inventory Operations",
-                points: [
-                  "Strategic stock management",
-                  "Expiry date tracking",
-                  "Cost reduction strategies",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis",
-                  "Delivery performance monitoring",
-                  "Stock turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Protection & Growth",
-            blogLink: "/blog/Brand-Protection-on-Nykaa",
-            description:
-              "Protect and enhance your beauty brand with our professional Nykaa account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Brand registry management",
-                  "Product authenticity protection",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Beauty brand analytics utilization",
-                  "Enhanced content opportunities",
-                  "Brand visibility optimization",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Nykaa Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our Nykaa account management process begins with a thorough analysis of your current beauty and wellness presence. We identify immediate opportunities and develop a customized strategy aligned with your business goals.",
-            details: [
-              "Complete account health assessment",
-              "Beauty market analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted Nykaa account management agency, we implement necessary optimizations across your entire account structure.",
-            details: [
-              "Beauty product listing optimization",
-              "Category-specific enhancement",
-              "Account settings refinement",
-              "Brand presence optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "We execute your customized growth strategy through targeted campaigns, inventory management, and brand presence enhancement.",
-            details: [
-              "Beauty marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Continuous monitoring of key performance indicators ensures we maintain momentum and quickly address challenges.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "300+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Nykaa Sellers Across India",
-          description:
-            "See why hundreds of beauty and wellness brands choose Technovita Solution for their Nykaa account management needs",
+                {
+                    iconName: "FileText",
+                    title: "Brand Guidelines Documentation",
+                    description: "Our expert documentation team creates comprehensive brand guidelines tailored specifically for your Nykaa presence, ensuring consistency across all brand touchpoints and marketing materials."
+                },
+                {
+                    iconName: "Shield",
+                    title: "Compliance Documentation",
+                    description: "We maintain detailed compliance documentation for all your beauty products, including ingredients lists, safety assessments, and regulatory certificates required by Nykaa."
+                },
+                {
+                    iconName: "Layout",
+                    title: "Product Documentation",
+                    description: "Comprehensive product documentation services including detailed specifications, usage guidelines, and technical documentation for your entire product range."
+                },
+                {
+                    iconName: "Users",
+                    title: "Dedicated Documentation Team",
+                    description: "Access to a specialized team of documentation experts who understand both Nykaa's requirements and beauty industry documentation standards."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Priya Sharma",
-            company: "Glow Beauty India",
-            rating: 5,
-            review:
-              "Technovita Solution transformed our Nykaa business. Their understanding of the beauty market helped us increase our sales by 200% in just 6 months. Their dedicated team is always responsive and proactive.",
-            position: "Brand Manager",
-            location: "Delhi",
-          },
-          {
-            name: "Aisha Khan",
-            company: "Natural Wellness Co",
-            rating: 5,
-            review:
-              "We struggled with Nykaa's complex policies before partnering with Technovita. Their expertise helped us become a top-rated seller in the natural beauty category. Exceptional service!",
-            position: "Business Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Riya Patel",
-            company: "Organic Beauty Hub",
-            rating: 5,
-            review:
-              "The expertise Technovita brings to Nykaa selling is remarkable. They helped optimize our listings and inventory, resulting in a 150% increase in sales. Their beauty market knowledge is invaluable.",
-            position: "CEO",
-            location: "Bangalore",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.7,
-            totalReviews: 328,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.8,
-            totalReviews: 542,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.6,
-            totalReviews: 246,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Nykaa Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your Nykaa account management service include?",
-            answer:
-              "Our comprehensive Nykaa account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, and performance analytics specific to beauty and wellness products. We provide dedicated account managers who ensure your Nykaa business operates smoothly.",
-            keywords: [
-              "nykaa account management services",
-              "account management nykaa",
+
+        servicesConfig: {
+            title: "Professional Nykaa Brand Documentation Services",
+            services: [
+                {
+                    iconName: "Book",
+                    title: "Brand Guidelines Documentation",
+                    blogLink: "/blog/Creating-Effective-Nykaa-Brand-Guidelines",
+                    description: "Comprehensive brand guidelines documentation services ensuring consistency across your Nykaa presence:",
+                    features: [
+                        {
+                            subtitle: "Visual Identity Documentation",
+                            points: [
+                                "Logo usage and placement guidelines",
+                                "Brand color palette documentation",
+                                "Typography and image style guides"
+                            ]
+                        },
+                        {
+                            subtitle: "Brand Voice Documentation",
+                            points: [
+                                "Tone of voice guidelines",
+                                "Product description templates",
+                                "Communication style guides"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "ClipboardCheck",
+                    title: "Product Documentation",
+                    blogLink: "/blog/Nykaa-Product-Documentation-Best-Practices",
+                    description: "Detailed product documentation services for your beauty and wellness range:",
+                    features: [
+                        {
+                            subtitle: "Technical Documentation",
+                            points: [
+                                "Product specifications documentation",
+                                "Ingredient documentation",
+                                "Usage instructions documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Marketing Documentation",
+                            points: [
+                                "Product benefit documentation",
+                                "Claims documentation",
+                                "Marketing material guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Compliance Documentation",
+                    blogLink: "/blog/Nykaa-Compliance-Documentation-Guide",
+                    description: "Complete compliance documentation management for your beauty brand:",
+                    features: [
+                        {
+                            subtitle: "Regulatory Documentation",
+                            points: [
+                                "Safety assessment documentation",
+                                "Certification documentation",
+                                "Legal compliance documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Quality Documentation",
+                            points: [
+                                "Quality control procedures",
+                                "Testing documentation",
+                                "Batch documentation"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Documentation Audit & Planning",
+                    description: "Comprehensive review of existing documentation and development of documentation strategy.",
+                    details: [
+                        "Current documentation assessment",
+                        "Gap analysis",
+                        "Documentation needs identification",
+                        "Strategy development",
+                        "Timeline planning"
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Creation",
+                    description: "Development of all required brand and product documentation.",
+                    details: [
+                        "Brand guidelines creation",
+                        "Product documentation development",
+                        "Compliance documentation preparation",
+                        "Quality assurance review",
+                        "Stakeholder approval"
+                    ]
+                },
+                {
+                    iconName: "Upload",
+                    title: "Documentation Implementation",
+                    description: "Integration of documentation into Nykaa platform and brand operations.",
+                    details: [
+                        "Documentation upload",
+                        "System integration",
+                        "Team training",
+                        "Process implementation",
+                        "Documentation distribution"
+                    ]
+                },
+                {
+                    iconName: "RefreshCw",
+                    title: "Maintenance & Updates",
+                    description: "Ongoing documentation management and updates.",
+                    details: [
+                        "Regular documentation review",
+                        "Update implementation",
+                        "Compliance monitoring",
+                        "Version control",
+                        "Change management"
+                    ]
+                }
+            ]
+        },
+
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Client Success", "200+ Satisfied Brands"],
+                    className: "bg-orange-100 text-orange-600"
+                },
+                title: "Trusted by Leading Beauty Brands on Nykaa",
+                description: "See why hundreds of beauty brands trust us with their documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Anjali Mehta",
+                    company: "Pure Herbals",
+                    rating: 5,
+                    review: "Technovita Solution revolutionized our brand documentation. Their attention to detail and understanding of Nykaa's requirements helped us achieve perfect compliance scores.",
+                    position: "Documentation Manager",
+                    location: "Mumbai"
+                },
+                {
+                    name: "Deepak Verma",
+                    company: "Skin Science",
+                    rating: 5,
+                    review: "The documentation services provided by Technovita are exceptional. They helped us create comprehensive product documentation that enhanced our brand credibility on Nykaa.",
+                    position: "Brand Director",
+                    location: "Delhi"
+                },
+                {
+                    name: "Meera Reddy",
+                    company: "Ayur Beauty",
+                    rating: 5,
+                    review: "Outstanding documentation services! Their expertise in beauty industry documentation requirements saved us countless hours and ensured our complete compliance.",
+                    position: "Operations Head",
+                    location: "Bangalore"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Nykaa account management agency improve my sales?",
-            answer:
-              "As a specialized Nykaa account management agency, we implement beauty industry-specific strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing promotional campaigns, and enhancing customer engagement. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "nykaa account management agency",
-              "nykaa seller account management",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question: "What makes your Nykaa Seller Portal management unique?",
-            answer:
-              "Our Nykaa Seller Portal management stands out through our comprehensive approach to beauty and wellness e-commerce. We combine technical expertise with beauty industry insights, including automated inventory management, advanced analytics reporting, and strategic pricing optimization specific to beauty products.",
-            keywords: [
-              "nykaa seller portal management",
-              "seller portal management",
-            ],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.8,
+                    totalReviews: 245,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.9,
+                    totalReviews: 312,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 189,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+
+        faqConfig: {
+            title: "Nykaa Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What types of documentation do you provide for Nykaa brands?",
+                    answer: "Our documentation services cover all aspects of brand presence on Nykaa, including brand guidelines, product specifications, compliance documentation, marketing materials, and technical documentation. We ensure all documentation meets Nykaa's requirements and industry standards.",
+                    keywords: ["nykaa documentation", "brand documentation"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure documentation compliance?",
+                    answer: "We maintain strict quality control processes and stay updated with Nykaa's documentation requirements. Our team regularly reviews and updates documentation to ensure continued compliance and accuracy.",
+                    keywords: ["documentation compliance", "quality control"]
+                },
+                {
+                    iconName: "RefreshCw",
+                    question: "How often is documentation updated?",
+                    answer: "We conduct regular documentation reviews and updates based on Nykaa's requirement changes, product updates, and brand evolution. Our team proactively monitors for any needed updates and implements them promptly.",
+                    keywords: ["documentation updates", "maintenance"]
+                }
+            ]
+        }
     },
     myntra: {
-      platform: "myntra",
-      title: "Myntra Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert Myntra Account Management Services",
-      metaDescription:
-        "Transform your Myntra business with our dedicated account managers and proven strategies. Expert Myntra seller account management services.",
-      metaKeywords:
-        "myntra account management services, myntra seller account management, myntra account manager, myntra seller registration, myntra brand registration",
-      heroConfig: {
-        badge: {
-          text: "Myntra Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "myntra",
+        title: "Myntra Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Myntra Brand Documentation Services",
+        metaDescription: "Expert Myntra brand documentation services helping fashion brands establish and grow their presence. Complete documentation support for Myntra sellers.",
+        metaKeywords: "myntra brand documentation, myntra brand registration documents, myntra seller documentation, myntra compliance documents, myntra brand approval",
+
+        heroConfig: {
+            badge: {
+                text: "Documentation Experts since 2018",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Myntra Brand Documentation & Compliance Services",
+            description: [
+                "Navigating Myntra's brand documentation requirements can be complex and time-consuming. At Technovita Solution, we streamline the entire documentation process, ensuring your fashion brand meets all Myntra's compliance standards and requirements.",
+                "Our documentation experts handle everything from initial brand registration paperwork to ongoing compliance updates. We ensure your documentation is always accurate, complete, and submitted on time, preventing any compliance-related business disruptions.",
+                "With years of experience in Myntra brand documentation, we understand the nuances of different product categories and their specific requirements. Our team stays updated with Myntra's latest documentation policies to keep your brand compliant and thriving."
+            ],
+            stats: [
+                { label: "Successful Brand Registrations", value: "180+" },
+                { label: "Documentation Success Rate", value: "99%" },
+                { label: "Average Approval Time", value: "7 Days" }
+            ]
         },
-        mainHeading: "Myntra Seller Account Management Services",
-        description: [
-          "Running a Myntra business can feel overwhelming. At Technovita Solution, we take the complexity out of Myntra selling. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your Myntra journey smooth and profitable.",
-          "Think of us as your dedicated Myntra team. We manage your Seller Portal, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified Myntra experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on Myntra, our experienced account managers at Technovita Solution know exactly what it takes to grow your fashion business. We've helped hundreds of sellers across all categories increase their sales and build sustainable Myntra businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "250+" },
-          { label: "Retention Rate", value: "95%" },
-          { label: "Monthly Sales", value: "₹25M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "250+",
+
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "180+"
+            },
+            title: "Why Choose TechnovitaSolution for Myntra Brand Documentation",
+            description: "In the complex world of e-commerce compliance, proper documentation can make or break your Myntra success. Our specialized documentation services ensure your brand maintains perfect compliance while focusing on growth.",
+            features: [
+                {
+                    title: "Documentation Expertise",
+                    description: "Specialized team with deep knowledge of Myntra's documentation requirements and compliance standards."
+                },
+                {
+                    title: "Fast Processing",
+                    description: "Streamlined documentation processes that reduce approval times and get your brand live faster."
+                },
+                {
+                    title: "Complete Compliance",
+                    description: "Comprehensive documentation management ensuring your brand stays compliant with all Myntra policies."
+                },
+                {
+                    title: "Ongoing Support",
+                    description: "Continuous documentation monitoring and updates to maintain perfect compliance scores."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Myntra Success",
-        description:
-          "In today's competitive fashion e-commerce landscape, mastering Myntra's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of Myntra's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing Myntra seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "95% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert Myntra account management services focus on developing comprehensive growth strategies tailored to your fashion business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the Myntra marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated Myntra seller account management partner, we ensure your account stays healthy and compliant with Myntra's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our Myntra account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your Myntra business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our Myntra account management services, you get a dedicated team of specialists who understand your fashion business inside and out. We act as an extension of your team, managing every aspect of your Myntra presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Myntra Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink:
-              "/blog/The-Ultimate-Guide-to-Myntra-Product-Listing-Optimization",
-            description:
-              "Transform your Myntra presence with our expert product listing optimization services. Our comprehensive approach ensures your fashion products not only rank well but convert browsers into buyers:",
+
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Fashion-focused product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Style and fit details that sell",
-                  "Material and care information optimization",
-                  "Competitor analysis and differentiation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Portal Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-myntra",
-            description:
-              "As your trusted Myntra account management agency, we provide comprehensive account setup and optimization services:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Portal configuration",
-                  "Fashion category optimization",
-                  "Integration of marketing and promotion tools",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Myntra-Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our Myntra seller account management services include advanced keyword research that drives organic traffic:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Fashion-specific keyword analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Enhanced Content Creation & Myntra Copywriting",
-            blogLink: "/blog/Content-Creation-Myntra-Copywriting-Guide",
-            description:
-              "Elevate your fashion brand presence with our professional Myntra account management services focused on content:",
-            features: [
-              {
-                subtitle: "Enhanced Content Development",
-                points: [
-                  "Product page enhancement",
-                  "Brand story integration",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Fashion-focused product descriptions",
-                  "Style and fit highlighting",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Inventory & Fulfillment Management",
-            blogLink: "/blog/Myntra-Inventory-Fulfillment-Guide",
-            description:
-              "Our comprehensive Myntra seller account management includes expert fulfillment optimization:",
-            features: [
-              {
-                subtitle: "Inventory Operations",
-                points: [
-                  "Strategic stock management",
-                  "Size and color variant tracking",
-                  "Cost reduction strategies",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis",
-                  "Delivery performance monitoring",
-                  "Stock turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Protection & Growth",
-            blogLink: "/blog/Brand-Protection-on-Myntra",
-            description:
-              "Protect and enhance your fashion brand with our professional Myntra account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Brand registry management",
-                  "Product authenticity protection",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Fashion brand analytics utilization",
-                  "Enhanced content opportunities",
-                  "Brand visibility optimization",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Myntra Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our Myntra account management process begins with a thorough analysis of your current fashion presence. We identify immediate opportunities and develop a customized strategy aligned with your business goals.",
-            details: [
-              "Complete account health assessment",
-              "Fashion market analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted Myntra account management agency, we implement necessary optimizations across your entire account structure.",
-            details: [
-              "Fashion product listing optimization",
-              "Category-specific enhancement",
-              "Account settings refinement",
-              "Brand presence optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "We execute your customized growth strategy through targeted campaigns, inventory management, and brand presence enhancement.",
-            details: [
-              "Fashion marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Continuous monitoring of key performance indicators ensures we maintain momentum and quickly address challenges.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "250+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Myntra Sellers Across India",
-          description:
-            "See why hundreds of fashion brands choose Technovita Solution for their Myntra account management needs",
+                {
+                    iconName: "FileText",
+                    title: "Comprehensive Documentation Management",
+                    description: "Our expert team handles all aspects of your Myntra brand documentation, from initial submission to ongoing maintenance and updates."
+                },
+                {
+                    iconName: "ShieldCheck",
+                    title: "Compliance Monitoring",
+                    description: "Continuous monitoring of documentation requirements and proactive updates to maintain perfect compliance scores."
+                },
+                {
+                    iconName: "Clock",
+                    title: "Quick Turnaround",
+                    description: "Accelerated documentation processing with our streamlined systems and direct channels with Myntra support."
+                },
+                {
+                    iconName: "Users",
+                    title: "Dedicated Documentation Team",
+                    description: "Experienced documentation specialists assigned to your brand who understand your specific requirements."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Rahul Mehta",
-            company: "Fashion First India",
-            rating: 5,
-            review:
-              "Technovita Solution transformed our Myntra business. Their understanding of the fashion market helped us increase our sales by 180% in just 6 months. Their dedicated team is always responsive and proactive.",
-            position: "Brand Manager",
-            location: "Delhi",
-          },
-          {
-            name: "Sneha Reddy",
-            company: "Trendy Styles Co",
-            rating: 5,
-            review:
-              "We struggled with Myntra's complex policies before partnering with Technovita. Their expertise helped us become a top-rated seller in the western wear category. Exceptional service!",
-            position: "Business Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Arjun Singh",
-            company: "Fashion Hub",
-            rating: 5,
-            review:
-              "The expertise Technovita brings to Myntra selling is remarkable. They helped optimize our listings and inventory, resulting in a 140% increase in sales. Their fashion market knowledge is invaluable.",
-            position: "CEO",
-            location: "Bangalore",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.8,
-            totalReviews: 285,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.9,
-            totalReviews: 496,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.7,
-            totalReviews: 213,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Myntra Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your Myntra account management service include?",
-            answer:
-              "Our comprehensive Myntra account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, and performance analytics specific to fashion products. We provide dedicated account managers who ensure your Myntra business operates smoothly and efficiently.",
-            keywords: [
-              "myntra account management services",
-              "account management myntra",
+
+        servicesConfig: {
+            title: "Professional Myntra Brand Documentation Services",
+            services: [
+                {
+                    iconName: "FileCheck",
+                    title: "Brand Registration Documentation",
+                    blogLink: "/blog/Complete-Guide-to-Myntra-Brand-Registration-Documentation",
+                    description: "Expert assistance with all brand registration documentation requirements:",
+                    features: [
+                        {
+                            subtitle: "Registration Documents",
+                            points: [
+                                "Trademark documentation preparation",
+                                "Brand ownership verification",
+                                "Legal compliance documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Brand Identity Documents",
+                            points: [
+                                "Brand style guide preparation",
+                                "Product authentication documentation",
+                                "Brand story documentation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "FileShield",
+                    title: "Compliance Documentation",
+                    blogLink: "/blog/Myntra-Compliance-Documentation-Guide",
+                    description: "Comprehensive compliance documentation management:",
+                    features: [
+                        {
+                            subtitle: "Quality Compliance",
+                            points: [
+                                "Product quality certificates",
+                                "Safety compliance documents",
+                                "Testing reports documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Legal Compliance",
+                            points: [
+                                "Business registration documents",
+                                "Tax compliance certificates",
+                                "Import/export documentation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Product Documentation",
+                    blogLink: "/blog/Myntra-Product-Documentation-Requirements",
+                    description: "Detailed product documentation services:",
+                    features: [
+                        {
+                            subtitle: "Product Specifications",
+                            points: [
+                                "Material composition documents",
+                                "Size chart documentation",
+                                "Care label documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Quality Assurance",
+                            points: [
+                                "Quality test reports",
+                                "Product authenticity certificates",
+                                "Manufacturing compliance documents"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "FileSearch",
+                    title: "Catalog Documentation",
+                    blogLink: "/blog/Myntra-Catalog-Documentation-Best-Practices",
+                    description: "Professional catalog documentation services:",
+                    features: [
+                        {
+                            subtitle: "Image Documentation",
+                            points: [
+                                "Product photography guidelines",
+                                "Image quality requirements",
+                                "Style guide compliance"
+                            ]
+                        },
+                        {
+                            subtitle: "Content Documentation",
+                            points: [
+                                "Product description standards",
+                                "Technical specification formats",
+                                "Category-specific requirements"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "FileSearch",
+                    title: "Documentation Assessment",
+                    description: "Thorough analysis of your current documentation status and requirements.",
+                    details: [
+                        "Brand documentation audit",
+                        "Compliance gap analysis",
+                        "Required document checklist",
+                        "Timeline planning",
+                        "Priority assessment"
+                    ]
+                },
+                {
+                    iconName: "FilePlus",
+                    title: "Documentation Preparation",
+                    description: "Expert preparation and organization of all required documents.",
+                    details: [
+                        "Document collection",
+                        "Format standardization",
+                        "Compliance verification",
+                        "Quality assurance",
+                        "System organization"
+                    ]
+                },
+                {
+                    iconName: "FileUp",
+                    title: "Submission & Follow-up",
+                    description: "Professional handling of document submission and approval process.",
+                    details: [
+                        "Systematic submission",
+                        "Progress tracking",
+                        "Communication management",
+                        "Query resolution",
+                        "Approval monitoring"
+                    ]
+                },
+                {
+                    iconName: "FileCheck",
+                    title: "Maintenance & Updates",
+                    description: "Ongoing documentation management and compliance monitoring.",
+                    details: [
+                        "Regular audits",
+                        "Update scheduling",
+                        "Compliance monitoring",
+                        "Record keeping",
+                        "System maintenance"
+                    ]
+                }
+            ]
+        },
+
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Client Success", "180+ Brands Registered"],
+                    className: "bg-blue-100 text-blue-600"
+                },
+                title: "Trusted by Leading Fashion Brands Across India",
+                description: "See why fashion brands choose us for their Myntra documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Priya Sharma",
+                    company: "Ethnic Elegance",
+                    rating: 5,
+                    review: "Technovita Solution made our brand registration process seamless. Their documentation expertise saved us weeks of work and potential compliance issues.",
+                    position: "Director",
+                    location: "Mumbai"
+                },
+                {
+                    name: "Vikram Kapoor",
+                    company: "Urban Style Co",
+                    rating: 5,
+                    review: "Their documentation team's attention to detail is impressive. They handled our entire compliance documentation professionally and efficiently.",
+                    position: "CEO",
+                    location: "Delhi"
+                },
+                {
+                    name: "Anjali Desai",
+                    company: "Fashion Forward",
+                    rating: 5,
+                    review: "Getting our documentation right was crucial for our brand. Technovita's expertise made the entire process smooth and worry-free.",
+                    position: "Operations Head",
+                    location: "Bangalore"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Myntra account management agency improve my sales?",
-            answer:
-              "As a specialized Myntra account management agency, we implement fashion industry-specific strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing promotional campaigns, and enhancing customer engagement. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "myntra account management agency",
-              "myntra seller account management",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question: "What is the process for Myntra brand registration?",
-            answer:
-              "Myntra brand registration involves several steps including trademark verification, documentation submission, and brand identity validation. Our team assists with preparing all necessary documents, submitting applications, and following up with Myntra's brand registration team to ensure a smooth process.",
-            keywords: ["myntra brand registration", "register brand on myntra"],
-          },
-          {
-            iconName: "HelpCircle",
-            question: "How can I contact Myntra customer support?",
-            answer:
-              "Myntra customer support can be reached through multiple channels: their support number (1800-419-0065), email (support@myntra.com), or their online Help Center. As your account managers, we also provide dedicated support for all your Myntra-related queries.",
-            keywords: ["myntra customer support", "myntra help center"],
-          },
-          {
-            iconName: "AlertTriangle",
-            question: "What should I do if my Myntra account gets suspended?",
-            answer:
-              "If your account faces suspension, our team immediately analyzes the cause and develops a resolution plan. We help prepare appeal documentation, implement necessary corrections, and work with Myntra support to reinstate your account quickly.",
-            keywords: ["myntra account suspension", "myntra suspension help"],
-          },
-          {
-            iconName: "Image",
-            question:
-              "Do you provide product image editing services for Myntra listings?",
-            answer:
-              "Yes, we offer professional product image editing services specifically optimized for Myntra's requirements. This includes background removal, color correction, size optimization, and creating lifestyle shots that meet Myntra's guidelines.",
-            keywords: [
-              "myntra product image editing",
-              "product photography myntra",
-            ],
-          },
-          {
-            iconName: "Package",
-            question: "How do you handle Myntra inventory management?",
-            answer:
-              "Our inventory management service includes real-time stock monitoring, demand forecasting, size and color variant tracking, and automated reordering systems. We help optimize your inventory levels to prevent stockouts while minimizing storage costs.",
-            keywords: ["myntra inventory management", "stock management myntra"],
-          },
-          {
-            iconName: "Bell",
-            question: "What are your advertising management services for Myntra?",
-            answer:
-              "Our advertising management services include campaign strategy development, budget optimization, targeted ad placement, and performance tracking. We create and manage sponsored product campaigns, brand story ads, and promotional campaigns while continuously optimizing for the best ROI.",
-            keywords: [
-              "myntra advertisement management",
-              "myntra marketing services",
-            ],
-          },
-          {
-            iconName: "Users",
-            question: "How do I register as a seller on Myntra?",
-            answer:
-              "The registration process involves several steps: submitting business documentation, GST registration, bank account details, and product category approval. Our team guides you through each step, helps prepare all required documents, and ensures a smooth registration process.",
-            keywords: [
-              "register as seller on myntra",
-              "myntra seller registration",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            question: "What strategies do you use to boost sales on Myntra?",
-            answer:
-              "We employ multiple strategies including search optimization, competitive pricing, strategic promotions, inventory management, and targeted advertising. Our approach is data-driven and tailored to your specific product category and target audience.",
-            keywords: ["myntra sales boost", "increase myntra sales"],
-          },
-          {
-            iconName: "Clock",
-            question: "How long does it take to see results from your services?",
-            answer:
-              "While initial optimizations show results within weeks, significant improvements in sales and ranking typically become evident within 2-3 months. We provide regular performance reports and adjust strategies based on data-driven insights.",
-            keywords: ["myntra performance improvement", "myntra sales results"],
-          },
-          {
-            iconName: "DollarSign",
-            question: "What are Myntra's commission rates and fee structure?",
-            answer:
-              "Myntra's commission structure varies by category and price point, typically ranging from 15% to 30%. We help optimize your pricing strategy to maintain profitability while staying competitive, and provide guidance on all applicable fees and charges.",
-            keywords: ["myntra commission rates", "myntra seller fees"],
-          },
-          {
-            iconName: "Truck",
-            question: "How does Myntra's fulfillment process work?",
-            answer:
-              "Myntra offers both self-shipping and Myntra-fulfilled options. We help you choose the most cost-effective fulfillment method, manage inventory across multiple locations, and optimize delivery performance to maintain high seller metrics.",
-            keywords: ["myntra fulfillment", "myntra shipping"],
-          },
-          {
-            iconName: "Shield",
-            question: "How do you handle returns and customer complaints?",
-            answer:
-              "We manage the entire returns process, from monitoring return rates to analyzing causes and implementing preventive measures. Our team handles customer complaints promptly, maintains communication records, and works to improve customer satisfaction metrics.",
-            keywords: ["myntra returns management", "myntra customer complaints"],
-          },
-          {
-            iconName: "Award",
-            question:
-              "What makes your Myntra account management services different from others?",
-            answer:
-              "Our services stand out through our dedicated account managers, data-driven approach, fashion industry expertise, and proven track record. We provide comprehensive support, transparent reporting, and customized strategies tailored to your specific business goals.",
-            keywords: ["myntra management experts", "best myntra services"],
-          },
-          {
-            iconName: "MessageCircle",
-            question: "How do you handle customer support for Myntra sellers?",
-            answer:
-              "We provide dedicated customer support assistance, helping manage buyer messages, returns, and issues. Our team ensures timely responses to customer queries, maintains high seller metrics, and handles escalations professionally.",
-            keywords: [
-              "myntra customer support services",
-              "myntra seller support",
-            ],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.9,
+                    totalReviews: 195,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.8,
+                    totalReviews: 342,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 167,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+
+        faqConfig: {
+            title: "Myntra Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What documents are required for Myntra brand registration?",
+                    answer: "Myntra brand registration requires several key documents including trademark registration, GST certificate, business registration documents, brand logo files, product images, and category-specific compliance certificates. Our team helps prepare and organize all required documentation.",
+                    keywords: ["myntra brand registration documents", "brand registration requirements"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the documentation process take?",
+                    answer: "The typical documentation process takes 7-10 business days, depending on your brand's complexity and documentation readiness. Our streamlined process helps expedite approvals while ensuring compliance.",
+                    keywords: ["myntra documentation timeline", "brand approval time"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure documentation compliance?",
+                    answer: "We maintain a comprehensive compliance checklist, conduct regular audits, and stay updated with Myntra's latest requirements. Our team proactively monitors and updates documentation to maintain perfect compliance.",
+                    keywords: ["myntra compliance documents", "documentation compliance"]
+                }
+            ]
+        }
     },
     meesho: {
-      platform: "meesho",
-      title: "Meesho Account Management Services",
-      metaTitle:
-        "Technovita Solution | Professional Meesho Account Management Services",
-      metaDescription:
-        "Boost your Meesho business with our expert account management services. Get dedicated support, listing optimization, and proven growth strategies.",
-      metaKeywords:
-        "meesho account management services, meesho seller account management, meesho supplier panel, meesho seller registration, meesho business growth, meesho catalog optimization, meesho supplier success",
-      heroConfig: {
-        badge: {
-          text: "Meesho Management Experts since 2019",
-          company: "Technovita Solution",
+        platform: "meesho",
+        title: "Meesho Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Meesho Brand Documentation Services",
+        metaDescription: "Transform your Meesho presence with expert brand documentation services. Get comprehensive brand guidelines, story development, and visual identity creation.",
+        metaKeywords: "meesho brand documentation, meesho brand guidelines, meesho brand story, meesho visual identity, meesho brand management, meesho brand development, meesho branding services",
+        heroConfig: {
+            badge: {
+                text: "Brand Documentation Experts since 2019",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Meesho Brand Documentation & Development Services",
+            description: [
+                "Building a strong brand identity on Meesho requires consistent documentation, compelling storytelling, and strategic positioning. At Technovita Solution, we provide comprehensive brand documentation services that help sellers establish and maintain a professional brand presence.",
+                "Our dedicated team creates detailed brand guidelines, develops compelling brand stories, and ensures consistent visual identity across all touchpoints. With certified branding experts who understand Meesho's unique marketplace dynamics, we help your brand stand out and build lasting customer trust.",
+                "Whether you're launching a new brand or evolving an existing one, our experienced brand strategists understand how to create documentation that resonates with both resellers and end customers on India's fastest-growing social commerce platform."
+            ],
+            stats: [
+                { label: "Brands Developed", value: "150+" },
+                { label: "Brand Success Rate", value: "95%" },
+                { label: "Average Brand Growth", value: "180%" }
+            ]
         },
-        mainHeading: "Meesho Seller Account Management Services",
-        description: [
-          "Managing a successful Meesho business requires expertise, time, and constant attention. At Technovita Solution, we provide comprehensive Meesho account management services that handle everything from daily operations to strategic growth planning.",
-          "Our dedicated team manages your Supplier Panel, optimizes product listings, handles inventory management, and ensures competitive pricing. With certified Meesho experts monitoring marketplace changes and implementing data-driven strategies, we help your products achieve better visibility and higher sales.",
-          "Whether you're new to Meesho or an established seller, our experienced account managers understand the nuances of growing a successful business on India's fastest-growing social commerce platform. We've helped hundreds of sellers across categories scale their Meesho presence and build sustainable businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "200+" },
-          { label: "Retention Rate", value: "92%" },
-          { label: "Monthly Sales", value: "₹20M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "200+",
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "150+"
+            },
+            title: "Why Choose TechnovitaSolution for Your Meesho Brand Documentation",
+            description: "In the competitive Meesho marketplace, strong brand documentation sets you apart and builds trust with resellers and customers. Our comprehensive brand documentation services are designed to establish your unique identity while driving sustainable growth.",
+            features: [
+                {
+                    title: "Brand Strategy Expertise",
+                    description: "Strategic brand development approach backed by deep understanding of Meesho's social commerce ecosystem."
+                },
+                {
+                    title: "Professional Documentation",
+                    description: "Comprehensive brand guidelines and documentation that ensure consistency across all touchpoints."
+                },
+                {
+                    title: "Visual Identity Development",
+                    description: "Creation of distinctive visual elements that help your brand stand out in the marketplace."
+                },
+                {
+                    title: "Proven Results",
+                    description: "95% success rate in establishing strong brand presence with measurable growth in brand metrics."
+                }
+            ]
         },
-        title: "Why Choose TechnovitaSolution for Your Meesho Success",
-        description:
-          "In the competitive world of social commerce, succeeding on Meesho requires specialized knowledge and proven strategies. Our comprehensive account management services are designed to navigate Meesho's unique ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Dedicated Management",
-            description:
-              "Experienced account managers with proven expertise in optimizing Meesho seller performance and growth.",
-          },
-          {
-            title: "Analytics-Driven Approach",
-            description:
-              "Advanced data analytics and market insights to make informed decisions and maintain competitive advantage.",
-          },
-          {
-            title: "Comprehensive Support",
-            description:
-              "Complete account management including catalog optimization, inventory planning, and order fulfillment.",
-          },
-          {
-            title: "Proven Success",
-            description:
-              "92% client retention rate with consistent improvement in sales and marketplace metrics.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Development",
-            description:
-              "Our expert Meesho account management services focus on creating comprehensive growth strategies tailored to your business objectives. We analyze market trends, competition, and consumer behavior to develop a roadmap for sustainable success on the Meesho marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Health Monitoring",
-            description:
-              "As your dedicated Meesho seller account management partner, we ensure your account maintains optimal health and compliance with Meesho's policies. Our proactive approach prevents issues before they impact your business.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our Meesho account managing experts use advanced analytics tools to track crucial performance metrics. We provide detailed insights into sales patterns, conversion rates, and marketing effectiveness to optimize your strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Expert Account Team",
-            description:
-              "When you choose our Meesho account management services, you get a specialized team that understands your business goals. We work as an extension of your team, managing every aspect of your Meesho presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Premium Meesho Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Catalog Optimization",
-            blogLink: "/blog/Complete-Guide-to-Meesho-Catalog-Optimization",
-            description:
-              "Enhance your Meesho presence with our expert catalog optimization services. Our comprehensive approach ensures your products achieve maximum visibility and conversion:",
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Product Title Optimization",
-                points: [
-                  "Strategic keyword integration for visibility",
-                  "Compelling titles that drive clicks",
-                  "Mobile-first optimization approach",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Detailed product specifications",
-                  "Clear sizing and material information",
-                  "Competitive advantage highlighting",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Supplier Panel Management",
-            blogLink: "/blog/Meesho-Supplier-Panel-Complete-Guide",
-            description:
-              "As your trusted Meesho account management agency, we provide comprehensive supplier panel optimization services:",
-            features: [
-              {
-                subtitle: "Panel Setup Excellence",
-                points: [
-                  "Professional supplier panel configuration",
-                  "Category optimization",
-                  "Marketing tools integration",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Metrics monitoring and improvement",
-                  "Account health maintenance",
-                  "Regular performance audits",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Keyword & Market Research",
-            blogLink: "/blog/Meesho-Keyword-Research-Strategy-Guide",
-            description:
-              "Our Meesho seller account management services include comprehensive market research:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Category-specific keyword analysis",
-                  "Competitor research and positioning",
-                  "Market trend identification",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement",
-                  "Search visibility optimization",
-                  "Performance tracking and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Product Content Creation",
-            blogLink: "/blog/Meesho-Product-Content-Creation-Guide",
-            description:
-              "Elevate your product presence with our professional content creation services:",
-            features: [
-              {
-                subtitle: "Content Development",
-                points: [
-                  "Engaging product descriptions",
-                  "Category-specific optimization",
-                  "Mobile-optimized content",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Compelling product stories",
-                  "Feature highlighting",
-                  "Brand voice consistency",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Inventory & Order Management",
-            blogLink: "/blog/Meesho-Inventory-Management-Guide",
-            description:
-              "Our comprehensive management includes expert inventory optimization:",
-            features: [
-              {
-                subtitle: "Inventory Operations",
-                points: [
-                  "Stock level optimization",
-                  "Variant management",
-                  "Cost optimization strategies",
-                ],
-              },
-              {
-                subtitle: "Order Processing",
-                points: [
-                  "Efficient order fulfillment",
-                  "Return rate optimization",
-                  "Customer satisfaction improvement",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Business Protection & Growth",
-            blogLink: "/blog/Business-Protection-on-Meesho",
-            description:
-              "Protect and grow your business with our professional management services:",
-            features: [
-              {
-                subtitle: "Business Protection",
-                points: [
-                  "Policy compliance management",
-                  "Quality control measures",
-                  "Risk management strategies",
-                ],
-              },
-              {
-                subtitle: "Growth Strategies",
-                points: [
-                  "Market expansion planning",
-                  "Category diversification",
-                  "Performance optimization",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Meesho Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Analysis & Strategy Planning",
-            description:
-              "Our Meesho account management process begins with a comprehensive analysis of your current business status. We identify opportunities and develop a tailored strategy aligned with your goals.",
-            details: [
-              "Account health assessment",
-              "Market opportunity analysis",
-              "Performance metrics review",
-              "Growth potential identification",
-              "Strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization",
-            description:
-              "As your trusted Meesho account management agency, we implement comprehensive optimizations across your account.",
-            details: [
-              "Catalog optimization",
-              "Category management",
-              "Price optimization",
-              "Listing enhancement",
-              "Policy compliance",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Implementation",
-            description:
-              "We execute your customized growth strategy through targeted campaigns and business enhancement.",
-            details: [
-              "Marketing strategy execution",
-              "Inventory optimization",
-              "Order management",
-              "Performance improvement",
-              "Market expansion",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring",
-            description:
-              "Continuous monitoring ensures sustained growth and quick problem resolution.",
-            details: [
-              "Real-time monitoring",
-              "Performance analysis",
-              "Competition tracking",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Success Stories", "200+ Satisfied Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Meesho Sellers Across India",
-          description:
-            "See why hundreds of businesses choose Technovita Solution for their Meesho account management needs",
+                {
+                    iconName: "Book",
+                    title: "Brand Guidelines Creation",
+                    description: "Our brand documentation services focus on developing comprehensive guidelines that ensure consistency across all brand touchpoints. We create detailed documentation covering visual elements, tone of voice, and brand application guidelines."
+                },
+                {
+                    iconName: "Palette",
+                    title: "Visual Identity System",
+                    description: "As your brand documentation partner, we develop complete visual identity systems including logo usage, color palettes, typography, and design elements specific to Meesho's platform requirements."
+                },
+                {
+                    iconName: "MessageSquare",
+                    title: "Brand Story Development",
+                    description: "Our brand experts craft compelling brand stories that resonate with your target audience. We document your brand's purpose, values, and unique selling propositions in a way that connects with customers."
+                },
+                {
+                    iconName: "Layout",
+                    title: "Documentation Management",
+                    description: "Our team maintains and updates all brand documentation, ensuring it evolves with your business while maintaining consistency and professional standards."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Amit Kumar",
-            company: "Trendy Store India",
-            rating: 5,
-            review:
-              "Technovita Solution revolutionized our Meesho business. Their understanding of the platform helped us increase sales by 150% in just 4 months. Their team is always available and proactive.",
-            position: "Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Priya Sharma",
-            company: "Fashion Hub",
-            rating: 5,
-            review:
-              "We were struggling with Meesho's policies before partnering with Technovita. Their expertise helped us become a top seller in our category. Excellent service!",
-            position: "Business Owner",
-            location: "Delhi",
-          },
-          {
-            name: "Rajesh Patel",
-            company: "Style Studio",
-            rating: 5,
-            review:
-              "The expertise Technovita brings to Meesho selling is exceptional. They helped optimize our listings and inventory, resulting in a 120% increase in sales. Their market knowledge is invaluable.",
-            position: "Director",
-            location: "Ahmedabad",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.7,
-            totalReviews: 245,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.8,
-            totalReviews: 428,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.6,
-            totalReviews: 189,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Meesho Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your Meesho account management service include?",
-            answer:
-              "Our comprehensive Meesho account management services cover end-to-end supplier operations on the platform. This includes catalog optimization, pricing strategy development, order fulfillment management, reseller network expansion, and performance analytics. Our dedicated account managers specialize in Meesho's unique social commerce model to ensure your business thrives on the platform.",
-            keywords: [
-              "meesho account management services",
-              "account management meesho",
+        servicesConfig: {
+            title: "Premium Meesho Brand Documentation Services In India",
+            services: [
+                {
+                    iconName: "BookOpen",
+                    title: "Brand Guidelines Documentation",
+                    blogLink: "/blog/Complete-Guide-to-Meesho-Brand-Guidelines",
+                    description: "Comprehensive documentation of your brand's core elements and usage guidelines:",
+                    features: [
+                        {
+                            subtitle: "Core Brand Elements",
+                            points: [
+                                "Brand vision and mission documentation",
+                                "Value proposition definition",
+                                "Brand personality development"
+                            ]
+                        },
+                        {
+                            subtitle: "Usage Guidelines",
+                            points: [
+                                "Logo application standards",
+                                "Color palette specifications",
+                                "Typography guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Image",
+                    title: "Visual Identity Documentation",
+                    blogLink: "/blog/Meesho-Visual-Identity-Guide",
+                    description: "Complete documentation of your brand's visual system:",
+                    features: [
+                        {
+                            subtitle: "Design Elements",
+                            points: [
+                                "Logo variations and usage",
+                                "Color system documentation",
+                                "Typography specifications"
+                            ]
+                        },
+                        {
+                            subtitle: "Application Guidelines",
+                            points: [
+                                "Product photography standards",
+                                "Packaging design guidelines",
+                                "Marketing material templates"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Pen",
+                    title: "Brand Story Documentation",
+                    blogLink: "/blog/Crafting-Your-Meesho-Brand-Story",
+                    description: "Professional documentation of your brand narrative:",
+                    features: [
+                        {
+                            subtitle: "Narrative Development",
+                            points: [
+                                "Brand origin story",
+                                "Mission and values",
+                                "Unique selling propositions"
+                            ]
+                        },
+                        {
+                            subtitle: "Communication Guidelines",
+                            points: [
+                                "Tone of voice documentation",
+                                "Key message framework",
+                                "Brand vocabulary guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Content Style Guide",
+                    blogLink: "/blog/Meesho-Content-Style-Guide",
+                    description: "Detailed documentation of content standards:",
+                    features: [
+                        {
+                            subtitle: "Writing Guidelines",
+                            points: [
+                                "Product description standards",
+                                "Marketing copy guidelines",
+                                "Communication templates"
+                            ]
+                        },
+                        {
+                            subtitle: "Style Standards",
+                            points: [
+                                "Grammar and formatting rules",
+                                "Brand terminology guide",
+                                "Content tone guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Package",
+                    title: "Product Presentation Guidelines",
+                    blogLink: "/blog/Meesho-Product-Presentation-Guide",
+                    description: "Comprehensive product documentation standards:",
+                    features: [
+                        {
+                            subtitle: "Visual Standards",
+                            points: [
+                                "Photography guidelines",
+                                "Product styling standards",
+                                "Image editing specifications"
+                            ]
+                        },
+                        {
+                            subtitle: "Content Standards",
+                            points: [
+                                "Product description templates",
+                                "Specification formats",
+                                "Feature presentation guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Documentation",
+                    blogLink: "/blog/Protecting-Your-Brand-on-Meesho",
+                    description: "Documentation for brand protection and compliance:",
+                    features: [
+                        {
+                            subtitle: "Protection Guidelines",
+                            points: [
+                                "Trademark usage documentation",
+                                "Copyright standards",
+                                "Brand asset protection"
+                            ]
+                        },
+                        {
+                            subtitle: "Compliance Standards",
+                            points: [
+                                "Platform policy documentation",
+                                "Quality control guidelines",
+                                "Customer service standards"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Brand Analysis & Strategy",
+                    description: "Comprehensive analysis of your current brand status and documentation needs.",
+                    details: [
+                        "Brand audit completion",
+                        "Market positioning analysis",
+                        "Documentation needs assessment",
+                        "Strategy development",
+                        "Timeline planning"
+                    ]
+                },
+                {
+                    iconName: "Edit",
+                    title: "Documentation Development",
+                    description: "Creation of comprehensive brand documentation and guidelines.",
+                    details: [
+                        "Guidelines creation",
+                        "Visual identity documentation",
+                        "Brand story development",
+                        "Content standards establishment",
+                        "Template creation"
+                    ]
+                },
+                {
+                    iconName: "Check",
+                    title: "Implementation Support",
+                    description: "Assistance with implementing brand guidelines across all touchpoints.",
+                    details: [
+                        "Team training",
+                        "Implementation oversight",
+                        "Quality control",
+                        "Feedback collection",
+                        "Refinement process"
+                    ]
+                },
+                {
+                    iconName: "Refresh",
+                    title: "Ongoing Management",
+                    description: "Continuous monitoring and updating of brand documentation.",
+                    details: [
+                        "Regular reviews",
+                        "Documentation updates",
+                        "Performance tracking",
+                        "Brand evolution management",
+                        "Compliance monitoring"
+                    ]
+                }
+            ]
+        },
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Success Stories", "150+ Satisfied Brands"],
+                    className: "bg-orange-100 text-orange-600"
+                },
+                title: "Trusted by Leading Brands on Meesho",
+                description: "See why hundreds of businesses choose Technovita Solution for their brand documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Sneha Reddy",
+                    company: "Fashion Edge",
+                    rating: 5,
+                    review: "Technovita Solution transformed our brand presence on Meesho. Their comprehensive documentation has helped maintain consistency across all our product listings and marketing materials.",
+                    position: "Brand Manager",
+                    location: "Hyderabad"
+                },
+                {
+                    name: "Vikram Singh",
+                    company: "HomeStyle India",
+                    rating: 5,
+                    review: "The brand guidelines and documentation provided by Technovita have been instrumental in our growth. Our resellers now have a clear understanding of our brand standards.",
+                    position: "CEO",
+                    location: "Jaipur"
+                },
+                {
+                    name: "Meera Patel",
+                    company: "Ethnic Elegance",
+                    rating: 5,
+                    review: "Professional brand documentation services that delivered beyond our expectations. Our brand story and visual identity now truly stand out on Meesho.",
+                    position: "Marketing Director",
+                    location: "Surat"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Meesho account management agency improve my sales?",
-            answer:
-              "As Meesho management experts, we implement strategies tailored to the platform's social commerce nature. This includes optimizing product visibility for resellers, implementing competitive pricing strategies, managing bulk order fulfillment, and expanding your reseller network. We continuously analyze performance metrics and adjust strategies to maximize your reach and sales.",
-            keywords: [
-              "meesho account management agency",
-              "meesho supplier account management",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question: "What is the process for Meesho supplier registration?",
-            answer:
-              "Meesho supplier registration involves multiple steps including GST verification, bank account setup, business documentation submission, and category approval. Our team assists with document preparation, application submission, and coordination with Meesho's supplier onboarding team to ensure a smooth registration process.",
-            keywords: [
-              "meesho supplier registration",
-              "register as supplier on meesho",
-            ],
-          },
-          {
-            iconName: "HelpCircle",
-            question: "How can I contact Meesho supplier support?",
-            answer:
-              "Meesho supplier support can be accessed through their dedicated supplier panel, email support (suppliers@meesho.com), or their supplier helpline. As your account managers, we provide additional dedicated support for all your Meesho-related queries and issues.",
-            keywords: ["meesho supplier support", "meesho help center"],
-          },
-          {
-            iconName: "AlertTriangle",
-            question: "What should I do if my Meesho account gets blocked?",
-            answer:
-              "If your account faces any restrictions, our team immediately investigates the cause and develops a resolution strategy. We help prepare appeal documentation, implement necessary corrections, and work directly with Meesho's supplier support team to restore your account access quickly.",
-            keywords: ["meesho account blocked", "meesho account resolution"],
-          },
-          {
-            iconName: "Image",
-            question:
-              "Do you provide catalog creation services for Meesho listings?",
-            answer:
-              "Yes, we offer professional catalog creation services optimized for Meesho's requirements. This includes product photography, image editing, description writing, and specification optimization that aligns with Meesho's guidelines and appeals to resellers.",
-            keywords: ["meesho catalog creation", "product listing meesho"],
-          },
-          {
-            iconName: "Package",
-            question: "How do you handle Meesho inventory management?",
-            answer:
-              "Our inventory management service includes real-time stock tracking, bulk order management, demand forecasting, and automated reordering systems. We help optimize your inventory levels across different categories while ensuring efficient fulfillment of reseller orders.",
-            keywords: ["meesho inventory management", "stock management meesho"],
-          },
-          {
-            iconName: "Bell",
-            question:
-              "What marketing support do you provide for Meesho suppliers?",
-            answer:
-              "Our marketing support includes catalog promotion strategies, reseller network development, pricing optimization, and performance tracking. We help create attractive supplier scores, manage promotional campaigns, and implement strategies to increase reseller engagement.",
-            keywords: ["meesho marketing support", "meesho promotion services"],
-          },
-          {
-            iconName: "Users",
-            question: "How do you help expand my reseller network on Meesho?",
-            answer:
-              "We implement strategies to attract and retain active resellers, including optimizing catalog visibility, maintaining competitive margins, ensuring quick order processing, and maintaining high supplier ratings. Our team helps you build a loyal reseller base while continuously expanding your network.",
-            keywords: ["meesho reseller network", "expand meesho resellers"],
-          },
-          {
-            iconName: "BarChart",
-            question: "What strategies do you use to boost sales on Meesho?",
-            answer:
-              "We employ multiple strategies including catalog optimization, competitive pricing, reseller engagement, efficient order processing, and maintaining high supplier metrics. Our approach focuses on both increasing reseller adoption and maintaining high customer satisfaction.",
-            keywords: ["meesho sales boost", "increase meesho sales"],
-          },
-          {
-            iconName: "Clock",
-            question: "How long does it take to see results from your services?",
-            answer:
-              "Initial improvements in catalog visibility and reseller engagement typically show within 2-4 weeks. Significant sales improvements usually become evident within 2-3 months as your supplier metrics improve and reseller network expands. We provide regular performance reports and strategy adjustments.",
-            keywords: ["meesho performance timeline", "meesho sales results"],
-          },
-          {
-            iconName: "DollarSign",
-            question: "What are Meesho's commission rates and charges?",
-            answer:
-              "Meesho's commission structure varies by category and price point, typically ranging from 10% to 25%. We help optimize your pricing and category strategy to maximize profitability while maintaining competitive reseller margins, and provide guidance on all platform charges.",
-            keywords: ["meesho commission rates", "meesho supplier charges"],
-          },
-          {
-            iconName: "Truck",
-            question: "How does Meesho's shipping process work?",
-            answer:
-              "Meesho provides integrated shipping services through various courier partners. We help manage your shipping settings, optimize delivery timelines, handle bulk orders efficiently, and maintain high shipping performance metrics to ensure customer satisfaction.",
-            keywords: ["meesho shipping process", "meesho delivery management"],
-          },
-          {
-            iconName: "Shield",
-            question: "How do you handle returns and quality issues?",
-            answer:
-              "We manage the complete returns process, from monitoring return rates to analyzing causes and implementing quality control measures. Our team handles return requests promptly, maintains documentation, and works to improve your return metrics while preventing future issues.",
-            keywords: ["meesho returns management", "meesho quality control"],
-          },
-          {
-            iconName: "Award",
-            question:
-              "What makes your Meesho account management services unique?",
-            answer:
-              "Our services stand out through our deep understanding of Meesho's social commerce model, dedicated account managers, data-driven approach, and proven track record. We provide comprehensive support, transparent reporting, and strategies specifically tailored for Meesho's platform.",
-            keywords: ["meesho management experts", "best meesho services"],
-          },
-          {
-            iconName: "MessageCircle",
-            question: "How do you handle reseller communications and support?",
-            answer:
-              "We manage all reseller communications, including query resolution, order status updates, and support requests. Our team ensures prompt responses, maintains positive reseller relationships, and handles any escalations professionally to maintain high supplier ratings.",
-            keywords: [
-              "meesho reseller support",
-              "meesho supplier communication",
-            ],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.8,
+                    totalReviews: 180,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.9,
+                    totalReviews: 320,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 150,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+        faqConfig: {
+            title: "Meesho Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What does your brand documentation service include?",
+                    answer: "Our brand documentation services include comprehensive brand guidelines, visual identity documentation, brand story development, content style guides, product presentation standards, and brand protection documentation. Each aspect is tailored to Meesho's platform requirements and your specific brand needs.",
+                    keywords: ["brand documentation", "brand guidelines"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the brand documentation process take?",
+                    answer: "The initial brand documentation process typically takes 3-4 weeks, including analysis, development, and refinement phases. This timeline ensures thorough documentation of all brand elements while allowing for stakeholder feedback and revisions.",
+                    keywords: ["documentation timeline", "brand development process"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure brand consistency across Meesho?",
+                    answer: "We create detailed guidelines and templates for all brand touchpoints, provide team training on implementation, and conduct regular audits to maintain consistency. Our documentation includes specific standards for product listings, marketing materials, and customer communications.",
+                    keywords: ["brand consistency", "brand standards"]
+                }
+            ]
+        }
     },
     ajio: {
-      platform: "ajio",
-      title: "AJIO Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert AJIO Account Management Services India",
-      metaDescription:
-        "Transform your fashion business with our specialized AJIO seller account management services. Get dedicated AJIO experts, trend-aligned strategies & proven growth solutions. #1 AJIO management agency in India.",
-      metaKeywords:
-        "ajio account management services, ajio seller account management, ajio account manager, ajio marketplace management, ajio seller services, ajio business management, ajio listing optimization, ajio fashion e-commerce",
-      heroConfig: {
-        badge: {
-          text: "AJIO Fashion E-commerce Experts since 2019",
-          company: "Technovita Solution",
+        platform: "ajio",
+        title: "AJIO Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional AJIO Brand Documentation Services India",
+        metaDescription: "Elevate your fashion brand presence with our expert AJIO brand documentation services. Get comprehensive brand guidelines, style documentation & proven brand management solutions. Leading AJIO brand documentation agency in India.",
+        metaKeywords: "ajio brand documentation services, ajio brand guidelines, ajio style guide creation, ajio brand management, ajio documentation services, ajio brand identity, ajio fashion documentation, ajio brand standards",
+
+        heroConfig: {
+            badge: {
+                text: "AJIO Brand Documentation Specialists since 2019",
+                company: "Technovita Solution"
+            },
+            mainHeading: "Professional AJIO Brand Documentation Services",
+            description: [
+                "Building a strong fashion brand on AJIO requires meticulous documentation and consistent brand presentation. At Technovita Solution, we specialize in creating comprehensive brand documentation that ensures your fashion identity remains consistent and compelling across all touchpoints. From detailed style guides to product documentation standards, we help establish and maintain your brand's unique voice in the competitive fashion marketplace.",
+                "Our team of brand documentation experts combines fashion industry knowledge with technical expertise to create thorough, actionable documentation. We develop clear guidelines for product descriptions, photography standards, brand voice, and seasonal collection documentation that help your team maintain consistency while adapting to fashion trends.",
+                "Whether you're an emerging fashion label or an established brand, our documentation services help you build and maintain a strong, recognizable presence on AJIO. We've helped hundreds of fashion brands create and implement effective brand documentation systems."
+            ],
+            stats: [
+                { label: "Documentation Projects", value: "250+" },
+                { label: "Brand Satisfaction", value: "98%" },
+                { label: "Documentation Templates", value: "100+" }
+            ]
         },
-        mainHeading: "Professional AJIO Seller Account Management Services",
-        description: [
-          "Succeeding in AJIO's fashion marketplace requires specialized expertise and deep market understanding. At Technovita Solution, we simplify AJIO selling with our comprehensive account management services. From day-to-day operations to strategic growth planning, we handle everything to make your fashion e-commerce journey profitable and sustainable.",
-          "Think of us as your dedicated AJIO fashion team. We manage your seller dashboard, optimize product listings for style-conscious buyers, handle seasonal inventory planning, and maintain competitive pricing across categories. Our certified AJIO experts stay updated with fashion trends and marketplace policies, using data-driven strategies to help your products stand out and sell better.",
-          "Whether you're a boutique fashion brand or a large-scale apparel manufacturer, our experienced AJIO account managers understand what it takes to succeed in fashion e-commerce. We've helped hundreds of sellers across clothing, accessories, and lifestyle categories build thriving businesses on AJIO.",
-        ],
-        stats: [
-          { label: "Active Fashion Brands", value: "300+" },
-          { label: "Client Retention", value: "96%" },
-          { label: "Monthly GMV", value: "₹30M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "300+",
+
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "250+"
+            },
+            title: "Why Choose TechnovitaSolution for AJIO Brand Documentation",
+            description: "In the dynamic world of fashion e-commerce, proper brand documentation is crucial for maintaining consistency and building brand authority. Our specialized documentation services ensure your brand's identity remains strong and consistent across all AJIO touchpoints.",
+            features: [
+                {
+                    title: "Brand Documentation Specialists",
+                    description: "Dedicated experts with deep understanding of fashion brand documentation and AJIO's platform requirements."
+                },
+                {
+                    title: "Fashion-Forward Approach",
+                    description: "Documentation systems designed to evolve with fashion trends while maintaining brand consistency."
+                },
+                {
+                    title: "Comprehensive Solutions",
+                    description: "End-to-end documentation services covering brand guidelines, product standards, and seasonal collection documentation."
+                },
+                {
+                    title: "Proven Success",
+                    description: "98% client satisfaction rate with documented improvement in brand consistency metrics."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for AJIO Success",
-        description:
-          "In today's competitive fashion e-commerce landscape, mastering AJIO's marketplace requires more than basic selling skills. Our comprehensive account management services are designed to navigate the complexities of fashion retail while driving sustainable growth for your brand.",
-        features: [
-          {
-            title: "Fashion E-commerce Experts",
-            description:
-              "Dedicated account managers with proven expertise in AJIO marketplace optimization and fashion retail growth strategies.",
-          },
-          {
-            title: "Trend-Driven Analytics",
-            description:
-              "Advanced fashion analytics and market insights to keep your brand ahead of seasonal trends and competition.",
-          },
-          {
-            title: "Complete Brand Support",
-            description:
-              "End-to-end account management including trend-aligned listing optimization, seasonal inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "96% client retention rate with consistent growth in fashion retail performance metrics.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Fashion Growth Planning",
-            description:
-              "Our expert AJIO account management services focus on developing comprehensive growth strategies tailored to fashion retail cycles. We analyze seasonal trends, competitor positioning, and consumer behavior to create a roadmap for sustainable success on the AJIO marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Style Compliance",
-            description:
-              "As your dedicated AJIO seller account management partner, we ensure your account stays healthy and compliant with AJIO's ever-changing fashion marketplace policies. Our proactive approach helps prevent issues before they impact your business.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Fashion Performance Analytics",
-            description:
-              "Our AJIO account managing experts utilize advanced analytics tools to track your fashion retail metrics. We provide detailed insights into seasonal trends, category performance, and marketing effectiveness to optimize your strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Fashion E-commerce Team",
-            description:
-              "When you choose our AJIO account management services near me, you get a dedicated team of fashion e-commerce specialists who understand your brand inside out. We act as an extension of your team, managing every aspect of your AJIO presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best AJIO Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Fashion-Forward Product Listing Optimization",
-            blogLink:
-              "/blog/The-Ultimate-Guide-to-AJIO-Product-Listing-Optimization",
-            description:
-              "Transform your AJIO presence with our expert fashion product listing optimization services. Our comprehensive approach ensures your products not only rank well but convert fashion-conscious browsers into buyers:",
+
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Style-Focused Title Optimization",
-                points: [
-                  "Fashion keyword integration for maximum visibility",
-                  "Trend-aligned product titles that drive engagement",
-                  "Style-specific attribute optimization",
-                ],
-              },
-              {
-                subtitle: "Fashion Description Enhancement",
-                points: [
-                  "Style-focused benefit descriptions",
-                  "Trend-relevant keyword optimization",
-                  "Fashion-forward product storytelling",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "AJIO Seller Dashboard Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-AJIO",
-            description:
-              "As your trusted AJIO account management agency, we provide comprehensive dashboard optimization services:",
-            features: [
-              {
-                subtitle: "Dashboard Excellence",
-                points: [
-                  "Professional seller account configuration",
-                  "Fashion-specific metrics monitoring",
-                  "Seasonal performance tracking",
-                ],
-              },
-              {
-                subtitle: "Growth Optimization",
-                points: [
-                  "Category performance analysis",
-                  "Trend-based strategy development",
-                  "Regular dashboard audits",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Fashion Keyword Research & Optimization",
-            blogLink: "/blog/Fashion-Keyword-Research-Guide-2025",
-            description:
-              "Our AJIO seller account management services include advanced fashion keyword research:",
-            features: [
-              {
-                subtitle: "Trend Research",
-                points: [
-                  "Seasonal keyword identification",
-                  "Style-specific search term analysis",
-                  "Fashion trend mapping",
-                ],
-              },
-              {
-                subtitle: "Implementation",
-                points: [
-                  "Strategic keyword placement",
-                  "Style conversion tracking",
-                  "Trend performance monitoring",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Fashion Content Creation & Copywriting",
-            blogLink: "/blog/Fashion-Content-Creation-AJIO-Guide",
-            description:
-              "Elevate your fashion brand with our professional AJIO content services:",
-            features: [
-              {
-                subtitle: "Style Content Development",
-                points: [
-                  "Fashion-forward product storytelling",
-                  "Brand style guide integration",
-                  "Trend-aligned content creation",
-                ],
-              },
-              {
-                subtitle: "Fashion Copywriting",
-                points: [
-                  "Style-focused product descriptions",
-                  "Fashion SEO optimization",
-                  "Brand voice consistency",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Inventory & Season Management",
-            blogLink: "/blog/AJIO-Inventory-Season-Management-Guide",
-            description:
-              "Our comprehensive inventory solutions for fashion retail:",
-            features: [
-              {
-                subtitle: "Seasonal Planning",
-                points: [
-                  "Fashion cycle inventory management",
-                  "Trend-based stock planning",
-                  "Season transition strategies",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Stock turnover analysis",
-                  "Season-end clearance planning",
-                  "Trend forecasting",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Fashion Brand Protection",
-            blogLink: "/blog/Brand-Protection-on-AJIO",
-            description: "Protect and enhance your fashion brand presence:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Style authenticity verification",
-                  "Fashion copyright protection",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Fashion brand analytics",
-                  "Style authority building",
-                  "Trend leadership positioning",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven AJIO Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Fashion Market Analysis",
-            description:
-              "Our AJIO account management process begins with a thorough analysis of your current fashion market presence. We evaluate your product portfolio, pricing strategy, and competitor positioning to identify immediate opportunities for improvement.",
-            details: [
-              "Fashion market assessment",
-              "Style category analysis",
-              "Trend opportunity mapping",
-              "Competitor benchmark study",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Fashion-Forward Optimization",
-            description:
-              "We implement necessary optimizations across your entire AJIO presence, focusing on fashion-specific enhancements and trend alignment.",
-            details: [
-              "Style-focused listing optimization",
-              "Seasonal keyword enhancement",
-              "Fashion metric refinement",
-              "Category-specific strategy",
-              "Trend compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Fashion Growth Strategy",
-            description:
-              "Execute your customized fashion retail growth strategy with focus on seasonal success and brand building.",
-            details: [
-              "Trend-based campaign planning",
-              "Seasonal inventory strategy",
-              "Style authority building",
-              "Fashion marketing execution",
-              "Category expansion planning",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Fashion Success Stories", "300+ Happy Brands"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Fashion Brands Across India",
-          description:
-            "See why hundreds of fashion retailers choose Technovita Solution for their AJIO success",
+                {
+                    iconName: "Book",
+                    title: "Comprehensive Brand Guidelines",
+                    description: "Our AJIO brand documentation services focus on creating detailed, actionable brand guidelines that cover every aspect of your fashion brand's presence on the platform."
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Standards Protection",
+                    description: "We develop documentation systems that help protect and maintain your brand standards across all AJIO listings and marketing materials."
+                },
+                {
+                    iconName: "ChartBar",
+                    title: "Documentation Analytics",
+                    description: "Track the effectiveness of your brand documentation with our specialized analytics tools measuring consistency and brand adherence."
+                },
+                {
+                    iconName: "Users",
+                    title: "Expert Documentation Team",
+                    description: "Work with dedicated fashion brand documentation specialists who understand both technical documentation and fashion industry needs."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Priya Mehta",
-            company: "StyleHub India",
-            rating: 5,
-            review:
-              "Technovita Solution transformed our AJIO business completely. Their understanding of fashion e-commerce helped us increase sales by 250% in just one season.",
-            position: "Fashion Director",
-            location: "Mumbai",
-          },
-          {
-            name: "Rajat Kapoor",
-            company: "Trend Factory",
-            rating: 5,
-            review:
-              "The best AJIO account management service in India! Their team's expertise in fashion retail has helped us become a top seller in our category.",
-            position: "CEO",
-            location: "Delhi",
-          },
-          {
-            name: "Anjali Singh",
-            company: "Fashion Forward",
-            rating: 5,
-            review:
-              "Outstanding results with their trend-aligned strategies. Their deep understanding of fashion e-commerce has been crucial to our success on AJIO.",
-            position: "Brand Manager",
-            location: "Bangalore",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.8,
-            totalReviews: 287,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.9,
-            totalReviews: 592,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.7,
-            totalReviews: 256,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "AJIO Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your AJIO account management service include?",
-            answer:
-              "Our comprehensive AJIO account management services cover everything from initial account setup to ongoing optimization. This includes fashion-forward product listing optimization, seasonal inventory management, trend-aligned pricing strategy, competitor analysis, and performance analytics. We provide dedicated account managers who ensure your fashion business thrives on AJIO.",
-            keywords: [
-              "ajio account management services",
-              "ajio seller services",
+
+        servicesConfig: {
+            title: "Professional AJIO Brand Documentation Services In India",
+            services: [
+                {
+                    iconName: "PenTool",
+                    title: "Brand Style Guide Creation",
+                    blogLink: "/blog/Creating-Effective-AJIO-Brand-Style-Guides",
+                    description: "Develop comprehensive brand style guides tailored for AJIO's fashion marketplace:",
+                    features: [
+                        {
+                            subtitle: "Visual Identity Documentation",
+                            points: [
+                                "Logo usage guidelines and specifications",
+                                "Brand color palette documentation",
+                                "Typography standards and applications"
+                            ]
+                        },
+                        {
+                            subtitle: "Content Style Documentation",
+                            points: [
+                                "Brand voice and tone guidelines",
+                                "Product description templates",
+                                "Communication standards"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Camera",
+                    title: "Product Documentation Standards",
+                    blogLink: "/blog/AJIO-Product-Documentation-Best-Practices",
+                    description: "Create detailed standards for product documentation and presentation:",
+                    features: [
+                        {
+                            subtitle: "Photography Guidelines",
+                            points: [
+                                "Product photography standards",
+                                "Image specification documentation",
+                                "Visual merchandising guidelines"
+                            ]
+                        },
+                        {
+                            subtitle: "Product Information Standards",
+                            points: [
+                                "Specification documentation templates",
+                                "Size chart standardization",
+                                "Product detail guidelines"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Layers",
+                    title: "Collection Documentation Systems",
+                    blogLink: "/blog/Seasonal-Collection-Documentation-Guide",
+                    description: "Develop systematic approaches to documenting seasonal collections:",
+                    features: [
+                        {
+                            subtitle: "Collection Guidelines",
+                            points: [
+                                "Seasonal theme documentation",
+                                "Collection structure templates",
+                                "Style variation documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Implementation Tools",
+                            points: [
+                                "Documentation workflow systems",
+                                "Quality control checklists",
+                                "Review process documentation"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Brand Analysis & Assessment",
+                    description: "We begin with a thorough analysis of your existing brand elements and documentation needs.",
+                    details: [
+                        "Current documentation review",
+                        "Brand consistency assessment",
+                        "Documentation gap analysis",
+                        "Stakeholder interviews",
+                        "Requirements documentation"
+                    ]
+                },
+                {
+                    iconName: "Edit",
+                    title: "Documentation Development",
+                    description: "Create comprehensive brand documentation tailored to your needs and AJIO's requirements.",
+                    details: [
+                        "Style guide creation",
+                        "Template development",
+                        "Standard operating procedures",
+                        "Quality control systems",
+                        "Implementation guidelines"
+                    ]
+                },
+                {
+                    iconName: "Share",
+                    title: "Implementation & Training",
+                    description: "Roll out documentation systems with proper training and support.",
+                    details: [
+                        "Team training sessions",
+                        "Documentation system setup",
+                        "Workflow implementation",
+                        "Monitoring systems",
+                        "Ongoing support"
+                    ]
+                }
+            ]
+        },
+
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Brand Documentation Excellence", "250+ Satisfied Brands"],
+                    className: "bg-blue-100 text-blue-600"
+                },
+                title: "Trusted by Fashion Brands Across India",
+                description: "See why leading fashion brands choose us for their documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Sneha Reddy",
+                    company: "Fashion Elite",
+                    rating: 5,
+                    review: "Their documentation services transformed how we manage our brand on AJIO. The systems they put in place have made our brand presentation much more consistent.",
+                    position: "Brand Manager",
+                    location: "Hyderabad"
+                },
+                {
+                    name: "Vikram Malhotra",
+                    company: "Style Spectrum",
+                    rating: 5,
+                    review: "Exceptional attention to detail in creating our brand documentation. Their systems have helped us maintain perfect consistency across all our AJIO listings.",
+                    position: "Creative Director",
+                    location: "Mumbai"
+                },
+                {
+                    name: "Leela Sharma",
+                    company: "Trendsetter Fashions",
+                    rating: 5,
+                    review: "The most comprehensive brand documentation service we've used. Their guidelines have become our brand bible for AJIO operations.",
+                    position: "Operations Head",
+                    location: "Delhi"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your AJIO account management agency improve my fashion sales?",
-            answer:
-              "As a specialized AJIO account management agency, we implement trend-driven strategies to boost your sales performance. This includes optimizing product listings for fashion-conscious buyers, implementing seasonal pricing strategies, managing inventory for fashion cycles, and enhancing brand presence. Our team continuously monitors fashion metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "ajio account management agency",
-              "ajio seller account management",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question: "What makes your AJIO seller dashboard management unique?",
-            answer:
-              "Our AJIO seller dashboard management stands out through our fashion-focused approach. We combine technical expertise with deep fashion retail insights, including trend-based inventory management, style analytics reporting, and seasonal optimization strategies.",
-            keywords: [
-              "ajio seller dashboard management",
-              "ajio account optimization",
-            ],
-          },
-          {
-            iconName: "Target",
-            question: "What strategic fashion retail services do you provide?",
-            answer:
-              "As your strategic fashion partner for AJIO, we focus on long-term growth and market positioning. Our services include fashion market analysis, trend monitoring, brand development, seasonal planning, and style-focused optimization strategies aligned with your business goals.",
-            keywords: ["ajio strategic services", "fashion retail management"],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.9,
+                    totalReviews: 245,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.8,
+                    totalReviews: 468,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.8,
+                    totalReviews: 198,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+
+        faqConfig: {
+            title: "AJIO Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "Book",
+                    question: "What does your brand documentation service include?",
+                    answer: "Our brand documentation services include comprehensive style guide creation, product documentation standards, collection documentation systems, and implementation support. We create detailed guidelines covering visual identity, content standards, photography requirements, and quality control processes.",
+                    keywords: ["brand documentation", "style guide", "documentation services"]
+                },
+                {
+                    iconName: "Target",
+                    question: "How can proper brand documentation improve our AJIO presence?",
+                    answer: "Effective brand documentation ensures consistency across all your AJIO listings, strengthens brand recognition, streamlines team operations, and helps maintain quality standards. It provides clear guidelines for product presentation, content creation, and brand communication.",
+                    keywords: ["brand consistency", "documentation benefits", "brand standards"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does it take to develop comprehensive brand documentation?",
+                    answer: "The timeline for developing comprehensive brand documentation typically ranges from 4-6 weeks, depending on your brand's complexity and specific requirements. This includes analysis, development, review cycles, and implementation planning.",
+                    keywords: ["documentation timeline", "development process"]
+                },
+                {
+                    iconName: "Update",
+                    question: "How often should brand documentation be updated?",
+                    answer: "We recommend reviewing and updating brand documentation quarterly for seasonal changes and annually for comprehensive updates. However, specific elements may need more frequent updates based on AJIO's platform changes or evolving brand needs.",
+                    keywords: ["documentation updates", "maintenance schedule"]
+                }
+            ]
+        }
     },
     tatacliq: {
-      platform: "tatacliq",
-      title: "Tata CLiQ Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert Tata CLiQ Account Management Services",
-      metaDescription:
-        "Transform your Tata CLiQ business with our dedicated account managers and proven strategies. Expert Tata CLiQ seller account management services.",
-      metaKeywords:
-        "tata cliq account management services, tata cliq seller account management, tata cliq account manager",
-      heroConfig: {
-        badge: {
-          text: "Tata CLiQ Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "tatacliq",
+        title: "Tata CLiQ Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Tata CLiQ Brand Documentation Services",
+        metaDescription: "Expert brand documentation services for Tata CLiQ sellers. Comprehensive documentation management, style guides, and brand asset organization.",
+        metaKeywords: "tata cliq brand documentation, tata cliq brand guidelines, tata cliq documentation services, brand documentation specialist, tata cliq brand management",
+
+        heroConfig: {
+            badge: {
+                text: "Brand Documentation Experts since 2018",
+                company: "Technovita Solution",
+            },
+            mainHeading: "Tata CLiQ Brand Documentation Services",
+            description: [
+                "Creating and maintaining professional brand documentation is crucial for success on Tata CLiQ. Our comprehensive documentation services ensure your brand presence remains consistent, compliant, and compelling across all touchpoints.",
+                "Our team of brand documentation specialists creates detailed style guides, product documentation, and brand asset libraries that help maintain your brand's integrity on Tata CLiQ. We handle everything from technical specifications to visual guidelines.",
+                "Whether you're launching a new brand or looking to organize existing brand assets, our documentation experts know exactly what it takes to create professional, scalable documentation systems for Tata CLiQ sellers.",
+            ],
+            stats: [
+                { label: "Brands Documented", value: "200+" },
+                { label: "Documentation Accuracy", value: "99.9%" },
+                { label: "Client Satisfaction", value: "98%" },
+            ],
         },
-        mainHeading: "Tata CLiQ Seller Account Management Services",
-        description: [
-          "Running a Tata CLiQ business can feel overwhelming. At Technovita Solution, we take the complexity out of selling on Tata CLiQ. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your Tata CLiQ journey smooth and profitable.",
-          "Think of us as your dedicated Tata CLiQ team. We manage your Seller Portal account, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified Tata CLiQ experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on Tata CLiQ, our experienced account managers at Technovita Solution know exactly what it takes to grow your business. We've helped hundreds of sellers across all categories increase their sales and build sustainable Tata CLiQ businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "300+" },
-          { label: "Retention Rate", value: "96%" },
-          { label: "Monthly Sales", value: "₹30M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "300+",
+
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "200+",
+            },
+            title: "Why Choose Our Brand Documentation Services",
+            description: "Professional brand documentation is essential for maintaining consistency and compliance on Tata CLiQ. Our comprehensive documentation services ensure your brand standards are clearly defined, easily accessible, and consistently implemented.",
+            features: [
+                {
+                    title: "Expert Documentation Team",
+                    description: "Dedicated specialists with extensive experience in creating comprehensive brand documentation for Tata CLiQ sellers.",
+                },
+                {
+                    title: "Systematic Approach",
+                    description: "Structured documentation processes ensuring completeness, accuracy, and usability of all brand materials.",
+                },
+                {
+                    title: "Complete Coverage",
+                    description: "End-to-end documentation including brand guidelines, product specifications, and operational procedures.",
+                },
+                {
+                    title: "Quality Assurance",
+                    description: "Rigorous review processes ensuring documentation accuracy and compliance with Tata CLiQ standards.",
+                },
+            ],
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Tata CLiQ Success",
-        description:
-          "In today's competitive e-commerce landscape, mastering Tata CLiQ's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of Tata CLiQ's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing Tata CLiQ seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "96% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert tata cliq account management services focus on developing comprehensive growth strategies tailored to your business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the Tata CLiQ marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated tata cliq seller account management partner, we ensure your account stays healthy and compliant with Tata CLiQ's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our tata cliq account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your Tata CLiQ business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our tata cliq account management services near me, you get a dedicated team of specialists who understand your business inside and out. We act as an extension of your team, managing every aspect of your Tata CLiQ presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Tata CLiQ Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink: "/blog/The-Ultimate-Guide-to-Product-Listing-Optimization",
-            description:
-              "Transform your Tata CLiQ presence with our expert product listing optimization services. Our comprehensive approach ensures your products not only rank well but convert browsers into buyers, implementing data-driven strategies across all listing aspects:",
+
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Compelling, clear product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Benefit-focused bullet points that sell",
-                  "Keyword-rich descriptions for better indexing",
-                  "Competitor analysis and differentiation",
-                ],
-              },
+                {
+                    iconName: "FileText",
+                    title: "Comprehensive Brand Guidelines",
+                    description: "Our documentation specialists create detailed brand guidelines that ensure consistency across all Tata CLiQ touchpoints. We document everything from visual elements to brand voice and communication standards.",
+                },
+                {
+                    iconName: "Shield",
+                    title: "Documentation Compliance",
+                    description: "We ensure all brand documentation meets Tata CLiQ's requirements and industry standards. Our team stays updated with platform policies and implements changes proactively.",
+                },
+                {
+                    iconName: "Layout",
+                    title: "Asset Organization",
+                    description: "Professional organization and management of all brand assets, including creating searchable libraries, version control systems, and access protocols.",
+                },
+                {
+                    iconName: "Users",
+                    title: "Team Training Materials",
+                    description: "Development of comprehensive training documentation to help your team understand and consistently implement brand standards on Tata CLiQ.",
+                },
             ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Portal Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-tatacliq",
-            description:
-              "As your trusted tata cliq account management agency, we provide comprehensive account setup and optimization services that set the foundation for your success:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Portal account configuration",
-                  "Custom shipping and fulfillment strategy development",
-                  "Integration of marketing and promotional services",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our tata cliq seller account management services include advanced keyword research that drives organic traffic and improves visibility:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Data-driven keyword identification and analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Premium Content Creation & CLiQ Copywriting",
-            blogLink: "/blog/Content-Creation-TataCliq-Copywriting-Guide",
-            description:
-              "Elevate your brand presence with our professional tata cliq account management services focused on creating compelling content:",
-            features: [
-              {
-                subtitle: "Premium Content Development",
-                points: [
-                  "Custom multimedia module design",
-                  "Brand story integration and storytelling",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Conversion-focused product descriptions",
-                  "SEO-optimized content creation",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Warehousing & Fulfillment Management",
-            blogLink: "/blog/TataCliq-Fulfillment-Management-Guide",
-            description:
-              "Our comprehensive tata cliq seller account management includes expert fulfillment optimization and management:",
-            features: [
-              {
-                subtitle: "Fulfillment Operations",
-                points: [
-                  "Strategic inventory placement and management",
-                  "Shipping plan optimization and monitoring",
-                  "Cost reduction and efficiency improvement",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis and optimization",
-                  "Delivery performance monitoring",
-                  "Inventory turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Registry & Protection",
-            blogLink: "/blog/Brand-Registry-Protection-on-TataCliq",
-            description:
-              "Protect and enhance your brand with our professional tata cliq account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Complete brand registry setup and management",
-                  "Intellectual property protection measures",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Access to exclusive brand tools and features",
-                  "Brand analytics utilization",
-                  "Enhanced content opportunities",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "LineChart",
-            title: "Inventory Management & Tracking",
-            blogLink: "/blog/TataCliq-inventory-Management-Tracking",
-            description:
-              "Our tata cliq account management services include comprehensive inventory solution:",
-            features: [
-              {
-                subtitle: "Stock Management",
-                points: [
-                  "Real-time inventory monitoring",
-                  "Restock timing optimization",
-                  "Storage fee management",
-                ],
-              },
-              {
-                subtitle: "Performance Analytics",
-                points: [
-                  "Sales velocity tracking",
-                  "Inventory turnover analysis",
-                  "Seasonal demand planning",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "MessageSquare",
-            title: "Review Management & Optimization",
-            blogLink: "/blog/TataCliq-Review-Management-Optimization",
-            description:
-              "Maintain a stellar reputation with our best tata cliq account management services focused on review optimization:",
-            features: [
-              {
-                subtitle: "Review Monitoring",
-                points: [
-                  "Proactive review solicitation strategies",
-                  "Negative feedback resolution",
-                  "Customer satisfaction improvement",
-                ],
-              },
-              {
-                subtitle: "Rating Enhancement",
-                points: [
-                  "Review analysis and trend identification",
-                  "Customer feedback implementation",
-                  "Product improvement recommendations",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "AlertTriangle",
-            title: "Account Reinstatement Services",
-            blogLink: "/blog/TataCliq-Account-Reinstatement",
-            description:
-              "Our expert tata cliq account management team specializes in account recovery and reinstatement:",
-            features: [
-              {
-                subtitle: "Recovery Process",
-                points: [
-                  "Comprehensive account audit",
-                  "Policy violation analysis",
-                  "Custom plan of action development",
-                ],
-              },
-              {
-                subtitle: "Prevention Strategy",
-                points: [
-                  "Ongoing compliance monitoring",
-                  "Risk assessment and mitigation",
-                  "Policy update implementation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Activity",
-            title: "CLiQ Express Program Management",
-            blogLink: "/blog/TataCliq-Express-Program",
-            description:
-              "Optimize your operations with our specialized tata cliq seller account management services for CLiQ Express:",
-            features: [
-              {
-                subtitle: "Program Implementation",
-                points: [
-                  "Eligibility assessment and application",
-                  "Operational setup and optimization",
-                  "Delivery network integration",
-                ],
-              },
-              {
-                subtitle: "Performance Management",
-                points: [
-                  "Delivery metrics monitoring",
-                  "Cost efficiency optimization",
-                  "Customer satisfaction tracking",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Target",
-            title: "Competitor Analysis & Strategy",
-            blogLink: "/blog/TataCliq-Competitor-Analysis-Strategy",
-            description:
-              "Stay ahead with our data-driven tata cliq account management analysis services:",
-            features: [
-              {
-                subtitle: "Market Analysis",
-                points: [
-                  "Comprehensive competitor research",
-                  "Price point optimization",
-                  "Market trend identification",
-                ],
-              },
-              {
-                subtitle: "Strategic Planning",
-                points: [
-                  "Competitive advantage development",
-                  "Market positioning strategy",
-                  "Growth opportunity identification",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Tata CLiQ Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our tata cliq account management process begins with a thorough analysis of your current Tata CLiQ presence. Our expert team conducts a comprehensive evaluation of your product listings, pricing strategies, promotional performance, and competitor positioning. We identify immediate opportunities for improvement and develop a customized strategy aligned with your business goals.",
-            details: [
-              "Complete account health assessment",
-              "Competitor landscape analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted tata cliq account management agency, we implement necessary optimizations across your entire account structure. This phase focuses on strengthening your account foundation through systematic improvements to listings, backend settings, and operational workflows.",
-            details: [
-              "Listing optimization implementation",
-              "Backend keyword enhancement",
-              "Account settings refinement",
-              "Category-specific optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "With optimizations in place, we execute your customized growth strategy. Our best tata cliq account management services focus on expanding your market presence through strategic initiatives. We implement targeted campaigns, optimize inventory management, and enhance brand presence to drive sustainable growth.",
-            details: [
-              "Marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand registry optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Our tata cliq seller account management services include continuous monitoring of key performance indicators. We track crucial metrics, analyze trends, and make data-driven adjustments to optimize your account's performance.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-          {
-            iconName: "Repeat",
-            title: "Continuous Improvement & Adaptation",
-            description:
-              "The tata cliq account management landscape constantly evolves, and so do our strategies. We continuously refine our approach based on performance data, market changes, and emerging opportunities. Our team stays updated with Tata CLiQ's latest features and requirements.",
-            details: [
-              "Strategy refinement",
-              "Market trend adaptation",
-              "Policy compliance updates",
-              "Performance optimization",
-              "Growth strategy evolution",
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Long-term Success & Protection",
-            description:
-              "As your dedicated tata cliq account management partner, we focus on securing your long-term success. We implement protective measures to safeguard your account health while continuing to identify and capitalize on new growth opportunities.",
-            details: [
-              "Account health maintenance",
-              "Brand protection measures",
-              "Growth sustainability planning",
-              "Risk mitigation strategies",
-              "Long-term opportunity development",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "300+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Tata CLiQ Sellers Across India",
-          description:
-            "See why hundreds of Tata CLiQ sellers choose Technovita Solution for their account management needs",
         },
-        customerReviews: [
-          {
-            name: "Amit Shah",
-            company: "Fashion Express India",
-            rating: 5,
-            review:
-              "Technovita Solution revolutionized our Tata CLiQ business. Their strategic approach helped us increase our sales by 250% in just 6 months. The dedicated account manager is always available and proactive in handling issues.",
-            position: "Business Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Sneha Reddy",
-            company: "Lifestyle Trends Ltd",
-            rating: 5,
-            review:
-              "We were struggling with Tata CLiQ compliance issues before partnering with Technovita. Their team not only resolved all our account problems but also helped us expand our product line successfully. Best Tata CLiQ account management service in India!",
-            position: "E-commerce Director",
-            location: "Hyderabad",
-          },
-          {
-            name: "Karthik Menon",
-            company: "Premium Lifestyle",
-            rating: 5,
-            review:
-              "The ROI with Technovita has been exceptional. Their deep understanding of Tata CLiQ's platform and market trends helped us achieve Premium Seller status in our category. Highly recommended for serious Tata CLiQ sellers.",
-            position: "Founder",
-            location: "Chennai",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.7,
-            totalReviews: 325,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.8,
-            totalReviews: 562,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.6,
-            totalReviews: 289,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Tata CLiQ Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question:
-              "What does your Tata CLiQ account management service include?",
-            answer:
-              "Our comprehensive Tata CLiQ account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, promotional campaign management, and performance analytics. We provide dedicated account managers who ensure your Tata CLiQ business operates smoothly across all aspects of the platform.",
-            keywords: [
-              "tata cliq account management services",
-              "account management tata cliq",
+
+        servicesConfig: {
+            title: "Professional Brand Documentation Services for Tata CLiQ",
+            services: [
+                {
+                    iconName: "Book",
+                    title: "Brand Style Guide Creation",
+                    blogLink: "/blog/Creating-Effective-Brand-Style-Guides",
+                    description: "Comprehensive brand style guide development services for Tata CLiQ sellers:",
+                    features: [
+                        {
+                            subtitle: "Visual Guidelines",
+                            points: [
+                                "Logo usage specifications and restrictions",
+                                "Color palette documentation with codes",
+                                "Typography standards and hierarchies",
+                                "Image style and photography guidelines",
+                                "Layout and composition standards",
+                            ],
+                        },
+                        {
+                            subtitle: "Brand Voice Guidelines",
+                            points: [
+                                "Tone of voice documentation",
+                                "Writing style standards",
+                                "Communication templates",
+                                "Messaging frameworks",
+                                "Content creation guidelines",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Image",
+                    title: "Product Documentation",
+                    blogLink: "/blog/Product-Documentation-Best-Practices",
+                    description: "Detailed product documentation services for your Tata CLiQ catalog:",
+                    features: [
+                        {
+                            subtitle: "Technical Specifications",
+                            points: [
+                                "Product feature documentation",
+                                "Material and composition details",
+                                "Size and measurement guides",
+                                "Performance specifications",
+                                "Quality standards documentation",
+                            ],
+                        },
+                        {
+                            subtitle: "Usage Guidelines",
+                            points: [
+                                "Product care instructions",
+                                "Assembly and installation guides",
+                                "Warranty documentation",
+                                "Safety information",
+                                "Maintenance procedures",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "FileText",
+                    title: "Operational Documentation",
+                    blogLink: "/blog/Operational-Documentation-Guide",
+                    description: "Comprehensive operational documentation for Tata CLiQ sellers:",
+                    features: [
+                        {
+                            subtitle: "Process Documentation",
+                            points: [
+                                "Standard operating procedures",
+                                "Workflow documentation",
+                                "Quality control processes",
+                                "Compliance procedures",
+                                "Emergency protocols",
+                            ],
+                        },
+                        {
+                            subtitle: "Training Documentation",
+                            points: [
+                                "Employee onboarding materials",
+                                "Role-specific guides",
+                                "Best practice documentation",
+                                "Performance standards",
+                                "Assessment criteria",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Database",
+                    title: "Asset Management Documentation",
+                    blogLink: "/blog/Asset-Management-Documentation",
+                    description: "Professional documentation for brand asset management:",
+                    features: [
+                        {
+                            subtitle: "Asset Organization",
+                            points: [
+                                "Digital asset library structure",
+                                "File naming conventions",
+                                "Version control procedures",
+                                "Asset tracking systems",
+                                "Access control documentation",
+                            ],
+                        },
+                        {
+                            subtitle: "Usage Guidelines",
+                            points: [
+                                "Asset usage policies",
+                                "Distribution procedures",
+                                "Rights management documentation",
+                                "Update protocols",
+                                "Archive management",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Layout",
+                    title: "Marketing Documentation",
+                    blogLink: "/blog/Marketing-Documentation-Guide",
+                    description: "Comprehensive marketing documentation services:",
+                    features: [
+                        {
+                            subtitle: "Campaign Documentation",
+                            points: [
+                                "Campaign planning templates",
+                                "Promotional guidelines",
+                                "Marketing asset specifications",
+                                "Performance tracking procedures",
+                                "Results reporting formats",
+                            ],
+                        },
+                        {
+                            subtitle: "Brand Messaging",
+                            points: [
+                                "Key message documentation",
+                                "Target audience profiles",
+                                "Communication guidelines",
+                                "Brand story documentation",
+                                "Value proposition guidelines",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Shield",
+                    title: "Compliance Documentation",
+                    blogLink: "/blog/Compliance-Documentation-Best-Practices",
+                    description: "Detailed compliance documentation services:",
+                    features: [
+                        {
+                            subtitle: "Policy Documentation",
+                            points: [
+                                "Platform compliance requirements",
+                                "Legal compliance guidelines",
+                                "Industry standards documentation",
+                                "Quality assurance procedures",
+                                "Audit preparation guides",
+                            ],
+                        },
+                        {
+                            subtitle: "Process Documentation",
+                            points: [
+                                "Compliance monitoring procedures",
+                                "Reporting requirements",
+                                "Issue resolution protocols",
+                                "Documentation maintenance",
+                                "Update procedures",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Users",
+                    title: "Team Training Documentation",
+                    blogLink: "/blog/Training-Documentation-Guide",
+                    description: "Comprehensive training documentation services:",
+                    features: [
+                        {
+                            subtitle: "Training Materials",
+                            points: [
+                                "Role-specific training guides",
+                                "Process documentation",
+                                "Best practice guides",
+                                "Assessment materials",
+                                "Reference documentation",
+                            ],
+                        },
+                        {
+                            subtitle: "Performance Standards",
+                            points: [
+                                "Quality benchmarks",
+                                "Performance metrics",
+                                "Evaluation criteria",
+                                "Progress tracking",
+                                "Improvement guidelines",
+                            ],
+                        },
+                    ],
+                },
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your Tata CLiQ account management agency improve my sales performance?",
-            answer:
-              "As a specialized Tata CLiQ account management agency, we implement data-driven strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing promotional campaigns, improving inventory turnover, and enhancing customer service metrics. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "tata cliq account management agency",
-              "tata cliq seller account management",
+        },
+
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Initial Brand Audit",
+                    description: "Comprehensive review of existing brand assets and documentation needs.",
+                    details: [
+                        "Brand asset inventory",
+                        "Documentation gap analysis",
+                        "Compliance assessment",
+                        "Stakeholder interviews",
+                        "Requirements gathering",
+                    ],
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Planning",
+                    description: "Strategic planning for documentation development and implementation.",
+                    details: [
+                        "Documentation structure design",
+                        "Content hierarchy planning",
+                        "Format standardization",
+                        "Timeline development",
+                        "Resource allocation",
+                    ],
+                },
+                {
+                    iconName: "Edit",
+                    title: "Content Development",
+                    description: "Creation of comprehensive documentation materials.",
+                    details: [
+                        "Style guide development",
+                        "Process documentation",
+                        "Technical writing",
+                        "Visual asset creation",
+                        "Template development",
+                    ],
+                },
+                {
+                    iconName: "CheckSquare",
+                    title: "Quality Assurance",
+                    description: "Thorough review and validation of all documentation.",
+                    details: [
+                        "Accuracy verification",
+                        "Compliance checking",
+                        "Usability testing",
+                        "Stakeholder review",
+                        "Final approval process",
+                    ],
+                },
+                {
+                    iconName: "Share2",
+                    title: "Implementation",
+                    description: "Systematic rollout of documentation across organization.",
+                    details: [
+                        "Documentation distribution",
+                        "Team training",
+                        "Access setup",
+                        "Version control implementation",
+                        "Usage monitoring",
+                    ],
+                },
+                {
+                    iconName: "RefreshCw",
+                    title: "Maintenance and Updates",
+                    description: "Ongoing documentation management and updates.",
+                    details: [
+                        "Regular reviews",
+                        "Content updates",
+                        "Policy compliance checks",
+                        "User feedback integration",
+                        "Continuous improvement",
+                    ],
+                },
             ],
-          },
-          {
-            iconName: "Settings",
-            question:
-              "What makes your Tata CLiQ Seller Portal account management unique?",
-            answer:
-              "Our Tata CLiQ Seller Portal account management stands out through our comprehensive approach. We combine technical expertise in platform operations with strategic business insights. This includes automated inventory management, advanced analytics reporting, strategic pricing optimization, and proactive problem resolution. We maintain all crucial seller metrics to ensure account health and growth.",
-            keywords: [
-              "tata cliq seller portal account management",
-              "seller portal account management",
+        },
+
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Client Success Stories", "200+ Satisfied Brands"],
+                    className: "bg-orange-100 text-orange-600",
+                },
+                title: "Trusted by Leading Brands on Tata CLiQ",
+                description: "See why hundreds of brands choose our documentation services",
+            },
+            customerReviews: [
+                {
+                    name: "Priya Kumar",
+                    company: "StyleHub India",
+                    rating: 5,
+                    review: "Their documentation services transformed how we manage our brand on Tata CLiQ. The comprehensive style guides and product documentation have made our operations much more efficient.",
+                    position: "Brand Manager",
+                    location: "Bangalore",
+                },
+                {
+                    name: "Rajesh Mehta",
+                    company: "TrendFirst Fashion",
+                    rating: 5,
+                    review: "Excellent documentation services that helped us maintain consistency across our entire product range. Their attention to detail and systematic approach has been invaluable.",
+                    position: "Operations Director",
+                    location: "Mumbai",
+                },
+                {
+                    name: "Sarah Abdullah",
+                    company: "Luxury Lifestyle Co",
+                    rating: 5,
+                    review: "The quality of documentation and ongoing support has been exceptional. Their team really understands brand documentation needs for Tata CLiQ sellers.",
+                    position: "CEO",
+                    location: "Delhi",
+                },
             ],
-          },
-          {
-            iconName: "DollarSign",
-            question: "How do you handle promotional campaigns and marketing?",
-            answer:
-              "Our Tata CLiQ account managers specialize in creating and optimizing promotional campaigns that maximize ROI. We handle campaign planning, implementation, monitoring, and performance tracking. Our team regularly analyzes metrics to refine targeting and improve campaign efficiency.",
-            keywords: [
-              "tata cliq marketing manager",
-              "tata cliq promotions",
-              "tata cliq campaign manager",
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.8,
+                    totalReviews: 245,
+                    className: "bg-[#00b67a]",
+                },
+                {
+                    platform: "Google",
+                    rating: 4.9,
+                    totalReviews: 378,
+                    className: "bg-[#4285f4]",
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 196,
+                    className: "bg-[#1877f2]",
+                },
             ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What strategic account management services do you provide?",
-            answer:
-              "As your strategic account manager for Tata CLiQ, we focus on long-term growth and market positioning. Our strategic account services include market analysis, competition monitoring, brand development, expansion planning, and performance optimization. We work closely with you to develop and implement strategies aligned with your business goals.",
-            keywords: [
-              "strategic account manager tata cliq",
-              "tata cliq strategic account services",
+        },
+
+        faqConfig: {
+            title: "Brand Documentation Services FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What does your brand documentation service include?",
+                    answer: "Our comprehensive brand documentation services cover all aspects of brand presence on Tata CLiQ, including style guides, product documentation, operational procedures, and training materials. We create detailed, user-friendly documentation that ensures brand consistency and compliance.",
+                    keywords: ["brand documentation", "style guides", "product documentation"],
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does it take to create comprehensive brand documentation?",
+                    answer: "The timeline varies depending on the scope and complexity of your brand, but typically ranges from 2-6 weeks. This includes initial audit, documentation development, review cycles, and implementation support.",
+                    keywords: ["documentation timeline", "process duration"],
+                },
+                {
+                    iconName: "Users",
+                    question: "Who will be working on my brand documentation?",
+                    answer: "You'll work with a dedicated team of documentation specialists, including technical writers, brand experts, and quality assurance professionals. Each team member has extensive experience in creating documentation for Tata CLiQ sellers.",
+                    keywords: ["documentation team", "specialists"],
+                },
+                {
+                    iconName: "RefreshCw",
+                    question: "How do you handle documentation updates and maintenance?",
+                    answer: "We provide ongoing documentation maintenance services, including regular reviews, updates for platform changes, and integration of new brand elements. Our team ensures your documentation stays current and effective.",
+                    keywords: ["documentation updates", "maintenance"],
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure documentation accuracy and compliance?",
+                    answer: "We implement a rigorous quality assurance process including multiple review cycles, compliance checks, and stakeholder approvals. Our team stays updated with Tata CLiQ's requirements to ensure all documentation meets platform standards.",
+                    keywords: ["documentation accuracy", "compliance"],
+                },
+                {
+                    iconName: "Download",
+                    question: "How is documentation delivered and accessed?",
+                    answer: "Documentation is delivered in multiple formats including digital (PDF, web-based) and editable files. We can also set up secure documentation portals for easy team access and version control.",
+                    keywords: ["documentation access", "delivery format"],
+                },
+                {
+                    iconName: "Users",
+                    question: "Do you provide training for using the documentation?",
+                    answer: "Yes, we provide comprehensive training for your team on how to use and maintain the documentation. This includes usage guidelines, update procedures, and best practices for documentation management.",
+                    keywords: ["documentation training", "team support"],
+                },
+                {
+                    iconName: "Settings",
+                    question: "Can you customize documentation for specific needs?",
+                    answer: "Absolutely. We tailor all documentation to your specific brand requirements, industry standards, and operational needs. Our team works closely with you to ensure the documentation serves your unique business goals.",
+                    keywords: ["customization", "specialized documentation"],
+                },
+                {
+                    iconName: "Link",
+                    question: "How do you handle integration with existing documentation?",
+                    answer: "We carefully review your existing documentation and create integration plans that preserve valuable content while improving organization and usability. Our process ensures smooth transition and compatibility.",
+                    keywords: ["documentation integration", "existing content"],
+                },
+                {
+                    iconName: "DollarSign",
+                    question: "What are your pricing models for documentation services?",
+                    answer: "We offer flexible pricing structures based on documentation scope and complexity. Options include project-based pricing for one-time documentation creation, retainer models for ongoing maintenance, and custom packages for comprehensive documentation management. Each quote is tailored to your specific needs after a detailed assessment.",
+                    keywords: ["documentation pricing", "service costs", "pricing models"],
+                },
+                {
+                    iconName: "Stars",
+                    question: "What makes your documentation services unique?",
+                    answer: "Our documentation services stand out through our deep understanding of Tata CLiQ's platform requirements, extensive experience with diverse brands, and comprehensive approach to documentation. We combine technical expertise with brand understanding to create documentation that's both practical and aligned with your brand vision.",
+                    keywords: ["unique features", "service benefits", "documentation expertise"],
+                },
+                {
+                    iconName: "CheckSquare",
+                    question: "How do you measure documentation effectiveness?",
+                    answer: "We use multiple metrics to assess documentation effectiveness, including user adoption rates, reduction in support queries, team efficiency improvements, and compliance adherence. Regular feedback collection and performance monitoring help us continuously optimize documentation quality.",
+                    keywords: ["effectiveness metrics", "performance measurement", "documentation quality"],
+                },
             ],
-          },
-          {
-            iconName: "Briefcase",
-            question: "How do you support premium brand accounts?",
-            answer:
-              "Our Tata CLiQ premium account manager services are tailored for luxury and premium sellers. We help optimize your premium presence, manage pricing strategies, handle customer relationships, and ensure compliance with premium-specific requirements. We also assist with premium catalog management and brand-focused marketing strategies.",
-            keywords: [
-              "tata cliq premium account manager",
-              "manage tata cliq premium account",
-            ],
-          },
-          {
-            iconName: "Users",
-            question:
-              "What support can I expect from your account management team?",
-            answer:
-              "You'll be assigned a dedicated Tata CLiQ account manager who serves as your primary point of contact. They provide regular performance updates, handle day-to-day account operations, and coordinate with our specialist teams for advertising, catalog management, and technical support. We offer responsive communication and proactive problem-solving.",
-            keywords: [
-              "tata cliq account manager service",
-              "account manager for tata cliq",
-            ],
-          },
-          {
-            iconName: "ShoppingCart",
-            question: "How do you handle inventory management?",
-            answer:
-              "Our Tata CLiQ account managers use advanced inventory management tools to optimize your operations. We monitor stock levels, manage reorder points, analyze storage fees, and coordinate shipments. Our team ensures optimal inventory levels to avoid stockouts while minimizing storage costs.",
-            keywords: [
-              "tata cliq inventory manager",
-              "tata cliq account handling",
-            ],
-          },
-          {
-            iconName: "PieChart",
-            question: "How do you handle performance analytics and reporting?",
-            answer:
-              "We provide comprehensive Tata CLiQ online account management reporting including sales analytics, inventory performance, promotional metrics, and competitive analysis. Our customized dashboards offer real-time insights into your account's performance, and we deliver detailed monthly reports with actionable recommendations.",
-            keywords: [
-              "tata cliq online account management",
-              "tata cliq account management companies",
-            ],
-          },
-          {
-            iconName: "Clock",
-            question: "What is your response time for account issues?",
-            answer:
-              "As your Tata CLiQ online account manager, we provide rapid response to account issues, typically within 2-4 business hours. Our team monitors account health metrics continuously and takes proactive measures to prevent potential problems. We handle case management, policy compliance, and issue resolution efficiently.",
-            keywords: [
-              "tata cliq online account manager",
-              "tata cliq account maintenance",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What specialized services do you offer for brand registered sellers?",
-            answer:
-              "For brand registered sellers, we provide enhanced content management, premium content optimization, brand store development, and brand protection services. Our team leverages all available brand tools and features to strengthen your brand presence and drive customer engagement on Tata CLiQ.",
-            keywords: [
-              "tata cliq account management services",
-              "tata cliq seller account management services",
-            ],
-          },
-          {
-            iconName: "CreditCard",
-            question:
-              "What are your pricing models for account management services?",
-            answer:
-              "We offer flexible pricing models based on your business size and service needs. Options include percentage of sales, fixed monthly fees, or hybrid models. All our Tata CLiQ account management services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements.",
-            keywords: [
-              "tata cliq account management pricing",
-              "tata cliq account management services",
-            ],
-          },
-        ],
-      },
+        },
+      
+
+        // Add more service pages
     },
     firstcry: {
-      platform: "firstcry",
-      title: "FirstCry Account Management Services",
-      metaTitle:
-        "Technovita Solution | Expert FirstCry Account Management Services",
-      metaDescription:
-        "Transform your FirstCry business with our dedicated account managers and proven strategies. Expert FirstCry seller account management services.",
-      metaKeywords:
-        "firstcry account management services, firstcry seller account management, firstcry account manager",
-      heroConfig: {
-        badge: {
-          text: "FirstCry Management Experts since 2018",
-          company: "Technovita Solution",
+        platform: "firstcry",
+        title: "FirstCry Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional FirstCry Brand Documentation Services",
+        metaDescription: "Expert FirstCry brand documentation services to build and protect your brand presence. Comprehensive documentation management for FirstCry sellers.",
+        metaKeywords: "firstcry brand documentation, firstcry brand registry documentation, firstcry brand protection documentation",
+        
+        heroConfig: {
+            badge: {
+                text: "FirstCry Brand Documentation Experts since 2018",
+                company: "Technovita Solution"
+            },
+            mainHeading: "FirstCry Brand Documentation & Registry Services",
+            description: [
+                "Creating and maintaining brand documentation for FirstCry can be complex and time-consuming. At Technovita Solution, we specialize in handling all aspects of brand documentation, from initial registry applications to ongoing brand protection.",
+                "Our comprehensive documentation services ensure your brand meets all FirstCry's requirements while maximizing your brand's potential on the platform. We handle everything from trademark documentation to enhanced brand content creation.",
+                "With years of experience in FirstCry brand documentation, our experts understand exactly what it takes to build and maintain a strong brand presence. We've helped hundreds of brands successfully navigate FirstCry's documentation requirements."
+            ],
+            stats: [
+                { label: "Brands Registered", value: "300+" },
+                { label: "Success Rate", value: "99%" },
+                { label: "Documentation Projects", value: "1000+" }
+            ]
         },
-        mainHeading: "FirstCry Seller Account Management Services",
-        description: [
-          "Running a FirstCry business can feel overwhelming. At Technovita Solution, we take the complexity out of FirstCry selling. Our complete account management service handles everything from day-to-day operations to long-term growth strategies, making your FirstCry journey smooth and profitable.",
-          "Think of us as your dedicated FirstCry team. We manage your Seller Portal account, optimize product listings, handle inventory planning, and keep your prices competitive. Our certified FirstCry experts stay on top of marketplace changes and use data-driven strategies to help your products rank higher and sell better.",
-          "Whether you're just starting out or already making millions on FirstCry, our experienced account managers at Technovita Solution know exactly what it takes to grow your business. We've helped hundreds of sellers across all categories increase their sales and build sustainable FirstCry businesses.",
-        ],
-        stats: [
-          { label: "Active Sellers", value: "500+" },
-          { label: "Retention Rate", value: "98%" },
-          { label: "Monthly Sales", value: "₹50M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "500+",
+    
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "300+"
+            },
+            title: "Why Choose TechnovitaSolution for FirstCry Brand Documentation",
+            description: "In today's competitive e-commerce landscape, proper brand documentation is crucial for success on FirstCry. Our comprehensive documentation services ensure your brand meets all requirements while maintaining a strong marketplace presence.",
+            features: [
+                {
+                    title: "Documentation Expertise",
+                    description: "Specialized team with extensive experience in FirstCry brand documentation and registry requirements."
+                },
+                {
+                    title: "Complete Coverage",
+                    description: "End-to-end documentation services covering all aspects of brand presence on FirstCry."
+                },
+                {
+                    title: "Proven Track Record",
+                    description: "99% success rate in brand registry approvals and documentation submissions."
+                },
+                {
+                    title: "Ongoing Support",
+                    description: "Continuous documentation maintenance and updates to ensure brand compliance."
+                }
+            ]
         },
-        title: "Why TechnovitaSolution is Your Best Choice for FirstCry Success",
-        description:
-          "In today's competitive e-commerce landscape, mastering FirstCry's marketplace requires more than just basic selling skills. Our comprehensive account management services are designed to navigate the complexities of FirstCry's ecosystem while driving sustainable growth for your business.",
-        features: [
-          {
-            title: "Expert Management",
-            description:
-              "Dedicated account managers with proven track records in optimizing FirstCry seller performance and growth.",
-          },
-          {
-            title: "Data-Driven Strategy",
-            description:
-              "Advanced analytics and market insights to make informed decisions and stay ahead of competition.",
-          },
-          {
-            title: "Complete Support",
-            description:
-              "End-to-end account management including listing optimization, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description:
-              "98% client retention rate with consistent growth in sales and marketplace performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Strategic Growth Planning",
-            description:
-              "Our expert firstcry account management services focus on developing comprehensive growth strategies tailored to your business goals. We analyze market trends, competitor positioning, and customer behavior to create a roadmap for sustainable success on the FirstCry marketplace.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Account Protection & Compliance",
-            description:
-              "As your dedicated firstcry seller account management partner, we ensure your account stays healthy and compliant with FirstCry's ever-changing policies. Our proactive approach to account management helps prevent issues before they arise.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Analytics",
-            description:
-              "Our firstcry account managing experts utilize advanced analytics tools to track your account's performance metrics. We provide detailed insights into sales trends, conversion rates, and marketing effectiveness to optimize your FirstCry business strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Account Team",
-            description:
-              "When you choose our firstcry account management services near me, you get a dedicated team of specialists who understand your business inside and out. We act as an extension of your team, managing every aspect of your FirstCry presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best FirstCry Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Listing Optimization",
-            blogLink: "/blog/The-Ultimate-Guide-to-Product-Listing-Optimization",
-            description:
-              "Transform your FirstCry presence with our expert product listing optimization services. Our comprehensive approach ensures your products not only rank well but convert browsers into buyers, implementing data-driven strategies across all listing aspects:",
+    
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Title Optimization",
-                points: [
-                  "Strategic keyword placement for maximum visibility",
-                  "Compelling, clear product titles that drive clicks",
-                  "Character limit optimization for mobile and desktop",
-                ],
-              },
-              {
-                subtitle: "Product Description Enhancement",
-                points: [
-                  "Benefit-focused bullet points that sell",
-                  "Keyword-rich descriptions for better indexing",
-                  "Competitor analysis and differentiation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Seller Portal Account Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-firstcry",
-            description:
-              "As your trusted firstcry account management agency, we provide comprehensive account setup and optimization services that set the foundation for your success:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional Seller Portal account configuration",
-                  "Custom shipping and fulfillment strategy development",
-                  "Integration of marketing and advertising services",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring and optimization",
-                  "Account health maintenance and improvement",
-                  "Regular account audits and updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Strategic Keyword Research",
-            blogLink: "/blog/Strategic-Keyword-Research-Guide-2025",
-            description:
-              "Our firstcry seller account management services include advanced keyword research that drives organic traffic and improves visibility:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Data-driven keyword identification and analysis",
-                  "Category-specific search term optimization",
-                  "Competitor keyword gap analysis",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement across listings",
-                  "Search volume and conversion tracking",
-                  "Regular performance monitoring and adjustment",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Enhanced Content Creation & FirstCry Copywriting",
-            blogLink: "/blog/Content-Creation-FirstCry-Copywriting-Guide",
-            description:
-              "Elevate your brand presence with our professional firstcry account management services focused on creating compelling content:",
-            features: [
-              {
-                subtitle: "Enhanced Content Development",
-                points: [
-                  "Custom multimedia module design",
-                  "Brand story integration and storytelling",
-                  "Mobile-optimized content creation",
-                ],
-              },
-              {
-                subtitle: "Professional Copywriting",
-                points: [
-                  "Conversion-focused product descriptions",
-                  "SEO-optimized content creation",
-                  "Brand voice consistency maintenance",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Fulfillment Setup & Management",
-            blogLink: "/blog/Fulfillment-Setup-Management-The-complete-Guide",
-            description:
-              "Our comprehensive firstcry seller account management includes expert fulfillment optimization and management:",
-            features: [
-              {
-                subtitle: "Fulfillment Operations",
-                points: [
-                  "Strategic inventory placement and management",
-                  "Shipping plan optimization and monitoring",
-                  "Cost reduction and efficiency improvement",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Regular fee structure analysis and optimization",
-                  "Delivery performance monitoring",
-                  "Inventory turnover optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Brand Registry & Protection",
-            blogLink: "/blog/Brand-Registry-Protection-on-FirstCry",
-            description:
-              "Protect and enhance your brand with our professional firstcry account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Complete brand registry setup and management",
-                  "Intellectual property protection measures",
-                  "Unauthorized seller monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Access to exclusive brand tools and features",
-                  "Brand analytics utilization",
-                  "Enhanced content opportunities",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "LineChart",
-            title: "Inventory Management & Tracking",
-            blogLink: "/blog/FirstCry-inventory-Management-Tracking",
-            description:
-              "Our firstcry account management services include comprehensive inventory solution:",
-            features: [
-              {
-                subtitle: "Stock Management",
-                points: [
-                  "Real-time inventory monitoring",
-                  "Restock timing optimization",
-                  "Storage fee management",
-                ],
-              },
-              {
-                subtitle: "Performance Analytics",
-                points: [
-                  "Sales velocity tracking",
-                  "Inventory turnover analysis",
-                  "Seasonal demand planning",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "MessageSquare",
-            title: "Review Management & Optimization",
-            blogLink: "/blog/FirstCry-Review-Management-Optimization",
-            description:
-              "Maintain a stellar reputation with our best firstcry account management services focused on review optimization:",
-            features: [
-              {
-                subtitle: "Review Monitoring",
-                points: [
-                  "Proactive review solicitation strategies",
-                  "Negative feedback resolution",
-                  "Customer satisfaction improvement",
-                ],
-              },
-              {
-                subtitle: "Rating Enhancement",
-                points: [
-                  "Review analysis and trend identification",
-                  "Customer feedback implementation",
-                  "Product improvement recommendations",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "AlertTriangle",
-            title: "Account Reinstatement Services",
-            blogLink: "/blog/FirstCry-Account-Reinstatement",
-            description:
-              "Our expert firstcry account management team specializes in account recovery and reinstatement:",
-            features: [
-              {
-                subtitle: "Recovery Process",
-                points: [
-                  "Comprehensive account audit",
-                  "Policy violation analysis",
-                  "Custom plan of action development",
-                ],
-              },
-              {
-                subtitle: "Prevention Strategy",
-                points: [
-                  "Ongoing compliance monitoring",
-                  "Risk assessment and mitigation",
-                  "Policy update implementation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Activity",
-            title: "Express Delivery Program Management",
-            blogLink: "/blog/FirstCry-Express-Delivery-Program",
-            description:
-              "Optimize your operations with our specialized firstcry seller account management services for Express Delivery:",
-            features: [
-              {
-                subtitle: "Program Implementation",
-                points: [
-                  "Eligibility assessment and application",
-                  "Operational setup and optimization",
-                  "Delivery network integration",
-                ],
-              },
-              {
-                subtitle: "Performance Management",
-                points: [
-                  "Delivery metrics monitoring",
-                  "Cost efficiency optimization",
-                  "Customer satisfaction tracking",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Target",
-            title: "Competitor Analysis & Strategy",
-            blogLink: "/blog/FirstCry-Competitor-Analysis-Strategy",
-            description:
-              "Stay ahead with our data-driven firstcry account management analysis services:",
-            features: [
-              {
-                subtitle: "Market Analysis",
-                points: [
-                  "Comprehensive competitor research",
-                  "Price point optimization",
-                  "Market trend identification",
-                ],
-              },
-              {
-                subtitle: "Strategic Planning",
-                points: [
-                  "Competitive advantage development",
-                  "Market positioning strategy",
-                  "Growth opportunity identification",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven FirstCry Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Account Analysis & Strategy Development",
-            description:
-              "Our firstcry account management process begins with a thorough analysis of your current FirstCry presence. Our expert team conducts a comprehensive evaluation of your product listings, pricing strategies, advertising performance, and competitor positioning. We identify immediate opportunities for improvement and develop a customized strategy aligned with your business goals.",
-            details: [
-              "Complete account health assessment",
-              "Competitor landscape analysis",
-              "Performance metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description:
-              "As your trusted firstcry account management agency, we implement necessary optimizations across your entire account structure. This phase focuses on strengthening your account foundation through systematic improvements to listings, backend settings, and operational workflows. Our team ensures every aspect of your firstcry account managing process is optimized for maximum performance and compliance.",
-            details: [
-              "Listing optimization implementation",
-              "Backend keyword enhancement",
-              "Account settings refinement",
-              "Category-specific optimization",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description:
-              "With optimizations in place, we execute your customized growth strategy. Our best firstcry account management services focus on expanding your market presence through strategic initiatives. We implement targeted campaigns, optimize inventory management, and enhance brand presence to drive sustainable growth on the platform.",
-            details: [
-              "Marketing campaign deployment",
-              "Inventory strategy execution",
-              "Brand registry optimization",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description:
-              "Our firstcry seller account management services include continuous monitoring of key performance indicators. We track crucial metrics, analyze trends, and make data-driven adjustments to optimize your account's performance. This proactive approach ensures we maintain momentum and quickly address any challenges that arise.",
-            details: [
-              "Real-time metrics tracking",
-              "Performance trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-          {
-            iconName: "Repeat",
-            title: "Continuous Improvement & Adaptation",
-            description:
-              "The firstcry account management landscape constantly evolves, and so do our strategies. We continuously refine our approach based on performance data, market changes, and emerging opportunities. Our team stays updated with FirstCry's latest features and requirements to ensure your account remains competitive and compliant.",
-            details: [
-              "Strategy refinement",
-              "Market trend adaptation",
-              "Policy compliance updates",
-              "Performance optimization",
-              "Growth strategy evolution",
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Long-term Success & Protection",
-            description:
-              "As your dedicated firstcry account management partner, we focus on securing your long-term success. We implement protective measures to safeguard your account health while continuing to identify and capitalize on new growth opportunities. Our comprehensive approach ensures sustainable success on the FirstCry marketplace.",
-            details: [
-              "Account health maintenance",
-              "Brand protection measures",
-              "Growth sustainability planning",
-              "Risk mitigation strategies",
-              "Long-term opportunity development",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Customer Stories", "500+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading FirstCry Sellers Across India",
-          description:
-            "See why hundreds of FirstCry sellers choose Technovita Solution for their account management needs",
+                {
+                    iconName: "FileText",
+                    title: "Comprehensive Documentation Management",
+                    description: "Our expert brand documentation services cover all aspects of FirstCry brand presence, from initial setup to ongoing maintenance."
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Documentation",
+                    description: "Detailed documentation strategies to protect your brand identity and intellectual property on FirstCry."
+                },
+                {
+                    iconName: "CheckSquare",
+                    title: "Compliance Documentation",
+                    description: "Ensure all brand documentation meets FirstCry's latest requirements and standards."
+                },
+                {
+                    iconName: "File",
+                    title: "Enhanced Content Documentation",
+                    description: "Professional documentation for enhanced brand content and A+ content creation."
+                }
+            ]
         },
-        customerReviews: [
-          {
-            name: "Meera Desai",
-            company: "Little Angels Clothing",
-            rating: 5,
-            review:
-              "Technovita Solution revolutionized our FirstCry business completely. Their strategic approach helped us increase our sales by 250% in just 6 months. The dedicated account manager is always available and proactive in handling issues.",
-            position: "Business Owner",
-            location: "Mumbai",
-          },
-          {
-            name: "Anand Gupta",
-            company: "Baby Care Essentials",
-            rating: 5,
-            review:
-              "We were struggling with FirstCry compliance issues before partnering with Technovita. Their team not only resolved all our account problems but also helped us expand our product line successfully. Best FirstCry account management service in India!",
-            position: "E-commerce Director",
-            location: "Delhi",
-          },
-          {
-            name: "Shalini Reddy",
-            company: "Kids Fashion World",
-            rating: 5,
-            review:
-              "The ROI with Technovita has been exceptional. Their deep understanding of FirstCry's algorithm and market trends helped us achieve Best Seller status in our category. Highly recommended for serious FirstCry sellers.",
-            position: "Founder",
-            location: "Hyderabad",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.8,
-            totalReviews: 487,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.9,
-            totalReviews: 892,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.7,
-            totalReviews: 356,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "FirstCry Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question:
-              "What does your FirstCry account management service include?",
-            answer:
-              "Our comprehensive FirstCry account management services cover everything from initial account setup to ongoing optimization. This includes product listing optimization, inventory management, pricing strategy, competitor analysis, advertising campaign management, and performance analytics. We provide dedicated account managers who ensure your FirstCry business operates smoothly across all aspects of the platform.",
-            keywords: [
-              "firstcry account management services",
-              "account management firstcry",
+    
+        servicesConfig: {
+            title: "Professional FirstCry Brand Documentation Services",
+            services: [
+                {
+                    iconName: "FileText",
+                    title: "Brand Registry Documentation",
+                    blogLink: "/blog/FirstCry-Brand-Registry-Documentation-Guide",
+                    description: "Complete documentation support for FirstCry brand registry applications:",
+                    features: [
+                        {
+                            subtitle: "Application Documentation",
+                            points: [
+                                "Trademark documentation preparation",
+                                "Brand ownership verification documents",
+                                "Legal compliance documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Supporting Documentation",
+                            points: [
+                                "Product authenticity documentation",
+                                "Manufacturing documentation",
+                                "Distribution rights documentation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Documentation",
+                    blogLink: "/blog/FirstCry-Brand-Protection-Documentation",
+                    description: "Comprehensive brand protection documentation services:",
+                    features: [
+                        {
+                            subtitle: "Protection Strategy",
+                            points: [
+                                "Trademark infringement documentation",
+                                "Counterfeit reporting procedures",
+                                "Brand violation documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Monitoring Documentation",
+                            points: [
+                                "Brand monitoring procedures",
+                                "Violation tracking documentation",
+                                "Enforcement action records"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    iconName: "Layout",
+                    title: "Enhanced Content Documentation",
+                    blogLink: "/blog/FirstCry-Enhanced-Content-Documentation",
+                    description: "Professional documentation for enhanced brand content:",
+                    features: [
+                        {
+                            subtitle: "Content Guidelines",
+                            points: [
+                                "Brand style guide documentation",
+                                "Content creation standards",
+                                "Image specification documentation"
+                            ]
+                        },
+                        {
+                            subtitle: "Implementation Documentation",
+                            points: [
+                                "A+ content templates",
+                                "Brand store documentation",
+                                "Enhanced brand content guidelines"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+    
+        processConfig: {
+            title: "Our Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Initial Documentation Assessment",
+                    description: "Comprehensive evaluation of existing brand documentation and requirements.",
+                    details: [
+                        "Brand documentation audit",
+                        "Requirement analysis",
+                        "Gap identification",
+                        "Documentation strategy development",
+                        "Timeline planning"
+                    ]
+                },
+                {
+                    iconName: "FileText",
+                    title: "Documentation Preparation",
+                    description: "Professional preparation of all required brand documentation.",
+                    details: [
+                        "Document compilation",
+                        "Format standardization",
+                        "Legal compliance review",
+                        "Quality assurance",
+                        "Version control setup"
+                    ]
+                },
+                {
+                    iconName: "Upload",
+                    title: "Documentation Submission",
+                    description: "Strategic submission of brand documentation to FirstCry.",
+                    details: [
+                        "Submission timing optimization",
+                        "Document organization",
+                        "Follow-up procedures",
+                        "Progress tracking",
+                        "Status monitoring"
+                    ]
+                },
+                {
+                    iconName: "CheckSquare",
+                    title: "Documentation Maintenance",
+                    description: "Ongoing maintenance and updates of brand documentation.",
+                    details: [
+                        "Regular reviews",
+                        "Update implementation",
+                        "Compliance monitoring",
+                        "Document archiving",
+                        "Version updates"
+                    ]
+                }
+            ]
+        },
+    
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Client Success Stories", "300+ Registered Brands"],
+                    className: "bg-blue-100 text-blue-600"
+                },
+                title: "Trusted by Leading Brands on FirstCry",
+                description: "See why hundreds of brands choose us for their FirstCry documentation needs"
+            },
+            customerReviews: [
+                {
+                    name: "Rajesh Kumar",
+                    company: "Baby Essentials India",
+                    rating: 5,
+                    review: "Technovita Solution handled our brand documentation perfectly. Their expertise made the entire process smooth and hassle-free.",
+                    position: "Brand Manager",
+                    location: "Delhi"
+                },
+                {
+                    name: "Priya Sharma",
+                    company: "Kids Fashion Co",
+                    rating: 5,
+                    review: "Outstanding documentation services. Their attention to detail and knowledge of FirstCry requirements is impressive.",
+                    position: "CEO",
+                    location: "Mumbai"
+                },
+                {
+                    name: "Amit Patel",
+                    company: "ToddlerCare Products",
+                    rating: 5,
+                    review: "Professional, efficient, and thorough in their documentation approach. Highly recommended for FirstCry brand documentation.",
+                    position: "Director",
+                    location: "Bangalore"
+                }
             ],
-          },
-          {
-            iconName: "TrendingUp",
-            question:
-              "How can your FirstCry account management agency improve my sales performance?",
-            answer:
-              "As a specialized FirstCry account management agency, we implement data-driven strategies to boost your sales performance. This includes optimizing product listings for better visibility, implementing strategic pricing, managing promotional campaigns, improving inventory turnover, and enhancing customer service metrics. Our team continuously monitors performance metrics and adjusts strategies to maximize your ROI.",
-            keywords: [
-              "firstcry account management agency",
-              "firstcry seller account management",
-            ],
-          },
-          {
-            iconName: "Globe",
-            question:
-              "Do you offer international FirstCry marketplace management?",
-            answer:
-              "Yes, we provide complete FirstCry account handling for multiple international marketplaces. Our global account managers are well-versed in managing accounts across FirstCry's global platforms, including UAE and other international markets. We help with marketplace-specific compliance, localization, and strategic expansion to new markets.",
-            keywords: [
-              "firstcry global account manager",
-              "firstcry marketplace account manager",
-            ],
-          },
-          {
-            iconName: "Settings",
-            question:
-              "What makes your FirstCry Seller Portal account management unique?",
-            answer:
-              "Our FirstCry Seller Portal account management stands out through our comprehensive approach. We combine technical expertise in platform operations with strategic business insights. This includes automated inventory management, advanced analytics reporting, strategic pricing optimization, and proactive problem resolution. We maintain all crucial seller metrics to ensure account health and growth.",
-            keywords: [
-              "firstcry seller portal account management",
-              "seller portal account management",
-            ],
-          },
-          {
-            iconName: "DollarSign",
-            question:
-              "How do you handle FirstCry advertising and promotional campaigns?",
-            answer:
-              "Our FirstCry advertising account managers specialize in creating and optimizing promotional campaigns that maximize ROI. We handle campaign strategy, promotion planning, campaign structure optimization, and performance tracking. Our team regularly analyzes advertising metrics to refine targeting and improve campaign spend efficiency.",
-            keywords: [
-              "firstcry promotion management",
-              "firstcry advertising",
-              "firstcry campaign manager",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What strategic account management services do you provide?",
-            answer:
-              "As your strategic account manager for FirstCry, we focus on long-term growth and market positioning. Our strategic account services include market analysis, competition monitoring, brand development, expansion planning, and performance optimization. We work closely with you to develop and implement strategies aligned with your business goals.",
-            keywords: [
-              "strategic account manager firstcry",
-              "firstcry strategic account services",
-            ],
-          },
-          {
-            iconName: "Briefcase",
-            question: "How do you support FirstCry Business accounts?",
-            answer:
-              "Our FirstCry business account manager services are tailored for large-scale sellers. We help optimize your business presence, manage bulk pricing strategies, handle corporate customer relationships, and ensure compliance with business-specific requirements. We also assist with catalog management and business-focused marketing strategies.",
-            keywords: [
-              "firstcry business account manager",
-              "manage firstcry business account",
-            ],
-          },
-          {
-            iconName: "Users",
-            question:
-              "What support can I expect from your account management team?",
-            answer:
-              "You'll be assigned a dedicated FirstCry account manager who serves as your primary point of contact. They provide regular performance updates, handle day-to-day account operations, and coordinate with our specialist teams for advertising, catalog management, and technical support. We offer responsive communication and proactive problem-solving.",
-            keywords: [
-              "firstcry account manager service",
-              "account manager for firstcry",
-            ],
-          },
-          {
-            iconName: "ShoppingCart",
-            question: "How do you handle inventory management?",
-            answer:
-              "Our FirstCry inventory managers use advanced inventory management tools to optimize your operations. We monitor stock levels, manage reorder points, analyze storage fees, and coordinate shipments. Our team ensures optimal inventory levels to avoid stockouts while minimizing storage costs.",
-            keywords: ["firstcry inventory manager", "firstcry account handling"],
-          },
-          {
-            iconName: "BookOpen",
-            question: "What experience do you have with large seller accounts?",
-            answer:
-              "Our FirstCry large seller account manager team has extensive experience managing high-volume seller relationships. We handle order management, retail analytics, marketing programs, and vendor negotiations. Our services help optimize your operations and maintain strong performance metrics.",
-            keywords: [
-              "firstcry large seller account manager",
-              "firstcry account maintenance",
-            ],
-          },
-          {
-            iconName: "PieChart",
-            question: "How do you handle performance analytics and reporting?",
-            answer:
-              "We provide comprehensive FirstCry online account management reporting including sales analytics, inventory performance, advertising metrics, and competitive analysis. Our customized dashboards offer real-time insights into your account's performance, and we deliver detailed monthly reports with actionable recommendations.",
-            keywords: [
-              "firstcry online account management",
-              "firstcry account management companies",
-            ],
-          },
-          {
-            iconName: "Clock",
-            question: "What is your response time for account issues?",
-            answer:
-              "As your FirstCry online account manager, we provide rapid response to account issues, typically within 2-4 business hours. Our team monitors account health metrics continuously and takes proactive measures to prevent potential problems. We handle case management, policy compliance, and issue resolution efficiently.",
-            keywords: [
-              "firstcry online account manager",
-              "firstcry account maintenance",
-            ],
-          },
-          {
-            iconName: "Globe",
-            question: "Can you help with market expansion?",
-            answer:
-              "Yes, our account management services help sellers expand their FirstCry presence across different regions. We handle regional market registration, listing optimization, regional compliance, and local market optimization. Our team guides you through the entire expansion process while managing your existing marketplace presence.",
-            keywords: [
-              "firstcry marketplace account manager",
-              "firstcry regional account manager",
-            ],
-          },
-          {
-            iconName: "Target",
-            question:
-              "What specialized services do you offer for brand registered sellers?",
-            answer:
-              "For brand registered sellers, we provide enhanced content management, premium content optimization, brand store development, and brand protection services. Our team leverages all available brand tools and features to strengthen your brand presence and drive customer engagement on FirstCry.",
-            keywords: [
-              "firstcry account management services",
-              "firstcry seller account management services",
-            ],
-          },
-          {
-            iconName: "CreditCard",
-            question:
-              "What are your pricing models for account management services?",
-            answer:
-              "We offer flexible pricing models based on your business size and service needs. Options include percentage of sales, fixed monthly fees, or hybrid models. All our FirstCry account management services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements.",
-            keywords: [
-              "firstcry account management pricing",
-              "firstcry account management services",
-            ],
-          },
-        ],
-      },
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.9,
+                    totalReviews: 312,
+                    className: "bg-[#00b67a]"
+                },
+                {
+                    platform: "Google",
+                    rating: 4.8,
+                    totalReviews: 456,
+                    className: "bg-[#4285f4]"
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 289,
+                    className: "bg-[#1877f2]"
+                }
+            ]
+        },
+    
+        faqConfig: {
+            title: "FirstCry Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "FileText",
+                    question: "What documentation is required for FirstCry brand registry?",
+                    answer: "FirstCry brand registry requires several key documents including trademark registration certificates, brand ownership proof, manufacturing documentation, and distribution rights documentation. Our service handles the preparation and submission of all required documentation.",
+                    keywords: ["firstcry brand registry documentation", "brand documentation requirements"]
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you handle brand protection documentation?",
+                    answer: "Our brand protection documentation services include trademark infringement documentation, counterfeit reporting procedures, and violation tracking documentation. We maintain comprehensive records of all brand protection activities.",
+                    keywords: ["brand protection documentation", "trademark documentation"]
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the documentation process take?",
+                    answer: "The documentation process timeline varies depending on the complexity of your brand and documentation requirements. Typically, initial documentation preparation takes 1-2 weeks, with submission and approval taking an additional 2-4 weeks.",
+                    keywords: ["documentation timeline", "process duration"]
+                }
+            ]
+        }
     },
-    aza: {
-      platform: "aza",
-      title: "Aza Fashion Account Management Services",
-      metaTitle: "Technovita Solution | Expert Aza Fashion Account Management Services",
-      metaDescription: "Transform your Aza Fashion business with our dedicated account managers and proven strategies. Expert fashion seller account management services.",
-      metaKeywords: "aza fashion account management services, aza seller account management, aza account manager, fashion e-commerce management, luxury retail management",
-      heroConfig: {
-        badge: {
-          text: "Fashion E-commerce Experts since 2018",
-          company: "Technovita Solution",
+    aza:{
+        platform: "aza",
+        title: "Aza Fashion Brand Documentation Services",
+        metaTitle: "Technovita Solution | Professional Aza Brand Documentation Services",
+        metaDescription: "Expert brand documentation services for Aza fashion sellers. Comprehensive documentation solutions for luxury fashion brands.",
+        metaKeywords: "aza brand documentation, fashion brand documentation, luxury brand guidelines, aza fashion documentation, brand style guide",
+        heroConfig: {
+            badge: {
+                text: "Brand Documentation Experts since 2018",
+                company: "Technovita Solution",
+            },
+            mainHeading: "Professional Aza Brand Documentation Services",
+            description: [
+                "Creating and maintaining comprehensive brand documentation is crucial for success on Aza's luxury fashion platform. Our expert documentation services ensure your brand identity remains consistent and compelling across all touchpoints.",
+                "We specialize in developing detailed brand guidelines, style guides, and technical documentation that helps your team maintain brand consistency while meeting Aza's marketplace requirements.",
+                "From establishing brand voice to documenting product photography standards, our experienced team creates clear, actionable documentation that supports your fashion brand's growth and success on Aza.",
+            ],
+            stats: [
+                { label: "Brands Documented", value: "300+" },
+                { label: "Documentation Success Rate", value: "99%" },
+                { label: "Brand Consistency Score", value: "95%" },
+            ],
         },
-        mainHeading: "Aza Fashion Seller Account Management Services",
-        description: [
-          "Managing a successful fashion business on Aza can be complex. At Technovita Solution, we simplify luxury fashion e-commerce. Our complete account management service handles everything from daily operations to strategic growth planning, ensuring your Aza journey is profitable and seamless.",
-          "Consider us your dedicated fashion e-commerce team. We manage your Aza seller account, optimize product presentations, handle inventory planning, and maintain competitive pricing. Our certified fashion e-commerce experts stay current with marketplace trends and use data-driven strategies to enhance your brand visibility and sales performance.",
-          "Whether you're an emerging designer or an established fashion house, our experienced account managers at Technovita Solution understand the nuances of luxury fashion retail. We've helped hundreds of sellers across all fashion categories increase their sales and build sustainable online businesses.",
-        ],
-        stats: [
-          { label: "Active Fashion Brands", value: "500+" },
-          { label: "Retention Rate", value: "98%" },
-          { label: "Monthly Sales", value: "₹100M+" },
-        ],
-      },
-      whyChooseUsConfig: {
-        badge: {
-          trustedSellers: "500+",
+        whyChooseUsConfig: {
+            badge: {
+                trustedBrands: "300+",
+            },
+            title: "Why TechnovitaSolution is Your Best Choice for Aza Brand Documentation",
+            description: "Professional brand documentation is essential for maintaining consistency and quality across your Aza presence. Our comprehensive documentation services ensure your brand standards are clearly defined and easily implementable.",
+            features: [
+                {
+                    title: "Documentation Expertise",
+                    description: "Specialized team with extensive experience in fashion brand documentation and style guide creation.",
+                },
+                {
+                    title: "Platform Knowledge",
+                    description: "Deep understanding of Aza's requirements and best practices for brand documentation.",
+                },
+                {
+                    title: "Complete Coverage",
+                    description: "Comprehensive documentation covering all aspects of brand presence and operations.",
+                },
+                {
+                    title: "Proven Systems",
+                    description: "Established documentation processes that ensure clarity and consistency.",
+                },
+            ],
         },
-        title: "Why TechnovitaSolution is Your Best Choice for Aza Fashion Success",
-        description: "In today's competitive luxury fashion e-commerce landscape, excelling on Aza requires specialized expertise. Our comprehensive account management services are designed to navigate the complexities of fashion retail while driving sustainable growth for your brand.",
-        features: [
-          {
-            title: "Fashion Expertise",
-            description: "Dedicated account managers with proven experience in luxury fashion e-commerce optimization and brand growth.",
-          },
-          {
-            title: "Trend Analysis",
-            description: "Advanced fashion analytics and market insights to make informed decisions and stay ahead of seasonal trends.",
-          },
-          {
-            title: "Complete Support",
-            description: "End-to-end account management including product presentation, inventory planning, and brand protection.",
-          },
-          {
-            title: "Proven Results",
-            description: "98% client retention rate with consistent growth in sales and brand performance.",
-          },
-        ],
-      },
-      featuresConfig: {
-        features: [
-          {
-            iconName: "TrendingUp",
-            title: "Fashion Growth Strategy",
-            description: "Our expert Aza account management services focus on developing comprehensive growth strategies tailored to your fashion brand's vision. We analyze market trends, competitor positioning, and customer preferences to create a roadmap for sustainable success in luxury fashion retail.",
-          },
-          {
-            iconName: "ShieldCheck",
-            title: "Brand Protection & Compliance",
-            description: "As your dedicated Aza seller account management partner, we ensure your brand maintains its luxury positioning while staying compliant with Aza's policies. Our proactive approach to account management helps prevent issues before they impact your brand.",
-          },
-          {
-            iconName: "BarChart",
-            title: "Fashion Analytics",
-            description: "Our Aza account managing experts utilize advanced analytics tools to track your fashion metrics. We provide detailed insights into sales trends, collection performance, and marketing effectiveness to optimize your luxury retail strategy.",
-          },
-          {
-            iconName: "Users",
-            title: "Dedicated Fashion Team",
-            description: "When you choose our Aza account management services, you get a dedicated team of fashion retail specialists who understand your brand essence. We act as an extension of your team, managing every aspect of your Aza presence.",
-          },
-        ],
-      },
-      servicesConfig: {
-        title: "Best Aza Fashion Account Management Services In India",
-        services: [
-          {
-            iconName: "Search",
-            title: "Product Presentation Optimization",
-            blogLink: "/blog/The-Ultimate-Guide-to-Fashion-Product-Presentation",
-            description: "Transform your Aza presence with our expert product presentation services. Our comprehensive approach ensures your fashion items not only stand out but convert browsers into buyers:",
+        featuresConfig: {
             features: [
-              {
-                subtitle: "Visual Merchandising",
-                points: [
-                  "Professional fashion photography guidelines",
-                  "Styling and presentation optimization",
-                  "Mobile and desktop display enhancement",
-                ],
-              },
-              {
-                subtitle: "Product Description Excellence",
-                points: [
-                  "Fashion-focused copywriting",
-                  "Detailed size and fit information",
-                  "Fabric and care instruction optimization",
-                ],
-              },
+                {
+                    iconName: "Book",
+                    title: "Brand Guidelines Development",
+                    description: "Our expert documentation services focus on creating comprehensive brand guidelines that establish clear standards for your fashion brand's presence on Aza. We analyze your brand elements and create detailed documentation for consistent implementation.",
+                },
+                {
+                    iconName: "Shield",
+                    title: "Documentation Standards & Compliance",
+                    description: "As your documentation partner, we ensure all brand guidelines comply with Aza's requirements while maintaining your unique identity. Our proactive approach to documentation helps prevent inconsistencies before they impact your brand.",
+                },
+                {
+                    iconName: "FileText",
+                    title: "Technical Documentation",
+                    description: "Our documentation experts create detailed technical specifications and guides. We provide comprehensive documentation for product standards, operational procedures, and platform integration requirements.",
+                },
+                {
+                    iconName: "Users",
+                    title: "Dedicated Documentation Team",
+                    description: "When you choose our documentation services, you get a dedicated team of documentation specialists who understand fashion branding. We act as an extension of your team, maintaining all aspects of your brand documentation.",
+                },
             ],
-          },
-          {
-            iconName: "Settings",
-            title: "Designer Dashboard Setup & Optimization",
-            blogLink: "/blog/How-to-become-seller-on-aza",
-            description: "As your trusted Aza account management agency, we provide comprehensive dashboard setup and optimization services that set the foundation for your success:",
-            features: [
-              {
-                subtitle: "Account Setup Excellence",
-                points: [
-                  "Professional designer dashboard configuration",
-                  "Custom shipping and fulfillment strategy",
-                  "Integration of marketing and promotional tools",
-                ],
-              },
-              {
-                subtitle: "Optimization Strategies",
-                points: [
-                  "Performance metrics monitoring",
-                  "Account health maintenance",
-                  "Regular dashboard audits",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Star",
-            title: "Fashion Keyword Optimization",
-            blogLink: "/blog/Fashion-Keyword-Research-Guide-2025",
-            description: "Our Aza seller account management services include advanced fashion keyword optimization that drives organic traffic:",
-            features: [
-              {
-                subtitle: "Research Methodology",
-                points: [
-                  "Fashion-specific keyword analysis",
-                  "Category-specific search optimization",
-                  "Competitor keyword research",
-                ],
-              },
-              {
-                subtitle: "Implementation Strategy",
-                points: [
-                  "Strategic keyword placement",
-                  "Search volume tracking",
-                  "Conversion optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "FileText",
-            title: "Luxury Content Creation & Fashion Copywriting",
-            blogLink: "/blog/Luxury-Fashion-Content-Creation-Guide",
-            description: "Elevate your brand presence with our professional Aza account management services focused on creating compelling fashion content:",
-            features: [
-              {
-                subtitle: "Premium Content Development",
-                points: [
-                  "Custom lookbook creation",
-                  "Brand story integration",
-                  "Mobile-optimized fashion content",
-                ],
-              },
-              {
-                subtitle: "Professional Fashion Writing",
-                points: [
-                  "Luxury product descriptions",
-                  "Style guide creation",
-                  "Brand voice consistency",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Truck",
-            title: "Inventory & Collection Management",
-            blogLink: "/blog/Fashion-Inventory-Management-Guide",
-            description: "Our comprehensive Aza seller account management includes expert inventory optimization:",
-            features: [
-              {
-                subtitle: "Inventory Operations",
-                points: [
-                  "Seasonal collection planning",
-                  "Size and color variant management",
-                  "Stock level optimization",
-                ],
-              },
-              {
-                subtitle: "Performance Optimization",
-                points: [
-                  "Sell-through analysis",
-                  "Stock rotation strategy",
-                  "Markdown optimization",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Fashion Brand Protection",
-            blogLink: "/blog/Fashion-Brand-Protection-on-Aza",
-            description: "Protect and enhance your fashion brand with our professional Aza account managing services:",
-            features: [
-              {
-                subtitle: "Brand Protection",
-                points: [
-                  "Design copyright protection",
-                  "Authenticity verification",
-                  "Counterfeit monitoring",
-                ],
-              },
-              {
-                subtitle: "Brand Growth",
-                points: [
-                  "Designer showcase opportunities",
-                  "Brand analytics utilization",
-                  "Premium content creation",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "LineChart",
-            title: "Fashion Analytics & Tracking",
-            blogLink: "/blog/Fashion-Analytics-Tracking",
-            description: "Our Aza account management services include comprehensive analytics solutions:",
-            features: [
-              {
-                subtitle: "Collection Performance",
-                points: [
-                  "Real-time sales monitoring",
-                  "Style performance analysis",
-                  "Seasonal trend tracking",
-                ],
-              },
-              {
-                subtitle: "Analytics Insights",
-                points: [
-                  "Customer behavior analysis",
-                  "Category performance metrics",
-                  "Trend forecasting",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "MessageSquare",
-            title: "Customer Experience Management",
-            blogLink: "/blog/Fashion-Customer-Experience-Management",
-            description: "Maintain exceptional customer satisfaction with our best Aza account management services:",
-            features: [
-              {
-                subtitle: "Review Management",
-                points: [
-                  "Style feedback analysis",
-                  "Fit accuracy monitoring",
-                  "Customer satisfaction tracking",
-                ],
-              },
-              {
-                subtitle: "Service Enhancement",
-                points: [
-                  "Styling advice optimization",
-                  "Size guide improvement",
-                  "Return rate reduction",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "AlertTriangle",
-            title: "Account Recovery Services",
-            blogLink: "/blog/Aza-Account-Recovery",
-            description: "Our expert Aza account management team specializes in account recovery:",
-            features: [
-              {
-                subtitle: "Recovery Process",
-                points: [
-                  "Account audit services",
-                  "Policy compliance review",
-                  "Resolution strategy development",
-                ],
-              },
-              {
-                subtitle: "Prevention Strategy",
-                points: [
-                  "Compliance monitoring",
-                  "Risk assessment",
-                  "Policy updates",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Activity",
-            title: "Designer Program Management",
-            blogLink: "/blog/Aza-Designer-Program",
-            description: "Optimize your presence with our specialized Aza seller account management services:",
-            features: [
-              {
-                subtitle: "Program Implementation",
-                points: [
-                  "Designer showcase setup",
-                  "Collection launch planning",
-                  "Brand presence optimization",
-                ],
-              },
-              {
-                subtitle: "Performance Management",
-                points: [
-                  "Collection metrics tracking",
-                  "Brand visibility optimization",
-                  "Designer ranking improvement",
-                ],
-              },
-            ],
-          },
-          {
-            iconName: "Target",
-            title: "Fashion Market Analysis",
-            blogLink: "/blog/Fashion-Market-Analysis-Strategy",
-            description: "Stay ahead with our data-driven Aza account management analysis services:",
-            features: [
-              {
-                subtitle: "Market Analysis",
-                points: [
-                  "Fashion trend research",
-                  "Price point optimization",
-                  "Collection planning",
-                ],
-              },
-              {
-                subtitle: "Strategic Planning",
-                points: [
-                  "Seasonal strategy development",
-                  "Market positioning",
-                  "Growth opportunity identification",
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      processConfig: {
-        title: "Our Proven Aza Fashion Account Management Process",
-        items: [
-          {
-            iconName: "Search",
-            title: "Initial Brand Analysis & Strategy Development",
-            description: "Our Aza account management process begins with a thorough analysis of your current fashion brand presence. Our expert team conducts a comprehensive evaluation of your collections, pricing strategies, promotional performance, and competitor positioning.",
-            details: [
-              "Brand health assessment",
-              "Collection performance analysis",
-              "Marketing metrics evaluation",
-              "Opportunity identification",
-              "Custom strategy development",
-            ],
-          },
-          {
-            iconName: "Settings",
-            title: "Account Optimization & Setup Enhancement",
-            description: "As your trusted Aza account management agency, we implement necessary optimizations across your entire brand presence. This phase focuses on strengthening your foundation through systematic improvements to product presentation, backend settings, and operational workflows.",
-            details: [
-              "Product presentation enhancement",
-              "Category optimization",
-              "Account settings refinement",
-              "Brand showcase setup",
-              "Compliance verification",
-            ],
-          },
-          {
-            iconName: "TrendingUp",
-            title: "Growth Strategy Implementation",
-            description: "With optimizations in place, we execute your customized growth strategy. Our best Aza account management services focus on expanding your market presence through strategic initiatives.",
-            details: [
-              "Collection launch planning",
-              "Inventory strategy execution",
-              "Brand visibility enhancement",
-              "Sales acceleration tactics",
-              "Market expansion planning",
-            ],
-          },
-          {
-            iconName: "BarChart",
-            title: "Performance Monitoring & Optimization",
-            description: "Our Aza seller account management includes continuous monitoring of key performance indicators. We track crucial metrics, analyze trends, and make data-driven adjustments to optimize your account's performance.",
-            details: [
-              "Real-time metrics tracking",
-              "Collection trend analysis",
-              "Competitive positioning review",
-              "ROI optimization",
-              "Growth opportunity identification",
-            ],
-          },
-          {
-            iconName: "Repeat",
-            title: "Continuous Improvement & Adaptation",
-            description: "The fashion e-commerce landscape constantly evolves, and so do our strategies. We continuously refine our approach based on performance data, market changes, and emerging opportunities.",
-            details: [
-              "Strategy refinement",
-              "Trend adaptation",
-              "Policy compliance updates",
-              "Performance optimization",
-              "Growth strategy evolution",
-            ],
-          },
-          {
-            iconName: "Shield",
-            title: "Long-term Success & Protection",
-            description: "As your dedicated Aza account management partner, we focus on securing your long-term success. We implement protective measures to safeguard your brand while continuing to identify and capitalize on new growth opportunities.",
-            details: [
-              "Brand health maintenance",
-              "Design protection measures",
-              "Growth sustainability planning",
-              "Risk mitigation strategies",
-              "Long-term opportunity development",
-            ],
-          },
-        ],
-      },
-      reviewConfig: {
-        header: {
-          badge: {
-            text: ["Designer Stories", "500+ Happy Clients"],
-            className: "bg-orange-100 text-orange-600",
-          },
-          title: "Trusted by Leading Fashion Designers Across India",
-          description: "See why hundreds of fashion brands choose Technovita Solution for their Aza account management needs",
         },
-        customerReviews: [
-          {
-            name: "Priya Mehta",
-            company: "House of PM",
-            rating: 5,
-            review: "Technovita Solution transformed our Aza presence completely. Their strategic approach helped us increase our sales by 300% in just one season. The dedicated account manager understands fashion retail deeply.",
-            position: "Creative Director",
-            location: "Mumbai",
-          },
-          {
-            name: "Arjun Khanna",
-            company: "AK Couture",
-            rating: 5,
-            review: "We were struggling with collection management before partnering with Technovita. Their team not only resolved our inventory issues but also helped us expand our luxury product line successfully.",
-            position: "Fashion Designer",
-            location: "Delhi",
-          },
-          {
-            name: "Meera Shah",
-            company: "Meera Shah Design House",
-            rating: 5,
-            review: "The ROI with Technovita has been exceptional. Their deep understanding of luxury fashion e-commerce helped us achieve Featured Designer status. Highly recommended for serious fashion brands.",
-            position: "Founder",
-            location: "Bangalore",
-          },
-        ],
-        platformReviews: [
-          {
-            platform: "Trustpilot",
-            rating: 4.8,
-            totalReviews: 452,
-            className: "bg-[#00b67a]",
-          },
-          {
-            platform: "Google",
-            rating: 4.9,
-            totalReviews: 728,
-            className: "bg-[#4285f4]",
-          },
-          {
-            platform: "Facebook",
-            rating: 4.7,
-            totalReviews: 394,
-            className: "bg-[#1877f2]",
-          },
-        ],
-      },
-      faqConfig: {
-        title: "Aza Fashion Account Management FAQ",
-        faqs: [
-          {
-            iconName: "ShieldCheck",
-            question: "What does your Aza fashion account management service include?",
-            answer: "Our comprehensive Aza fashion account management services cover everything from initial brand setup to ongoing optimization. This includes collection presentation, inventory management, pricing strategy, competitor analysis, promotional campaign management, and performance analytics. We provide dedicated fashion account managers who ensure your luxury retail business operates seamlessly across all aspects of the platform.",
-            keywords: ["aza account management services", "fashion account management", "luxury retail management"],
-          },
-          {
-            iconName: "TrendingUp",
-            question: "How can your fashion account management agency improve my brand performance?",
-            answer: "As a specialized fashion account management agency, we implement data-driven strategies to boost your brand performance. This includes optimizing collection presentations for better visibility, implementing strategic pricing for luxury items, managing promotional campaigns, improving inventory turnover, and enhancing customer experience metrics. Our team continuously monitors fashion trends and adjusts strategies to maximize your ROI.",
-            keywords: ["fashion account management agency", "aza seller account management", "brand performance optimization"],
-          },
-          {
-            iconName: "Globe",
-            question: "Do you offer international fashion marketplace management?",
-            answer: "Yes, we provide complete fashion account handling for multiple international marketplaces. Our global fashion managers are well-versed in managing luxury brands across various platforms. We help with marketplace-specific compliance, cultural adaptation, and strategic expansion to new markets while maintaining brand consistency.",
-            keywords: ["global fashion manager", "international fashion marketplace", "luxury brand management"],
-          },
-          {
-            iconName: "Settings",
-            question: "What makes your Aza Designer Dashboard management unique?",
-            answer: "Our Aza Designer Dashboard management stands out through our fashion-focused approach. We combine technical expertise in platform operations with deep fashion industry insights. This includes automated collection management, advanced fashion analytics reporting, strategic pricing optimization, and proactive issue resolution. We maintain all crucial designer metrics to ensure brand health and growth.",
-            keywords: ["aza designer dashboard", "fashion analytics", "designer account management"],
-          },
-          {
-            iconName: "DollarSign",
-            question: "How do you handle fashion promotion and marketing campaigns?",
-            answer: "Our fashion marketing managers specialize in creating and optimizing promotional campaigns that maximize visibility and sales. We handle trend research, promotional timing, campaign structure optimization, and performance tracking. Our team regularly analyzes marketing metrics to refine targeting and improve campaign effectiveness for luxury fashion items.",
-            keywords: ["fashion marketing management", "luxury promotion", "fashion campaign optimization"],
-          },
-          {
-            iconName: "Target",
-            question: "What strategic fashion account management services do you provide?",
-            answer: "As your strategic fashion account manager, we focus on long-term brand growth and market positioning. Our strategic services include fashion market analysis, competition monitoring, brand development, collection planning, and performance optimization. We work closely with you to develop and implement strategies aligned with your fashion brand vision.",
-            keywords: ["strategic fashion manager", "fashion brand strategy", "luxury retail services"],
-          },
-          {
-            iconName: "Briefcase",
-            question: "How do you support luxury fashion business accounts?",
-            answer: "Our luxury business account manager services are tailored for high-end fashion retailers. We help optimize your premium brand presence, manage wholesale pricing strategies, handle boutique relationships, and ensure compliance with luxury retail requirements. We also assist with lookbook management and business-focused marketing strategies.",
-            keywords: ["luxury business account", "premium fashion management", "high-end retail services"],
-          },
-          {
-            iconName: "Users",
-            question: "What support can I expect from your fashion management team?",
-            answer: "You'll be assigned a dedicated fashion account manager who serves as your primary point of contact. They provide regular performance updates, handle day-to-day operations, and coordinate with our specialist teams for marketing, collection management, and technical support. We offer responsive communication and proactive problem-solving for all fashion-related concerns.",
-            keywords: ["fashion account manager", "fashion retail support", "collection management"],
-          },
-          {
-            iconName: "ShoppingCart",
-            question: "How do you handle fashion inventory management?",
-            answer: "Our fashion inventory managers use advanced management tools to optimize your stock operations. We monitor collection levels, manage seasonal transitions, analyze storage efficiency, and coordinate new arrivals. Our team ensures optimal inventory levels to avoid stockouts while minimizing excess inventory of seasonal items.",
-            keywords: ["fashion inventory manager", "collection management", "stock optimization"],
-          },
-          {
-            iconName: "BookOpen",
-            question: "What experience do you have with premium designer accounts?",
-            answer: "Our premium designer account management team has extensive experience managing luxury fashion brands. We handle collection launches, designer analytics, marketing programs, and brand positioning. Our services help optimize your designer operations and maintain strong relationships with the fashion community.",
-            keywords: ["premium designer account", "luxury brand management", "fashion retail expertise"],
-          },
-          {
-            iconName: "PieChart",
-            question: "How do you handle fashion analytics and reporting?",
-            answer: "We provide comprehensive fashion retail reporting including sales analytics, collection performance, marketing metrics, and competitive analysis. Our customized dashboards offer real-time insights into your brand's performance, and we deliver detailed monthly reports with actionable recommendations for fashion retail optimization.",
-            keywords: ["fashion analytics", "retail reporting", "collection performance"],
-          },
-          {
-            iconName: "Clock",
-            question: "What is your response time for fashion account issues?",
-            answer: "As your fashion account manager, we provide rapid response to account issues, typically within 2-4 business hours. Our team monitors brand health metrics continuously and takes proactive measures to prevent potential problems. We handle case management, policy compliance, and issue resolution efficiently for fashion retailers.",
-            keywords: ["fashion account response", "brand management", "retail support"],
-          },
-          {
-            iconName: "Globe",
-            question: "Can you help with international fashion market expansion?",
-            answer: "Yes, our global fashion management services help brands expand into international markets. We handle market entry strategy, collection adaptation, international compliance, and local market optimization. Our team guides you through the entire expansion process while managing your existing market presence.",
-            keywords: ["international fashion market", "global brand expansion", "fashion market entry"],
-          },
-          {
-            iconName: "Target",
-            question: "What specialized services do you offer for premium fashion brands?",
-            answer: "For premium fashion brands, we provide enhanced content management, lookbook optimization, brand store development, and brand protection services. Our team leverages all available luxury retail tools and features to strengthen your brand presence and drive customer engagement on Aza.",
-            keywords: ["premium fashion services", "luxury brand services", "fashion brand management"],
-          },
-          {
-            iconName: "CreditCard",
-            question: "What are your pricing models for fashion account management services?",
-            answer: "We offer flexible pricing models based on your brand size and service needs. Options include percentage of sales, fixed monthly fees, or hybrid models. All our fashion account management services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements.",
-            keywords: ["fashion account pricing", "luxury retail services", "brand management costs"],
-          },
-        ],
-      },
+        servicesConfig: {
+            title: "Best Aza Brand Documentation Services In India",
+            services: [
+                {
+                    iconName: "BookOpen",
+                    title: "Brand Identity Documentation",
+                    blogLink: "/blog/Fashion-Brand-Identity-Documentation",
+                    description: "Comprehensive documentation of your brand's identity elements for consistent representation on Aza:",
+                    features: [
+                        {
+                            subtitle: "Core Identity Documentation",
+                            points: [
+                                "Brand vision and values documentation",
+                                "Voice and tone guidelines",
+                                "Brand personality definition",
+                            ],
+                        },
+                        {
+                            subtitle: "Visual Identity Guidelines",
+                            points: [
+                                "Logo usage specifications",
+                                "Color palette documentation",
+                                "Typography standards",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Image",
+                    title: "Product Documentation Standards",
+                    blogLink: "/blog/Fashion-Product-Documentation-Guide",
+                    description: "Detailed documentation for consistent product presentation on Aza:",
+                    features: [
+                        {
+                            subtitle: "Photography Guidelines",
+                            points: [
+                                "Product photo specifications",
+                                "Styling standards documentation",
+                                "Image quality requirements",
+                            ],
+                        },
+                        {
+                            subtitle: "Product Information Standards",
+                            points: [
+                                "Description templates",
+                                "Specification guides",
+                                "Measurement standards",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Layout",
+                    title: "Visual Style Documentation",
+                    blogLink: "/blog/Fashion-Visual-Style-Guide",
+                    description: "Professional documentation of visual presentation standards:",
+                    features: [
+                        {
+                            subtitle: "Design Standards",
+                            points: [
+                                "Layout guidelines",
+                                "Visual hierarchy documentation",
+                                "Design element specifications",
+                            ],
+                        },
+                        {
+                            subtitle: "Implementation Guides",
+                            points: [
+                                "Template documentation",
+                                "Asset management guidelines",
+                                "Visual consistency standards",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "FileText",
+                    title: "Technical Documentation",
+                    blogLink: "/blog/Fashion-Technical-Documentation",
+                    description: "Comprehensive technical documentation for your Aza operations:",
+                    features: [
+                        {
+                            subtitle: "Platform Documentation",
+                            points: [
+                                "System integration guides",
+                                "API documentation",
+                                "Technical specifications",
+                            ],
+                        },
+                        {
+                            subtitle: "Process Documentation",
+                            points: [
+                                "Operational procedures",
+                                "Workflow documentation",
+                                "System usage guides",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Layers",
+                    title: "Collection Documentation",
+                    blogLink: "/blog/Fashion-Collection-Documentation",
+                    description: "Detailed documentation for collection management:",
+                    features: [
+                        {
+                            subtitle: "Collection Standards",
+                            points: [
+                                "Collection presentation guidelines",
+                                "Seasonal documentation",
+                                "Category standards",
+                            ],
+                        },
+                        {
+                            subtitle: "Management Guidelines",
+                            points: [
+                                "Collection workflow documentation",
+                                "Quality control procedures",
+                                "Update protocols",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Shield",
+                    title: "Brand Protection Documentation",
+                    blogLink: "/blog/Fashion-Brand-Protection-Documentation",
+                    description: "Documentation for brand protection measures:",
+                    features: [
+                        {
+                            subtitle: "Protection Guidelines",
+                            points: [
+                                "Trademark usage documentation",
+                                "Copyright protection guides",
+                                "Brand defense procedures",
+                            ],
+                        },
+                        {
+                            subtitle: "Compliance Documentation",
+                            points: [
+                                "Legal requirement guides",
+                                "Policy compliance documentation",
+                                "Protection protocols",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "MessageSquare",
+                    title: "Communication Guidelines",
+                    blogLink: "/blog/Fashion-Communication-Guidelines",
+                    description: "Comprehensive communication documentation:",
+                    features: [
+                        {
+                            subtitle: "Style Guidelines",
+                            points: [
+                                "Brand voice documentation",
+                                "Communication standards",
+                                "Content guidelines",
+                            ],
+                        },
+                        {
+                            subtitle: "Implementation Guides",
+                            points: [
+                                "Channel-specific guidelines",
+                                "Response templates",
+                                "Tone documentation",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Truck",
+                    title: "Operational Documentation",
+                    blogLink: "/blog/Fashion-Operations-Documentation",
+                    description: "Detailed operational procedure documentation:",
+                    features: [
+                        {
+                            subtitle: "Process Documentation",
+                            points: [
+                                "Standard operating procedures",
+                                "Workflow documentation",
+                                "Quality standards",
+                            ],
+                        },
+                        {
+                            subtitle: "Management Guidelines",
+                            points: [
+                                "Team protocols",
+                                "Resource management",
+                                "Efficiency guidelines",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Target",
+                    title: "Marketing Documentation",
+                    blogLink: "/blog/Fashion-Marketing-Documentation",
+                    description: "Comprehensive marketing guidelines documentation:",
+                    features: [
+                        {
+                            subtitle: "Strategy Documentation",
+                            points: [
+                                "Campaign guidelines",
+                                "Promotion standards",
+                                "Marketing protocols",
+                            ],
+                        },
+                        {
+                            subtitle: "Implementation Guides",
+                            points: [
+                                "Channel-specific guides",
+                                "Content standards",
+                                "Performance metrics",
+                            ],
+                        },
+                    ],
+                },
+                {
+                    iconName: "Settings",
+                    title: "Platform Integration Documentation",
+                    blogLink: "/blog/Aza-Platform-Integration-Documentation",
+                    description: "Technical integration documentation services:",
+                    features: [
+                        {
+                            subtitle: "Integration Guidelines",
+                            points: [
+                                "System requirements",
+                                "API documentation",
+                                "Integration protocols",
+                            ],
+                        },
+                        {
+                            subtitle: "Management Guides",
+                            points: [
+                                "Maintenance procedures",
+                                "Update protocols",
+                                "Troubleshooting guides",
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
+        processConfig: {
+            title: "Our Professional Brand Documentation Process",
+            items: [
+                {
+                    iconName: "Search",
+                    title: "Initial Brand Analysis",
+                    description: "Comprehensive analysis of your current brand documentation and requirements.",
+                    details: [
+                        "Brand documentation audit",
+                        "Gap analysis",
+                        "Requirements gathering",
+                        "Documentation planning",
+                        "Strategy development",
+                    ],
+                },
+                {
+                    iconName: "Edit",
+                    title: "Documentation Development",
+                    description: "Creation of comprehensive brand documentation following established best practices.",
+                    details: [
+                        "Content development",
+                        "Visual guidelines creation",
+                        "Technical documentation",
+                        "Process documentation",
+                        "Quality assurance",
+                    ],
+                },
+                {
+                    iconName: "CheckCircle",
+                    title: "Implementation Support",
+                    description: "Assistance with documentation implementation and team training.",
+                    details: [
+                        "Team training",
+                        "Implementation guidance",
+                        "Support materials",
+                        "Process integration",
+                        "Adoption monitoring",
+                    ],
+                },
+                {
+                    iconName: "BarChart",
+                    title: "Documentation Monitoring",
+                    description: "Ongoing monitoring of documentation effectiveness and usage.",
+                    details: [
+                        "Usage tracking",
+                        "Effectiveness analysis",
+                        "Compliance monitoring",
+                        "Performance review",
+                        "Impact assessment",
+                    ],
+                },
+                {
+                    iconName: "RefreshCw",
+                    title: "Continuous Updates",
+                    description: "Regular review and updates of documentation to maintain relevance.",
+                    details: [
+                        "Regular reviews",
+                        "Content updates",
+                        "Standard revisions",
+                        "Process refinement",
+                        "Documentation evolution",
+                    ],
+                },
+                {
+                    iconName: "Shield",
+                    title: "Quality Assurance",
+                    description: "Ongoing quality control and documentation maintenance.",
+                    details: [
+                        "Quality checks",
+                        "Consistency review",
+                        "Accuracy verification",
+                        "Standard compliance",
+                        "Documentation maintenance",
+                    ],
+                },
+            ],
+        },
+        reviewConfig: {
+            header: {
+                badge: {
+                    text: ["Brand Success", "300+ Satisfied Clients"],
+                    className: "bg-blue-100 text-blue-600",
+                },
+                title: "Trusted by Leading Fashion Brands Across India",
+                description: "See why hundreds of fashion brands choose us for their documentation needs",
+            },
+            customerReviews: [
+                {
+                    name: "Rohit Kumar",
+                    company: "RK Fashion House",
+                    rating: 5,
+                    review: "Their documentation services helped us maintain perfect brand consistency across our Aza presence. The team's attention to detail is exceptional.",
+                    position: "Brand Director",
+                    location: "Delhi",
+                },
+                {
+                    name: "Priya Shah",
+                    company: "Elegance Couture",
+                    rating: 5,
+                    review: "The comprehensive documentation provided by Technovita has transformed how we manage our brand presence. Highly recommended.",
+                    position: "Creative Director",
+                    location: "Mumbai",
+                },
+                {
+                    name: "Arun Verma",
+                    company: "Fashion Forward",
+                    rating: 5,
+                    review: "Professional, thorough, and incredibly helpful. Their documentation has become our brand bible for all Aza operations.",
+                    position: "Founder",
+                    location: "Bangalore",
+                },
+            ],
+            platformReviews: [
+                {
+                    platform: "Trustpilot",
+                    rating: 4.9,
+                    totalReviews: 328,
+                    className: "bg-[#00b67a]",
+                },
+                {
+                    platform: "Google",
+                    rating: 4.8,
+                    totalReviews: 542,
+                    className: "bg-[#4285f4]",
+                },
+                {
+                    platform: "Facebook",
+                    rating: 4.7,
+                    totalReviews: 276,
+                    className: "bg-[#1877f2]",
+                },
+            ],
+        },
+        faqConfig: {
+            title: "Aza Brand Documentation FAQ",
+            faqs: [
+                {
+                    iconName: "HelpCircle",
+                    question: "What does brand documentation include?",
+                    answer: "Our brand documentation services cover all aspects of your brand presence on Aza, including visual guidelines, technical specifications, operational procedures, and brand standards. We create comprehensive documentation that ensures consistency across all brand touchpoints.",
+                    keywords: ["brand documentation", "documentation services", "brand guidelines"],
+                },
+                {
+                    iconName: "Clock",
+                    question: "How long does the documentation process take?",
+                    answer: "The timeline for creating comprehensive brand documentation typically ranges from 2-4 weeks, depending on the complexity of your brand and documentation requirements. We work efficiently while ensuring thorough coverage of all necessary aspects.",
+                    keywords: ["documentation timeline", "process duration", "documentation development"],
+                },
+                {
+                    iconName: "RefreshCw",
+                    question: "How often should brand documentation be updated?",
+                    answer: "We recommend reviewing and updating brand documentation quarterly, with major revisions annually or whenever significant brand changes occur. Our team provides ongoing monitoring and suggests updates as needed.",
+                    keywords: ["documentation updates", "brand maintenance", "documentation review"],
+                },
+                {
+                    iconName: "Users",
+                    question: "Who will be managing our documentation?",
+                    answer: "You'll be assigned a dedicated documentation specialist who works with a team of brand experts, technical writers, and design professionals. They ensure your documentation remains comprehensive, current, and effective.",
+                    keywords: ["documentation team", "brand specialists", "documentation management"],
+                },
+                {
+                    iconName: "Shield",
+                    question: "How do you ensure documentation quality?",
+                    answer: "We follow a rigorous quality assurance process including multiple review stages, compliance checks, and usability testing. All documentation undergoes thorough verification before delivery.",
+                    keywords: ["quality assurance", "documentation standards", "quality control"],
+                },
+                {
+                    iconName: "FileText",
+                    question: "What technical documentation services do you offer?",
+                    answer: "Our technical documentation services cover API documentation, system integration guides, workflow procedures, and platform-specific requirements. We ensure all technical aspects are documented clearly and comprehensively.",
+                    keywords: ["technical documentation", "system guides", "procedure documentation"],
+                },
+                {
+                    iconName: "Share2",
+                    question: "How do you ensure documentation accessibility?",
+                    answer: "We implement multiple accessibility features including searchable content, clear navigation, mobile responsiveness, and user-friendly interfaces. All documentation follows accessibility best practices.",
+                    keywords: ["documentation access", "user experience", "accessibility features"],
+                },
+                {
+                    iconName: "BarChart",
+                    question: "What reporting do you provide on documentation usage?",
+                    answer: "We provide detailed analytics on documentation usage including access patterns, most-referenced sections, user engagement metrics, and implementation success rates. Regular reports help optimize documentation effectiveness.",
+                    keywords: ["usage analytics", "documentation metrics", "performance reports"],
+                },
+            ]
+}
     },
-  
-    // Add more service pages
-  };
-  
+}
