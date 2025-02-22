@@ -11,7 +11,7 @@ const ServicesSection = () => {
 
   return (
     <>
-        {/* Onovo Services */}
+        {/* technovita Services */}
         <section className="onovo-section gap-top-140 gap-bottom-140">
             <div className="container-xl">
 

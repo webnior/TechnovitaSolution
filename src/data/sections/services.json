@@ -8,15 +8,15 @@
       },
       {
         "image": "/images/serv-icon2.png",
-        "title": "Website Development",
+        "title": "Web-Development",
         "text": "Create a website that reflects your brand and drives results. We offer beautiful design, user-friendly functionality, and SEO optimization.",
-        "link": "/services/service-2"
+        "link": "/website-development-services"
       },
       {
         "image": "/images/serv-icon3.png",
         "title": "Studio Services",
         "text": "Showcase your products in the best light. We provide professional product and model photography services.",
-        "link": "/services/service-3"
+        "link": "/technovita-studio-services"
       }
     ]
   }
