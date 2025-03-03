@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const WEBSITE_URL = 'https://technovitasolution.in';
-const PLATFORMS = ['amazon', 'flipkart', 'meesho','myntra','nykaa','ajio','tatacliq','firstcry','aza'];
+const PLATFORMS = ['amazon', 'flipkart', 'meesho','myntra','nykaa','ajio','tatacliq','firstcry','aza','zepto','blinkit'];
 const SERVICES = [
   'account-management',
   'brand-documentation',
