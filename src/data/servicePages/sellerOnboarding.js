@@ -4586,7 +4586,1342 @@ export const sellerOnboardingPages = {
         }
       ],
     }
-}
-
+},
+blinkit: {
+  platform: "blinkit",
+  title: "Blinkit Seller Onboarding Services",
+  metaTitle:
+    "Technovita Solution | Expert Blinkit Seller Onboarding Services",
+  metaDescription:
+    "Transform your quick commerce business with our dedicated Blinkit onboarding specialists and proven strategies. Expert Blinkit seller account setup and launch services.",
+  metaKeywords:
+    "blinkit seller onboarding, blinkit seller setup, blinkit launch services, new blinkit seller assistance, quick commerce onboarding",
+  heroConfig: {
+    badge: {
+      text: "Blinkit Onboarding Experts since 2020",
+      company: "Technovita Solution",
+    },
+    mainHeading: "Blinkit Seller Onboarding & Launch Services",
+    description: [
+      "Entering the quick commerce space with Blinkit can feel overwhelming. At Technovita Solution, we take the complexity out of Blinkit selling. Our complete seller onboarding service handles everything from initial setup to launch strategy, making your Blinkit journey smooth and profitable from day one.",
+      "Think of us as your dedicated Blinkit launch team. We set up your Seller Dashboard account, create optimized product catalogs, establish inventory planning for 10-minute delivery, and position your pricing competitively. Our certified Blinkit experts understand the quick commerce requirements and use data-driven strategies to help your products launch successfully and gain visibility.",
+      "Whether you're completely new to quick commerce or expanding from other platforms to Blinkit, our experienced onboarding specialists at Technovita Solution know exactly what it takes to launch your business. We've helped hundreds of sellers across all categories successfully enter the Blinkit marketplace and build sustainable quick commerce businesses.",
+    ],
+    stats: [
+      { label: "Successful Launches", value: "300+" },
+      { label: "Success Rate", value: "97%" },
+      { label: "Monthly Launch Volume", value: "₹25M+" },
+    ],
+  },
+  whyChooseUsConfig: {
+    badge: {
+      trustedSellers: "300+",
+    },
+    title: "Why TechnovitaSolution is Your Best Choice for Blinkit Seller Onboarding",
+    description:
+      "In today's competitive quick commerce landscape, successfully launching on Blinkit's marketplace requires more than just basic selling skills. Our comprehensive seller onboarding services are designed to navigate the complexities of Blinkit's 10-minute delivery ecosystem while setting up a foundation for sustainable growth.",
+    features: [
+      {
+        title: "Expert Onboarding",
+        description:
+          "Dedicated onboarding specialists with proven track records in successful Blinkit seller launches and quick commerce entry strategies.",
+      },
+      {
+        title: "Hyperlocal Strategy",
+        description:
+          "Advanced dark store optimization and hyperlocal market analysis to make informed decisions when entering the quick commerce marketplace.",
+      },
+      {
+        title: "Complete Setup Support",
+        description:
+          "End-to-end onboarding process including account creation, catalog development, dark store inventory planning, and brand compliance.",
+      },
+      {
+        title: "Proven Results",
+        description:
+          "97% launch success rate with consistent growth trajectories for new seller accounts in the quick commerce space.",
+      },
+    ],
+  },
+  featuresConfig: {
+    features: [
+      {
+        iconName: "TrendingUp",
+        title: "Strategic Launch Planning",
+        description:
+          "Our expert blinkit seller onboarding services focus on developing comprehensive launch strategies tailored to your business goals. We analyze hyperlocal entry points, dark store positioning, and urban customer behavior to create a roadmap for successful quick commerce marketplace entry.",
+      },
+      {
+        iconName: "ShieldCheck",
+        title: "Account Setup & Compliance",
+        description:
+          "As your dedicated blinkit seller setup partner, we ensure your new account is properly configured and compliant with Blinkit's strict quality and delivery time policies. Our proactive approach to seller onboarding helps prevent issues before they affect your launch.",
+      },
+      {
+        iconName: "BarChart",
+        title: "Launch Analytics",
+        description:
+          "Our blinkit seller launch experts utilize advanced analytics tools to plan and track your initial performance metrics. We provide detailed insights into hyperlocal opportunities, competitive positioning, and launch effectiveness to optimize your entry strategy.",
+      },
+      {
+        iconName: "Users",
+        title: "Dedicated Onboarding Team",
+        description:
+          "When you choose our blinkit seller onboarding services near me, you get a dedicated team of specialists who guide your business through every step of the setup process. We act as your launch partners, managing every aspect of your quick commerce marketplace entry.",
+      },
+    ],
+  },
+  servicesConfig: {
+    title: "Best Blinkit Seller Onboarding Services In India",
+    services: [
+      {
+        iconName: "Search",
+        title: "Product Catalog Creation",
+        blogLink: "/blog/The-Ultimate-Guide-to-Blinkit-Catalog-Creation",
+        description:
+          "Launch your Blinkit presence with our expert product catalog creation services. Our comprehensive approach ensures your products not only appear professional but convert browsers into buyers from day one, implementing data-driven strategies across all catalog aspects:",
+        features: [
+          {
+            subtitle: "Product Naming Optimization",
+            points: [
+              "Strategic keyword research for quick commerce discovery",
+              "Compelling, clear product names that drive instant purchase decisions",
+              "Character limit optimization for mobile app discovery",
+            ],
+          },
+          {
+            subtitle: "Product Description Development",
+            points: [
+              "Concise, benefit-focused descriptions that convert on first view",
+              "Keyword-rich content for better indexing during launch",
+              "Competitor analysis and quick commerce differentiation strategy",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Settings",
+        title: "Seller Dashboard Setup & Configuration",
+        blogLink: "/blog/How-to-become-seller-on-blinkit",
+        description:
+          "As your trusted blinkit seller onboarding agency, we provide comprehensive account setup services that set the foundation for your success:",
+        features: [
+          {
+            subtitle: "Account Creation Excellence",
+            points: [
+              "Professional Seller Dashboard registration and verification",
+              "Initial dark store and delivery zone strategy development",
+              "Setup of payment processing and settlement systems",
+            ],
+          },
+          {
+            subtitle: "Launch Configuration",
+            points: [
+              "Business information and brand profile setup",
+              "Initial account settings optimization for 10-minute delivery",
+              "Compliance verification and FSSAI documentation",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Star",
+        title: "Hyperlocal Keyword Research",
+        blogLink: "/blog/Strategic-Quick-Commerce-Keyword-Research-Guide-2025",
+        description:
+          "Our blinkit seller setup services include advanced hyperlocal keyword research that drives initial visibility and improves launch discovery:",
+        features: [
+          {
+            subtitle: "Research Methodology",
+            points: [
+              "Data-driven hyperlocal search term identification",
+              "Category-specific quick commerce entry point analysis",
+              "Competitor keyword opportunity analysis in urban markets",
+            ],
+          },
+          {
+            subtitle: "Implementation Strategy",
+            points: [
+              "Strategic keyword placement across initial catalog",
+              "Launch visibility optimization for 10-minute delivery searches",
+              "Early performance monitoring framework",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "FileText",
+        title: "Brand Storefront Creation & Quick Commerce Copywriting",
+        blogLink: "/blog/Content-Creation-Blinkit-Copywriting-Guide",
+        description:
+          "Establish your brand presence from day one with our professional blinkit seller onboarding services focused on creating compelling content:",
+        features: [
+          {
+            subtitle: "Brand Storefront Development",
+            points: [
+              "Initial brand story and showcase design",
+              "Brand positioning for quick commerce customers",
+              "Launch-optimized storefront creation",
+            ],
+          },
+          {
+            subtitle: "Professional Launch Copywriting",
+            points: [
+              "Conversion-focused quick commerce product descriptions",
+              "App-optimized launch content creation",
+              "Brand voice establishment for instant delivery context",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Truck",
+        title: "Dark Store Setup & Initial Inventory Planning",
+        blogLink: "/blog/Dark-Store-Setup-Planning-The-complete-Guide",
+        description:
+          "Our comprehensive blinkit seller onboarding includes expert dark store setup and initial inventory planning:",
+        features: [
+          {
+            subtitle: "Dark Store Launch Operations",
+            points: [
+              "Initial inventory strategy for 10-minute delivery promise",
+              "First stocking plan creation and labeling setup",
+              "Launch cost optimization planning",
+            ],
+          },
+          {
+            subtitle: "Initial Performance Framework",
+            points: [
+              "Initial commission structure analysis",
+              "Delivery SLA establishment and planning",
+              "First-batch inventory planning for quick replenishment",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Shield",
+        title: "Brand Verification Setup & Initial Protection",
+        blogLink: "/blog/Brand-Verification-Setup-on-Blinkit",
+        description:
+          "Protect your brand from day one with our professional blinkit seller onboarding services:",
+        features: [
+          {
+            subtitle: "Brand Protection Setup",
+            points: [
+              "Complete brand verification application and setup",
+              "Initial quality assurance measures",
+              "FSSAI and legal documentation assistance",
+            ],
+          },
+          {
+            subtitle: "Brand Launch Framework",
+            points: [
+              "Initial access to brand promotion tools",
+              "Brand presence establishment in quick commerce",
+              "Enhanced visibility preparation",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "LineChart",
+        title: "Initial Inventory Planning & Replenishment Strategy",
+        blogLink: "/blog/Blinkit-inventory-Planning-Strategy",
+        description:
+          "Our blinkit seller launch services include comprehensive initial inventory planning:",
+        features: [
+          {
+            subtitle: "Launch Inventory Strategy",
+            points: [
+              "Initial stock level determination for multiple dark stores",
+              "Launch quantity planning for high-demand items",
+              "Dark store space allocation and planning",
+            ],
+          },
+          {
+            subtitle: "Performance Projections",
+            points: [
+              "Initial sales velocity estimation in quick commerce",
+              "Inventory turnover projection for 10-minute delivery model",
+              "First replenishment cycle planning",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "MessageSquare",
+        title: "Rating Generation Strategy Setup",
+        blogLink: "/blog/Blinkit-Rating-Generation-Strategy",
+        description:
+          "Establish a stellar reputation from the start with our best blinkit seller onboarding services focused on rating strategy:",
+        features: [
+          {
+            subtitle: "Initial Rating Strategy",
+            points: [
+              "Early rating generation planning",
+              "Initial customer feedback system setup",
+              "Post-delivery communication templates",
+            ],
+          },
+          {
+            subtitle: "Rating Foundation",
+            points: [
+              "Customer satisfaction measurement setup",
+              "Initial feedback collection system",
+              "Early product improvement framework for quick commerce",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "AlertTriangle",
+        title: "Account Verification Assistance",
+        blogLink: "/blog/Blinkit-Account-Verification",
+        description:
+          "Our expert blinkit seller setup team specializes in smooth account verification and approval:",
+        features: [
+          {
+            subtitle: "Verification Process",
+            points: [
+              "Document preparation and submission guidance",
+              "Verification requirement analysis for quick commerce",
+              "Communication management with Blinkit teams",
+            ],
+          },
+          {
+            subtitle: "Approval Strategy",
+            points: [
+              "Compliance verification before submission",
+              "Risk assessment and mitigation during setup",
+              "Quick commerce policy adherence confirmation",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Activity",
+        title: "Preferred Seller Program Eligibility Assessment",
+        blogLink: "/blog/Blinkit-Preferred-Seller-Program",
+        description:
+          "Prepare for future success with our specialized blinkit seller setup services for Preferred Seller qualification:",
+        features: [
+          {
+            subtitle: "Eligibility Evaluation",
+            points: [
+              "Initial qualification assessment for premium placement",
+              "Future application planning",
+              "Operational requirements preparation",
+            ],
+          },
+          {
+            subtitle: "Readiness Planning",
+            points: [
+              "Future delivery metrics targets",
+              "10-minute fulfillment efficiency planning",
+              "Customer satisfaction framework development",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Target",
+        title: "Competitive Launch Strategy",
+        blogLink: "/blog/Blinkit-Competitive-Launch-Strategy",
+        description:
+          "Enter the marketplace strategically with our data-driven blinkit seller onboarding analysis services:",
+        features: [
+          {
+            subtitle: "Pre-Launch Analysis",
+            points: [
+              "Comprehensive hyperlocal competitor assessment",
+              "Initial price point determination for quick commerce",
+              "Market entry opportunity identification",
+            ],
+          },
+          {
+            subtitle: "Launch Positioning",
+            points: [
+              "Initial competitive advantage identification",
+              "Quick commerce entry positioning strategy",
+              "Early differentiation opportunity planning",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  processConfig: {
+    title: "Our Proven Blinkit Seller Onboarding Process",
+    items: [
+      {
+        iconName: "Search",
+        title: "Initial Business Analysis & Quick Commerce Strategy Development",
+        description:
+          "Our blinkit seller onboarding process begins with a thorough analysis of your business and products. Our expert team conducts a comprehensive evaluation of your product potential, hyperlocal opportunities, and dark store positioning. We identify the best entry strategy and develop a customized launch plan aligned with your business goals. This initial phase establishes clear objectives and sets the foundation for our blinkit seller setup services.",
+        details: [
+          "Complete business assessment for quick commerce",
+          "Hyperlocal opportunity analysis",
+          "Product viability for 10-minute delivery evaluation",
+          "Launch strategy development",
+          "Custom onboarding plan creation",
+        ],
+      },
+      {
+        iconName: "Settings",
+        title: "Account Creation & Initial Setup",
+        description:
+          "As your trusted blinkit seller onboarding agency, we handle the complete account creation and verification process. This phase focuses on establishing your seller presence through systematic setup of all required accounts, FSSAI information, and business documentation. Our team ensures every aspect of your blinkit seller registration process meets compliance requirements for a smooth launch.",
+        details: [
+          "Seller Dashboard account creation",
+          "Business verification documentation",
+          "Payment and settlement setup",
+          "Initial category approval requests",
+          "Quick commerce policy compliance verification",
+        ],
+      },
+      {
+        iconName: "TrendingUp",
+        title: "Launch Strategy Implementation",
+        description:
+          "With account foundation in place, we execute your customized launch strategy. Our best blinkit seller onboarding services focus on creating your marketplace presence through strategic initiatives. We develop initial product catalogs, prepare dark store inventory plans, and establish your brand presence to position your business for successful quick commerce entry.",
+        details: [
+          "Initial product catalog creation",
+          "First dark store inventory planning",
+          "Brand presence establishment",
+          "Launch positioning tactics",
+          "Initial visibility strategy implementation",
+        ],
+      },
+      {
+        iconName: "BarChart",
+        title: "Launch Monitoring & Initial Optimization",
+        description:
+          "Our blinkit seller launch services include close monitoring of initial marketplace performance. We track crucial early metrics, analyze competitive positioning, and make data-driven adjustments to optimize your launch performance. This proactive approach ensures we maximize initial momentum and quickly address any launch challenges in the fast-paced quick commerce environment.",
+        details: [
+          "First-week performance tracking",
+          "Initial sales velocity monitoring",
+          "Early search visibility analysis",
+          "Initial conversion optimization",
+          "First customer behavior analysis in quick commerce",
+        ],
+      },
+      {
+        iconName: "Repeat",
+        title: "Initial Optimization & Strategy Refinement",
+        description:
+          "The blinkit seller onboarding landscape continues after launch, and so does our support. We refine the initial approach based on early performance data, customer feedback, and emerging opportunities. Our team implements improvements to ensure your business establishes a strong foundation during the critical early period in the quick commerce ecosystem.",
+        details: [
+          "Initial catalog refinement",
+          "Early market response adaptation",
+          "First-month performance analysis",
+          "Early customer feedback implementation",
+          "Initial growth strategy adjustment",
+        ],
+      },
+      {
+        iconName: "Shield",
+        title: "Transition to Sustainable Growth",
+        description:
+          "As your dedicated blinkit seller onboarding partner, we focus on transitioning from launch to sustainable operations. We implement long-term systems, establish ongoing monitoring practices, and prepare growth strategies to ensure continued success beyond the initial launch period in the competitive quick commerce space.",
+        details: [
+          "Operational process establishment for 10-minute delivery",
+          "Long-term brand quality framework",
+          "Sustainable inventory planning for multiple dark stores",
+          "Growth planning implementation",
+          "Ongoing success strategy development",
+        ],
+      },
+    ],
+  },
+  reviewConfig: {
+    header: {
+      badge: {
+        text: ["Customer Stories", "300+ Successful Launches"],
+        className: "bg-orange-100 text-orange-600",
+      },
+      title: "Trusted by New Blinkit Sellers Across India",
+      description:
+        "See why hundreds of new Blinkit sellers choose Technovita Solution for their onboarding and launch needs",
+    },
+    customerReviews: [
+      {
+        name: "Anand Mehta",
+        company: "Fresh Basket India",
+        rating: 5,
+        review:
+          "Technovita Solution made our Blinkit launch incredibly smooth. Their strategic approach helped us achieve 250% of our expected first-month order volume. The dedicated onboarding specialist guided us through every step of the complex dark store setup process.",
+        position: "Business Owner",
+        location: "Mumbai",
+      },
+      {
+        name: "Sneha Gupta",
+        company: "Urban Essentials Pvt Ltd",
+        rating: 5,
+        review:
+          "We were overwhelmed by Blinkit's quick commerce requirements before partnering with Technovita. Their team not only handled all our setup and verification challenges but also helped us launch our initial product catalog successfully. Best Blinkit seller onboarding service in India!",
+        position: "E-commerce Director",
+        location: "Delhi",
+      },
+      {
+        name: "Karthik Reddy",
+        company: "Insta Grocers",
+        rating: 5,
+        review:
+          "The launch results with Technovita exceeded our expectations. Their deep understanding of Blinkit's hyperlocal algorithm and quick commerce entry strategies helped us achieve visibility much faster than anticipated. Highly recommended for new Blinkit sellers.",
+        position: "Founder",
+        location: "Bangalore",
+      },
+    ],
+    platformReviews: [
+      {
+        platform: "Trustpilot",
+        rating: 4.7,
+        totalReviews: 357,
+        className: "bg-[#00b67a]",
+      },
+      {
+        platform: "Google",
+        rating: 4.8,
+        totalReviews: 612,
+        className: "bg-[#4285f4]",
+      },
+      {
+        platform: "Facebook",
+        rating: 4.6,
+        totalReviews: 289,
+        className: "bg-[#1877f2]",
+      },
+    ],
+  },
+  faqConfig: {
+    title: "Blinkit Seller Onboarding FAQ",
+    faqs: [
+      {
+        iconName: "ShieldCheck",
+        question: "What does your Blinkit seller onboarding service include?",
+        answer:
+          "Our comprehensive Blinkit seller onboarding services cover everything from initial business assessment to successful quick commerce launch. This includes seller account creation, product catalog development, dark store inventory planning, pricing strategy, competitor analysis, launch campaign planning, and early performance monitoring. We provide dedicated onboarding specialists who ensure your Blinkit business launches smoothly across all aspects of the platform.",
+        keywords: [
+          "blinkit seller onboarding services",
+          "blinkit seller setup",
+        ],
+      },
+      {
+        iconName: "TrendingUp",
+        question:
+          "How can your Blinkit seller onboarding agency improve my launch performance?",
+        answer:
+          "As a specialized Blinkit seller onboarding agency, we implement data-driven strategies to boost your initial marketplace performance. This includes creating optimized product catalogs for better launch visibility, implementing strategic initial pricing for quick commerce, planning targeted launch promotions, establishing dark store inventory strategy, and setting up rapid fulfillment processes. Our team monitors early performance metrics and adjusts strategies to maximize your initial impact in the 10-minute delivery ecosystem.",
+        keywords: [
+          "blinkit seller onboarding agency",
+          "blinkit seller setup services",
+        ],
+      },
+      {
+        iconName: "Globe",
+        question: "Do you offer multi-city Blinkit marketplace launch assistance?",
+        answer:
+          "Yes, we provide complete Blinkit seller onboarding for multiple cities across India. Our multi-city launch specialists are well-versed in setting up dark stores across major metropolitan areas covered by Blinkit. We help with city-specific compliance, local consumer preference analysis, and strategic launch planning for each new market you enter on the platform.",
+        keywords: [
+          "blinkit multi-city seller onboarding",
+          "blinkit marketplace seller setup",
+        ],
+      },
+      {
+        iconName: "Settings",
+        question:
+          "What makes your Blinkit Seller Dashboard setup process unique?",
+        answer:
+          "Our Blinkit Seller Dashboard setup process stands out through our comprehensive approach. We combine technical expertise in platform requirements with strategic quick commerce insights. This includes streamlined verification processes, optimized initial settings configuration, category approval assistance, and proactive compliance verification. We establish all crucial seller foundations to ensure a smooth and successful launch in the fast-paced 10-minute delivery ecosystem.",
+        keywords: [
+          "blinkit seller dashboard setup",
+          "seller dashboard onboarding",
+        ],
+      },
+      {
+        iconName: "DollarSign",
+        question: "How do you handle initial Blinkit promotions and discount launch campaigns?",
+        answer:
+          "Our Blinkit launch promotion specialists create optimized initial campaigns that maximize visibility and early orders. We handle launch pricing strategy, initial discount planning, campaign structure development, and performance tracking setup. Our team establishes promotion frameworks designed to give your products the best possible start on the quick commerce platform.",
+        keywords: [
+          "blinkit launch promotions",
+          "blinkit seller launch campaigns",
+          "blinkit discounts setup",
+        ],
+      },
+      {
+        iconName: "Target",
+        question:
+          "What strategic launch services do you provide for Blinkit?",
+        answer:
+          "As your strategic launch partner for Blinkit, we focus on successful quick commerce entry and early positioning. Our strategic launch services include hyperlocal analysis, dark store competition assessment, brand positioning, launch timing planning, and initial performance targets. We work closely with you to develop and implement strategies aligned with your business goals from day one in the 10-minute delivery ecosystem.",
+        keywords: [
+          "blinkit strategic launch services",
+          "blinkit seller entry strategy",
+        ],
+      },
+      {
+        iconName: "Briefcase",
+        question: "How do you support new Blinkit Business sellers?",
+        answer:
+          "Our Blinkit business seller onboarding services are tailored for B2B quick commerce entrants. We help establish your Business presence, develop initial bulk pricing strategies, set up corporate customer acquisition framework, and ensure compliance with B2B-specific requirements. We also assist with business catalog development and B2B-focused launch strategies for the quick commerce channel.",
+        keywords: [
+          "blinkit business seller onboarding",
+          "blinkit b2b seller setup",
+        ],
+      },
+      {
+        iconName: "Users",
+        question:
+          "What support can I expect from your Blinkit onboarding team?",
+        answer:
+          "You'll be assigned a dedicated Blinkit launch specialist who serves as your primary point of contact. They guide you through the entire setup process, coordinate account verification, oversee initial catalog creation, and work with our specialist teams for dark store inventory planning, promotion setup, and technical support. We offer responsive communication and proactive problem-solving throughout the launch process.",
+        keywords: [
+          "blinkit launch specialist",
+          "blinkit seller onboarding support",
+        ],
+      },
+      {
+        iconName: "ShoppingCart",
+        question: "How do you handle initial dark store setup and planning?",
+        answer:
+          "Our Blinkit dark store onboarding specialists use advanced inventory planning tools to optimize your initial quick commerce operations. We determine optimal launch quantities, plan first stocking timing, analyze initial storage requirements, and coordinate product preparation. Our team ensures your inventory strategy supports successful 10-minute delivery while minimizing early wastage and stockouts.",
+        keywords: ["blinkit dark store onboarding", "blinkit dark store seller setup"],
+      },
+      {
+        iconName: "BookOpen",
+        question: "What experience do you have with new brand partner accounts?",
+        answer:
+          "Our Blinkit brand partner onboarding team has extensive experience establishing new brand relationships on the platform. We handle initial negotiation support, brand catalog setup, initial retail planning, and brand portal configuration. Our services help optimize your brand launch and establish strong initial visibility in the quick commerce ecosystem.",
+        keywords: [
+          "blinkit brand partner onboarding",
+          "blinkit brand setup",
+        ],
+      },
+      {
+        iconName: "PieChart",
+        question: "How do you handle launch analytics and initial reporting?",
+        answer:
+          "We provide comprehensive Blinkit seller launch reporting including early order analytics, initial inventory tracking, launch promotion metrics, and competitive positioning. Our customized dashboards offer real-time insights into your quick commerce performance, and we deliver detailed first-month reports with actionable recommendations for post-launch optimization.",
+        keywords: [
+          "blinkit seller launch analytics",
+          "blinkit onboarding reporting",
+        ],
+      },
+      {
+        iconName: "Clock",
+        question: "What is your response time during the critical launch period?",
+        answer:
+          "As your Blinkit seller launch partner, we provide rapid response during the critical initial period, typically within 1-2 business hours. Our team monitors launch metrics continuously and takes proactive measures to address potential issues. We handle initial support tickets, early policy compliance, and rapid issue resolution to ensure a smooth launch in the time-sensitive quick commerce environment.",
+        keywords: [
+          "blinkit seller launch support",
+          "blinkit onboarding response time",
+        ],
+      },
+      {
+        iconName: "Globe",
+        question: "Can you help with multi-category launch planning?",
+        answer:
+          "Yes, our comprehensive seller launch services help businesses enter multiple Blinkit categories simultaneously or sequentially. We handle category prioritization, staggered launch planning, cross-category catalog strategy, and specific compliance verification. Our team guides you through the entire multi-category entry process with coordinated launch timing for optimal quick commerce presence.",
+        keywords: [
+          "blinkit multi-category launch",
+          "blinkit category seller setup",
+        ],
+      },
+      {
+        iconName: "Target",
+        question:
+          "What specialized services do you offer for brand verification during onboarding?",
+        answer:
+          "For sellers establishing brand verification during onboarding, we provide FSSAI documentation assistance, brand verification application support, initial storefront planning, and brand quality assurance strategy development. Our team helps expedite the brand verification process to ensure you can access all available brand tools during your initial quick commerce launch phase.",
+        keywords: [
+          "blinkit brand verification setup",
+          "blinkit seller brand onboarding",
+        ],
+      },
+      {
+        iconName: "CreditCard",
+        question:
+          "What are your pricing models for Blinkit seller onboarding services?",
+        answer:
+          "We offer flexible pricing models based on your business size and quick commerce launch needs. Options include one-time setup fees, launch package pricing, or phased payment models. All our Blinkit seller onboarding services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements and launch goals in the 10-minute delivery ecosystem.",
+        keywords: [
+          "blinkit seller onboarding pricing",
+          "blinkit seller setup services",
+        ],
+      },
+    ],
+  },
+  // Add more sections as needed
+  },
+zepto: {
+    platform: "zepto",
+    title: "Zepto Seller Onboarding Services",
+    metaTitle:
+      "Technovita Solution | Expert Zepto Seller Onboarding Services",
+    metaDescription:
+      "Transform your quick commerce business with our dedicated Zepto onboarding specialists and proven strategies. Expert Zepto seller account setup and launch services.",
+    metaKeywords:
+      "zepto seller onboarding, zepto seller setup, zepto launch services, new zepto seller assistance, quick commerce onboarding",
+    heroConfig: {
+      badge: {
+        text: "Zepto Onboarding Experts since 2021",
+        company: "Technovita Solution",
+      },
+      mainHeading: "Zepto Seller Onboarding & Launch Services",
+      description: [
+        "Entering the quick commerce space with Zepto can feel overwhelming. At Technovita Solution, we take the complexity out of Zepto selling. Our complete seller onboarding service handles everything from initial setup to launch strategy, making your Zepto journey smooth and profitable from day one.",
+        "Think of us as your dedicated Zepto launch team. We set up your Seller Dashboard account, create optimized product catalogs, establish inventory planning for 10-minute delivery, and position your pricing competitively. Our certified Zepto experts understand the quick commerce requirements and use data-driven strategies to help your products launch successfully and gain visibility.",
+        "Whether you're completely new to quick commerce or expanding from other platforms to Zepto, our experienced onboarding specialists at Technovita Solution know exactly what it takes to launch your business. We've helped hundreds of sellers across all categories successfully enter the Zepto marketplace and build sustainable quick commerce businesses.",
+      ],
+      stats: [
+        { label: "Successful Launches", value: "250+" },
+        { label: "Success Rate", value: "96%" },
+        { label: "Monthly Launch Volume", value: "₹22M+" },
+      ],
+    },
+    whyChooseUsConfig: {
+      badge: {
+        trustedSellers: "250+",
+      },
+      title: "Why TechnovitaSolution is Your Best Choice for Zepto Seller Onboarding",
+      description:
+        "In today's competitive quick commerce landscape, successfully launching on Zepto's marketplace requires more than just basic selling skills. Our comprehensive seller onboarding services are designed to navigate the complexities of Zepto's 10-minute delivery ecosystem while setting up a foundation for sustainable growth.",
+      features: [
+        {
+          title: "Expert Onboarding",
+          description:
+            "Dedicated onboarding specialists with proven track records in successful Zepto seller launches and quick commerce entry strategies.",
+        },
+        {
+          title: "Hyperlocal Strategy",
+          description:
+            "Advanced dark store optimization and hyperlocal market analysis to make informed decisions when entering the quick commerce marketplace.",
+        },
+        {
+          title: "Complete Setup Support",
+          description:
+            "End-to-end onboarding process including account creation, catalog development, dark store inventory planning, and brand compliance.",
+        },
+        {
+          title: "Proven Results",
+          description:
+            "96% launch success rate with consistent growth trajectories for new seller accounts in the quick commerce space.",
+        },
+      ],
+    },
+    featuresConfig: {
+      features: [
+        {
+          iconName: "TrendingUp",
+          title: "Strategic Launch Planning",
+          description:
+            "Our expert Zepto seller onboarding services focus on developing comprehensive launch strategies tailored to your business goals. We analyze hyperlocal entry points, dark store positioning, and urban customer behavior to create a roadmap for successful quick commerce marketplace entry.",
+        },
+        {
+          iconName: "ShieldCheck",
+          title: "Account Setup & Compliance",
+          description:
+            "As your dedicated Zepto seller setup partner, we ensure your new account is properly configured and compliant with Zepto's strict quality and delivery time policies. Our proactive approach to seller onboarding helps prevent issues before they affect your launch.",
+        },
+        {
+          iconName: "BarChart",
+          title: "Launch Analytics",
+          description:
+            "Our Zepto seller launch experts utilize advanced analytics tools to plan and track your initial performance metrics. We provide detailed insights into hyperlocal opportunities, competitive positioning, and launch effectiveness to optimize your entry strategy.",
+        },
+        {
+          iconName: "Users",
+          title: "Dedicated Onboarding Team",
+          description:
+            "When you choose our Zepto seller onboarding services near me, you get a dedicated team of specialists who guide your business through every step of the setup process. We act as your launch partners, managing every aspect of your quick commerce marketplace entry.",
+        },
+      ],
+    },
+    servicesConfig: {
+      title: "Best Zepto Seller Onboarding Services In India",
+      services: [
+        {
+          iconName: "Search",
+          title: "Product Catalog Creation",
+          blogLink: "/blog/The-Ultimate-Guide-to-Zepto-Catalog-Creation",
+          description:
+            "Launch your Zepto presence with our expert product catalog creation services. Our comprehensive approach ensures your products not only appear professional but convert browsers into buyers from day one, implementing data-driven strategies across all catalog aspects:",
+          features: [
+            {
+              subtitle: "Product Naming Optimization",
+              points: [
+                "Strategic keyword research for quick commerce discovery",
+                "Compelling, clear product names that drive instant purchase decisions",
+                "Character limit optimization for mobile app discovery",
+              ],
+            },
+            {
+              subtitle: "Product Description Development",
+              points: [
+                "Concise, benefit-focused descriptions that convert on first view",
+                "Keyword-rich content for better indexing during launch",
+                "Competitor analysis and quick commerce differentiation strategy",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Settings",
+          title: "Seller Dashboard Setup & Configuration",
+          blogLink: "/blog/How-to-become-seller-on-Zepto",
+          description:
+            "As your trusted Zepto seller onboarding agency, we provide comprehensive account setup services that set the foundation for your success:",
+          features: [
+            {
+              subtitle: "Account Creation Excellence",
+              points: [
+                "Professional Seller Dashboard registration and verification",
+                "Initial dark store and delivery zone strategy development",
+                "Setup of payment processing and settlement systems",
+              ],
+            },
+            {
+              subtitle: "Launch Configuration",
+              points: [
+                "Business information and brand profile setup",
+                "Initial account settings optimization for 10-minute delivery",
+                "Compliance verification and FSSAI documentation",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Star",
+          title: "Hyperlocal Keyword Research",
+          blogLink: "/blog/Strategic-Quick-Commerce-Keyword-Research-Guide-2025",
+          description:
+            "Our Zepto seller setup services include advanced hyperlocal keyword research that drives initial visibility and improves launch discovery:",
+          features: [
+            {
+              subtitle: "Research Methodology",
+              points: [
+                "Data-driven hyperlocal search term identification",
+                "Category-specific quick commerce entry point analysis",
+                "Competitor keyword opportunity analysis in urban markets",
+              ],
+            },
+            {
+              subtitle: "Implementation Strategy",
+              points: [
+                "Strategic keyword placement across initial catalog",
+                "Launch visibility optimization for 10-minute delivery searches",
+                "Early performance monitoring framework",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "FileText",
+          title: "Brand Storefront Creation & Quick Commerce Copywriting",
+          blogLink: "/blog/Content-Creation-Zepto-Copywriting-Guide",
+          description:
+            "Establish your brand presence from day one with our professional Zepto seller onboarding services focused on creating compelling content:",
+          features: [
+            {
+              subtitle: "Brand Storefront Development",
+              points: [
+                "Initial brand story and showcase design",
+                "Brand positioning for quick commerce customers",
+                "Launch-optimized storefront creation",
+              ],
+            },
+            {
+              subtitle: "Professional Launch Copywriting",
+              points: [
+                "Conversion-focused quick commerce product descriptions",
+                "App-optimized launch content creation",
+                "Brand voice establishment for instant delivery context",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Truck",
+          title: "Dark Store Setup & Initial Inventory Planning",
+          blogLink: "/blog/Dark-Store-Setup-Planning-The-complete-Guide",
+          description:
+            "Our comprehensive Zepto seller onboarding includes expert dark store setup and initial inventory planning:",
+          features: [
+            {
+              subtitle: "Dark Store Launch Operations",
+              points: [
+                "Initial inventory strategy for 10-minute delivery promise",
+                "First stocking plan creation and labeling setup",
+                "Launch cost optimization planning",
+              ],
+            },
+            {
+              subtitle: "Initial Performance Framework",
+              points: [
+                "Initial commission structure analysis",
+                "Delivery SLA establishment and planning",
+                "First-batch inventory planning for quick replenishment",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Shield",
+          title: "Brand Verification Setup & Initial Protection",
+          blogLink: "/blog/Brand-Verification-Setup-on-Zepto",
+          description:
+            "Protect your brand from day one with our professional Zepto seller onboarding services:",
+          features: [
+            {
+              subtitle: "Brand Protection Setup",
+              points: [
+                "Complete brand verification application and setup",
+                "Initial quality assurance measures",
+                "FSSAI and legal documentation assistance",
+              ],
+            },
+            {
+              subtitle: "Brand Launch Framework",
+              points: [
+                "Initial access to brand promotion tools",
+                "Brand presence establishment in quick commerce",
+                "Enhanced visibility preparation",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "LineChart",
+          title: "Initial Inventory Planning & Replenishment Strategy",
+          blogLink: "/blog/Zepto-inventory-Planning-Strategy",
+          description:
+            "Our Zepto seller launch services include comprehensive initial inventory planning:",
+          features: [
+            {
+              subtitle: "Launch Inventory Strategy",
+              points: [
+                "Initial stock level determination for multiple dark stores",
+                "Launch quantity planning for high-demand items",
+                "Dark store space allocation and planning",
+              ],
+            },
+            {
+              subtitle: "Performance Projections",
+              points: [
+                "Initial sales velocity estimation in quick commerce",
+                "Inventory turnover projection for 10-minute delivery model",
+                "First replenishment cycle planning",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "MessageSquare",
+          title: "Rating Generation Strategy Setup",
+          blogLink: "/blog/Zepto-Rating-Generation-Strategy",
+          description:
+            "Establish a stellar reputation from the start with our best Zepto seller onboarding services focused on rating strategy:",
+          features: [
+            {
+              subtitle: "Initial Rating Strategy",
+              points: [
+                "Early rating generation planning",
+                "Initial customer feedback system setup",
+                "Post-delivery communication templates",
+              ],
+            },
+            {
+              subtitle: "Rating Foundation",
+              points: [
+                "Customer satisfaction measurement setup",
+                "Initial feedback collection system",
+                "Early product improvement framework for quick commerce",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "AlertTriangle",
+          title: "Account Verification Assistance",
+          blogLink: "/blog/Zepto-Account-Verification",
+          description:
+            "Our expert Zepto seller setup team specializes in smooth account verification and approval:",
+          features: [
+            {
+              subtitle: "Verification Process",
+              points: [
+                "Document preparation and submission guidance",
+                "Verification requirement analysis for quick commerce",
+                "Communication management with Zepto teams",
+              ],
+            },
+            {
+              subtitle: "Approval Strategy",
+              points: [
+                "Compliance verification before submission",
+                "Risk assessment and mitigation during setup",
+                "Quick commerce policy adherence confirmation",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Activity",
+          title: "Preferred Seller Program Eligibility Assessment",
+          blogLink: "/blog/Zepto-Preferred-Seller-Program",
+          description:
+            "Prepare for future success with our specialized Zepto seller setup services for Preferred Seller qualification:",
+          features: [
+            {
+              subtitle: "Eligibility Evaluation",
+              points: [
+                "Initial qualification assessment for premium placement",
+                "Future application planning",
+                "Operational requirements preparation",
+              ],
+            },
+            {
+              subtitle: "Readiness Planning",
+              points: [
+                "Future delivery metrics targets",
+                "10-minute fulfillment efficiency planning",
+                "Customer satisfaction framework development",
+              ],
+            },
+          ],
+        },
+        {
+          iconName: "Target",
+          title: "Competitive Launch Strategy",
+          blogLink: "/blog/Zepto-Competitive-Launch-Strategy",
+          description:
+            "Enter the marketplace strategically with our data-driven Zepto seller onboarding analysis services:",
+          features: [
+            {
+              subtitle: "Pre-Launch Analysis",
+              points: [
+                "Comprehensive hyperlocal competitor assessment",
+                "Initial price point determination for quick commerce",
+                "Market entry opportunity identification",
+              ],
+            },
+            {
+              subtitle: "Launch Positioning",
+              points: [
+                "Initial competitive advantage identification",
+                "Quick commerce entry positioning strategy",
+                "Early differentiation opportunity planning",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    processConfig: {
+      title: "Our Proven Zepto Seller Onboarding Process",
+      items: [
+        {
+          iconName: "Search",
+          title: "Initial Business Analysis & Quick Commerce Strategy Development",
+          description:
+            "Our Zepto seller onboarding process begins with a thorough analysis of your business and products. Our expert team conducts a comprehensive evaluation of your product potential, hyperlocal opportunities, and dark store positioning. We identify the best entry strategy and develop a customized launch plan aligned with your business goals. This initial phase establishes clear objectives and sets the foundation for our Zepto seller setup services.",
+          details: [
+            "Complete business assessment for quick commerce",
+            "Hyperlocal opportunity analysis",
+            "Product viability for 10-minute delivery evaluation",
+            "Launch strategy development",
+            "Custom onboarding plan creation",
+          ],
+        },
+        {
+          iconName: "Settings",
+          title: "Account Creation & Initial Setup",
+          description:
+            "As your trusted Zepto seller onboarding agency, we handle the complete account creation and verification process. This phase focuses on establishing your seller presence through systematic setup of all required accounts, FSSAI information, and business documentation. Our team ensures every aspect of your Zepto seller registration process meets compliance requirements for a smooth launch.",
+          details: [
+            "Seller Dashboard account creation",
+            "Business verification documentation",
+            "Payment and settlement setup",
+            "Initial category approval requests",
+            "Quick commerce policy compliance verification",
+          ],
+        },
+        {
+          iconName: "TrendingUp",
+          title: "Launch Strategy Implementation",
+          description:
+            "With account foundation in place, we execute your customized launch strategy. Our best Zepto seller onboarding services focus on creating your marketplace presence through strategic initiatives. We develop initial product catalogs, prepare dark store inventory plans, and establish your brand presence to position your business for successful quick commerce entry.",
+          details: [
+            "Initial product catalog creation",
+            "First dark store inventory planning",
+            "Brand presence establishment",
+            "Launch positioning tactics",
+            "Initial visibility strategy implementation",
+          ],
+        },
+        {
+          iconName: "BarChart",
+          title: "Launch Monitoring & Initial Optimization",
+          description:
+            "Our Zepto seller launch services include close monitoring of initial marketplace performance. We track crucial early metrics, analyze competitive positioning, and make data-driven adjustments to optimize your launch performance. This proactive approach ensures we maximize initial momentum and quickly address any launch challenges in the fast-paced quick commerce environment.",
+          details: [
+            "First-week performance tracking",
+            "Initial sales velocity monitoring",
+            "Early search visibility analysis",
+            "Initial conversion optimization",
+            "First customer behavior analysis in quick commerce",
+          ],
+        },
+        {
+          iconName: "Repeat",
+          title: "Initial Optimization & Strategy Refinement",
+          description:
+            "The Zepto seller onboarding landscape continues after launch, and so does our support. We refine the initial approach based on early performance data, customer feedback, and emerging opportunities. Our team implements improvements to ensure your business establishes a strong foundation during the critical early period in the quick commerce ecosystem.",
+          details: [
+            "Initial catalog refinement",
+            "Early market response adaptation",
+            "First-month performance analysis",
+            "Early customer feedback implementation",
+            "Initial growth strategy adjustment",
+          ],
+        },
+        {
+          iconName: "Shield",
+          title: "Transition to Sustainable Growth",
+          description:
+            "As your dedicated Zepto seller onboarding partner, we focus on transitioning from launch to sustainable operations. We implement long-term systems, establish ongoing monitoring practices, and prepare growth strategies to ensure continued success beyond the initial launch period in the competitive quick commerce space.",
+          details: [
+            "Operational process establishment for 10-minute delivery",
+            "Long-term brand quality framework",
+            "Sustainable inventory planning for multiple dark stores",
+            "Growth planning implementation",
+            "Ongoing success strategy development",
+          ],
+        },
+      ],
+    },
+    reviewConfig: {
+      header: {
+        badge: {
+          text: ["Customer Stories", "250+ Successful Launches"],
+          className: "bg-orange-100 text-orange-600",
+        },
+        title: "Trusted by New Zepto Sellers Across India",
+        description:
+          "See why hundreds of new Zepto sellers choose Technovita Solution for their onboarding and launch needs",
+      },
+      customerReviews: [
+        {
+          name: "Vijay Sharma",
+          company: "Quick Basket India",
+          rating: 5,
+          review:
+            "Technovita Solution made our Zepto launch incredibly smooth. Their strategic approach helped us achieve 230% of our expected first-month order volume. The dedicated onboarding specialist guided us through every step of the complex dark store setup process.",
+          position: "Business Owner",
+          location: "Pune",
+        },
+        {
+          name: "Priya Kumar",
+          company: "City Essentials Pvt Ltd",
+          rating: 5,
+          review:
+            "We were overwhelmed by Zepto's quick commerce requirements before partnering with Technovita. Their team not only handled all our setup and verification challenges but also helped us launch our initial product catalog successfully. Best Zepto seller onboarding service in India!",
+          position: "E-commerce Director",
+          location: "Hyderabad",
+        },
+        {
+          name: "Rahul Joshi",
+          company: "Swift Grocers",
+          rating: 5,
+          review:
+            "The launch results with Technovita exceeded our expectations. Their deep understanding of Zepto's hyperlocal algorithm and quick commerce entry strategies helped us achieve visibility much faster than anticipated. Highly recommended for new Zepto sellers.",
+          position: "Founder",
+          location: "Chennai",
+        },
+      ],
+      platformReviews: [
+        {
+          platform: "Trustpilot",
+          rating: 4.6,
+          totalReviews: 312,
+          className: "bg-[#00b67a]",
+        },
+        {
+          platform: "Google",
+          rating: 4.7,
+          totalReviews: 578,
+          className: "bg-[#4285f4]",
+        },
+        {
+          platform: "Facebook",
+          rating: 4.5,
+          totalReviews: 256,
+          className: "bg-[#1877f2]",
+        },
+      ],
+    },
+    faqConfig: {
+      title: "Zepto Seller Onboarding FAQ",
+      faqs: [
+        {
+          iconName: "ShieldCheck",
+          question: "What does your Zepto seller onboarding service include?",
+          answer:
+            "Our comprehensive Zepto seller onboarding services cover everything from initial business assessment to successful quick commerce launch. This includes seller account creation, product catalog development, dark store inventory planning, pricing strategy, competitor analysis, launch campaign planning, and early performance monitoring. We provide dedicated onboarding specialists who ensure your Zepto business launches smoothly across all aspects of the platform.",
+          keywords: [
+            "zepto seller onboarding services",
+            "zepto seller setup",
+          ],
+        },
+        {
+          iconName: "TrendingUp",
+          question:
+            "How can your Zepto seller onboarding agency improve my launch performance?",
+          answer:
+            "As a specialized Zepto seller onboarding agency, we implement data-driven strategies to boost your initial marketplace performance. This includes creating optimized product catalogs for better launch visibility, implementing strategic initial pricing for quick commerce, planning targeted launch promotions, establishing dark store inventory strategy, and setting up rapid fulfillment processes. Our team monitors early performance metrics and adjusts strategies to maximize your initial impact in the 10-minute delivery ecosystem.",
+          keywords: [
+            "zepto seller onboarding agency",
+            "zepto seller setup services",
+          ],
+        },
+        {
+          iconName: "Globe",
+          question: "Do you offer multi-city Zepto marketplace launch assistance?",
+          answer:
+            "Yes, we provide complete Zepto seller onboarding for multiple cities across India. Our multi-city launch specialists are well-versed in setting up dark stores across major metropolitan areas covered by Zepto. We help with city-specific compliance, local consumer preference analysis, and strategic launch planning for each new market you enter on the platform.",
+          keywords: [
+            "zepto multi-city seller onboarding",
+            "zepto marketplace seller setup",
+          ],
+        },
+        {
+          iconName: "Settings",
+          question:
+            "What makes your Zepto Seller Dashboard setup process unique?",
+          answer:
+            "Our Zepto Seller Dashboard setup process stands out through our comprehensive approach. We combine technical expertise in platform requirements with strategic quick commerce insights. This includes streamlined verification processes, optimized initial settings configuration, category approval assistance, and proactive compliance verification. We establish all crucial seller foundations to ensure a smooth and successful launch in the fast-paced 10-minute delivery ecosystem.",
+          keywords: [
+            "zepto seller dashboard setup",
+            "seller dashboard onboarding",
+          ],
+        },
+        {
+          iconName: "DollarSign",
+          question: "How do you handle initial Zepto promotions and discount launch campaigns?",
+          answer:
+            "Our Zepto launch promotion specialists create optimized initial campaigns that maximize visibility and early orders. We handle launch pricing strategy, initial discount planning, campaign structure development, and performance tracking setup. Our team establishes promotion frameworks designed to give your products the best possible start on the quick commerce platform.",
+          keywords: [
+            "zepto launch promotions",
+            "zepto seller launch campaigns",
+            "zepto discounts setup",
+          ],
+        },
+        {
+          iconName: "Target",
+          question:
+            "What strategic launch services do you provide for Zepto?",
+          answer:
+            "As your strategic launch partner for Zepto, we focus on successful quick commerce entry and early positioning. Our strategic launch services include hyperlocal analysis, dark store competition assessment, brand positioning, launch timing planning, and initial performance targets. We work closely with you to develop and implement strategies aligned with your business goals from day one in the 10-minute delivery ecosystem.",
+          keywords: [
+            "zepto strategic launch services",
+            "zepto seller entry strategy",
+          ],
+        },
+        {
+          iconName: "Briefcase",
+          question: "How do you support new Zepto Business sellers?",
+          answer:
+            "Our Zepto business seller onboarding services are tailored for B2B quick commerce entrants. We help establish your Business presence, develop initial bulk pricing strategies, set up corporate customer acquisition framework, and ensure compliance with B2B-specific requirements. We also assist with business catalog development and B2B-focused launch strategies for the quick commerce channel.",
+          keywords: [
+            "zepto business seller onboarding",
+            "zepto b2b seller setup",
+          ],
+        },
+        {
+          iconName: "Users",
+          question:
+            "What support can I expect from your Zepto onboarding team?",
+          answer:
+            "You'll be assigned a dedicated Zepto launch specialist who serves as your primary point of contact. They guide you through the entire setup process, coordinate account verification, oversee initial catalog creation, and work with our specialist teams for dark store inventory planning, promotion setup, and technical support. We offer responsive communication and proactive problem-solving throughout the launch process.",
+          keywords: [
+            "zepto launch specialist",
+            "zepto seller onboarding support",
+          ],
+        },
+        {
+          iconName: "ShoppingCart",
+          question: "How do you handle initial dark store setup and planning?",
+          answer:
+            "Our Zepto dark store onboarding specialists use advanced inventory planning tools to optimize your initial quick commerce operations. We determine optimal launch quantities, plan first stocking timing, analyze initial storage requirements, and coordinate product preparation. Our team ensures your inventory strategy supports successful 10-minute delivery while minimizing early wastage and stockouts.",
+          keywords: ["zepto dark store onboarding", "zepto dark store seller setup"],
+        },
+        {
+          iconName: "BookOpen",
+          question: "What experience do you have with new brand partner accounts?",
+          answer:
+            "Our Zepto brand partner onboarding team has extensive experience establishing new brand relationships on the platform. We handle initial negotiation support, brand catalog setup, initial retail planning, and brand portal configuration. Our services help optimize your brand launch and establish strong initial visibility in the quick commerce ecosystem.",
+          keywords: [
+            "zepto brand partner onboarding",
+            "zepto brand setup",
+          ],
+        },
+        {
+          iconName: "PieChart",
+          question: "How do you handle launch analytics and initial reporting?",
+          answer:
+            "We provide comprehensive Zepto seller launch reporting including early order analytics, initial inventory tracking, launch promotion metrics, and competitive positioning. Our customized dashboards offer real-time insights into your quick commerce performance, and we deliver detailed first-month reports with actionable recommendations for post-launch optimization.",
+          keywords: [
+            "zepto seller launch analytics",
+            "zepto onboarding reporting",
+          ],
+        },
+        {
+          iconName: "Clock",
+          question: "What is your response time during the critical launch period?",
+          answer:
+            "As your Zepto seller launch partner, we provide rapid response during the critical initial period, typically within 1-2 business hours. Our team monitors launch metrics continuously and takes proactive measures to address potential issues. We handle initial support tickets, early policy compliance, and rapid issue resolution to ensure a smooth launch in the time-sensitive quick commerce environment.",
+          keywords: [
+            "zepto seller launch support",
+            "zepto onboarding response time",
+          ],
+        },
+        {
+          iconName: "Globe",
+          question: "Can you help with multi-category launch planning?",
+          answer:
+            "Yes, our comprehensive seller launch services help businesses enter multiple Zepto categories simultaneously or sequentially. We handle category prioritization, staggered launch planning, cross-category catalog strategy, and specific compliance verification. Our team guides you through the entire multi-category entry process with coordinated launch timing for optimal quick commerce presence.",
+          keywords: [
+            "zepto multi-category launch",
+            "zepto category seller setup",
+          ],
+        },
+        {
+          iconName: "Target",
+          question:
+            "What specialized services do you offer for brand verification during onboarding?",
+          answer:
+            "For sellers establishing brand verification during onboarding, we provide FSSAI documentation assistance, brand verification application support, initial storefront planning, and brand quality assurance strategy development. Our team helps expedite the brand verification process to ensure you can access all available brand tools during your initial quick commerce launch phase.",
+          keywords: [
+            "zepto brand verification setup",
+            "zepto seller brand onboarding",
+          ],
+        },
+        {
+          iconName: "CreditCard",
+          question:
+            "What are your pricing models for Zepto seller onboarding services?",
+          answer:
+            "We offer flexible pricing models based on your business size and quick commerce launch needs. Options include one-time setup fees, launch package pricing, or phased payment models. All our Zepto seller onboarding services are transparent with no hidden charges, and we provide custom quotes after a detailed assessment of your requirements and launch goals in the 10-minute delivery ecosystem.",
+          keywords: [
+            "zepto seller onboarding pricing",
+            "zepto seller setup services",
+          ],
+        },
+      ],
+    },
+    // Add more sections as needed
+    },
   // Add more service pages
 };

@@ -49,6 +49,16 @@ const SERVICES = [
       id: 'aza',
       name: "AZA Fashion Seller Onboarding",
       description: "Premium onboarding assistance for luxury and designer brands looking to establish their presence on AZA Fashion.",
+    },
+    {
+      id: 'zepto',
+      name: "Zepto Seller Onboarding",
+      description: "Specialized onboarding support for quick commerce brands on Zepto, including documentation and compliance assistance.",
+    },
+    {
+      id: 'blinkit',
+      name: "Blinkit Seller Onboarding",
+      description: "Specialized onboarding assistance for local businesses and brands aiming to reach customers through Blinkit's quick commerce network.",
     }
   ];
   
