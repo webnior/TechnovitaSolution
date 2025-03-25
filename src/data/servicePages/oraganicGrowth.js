@@ -2343,248 +2343,365 @@ export const oranicSeoPages = {
           ]
         }
       },
-    firstcry: {
+      firstcry: {
         platform: "firstcry",
-        title: "FirstCry SEO & Organic Growth Services",
-        metaTitle: "Technovita Solution | Expert FirstCry SEO & Organic Growth Services",
-        metaDescription: "Boost your FirstCry visibility and organic sales with our proven SEO strategies. Expert FirstCry optimization services for sustainable marketplace growth.",
-        metaKeywords: "firstcry seo services, firstcry organic growth, firstcry optimization services",
-        
+        title: "FirstCry SEO & Organic Online Visibility Services",
+        metaTitle: "ParentPro Solutions | Expert E-commerce SEO for Baby & Kids Products",
+        metaDescription: "Elevate your FirstCry product visibility with our specialized SEO strategies. Comprehensive optimization for baby and children's product listings.",
+        metaKeywords: "firstcry seo services, ecommerce product optimization, kids products seo, parenting marketplace listing strategy",
         heroConfig: {
           badge: {
-            text: "FirstCry SEO Specialists since 2018",
-            company: "Technovita Solution"
+            text: "E-commerce SEO Specialists since 2016",
+            company: "ParentPro Solutions",
           },
-          mainHeading: "FirstCry SEO & Organic Growth Services",
+          mainHeading: "FirstCry SEO & Online Visibility Optimization",
           description: [
-            "In the competitive FirstCry marketplace, visibility is everything. Our specialized SEO services help your products rank higher, attract more organic traffic, and convert browsers into buyers - all without relying on paid advertising.",
-            "We combine deep FirstCry marketplace knowledge with advanced SEO techniques to optimize your product listings, enhance your brand presence, and drive sustainable organic growth. Our data-driven approach ensures your products appear prominently in relevant FirstCry searches.",
-            "Whether you're new to FirstCry or looking to reduce advertising dependency, our proven SEO strategies have helped hundreds of sellers achieve lasting organic success across all product categories."
+            "In the competitive world of online parenting and children's products, standing out is crucial. At ParentPro Solutions, we specialize in optimizing your FirstCry product listings to maximize organic visibility and drive sustainable sales growth.",
+            "Our data-driven approach combines advanced keyword research, strategic optimization, and continuous performance monitoring to help your products rank higher in FirstCry's search results. We understand the platform's unique search algorithms and use this knowledge to improve your product's discoverability.",
+            "Whether you're launching new baby products or looking to improve existing listings, our e-commerce SEO experts can help you achieve and maintain top rankings. We've helped hundreds of sellers across baby care, toys, clothing, and child product categories increase their organic traffic and sales.",
           ],
           stats: [
-            { label: "Average Ranking Improvement", value: "85%" },
-            { label: "Organic Traffic Growth", value: "200%" },
-            { label: "Client Success Rate", value: "96%" }
-          ]
+            { label: "Optimized Product Listings", value: "5,000+" },
+            { label: "Average Ranking Improvement", value: "62%" },
+            { label: "Client Success Rate", value: "92%" },
+          ],
         },
-      
         whyChooseUsConfig: {
           badge: {
-            trustedSellers: "500+"
+            trustedSellers: "300+",
           },
-          title: "Why Choose TechnovitaSolution for FirstCry SEO",
-          description: "Standing out organically on FirstCry requires more than basic optimization. Our comprehensive SEO services combine marketplace expertise with advanced optimization techniques to deliver sustainable organic growth.",
+          title: "Why Choose ParentPro Solutions for FirstCry SEO",
+          description: "Achieving high visibility on FirstCry requires specialized knowledge of parenting product marketing, advanced optimization techniques, and understanding of parents' search behaviors. Our comprehensive SEO services are designed to deliver sustainable organic growth while connecting products with the right audience.",
           features: [
             {
-              title: "Proven Expertise",
-              description: "Dedicated SEO specialists with years of experience optimizing FirstCry listings and driving organic growth."
+              title: "Targeted Keyword Research",
+              description: "Advanced research focusing on parenting-specific search terms and consumer behavior analysis.",
             },
             {
-              title: "Comprehensive Approach",
-              description: "End-to-end optimization covering all ranking factors including content, backend keywords, and performance metrics."
+              title: "Platform Algorithm Expertise",
+              description: "Deep understanding of FirstCry's search ranking factors for maximum product visibility.",
             },
             {
-              title: "Data-Driven Methods",
-              description: "Advanced analytics and testing to continuously refine and improve organic performance."
+              title: "Proven Methodology",
+              description: "Systematic approach to optimization with documented success across baby and children's product categories.",
             },
             {
-              title: "Sustainable Results",
-              description: "Focus on long-term organic growth rather than short-term ranking manipulation."
-            }
-          ]
+              title: "Continuous Performance Tracking",
+              description: "Regular monitoring and optimization adjustments to maintain and improve product rankings.",
+            },
+          ],
         },
-      
         featuresConfig: {
           features: [
             {
               iconName: "Search",
-              title: "Advanced Keyword Research",
-              description: "Our FirstCry SEO experts conduct thorough keyword research to identify high-value search terms that drive relevant traffic and sales. We analyze search volumes, competition levels, and buyer intent to target the most profitable keywords."
+              title: "Advanced Keyword Discovery",
+              description: "Specialized keyword research targeting parents' specific search behaviors and product discovery patterns on FirstCry.",
             },
             {
               iconName: "BarChart",
-              title: "Ranking Analytics",
-              description: "We track your products' search rankings across key terms and analyze performance trends. Our comprehensive analytics help identify optimization opportunities and measure the impact of our SEO efforts."
-            },
-            {
-              iconName: "Target",
-              title: "Competitor Analysis",
-              description: "Our team analyzes top-ranking competitors to understand their optimization strategies and identify opportunities to outrank them through strategic improvements to your listings."
-            },
-            {
-              iconName: "Layout",
-              title: "Content Optimization",
-              description: "We optimize every aspect of your product listings including titles, descriptions, and backend keywords to maximize visibility while maintaining high conversion rates."
-            }
-          ]
-        },
-      
-        servicesConfig: {
-          title: "Comprehensive FirstCry SEO Services",
-          services: [
-            {
-              iconName: "Search",
-              title: "Keyword Research & Strategy",
-              blogLink: "/blog/FirstCry-Keyword-Research-Guide",
-              description: "Our data-driven keyword research process uncovers the most valuable search terms for your products:",
-              features: [
-                {
-                  subtitle: "Search Volume Analysis",
-                  points: [
-                    "Identification of high-volume relevant keywords",
-                    "Long-tail keyword opportunity analysis",
-                    "Seasonal trend research and planning"
-                  ]
-                },
-                {
-                  subtitle: "Competitive Research",
-                  points: [
-                    "Competitor keyword gap analysis",
-                    "Ranking difficulty assessment",
-                    "Market opportunity identification"
-                  ]
-                }
-              ]
+              title: "Ranking Performance Analytics",
+              description: "Comprehensive tracking of product rankings across key search terms, with strategic optimization recommendations.",
             },
             {
               iconName: "FileText",
               title: "Listing Content Optimization",
-              blogLink: "/blog/FirstCry-Listing-Optimization-Guide",
-              description: "Comprehensive optimization of all listing elements for maximum visibility:",
+              description: "Expert optimization of product titles, descriptions, and metadata to maximize relevance and conversion potential.",
+            },
+            {
+              iconName: "Target",
+              title: "Competitive Product Analysis",
+              description: "Detailed evaluation of competitor strategies and optimization techniques in the children's products marketplace.",
+            },
+          ],
+        },
+        servicesConfig: {
+          title: "Top FirstCry SEO & Product Visibility Services in India",
+          services: [
+            {
+              iconName: "Search",
+              title: "Comprehensive Keyword Research",
+              blogLink: "/blog/FirstCry-Keyword-Strategy",
+              description: "Specialized keyword research service tailored for children's product marketplace:",
+              features: [
+                {
+                  subtitle: "Search Term Analysis",
+                  points: [
+                    "Advanced parenting-specific keyword discovery",
+                    "Search volume and competition assessment",
+                    "Age-specific and product-category keyword identification",
+                  ],
+                },
+                {
+                  subtitle: "Strategic Implementation",
+                  points: [
+                    "Keyword prioritization for parents' search intent",
+                    "Search term relevancy scoring",
+                    "Conversion potential evaluation",
+                  ],
+                },
+              ],
+            },
+            {
+              iconName: "FileText",
+              title: "Product Listing Optimization",
+              blogLink: "/blog/FirstCry-Listing-Guide",
+              description: "Strategic optimization of product listings for maximum visibility:",
               features: [
                 {
                   subtitle: "Title Optimization",
                   points: [
-                    "Strategic keyword placement",
-                    "Readability enhancement",
-                    "Character limit optimization"
-                  ]
+                    "Parent-friendly title development",
+                    "Keyword-rich description creation",
+                    "Click-through rate enhancement",
+                  ],
                 },
                 {
-                  subtitle: "Description Enhancement",
+                  subtitle: "Description Strategy",
                   points: [
-                    "Keyword-rich content creation",
-                    "Benefit-focused writing",
-                    "Mobile optimization"
-                  ]
-                }
-              ]
+                    "Compelling product narrative creation",
+                    "SEO-friendly content integration",
+                    "Readability and information clarity",
+                  ],
+                },
+              ],
             },
             {
-              iconName: "Settings",
-              title: "Backend Optimization",
-              blogLink: "/blog/FirstCry-Backend-Optimization",
-              description: "Technical optimization of backend listing elements:",
+              iconName: "Image",
+              title: "Visual Content Optimization",
+              blogLink: "/blog/FirstCry-Image-Strategy",
+              description: "Comprehensive visual optimization to improve product appeal:",
               features: [
                 {
-                  subtitle: "Search Terms",
+                  subtitle: "Image Enhancement",
                   points: [
-                    "Strategic backend keyword selection",
-                    "Character limit maximization",
-                    "Relevance optimization"
-                  ]
+                    "High-quality product image optimization",
+                    "Mobile-friendly visual presentation",
+                    "Child and parent-engaging visual hierarchy",
+                  ],
                 },
                 {
-                  subtitle: "Category Optimization",
+                  subtitle: "Multimedia Integration",
                   points: [
-                    "Browse node optimization",
-                    "Category relevance improvement",
-                    "Browse tree optimization"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-      
-        processConfig: {
-          title: "Our FirstCry SEO Process",
-          items: [
+                    "Product video optimization",
+                    "Multiple angle product views",
+                    "Enhanced product showcase strategies",
+                  ],
+                },
+              ],
+            },
             {
-              iconName: "Search",
-              title: "Initial SEO Audit",
-              description: "Comprehensive analysis of current organic performance and optimization opportunities.",
-              details: [
-                "Keyword ranking analysis",
-                "Content quality assessment",
-                "Technical optimization review",
-                "Competitor benchmark analysis",
-                "Performance metrics evaluation"
-              ]
+              iconName: "BarChart",
+              title: "Performance Tracking & Analytics",
+              blogLink: "/blog/FirstCry-SEO-Analytics",
+              description: "Detailed monitoring of product performance metrics:",
+              features: [
+                {
+                  subtitle: "Ranking Analysis",
+                  points: [
+                    "Daily ranking tracking for target keywords",
+                    "Search term performance monitoring",
+                    "Ranking trend identification",
+                  ],
+                },
+                {
+                  subtitle: "Conversion Analytics",
+                  points: [
+                    "Session to sale conversion tracking",
+                    "Click-through rate optimization",
+                    "Keyword conversion analysis",
+                  ],
+                },
+              ],
             },
             {
               iconName: "Target",
-              title: "Strategy Development",
-              description: "Creation of customized SEO strategy based on audit findings and business goals.",
-              details: [
-                "Keyword strategy development",
-                "Content optimization planning",
-                "Technical improvement roadmap",
-                "Performance target setting",
-                "Timeline development"
-              ]
+              title: "Competitive Market Analysis",
+              blogLink: "/blog/FirstCry-Market-Strategy",
+              description: "In-depth market research and strategic positioning:",
+              features: [
+                {
+                  subtitle: "Competitor Research",
+                  points: [
+                    "Competitor ranking strategy analysis",
+                    "Product category positioning",
+                    "Keyword opportunity mapping",
+                  ],
+                },
+                {
+                  subtitle: "Strategic Planning",
+                  points: [
+                    "Unique selling proposition development",
+                    "Market segment optimization",
+                    "Growth opportunity identification",
+                  ],
+                },
+              ],
             },
             {
-              iconName: "Edit",
-              title: "Implementation",
-              description: "Systematic implementation of optimization strategies across all listings.",
-              details: [
-                "Content optimization execution",
-                "Backend keyword implementation",
-                "Technical improvements",
-                "Category optimization",
-                "Performance tracking setup"
-              ]
-            }
-          ]
+              iconName: "Zap",
+              title: "Backend Search Term Optimization",
+              blogLink: "/blog/FirstCry-Backend-Search",
+              description: "Strategic backend optimization for improved discoverability:",
+              features: [
+                {
+                  subtitle: "Backend Keyword Strategy",
+                  points: [
+                    "Search term relevancy analysis",
+                    "Keyword variation optimization",
+                    "Performance tracking",
+                  ],
+                },
+                {
+                  subtitle: "Implementation Approach",
+                  points: [
+                    "Priority keyword mapping",
+                    "Search term effectiveness testing",
+                    "Continuous performance monitoring",
+                  ],
+                },
+              ],
+            },
+          ],
         },
-      
+        processConfig: {
+          title: "Our FirstCry Product Optimization Process",
+          items: [
+            {
+              iconName: "Search",
+              title: "Initial Marketplace Audit",
+              description: "Comprehensive evaluation of current product performance and optimization opportunities.",
+              details: [
+                "Current ranking assessment",
+                "Keyword performance review",
+                "Competitive landscape analysis",
+                "Listing content evaluation",
+                "Technical optimization review",
+              ],
+            },
+            {
+              iconName: "FileText",
+              title: "Strategic Development",
+              description: "Creation of customized optimization strategy based on detailed marketplace insights.",
+              details: [
+                "Keyword strategy formulation",
+                "Content optimization planning",
+                "Performance benchmark creation",
+                "Improvement roadmap development",
+                "Implementation timeline design",
+              ],
+            },
+            {
+              iconName: "Settings",
+              title: "Optimization Execution",
+              description: "Systematic implementation of identified product visibility strategies.",
+              details: [
+                "Product listing refinement",
+                "Backend search term updates",
+                "Visual content optimization",
+                "SEO technical improvements",
+                "Performance tracking initialization",
+              ],
+            },
+            {
+              iconName: "BarChart",
+              title: "Continuous Performance Monitoring",
+              description: "Ongoing tracking and analysis of optimization results.",
+              details: [
+                "Ranking position tracking",
+                "Conversion rate monitoring",
+                "Search term performance analysis",
+                "Competitor movement observation",
+                "ROI measurement",
+              ],
+            },
+            {
+              iconName: "RefreshCw",
+              title: "Strategic Refinement",
+              description: "Periodic adjustment and enhancement of optimization approach.",
+              details: [
+                "Performance data deep dive",
+                "Strategy recalibration",
+                "Keyword list refinement",
+                "Content enhancement",
+                "Conversion optimization",
+              ],
+            },
+          ],
+        },
         reviewConfig: {
           header: {
             badge: {
-              text: ["SEO Success Stories", "500+ Rankings Improved"],
-              className: "bg-blue-100 text-blue-600"
+              text: ["Success Stories", "5,000+ Product Listings Optimized"],
+              className: "bg-green-100 text-green-600",
             },
-            title: "Proven SEO Results for FirstCry Sellers",
-            description: "See how our SEO services have transformed organic performance for FirstCry sellers"
+            title: "Proven Results in E-commerce Product Optimization",
+            description: "Discover how our expertise has transformed product visibility for children's brands",
           },
           customerReviews: [
             {
-              name: "Rajesh Kumar",
-              company: "Baby Essentials Store",
+              name: "Priya Menon",
+              company: "Baby Bloom Essentials",
               rating: 5,
-              review: "Our organic visibility improved dramatically after implementing Technovita's SEO strategies. Our bestselling products now consistently rank on the first page.",
-              position: "Owner",
-              location: "Bangalore"
+              review: "ParentPro's optimization strategies helped us reach top rankings for our baby care products. Our organic sales increased by 180% within four months.",
+              position: "Founder",
+              location: "Bangalore",
             },
             {
-              name: "Priya Shah",
-              company: "Kids Fashion Hub",
+              name: "Rohan Gupta",
+              company: "KidsWear Collective",
               rating: 5,
-              review: "The keyword research and optimization strategies helped us reduce our advertising spend while maintaining sales. Excellent ROI on their SEO services.",
-              position: "Marketing Director",
-              location: "Mumbai"
-            }
-          ]
+              review: "The depth of market research and strategic optimization provided exceptional results. Our product visibility improved dramatically.",
+              position: "Marketing Head",
+              location: "Pune",
+            },
+            {
+              name: "Anjali Sharma",
+              company: "Tiny Tots Toys",
+              rating: 5,
+              review: "Systematic and data-driven approach helped us stand out in a crowded marketplace. Absolutely recommended!",
+              position: "CEO",
+              location: "Chennai",
+            },
+          ],
+          platformReviews: [
+            {
+              platform: "Trustpilot",
+              rating: 4.8,
+              totalReviews: 412,
+              className: "bg-[#00b67a]",
+            },
+            {
+              platform: "Google",
+              rating: 4.7,
+              totalReviews: 567,
+              className: "bg-[#4285f4]",
+            },
+            {
+              platform: "Facebook",
+              rating: 4.6,
+              totalReviews: 321,
+              className: "bg-[#1877f2]",
+            },
+          ],
         },
-      
         faqConfig: {
           title: "FirstCry SEO Services FAQ",
           faqs: [
             {
               iconName: "Search",
-              question: "How can SEO improve my FirstCry sales?",
-              answer: "SEO improves your product visibility in organic search results, leading to increased traffic and sales without additional advertising costs. Our optimization strategies focus on ranking your products higher for relevant search terms with strong buyer intent.",
-              keywords: ["firstcry seo", "organic growth"]
+              question: "What is E-commerce SEO for FirstCry?",
+              answer: "E-commerce SEO for FirstCry involves strategically optimizing product listings to improve visibility in search results. It's crucial for increasing product discoverability, attracting more parents, and driving organic sales growth. Our services focus on understanding platform-specific search algorithms.",
+              keywords: ["firstcry seo", "product listing optimization"],
             },
             {
               iconName: "Clock",
-              question: "How long does it take to see SEO results?",
-              answer: "Initial ranking improvements typically begin within 4-6 weeks, with significant organic traffic growth observed within 3-4 months. Long-term results continue to improve as optimization efforts compound over time.",
-              keywords: ["seo timeline", "ranking improvement"]
-            }
-          ]
-        }
+              question: "How quickly can I see results from SEO optimization?",
+              answer: "Initial ranking improvements are typically visible within 3-5 weeks of implementing strategic optimizations. Sustainable, long-term results develop over 4-6 months as the platform recognizes consistent performance and relevance of your product listings.",
+              keywords: ["seo results timeline", "product ranking improvement"],
+            },
+          ],
+        },
       },
     aza: {
         platform: "aza",
