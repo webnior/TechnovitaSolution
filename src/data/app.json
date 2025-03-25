@@ -105,6 +105,11 @@
                 ]
             },
             {
+                "label": "YouTube Videos",
+                "link": "/youtube-videos",
+                "children": 0
+            },
+            {
                 "label": "About",
                 "link": "/about",
                 "children": [
@@ -172,7 +177,7 @@
                 "alt": "image"
             }
         ],
-        "copy": "© 2019-2024 Technovita Solution. All rights reserved."
+        "copy": " 2019-2024 Technovita Solution. All rights reserved."
     },
     "social": [
         {

@@ -1,0 +1,114 @@
+/* YouTube Videos Page Styles */
+
+.platform-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 15px;
+  border-left: 4px solid var(--primary-color, #ff3d57);
+}
+
+.video-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.video-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+  transform: scale(1.05);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color, #ff3d57);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  background-color: var(--primary-color, #ff3d57);
+  color: white;
+  opacity: 1;
+}
+
+.video-info {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.video-card:hover .video-title {
+  color: var(--primary-color, #ff3d57);
+}
+
+.video-category {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.video-category:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 767px) {
+  .platform-title {
+    font-size: 28px;
+  }
+  
+  .video-title {
+    font-size: 16px;
+  }
+  
+  .play-button {
+    width: 50px;
+    height: 50px;
+  }
+}
