@@ -14,7 +14,7 @@ const E404 = () => {
   // Constants for our circular timer
   const RADIUS = 40;
   const CIRCUMFERENCE = calculateCircumference(RADIUS);
-  const TOTAL_TIME = 15;
+  const TOTAL_TIME = 10;
 
   useEffect(() => {
     // Redirect timer
