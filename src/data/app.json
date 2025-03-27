@@ -80,19 +80,6 @@
                     
                 ]
             },
-            
-            {
-                "label": "Projects",
-                "link": "/projects",
-                "children": [
-                    {
-                        "label": "Projects Grid",
-                        "link": "/projects",
-                        "children": 0
-                    }
-                ]
-            },
-           
             {
                 "label": "Blog",
                 "link": "/blog",
@@ -117,11 +104,6 @@
                         "label": "About Us",
                         "link": "/about",
                         "children": 0
-                    },
-                    {
-                        "label": "FAQ",
-                        "link": "/faq",
-                        "children": 0
                     }
                 ]
             },
@@ -134,10 +116,6 @@
         "button": {
             "label": "SellerGuide",
             "link": "https://sellerguide.technovitasolution.in/seller-services"
-        },
-        "button2": {
-            "label": "Start a Project",
-            "link": "/contact"
         }
     },
     "footer": {

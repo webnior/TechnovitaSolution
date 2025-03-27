@@ -3,7 +3,7 @@ import prettier from 'prettier';
 import fs from 'fs';
 import path from 'path';
 
-const WEBSITE_URL = 'https://technovitasolution.in';
+const WEBSITE_URL = 'https://www.technovitasolution.in';
 const PLATFORMS = ['amazon', 'flipkart', 'meesho','myntra','nykaa','ajio','tatacliq','firstcry','aza','zepto','blinkit'];
 const SERVICES = [
   'account-management',
