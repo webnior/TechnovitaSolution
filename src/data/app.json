@@ -97,17 +97,6 @@
                 "children": 0
             },
             {
-                "label": "About",
-                "link": "/about",
-                "children": [
-                    {
-                        "label": "About Us",
-                        "link": "/about",
-                        "children": 0
-                    }
-                ]
-            },
-            {
                 "label": "Contact Us",
                 "link": "/contact",
                 "children": 0
