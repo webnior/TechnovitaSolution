@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import Layouts from "@layouts/Layouts";
 import dynamic from "next/dynamic";
 
-import { getSortedPostsData } from "@library/posts";
 import { getSortedProjectsData } from "@library/projects";
 
 import { circleText } from "@common/utilits";
@@ -15,7 +14,6 @@ import ShowcaseSection from "@components/sections/Showcase";
 import VideoSection from "@components/sections/Video";
 import CountersSection from "@components/sections/Counters";
 import CallToActionSection from "@components/sections/CallToAction";
-import LatestPostsSection from "@components/sections/LatestPosts";
 import PartnersSection from "@components/sections/Partners"
 
 const HeroSection = dynamic( () => import("@components/sections/Hero"), { ssr: false } );
@@ -39,7 +37,6 @@ const Home1 = (props) => {
         <VideoSection />
         <CountersSection />
         {/* <CallToActionSection /> */}
-        <LatestPostsSection posts={props.posts} />
         <PartnersSection />
       </>
     </Layouts>
@@ -48,12 +45,10 @@ const Home1 = (props) => {
 export default Home1;
 
 export async function getStaticProps() {
-  const allPosts = getSortedPostsData();
   const allProjects = getSortedProjectsData();
 
   return {
     props: {
-      posts: allPosts,
       projects: allProjects,
     }
   }
