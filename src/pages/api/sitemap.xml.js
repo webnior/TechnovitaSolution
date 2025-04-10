@@ -2,6 +2,7 @@ import { globby } from 'globby';
 import prettier from 'prettier';
 import fs from 'fs';
 import path from 'path';
+import { getPosts, getCategories } from '../../lib/wordpress';
 
 const WEBSITE_URL = 'https://www.technovitasolution.in';
 const PLATFORMS = ['amazon', 'flipkart', 'meesho','myntra','nykaa','ajio','tatacliq','firstcry','aza','zepto','blinkit'];
@@ -53,6 +54,34 @@ function getDynamicServicePages() {
   return dynamicPages;
 }
 
+// Function to get WordPress blog posts
+async function getWordPressPosts() {
+  try {
+    // Get all posts (up to 100 for sitemap)
+    const { posts } = await getPosts(1, 100);
+    
+    // Map posts to URLs
+    return posts.map(post => `${WEBSITE_URL}/blog/${post.slug}`);
+  } catch (error) {
+    console.error('Error fetching WordPress posts for sitemap:', error);
+    return [];
+  }
+}
+
+// Function to get WordPress categories
+async function getWordPressCategories() {
+  try {
+    // Get all categories
+    const categories = await getCategories();
+    
+    // Map categories to URLs
+    return categories.map(category => `${WEBSITE_URL}/blog/category/${category.slug}`);
+  } catch (error) {
+    console.error('Error fetching WordPress categories for sitemap:', error);
+    return [];
+  }
+}
+
 // Function to generate sitemap XML
 async function generateSitemap(pages) {
   const sitemap = `
@@ -61,8 +90,26 @@ async function generateSitemap(pages) {
       ${pages
         .map((url) => {
           // Set priority based on URL type
-          const priority = url.includes('/services/') ? '0.8' : '0.7';
-          const changefreq = url.includes('/services/') ? 'weekly' : 'monthly';
+          let priority = '0.7';
+          let changefreq = 'monthly';
+          
+          // Services pages get higher priority
+          if (url.includes('/services/')) {
+            priority = '0.8';
+            changefreq = 'weekly';
+          }
+          
+          // Blog posts get higher priority and more frequent updates
+          if (url.includes('/blog/') && !url.includes('/category/')) {
+            priority = '0.9';
+            changefreq = 'weekly';
+          }
+          
+          // Blog index and category pages
+          if (url.endsWith('/blog') || url.includes('/blog/category/')) {
+            priority = '0.8';
+            changefreq = 'weekly';
+          }
           
           return `
             <url>
@@ -93,11 +140,19 @@ export default async function handler(req, res) {
 
     // Get all dynamic service pages
     const dynamicPages = getDynamicServicePages();
+    
+    // Get WordPress blog posts
+    const blogPosts = await getWordPressPosts();
+    
+    // Get WordPress categories
+    const blogCategories = await getWordPressCategories();
 
     // Combine all pages
     const allPages = [
       ...staticPages,
-      ...dynamicPages
+      ...dynamicPages,
+      ...blogPosts,
+      ...blogCategories
     ];
 
     // Generate sitemap
