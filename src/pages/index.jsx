@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import Layouts from "@layouts/Layouts";
 import dynamic from "next/dynamic";
+import BlogWidget from "@components/BlogWidget";
 
 import { getSortedProjectsData } from "@library/projects";
 
@@ -35,6 +36,7 @@ const Home1 = (props) => {
         <ShowcaseSection projects={props.projects} />
         <TestimonialSlider />
         <VideoSection />
+        <BlogWidget />
         <CountersSection />
         {/* <CallToActionSection /> */}
         <PartnersSection />
@@ -42,6 +44,7 @@ const Home1 = (props) => {
     </Layouts>
   );
 };
+
 export default Home1;
 
 export async function getStaticProps() {
