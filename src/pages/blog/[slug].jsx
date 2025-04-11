@@ -6,7 +6,7 @@ import BlogLayout from '../../layouts/BlogLayout';
 import { getPosts, getPostBySlug, formatPostData } from '../../lib/wordpress';
 import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
 
-export default function BlogPost({ post }) {
+export default function BlogPost({ post, relatedPosts }) {
   const router = useRouter();
 
   if (router.isFallback) {
@@ -225,12 +225,40 @@ export default function BlogPost({ post }) {
             </div>
 
             {/* Related Posts */}
-            <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow p-8 mb-12">
+            <div className="mt-16">
               <h3 className="text-3xl font-bold text-gray-900 mb-8">
                 Related Posts
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* This would be populated with related posts */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {relatedPosts.map((post) => (
+                  <Link
+                    key={post.id}
+                    href={`/blog/${post.slug}`}
+                    className="group block"
+                  >
+                    <div className="relative overflow-hidden rounded-2xl">
+                      {post.featuredImage && (
+                        <Image
+                          src={post.featuredImage}
+                          alt={post.title}
+                          width={1200}
+                          height={600}
+                          objectFit="cover"
+                          className="transform group-hover:scale-110 transition-transform duration-500"
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:from-black/70 transition-colors duration-500" />
+                    </div>
+                    <div className="p-4 bg-white">
+                      <h4 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                        {post.title}
+                      </h4>
+                      <p className="text-gray-600 line-clamp-2 mt-2">
+                        {post.excerpt.replace(/<p>/g, '').replace(/<\/p>/g, '')}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -272,6 +300,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const post = await getPostBySlug(params.slug);
+    const relatedPosts = await getPosts(1, 3, post.categories[0].id);
 
     if (!post) {
       return {
@@ -282,6 +311,7 @@ export async function getStaticProps({ params }) {
     return {
       props: {
         post: formatPostData(post),
+        relatedPosts: relatedPosts.posts.map(formatPostData),
       },
       revalidate: 3600,
     };

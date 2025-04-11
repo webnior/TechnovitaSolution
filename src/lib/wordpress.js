@@ -10,14 +10,21 @@ const WORDPRESS_API_URL = 'http://blog.technovitasolution.com/wp-json/wp/v2';
  * Fetch all posts with pagination support
  * @param {number} page - Page number
  * @param {number} perPage - Posts per page
+ * @param {number} categoryId - Category ID (optional)
  * @returns {Promise<{posts: Array, totalPages: number}>}
  */
-export async function getPosts(page = 1, perPage = 10) {
+export async function getPosts(page = 1, perPage = 10, categoryId = null) {
   try {
+    // Build query parameters
+    let queryParams = `?_embed=true&page=${page}&per_page=${perPage}`;
+    if (categoryId) {
+      queryParams += `&categories=${categoryId}`;
+    }
+
     // Fetch posts with embedded featured media, categories, and authors
     const response = await fetch(
-      `${WORDPRESS_API_URL}/posts?_embed=true&page=${page}&per_page=${perPage}`,
-      { next: { revalidate: 3600 } } // Revalidate cache every hour
+      `${WORDPRESS_API_URL}/posts${queryParams}`,
+      { next: { revalidate: 3600 } }
     );
     
     // Get total pages from headers
