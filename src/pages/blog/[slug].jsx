@@ -157,7 +157,7 @@ export default function BlogPost({ post }) {
               <h3 className="text-3xl font-bold text-gray-900 mb-8">
                 Share This Post:
               </h3>
-              <div className="flex gap-6">
+              <div className="flex flex-col md:flex-row gap-4">
                 <FacebookShareButton url={currentUrl} quote={post.title}>
                   <div className="flex items-center gap-3 p-4 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                     <i className="fab fa-facebook-f text-blue-600" />
