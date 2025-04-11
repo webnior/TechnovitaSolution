@@ -49,7 +49,7 @@ export default function Blog({ initialPosts, totalPages, categories }) {
   return (
     <BlogLayout 
       title="Blog | Technovita Solution"
-      description="Latest insights, guides, and news from Technovita Solution"
+      description="Latest insights, guides, and news of e-commerce from Technovita Solution"
     >
       {/* Hero Section */}
       <div className="relative overflow-hidden py-24">
