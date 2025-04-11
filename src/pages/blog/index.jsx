@@ -135,12 +135,13 @@ export default function Blog({ initialPosts, totalPages, categories }) {
                   className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   {post.featuredImage && (
-                    <div className="relative h-64 md:h-80 overflow-hidden">
+                    <div className="relative overflow-hidden h-[300px]">
                       <Image 
                         src={post.featuredImage} 
                         alt={post.title}
-                        layout="fill"
-                        objectFit="cover"
+                        width={1200}
+                        height={400}
+                        objectFit="contain"
                         quality={85}
                         className="transform group-hover:scale-110 transition-transform duration-500"
                       />

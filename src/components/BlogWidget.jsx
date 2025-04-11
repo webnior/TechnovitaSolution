@@ -49,7 +49,7 @@ export default function BlogWidget() {
                     src={post.featuredImage} 
                     alt={post.title}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     quality={85}
                     className="transform group-hover:scale-110 transition-transform duration-500"
                   />

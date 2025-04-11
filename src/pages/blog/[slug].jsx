@@ -42,15 +42,15 @@ export default function BlogPost({ post }) {
     );
   }
 
-  const currentUrl = typeof window !== 'undefined' 
-    ? window.location.href 
+  const currentUrl = typeof window !== 'undefined'
+    ? window.location.href
     : `https://technovitasolution.com/blog/${post.slug}`;
 
   // Convert HTML content to array of paragraphs
   const contentParagraphs = post.content.split(/<\/p>/).map(p => p.replace(/<p>/, ''));
 
   return (
-    <BlogLayout 
+    <BlogLayout
       title={`${post.title} | Technovita Solution`}
       description={post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160)}
     >
@@ -111,9 +111,9 @@ export default function BlogPost({ post }) {
             </div>
             <div className="flex justify-center gap-4">
               {post.categories.map((cat, index) => (
-                <Link 
+                <Link
                   key={cat.id}
-                  href={`/blog/category/${cat.slug}`} 
+                  href={`/blog/category/${cat.slug}`}
                   className="px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-full hover:bg-blue-100 transition-colors"
                 >
                   {cat.name}
@@ -128,20 +128,21 @@ export default function BlogPost({ post }) {
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
+
             {/* Featured Image */}
             {post.featuredImage && (
-              <div className="relative h-96 mb-12">
-                <Image 
-                  src={post.featuredImage} 
+              <div className="relative mb-12">
+                <Image
+                  src={post.featuredImage}
                   alt={post.title}
-                  layout="fill"
-                  objectFit="cover"
+                  width={1200}
+                  height={600}
+                  objectFit="contain"
                   className="rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               </div>
             )}
-
             {/* Content */}
             <div className="prose prose-lg max-w-none">
               {contentParagraphs.map((para, index) => (
@@ -183,8 +184,8 @@ export default function BlogPost({ post }) {
               <div className="flex items-center gap-6">
                 {post.author.avatar && (
                   <div className="relative w-24 h-24">
-                    <Image 
-                      src={post.author.avatar} 
+                    <Image
+                      src={post.author.avatar}
                       alt={post.author.name}
                       width={96}
                       height={96}
@@ -200,19 +201,19 @@ export default function BlogPost({ post }) {
                     Author at Technovita Solution
                   </p>
                   <div className="flex gap-4">
-                    <Link 
+                    <Link
                       href="#"
                       className="text-blue-600 hover:text-blue-800 transition-colors"
                     >
                       <i className="fab fa-linkedin-in" />
                     </Link>
-                    <Link 
+                    <Link
                       href="#"
                       className="text-blue-600 hover:text-blue-800 transition-colors"
                     >
                       <i className="fab fa-twitter" />
                     </Link>
-                    <Link 
+                    <Link
                       href="#"
                       className="text-blue-600 hover:text-blue-800 transition-colors"
                     >
@@ -250,11 +251,11 @@ export default function BlogPost({ post }) {
 export async function getStaticPaths() {
   try {
     const { posts } = await getPosts(1, 100);
-    
+
     const paths = posts.map((post) => ({
       params: { slug: post.slug },
     }));
-    
+
     return {
       paths,
       fallback: true,
@@ -271,13 +272,13 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const post = await getPostBySlug(params.slug);
-    
+
     if (!post) {
       return {
         notFound: true,
       };
     }
-    
+
     return {
       props: {
         post: formatPostData(post),
