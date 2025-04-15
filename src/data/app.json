@@ -76,6 +76,12 @@
                         "label":"Ajio seller Calculator",
                         "link":"https://sellerguide.technovitasolution.in/calculator/ajio",
                         "children":3
+                    },
+                    {
+                        "label":"Blinkit seller Calculator",
+                        "link":"https://sellerguide.technovitasolution.in/blinkit-seller-calculator",
+                        "children":4
+
                     }
                     
                 ]
