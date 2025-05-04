@@ -140,7 +140,7 @@ const LeadGenPopup = ({
                   disabled={isSubmitting}
                   className="w-11/12 mx-auto block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium text-lg py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/30 border border-indigo-400/30"
                 >
-                  {isSubmitting ? 'Just a moment...' : '🚀 Unlock Your Growth Strategy'}
+                  {isSubmitting ? 'Just a moment...' : '🚀 Get Your Free Guide'}
                 </button>
 
 

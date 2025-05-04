@@ -2,8 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import LeadGenPopup from '@/src/components/LeadGenPopup';
+import WhatsAppCTA from '@/src/components/WhatsappCTA';
 
-export default function HowToSellOnBlinkit() {
+function HowToSellOnBlinkit() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -41,14 +42,12 @@ export default function HowToSellOnBlinkit() {
 
   // Blinkit service links
   const blinkitServices = [
-    { title: "Warehouse Management System", href: "/services/warehouse-management" },
-    { title: "Inventory Management Software", href: "/services/inventory-management" },
-    { title: "Vendor Management System", href: "/services/vendor-management" },
-    { title: "Order Management System", href: "/services/order-management" },
-    { title: "Omnichannel Retail Software", href: "/services/omnichannel-retail" },
-    { title: "E-commerce Returns Management", href: "/services/returns-management" },
-    { title: "E-commerce Integrations", href: "/services/integrations" },
-    { title: "Direct to Consumer (D2C)", href: "/services/d2c" },
+    { title: "Blinkit Seller Onboarding", href: "/services/ecommerce-seller-onboarding/blinkit/" },
+    { title: "Blinkit Account Management", href: "/services/account-management/blinkit" },
+    { title: "Blinkit Store Setup", href: "/services/store-setup-and-branding-services/blinkit" },
+    { title: "Blinkit Product Advertising", href: "/services/ecommerce-advertising/blinkit" },
+    { title: "Blinkit SEO Services", href: "/services/seo-services-and-organic-growth-strategies/blinkit" },
+    { title: "Blinkit Seller Documentation Prepare Help", href: "/services/brand-documentation/blinkit" },
   ];
 
   const faqs = [
@@ -94,105 +93,18 @@ export default function HowToSellOnBlinkit() {
     },
   ];
 
-  const steps = [
-    {
-      title: "Visit the Blinkit Seller Portal.",
-      description:
-        "Go to the official Blinkit Seller Portal where you can start your registration journey. Look for clear call-to-action buttons like “Sell on Blinkit” or “Register Now.”",
-      image: "/images/blinkit/seller-registration/step-1.webp",
-      alt: "Blinkit Seller Portal",
-    },
-    {
-      title: "Click on the “Sell on Blinkit” Button.",
-      description:
-        "Once on the Blinkit Seller Onboarding page, click the green-colored “Sell on Blinkit” button to start your seller registration. Refer to the screenshot below for clarity.",
-      image: "/images/blinkit/seller-registration/step-2.webp",
-      alt: "Sell on Blinkit Button",
-    },
-    {
-      title: "Enter Email Address and Verify OTP.",
-      description:
-        "Enter your active email address for Blinkit Seller Sign-Up and click on “Send OTP.” Check your inbox and input the received OTP to continue registration.",
-      image: "/images/blinkit/seller-registration/step-3.webp",
-      alt: "Enter Email and OTP for Blinkit Seller",
-    },
-    {
-      title: "Fill in Your Business Details.",
-      description:
-        "After verifying your email, fill out your business information. Select your selling category, online selling platforms (Instagram, YouTube, etc.), your name, designation, and mobile number. Enter the correct number as you will receive another OTP.",
-      image: "/images/blinkit/seller-registration/step-4.webp",
-      alt: "Fill Business Details for Blinkit",
-    },
-    {
-      title: "Verify Mobile Number via OTP.",
-      description:
-        "Once your mobile number is added, an OTP will be sent to verify it. Enter the OTP and click “Save & Continue” to move forward in the Blinkit Seller Onboarding process.",
-      image: "/images/blinkit/seller-registration/step-5.webp",
-      alt: "Verify Mobile Number Blinkit",
-    },
-    {
-      title: "Enter Your GST Details.",
-      description:
-        "Provide your 15-digit GSTIN (Goods and Services Tax Identification Number). If you don't have a GST certificate yet, you can apply for one easily online.",
-      image: "/images/blinkit/seller-registration/step-6.webp",
-      alt: "Enter GST Details Blinkit Seller",
-    },
-    {
-      title: "Verify GST Information.",
-      description:
-        "After entering your GST number, Blinkit will automatically fetch your registered business information. Click “Verify” to confirm that the GST number belongs to you.",
-      image: "/images/blinkit/seller-registration/step-7.webp",
-      alt: "Verify GST Number Blinkit Seller",
-    },
-    {
-      title: "Fill in Brand Details.",
-      description:
-        "Next, enter all the brand-related information including brand name, description, and any other details Blinkit asks. This helps Blinkit list your products properly on their platform.",
-      image: "/images/blinkit/seller-registration/step-8.webp",
-      alt: "Fill Brand Details Blinkit Seller",
-    },
-    {
-      title: "Add Your Bank Account Information.",
-      description:
-        "Provide your business bank account details to receive payouts from Blinkit sales. Ensure all information is accurate to avoid future payment issues.",
-      image: "/images/blinkit-bank-details.png",
-      alt: "Enter Bank Details Blinkit Seller",
-    },
-    {
-      title: "Set Your Shipping Locations.",
-      description:
-        "Although Blinkit doesn’t ask for a specific shipping hub, you should be ready to supply products from locations within Blinkit's service zones to enable faster deliveries.",
-      image: "/images/blinkit-shipping-location.png",
-      alt: "Shipping Location for Blinkit Seller",
-    },
-    {
-      title: "Upload Your Digital Signature.",
-      description:
-        "Upload a digital signature to complete official documentation. If you don't have one, consult your Chartered Accountant (CA) to create a digital signature easily.",
-      image: "/images/blinkit-digital-signature.png",
-      alt: "Digital Signature Upload Blinkit Seller",
-    },
-    {
-      title: "Final Verification and Submit Application.",
-      description:
-        "Finally, review all entered information carefully. After confirming everything is correct, submit your application for verification. Blinkit's team will review your onboarding request, and you'll receive a confirmation email shortly after approval!",
-      image: "/images/blinkit-final-submit.png",
-      alt: "Submit Application for Blinkit Seller",
-    },
-  ];
-
   return (
     <div className="bg-white min-h-screen">
       <Head>
-        <title>Complete Guide to Sell on Blinkit | Step-by-Step Seller Hub Tutorial</title>
-        <meta name="description" content="Learn how to sell on Blinkit with this step-by-step guide. Covers registration, commissions, and everything you need to start selling successfully on Blinkit." />
+        <title>Complete Guide to Sell on Blinkit | How to Sell On Blinkit</title>
+        <meta name="description" content="Learn how to sell on Blinkit with this step-by-step guide. Covers blinkit seller registration, commissions, product listing, ads and everything you need to start selling successfully on Blinkit." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph SEO */}
         <meta property="og:title" content="Guide to Sell on Blinkit" />
         <meta property="og:description" content="Step-by-step guide for sellers to start and grow their business on Blinkit." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://yourdomain.com/blinkit/how-to-sell-on-blinkit" />
-        <meta property="og:image" content="https://yourdomain.com/images/blinkit-guide-featured.png" />
+        <meta property="og:url" content="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
+        <meta property="og:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
         <meta property="og:image:alt" content="Blinkit Seller Guide Featured Image" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -200,44 +112,48 @@ export default function HowToSellOnBlinkit() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Guide to Sell on Blinkit" />
         <meta name="twitter:description" content="Step-by-step guide for sellers to start and grow their business on Blinkit." />
-        <meta name="twitter:image" content="https://yourdomain.com/images/blinkit-guide-featured.png" />
+        <meta name="twitter:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
         <meta name="twitter:image:alt" content="Blinkit Seller Guide Featured Image" />
         {/* Additional SEO metadata */}
         <meta name="keywords" content="Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce" />
         <meta name="author" content="Your Brand Name" />
-        <link rel="canonical" href="https://yourdomain.com/blinkit/how-to-sell-on-blinkit" />
+        <link rel="canonical" href="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
         {/* Structured data for article */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              "headline": "Complete Guide to Sell on Blinkit",
-              "description": "Learn how to sell on Blinkit with this step-by-step guide. Covers registration, commissions, and everything you need to start selling successfully on Blinkit.",
+              "headline": "Complete Guide to Sell on Blinkit | How to Sell On Blinkit",
+              "description": "Learn how to sell on Blinkit with this step-by-step guide. Covers blinkit seller registration, commissions, product listing, ads and everything you need to start selling successfully on Blinkit.",
               "image": {
                 "@type": "ImageObject",
-                "url": "https://yourdomain.com/images/blinkit-guide-featured.png",
+                "url": "https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp",
                 "width": "1200",
                 "height": "630"
               },
               "author": {
                 "@type": "Organization",
-                "name": "Your Brand Name"
+                "name": "Technovita Solution",
+                "url": "https://technovitasolution.in"
               },
               "publisher": {
                 "@type": "Organization",
-                "name": "Your Brand Name",
+                "name": "Technovita Solution",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://yourdomain.com/logo.png",
+                  "url": "https://technovitasolution.in/images/logo-main.png",
                   "width": "112",
                   "height": "112"
                 }
               },
-              "datePublished": "2025-04-26",
+              "datePublished": "2025-05-05",
+              "dateModified": "2025-05-05",
+              "keywords": "Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce,how to sell on blinkit ,blinkit product listing",
+              "articleSection": "E-commerce",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://yourdomain.com/blinkit/how-to-sell-on-blinkit"
+                "@id": "https://technovitasolution.in/blinkit/how-to-sell-on-blinkit"
               }
             }
           `}
@@ -401,6 +317,11 @@ export default function HowToSellOnBlinkit() {
                     <span className="font-semibold">Sales Figures (Online/Offline):</span> Details of your previous sales (if any) to help Blinkit assess your selling capacity.
                   </li>
                 </ul>
+
+                <WhatsAppCTA
+                  showMessage={false}
+                  buttonText="Get Free Support"
+                />
               </section>
 
               {/* Step-by-Step Registration Process */}
@@ -599,8 +520,12 @@ export default function HowToSellOnBlinkit() {
                   </div>
                 </div>
               </section>
+              <WhatsAppCTA
+                  showMessage={false}
+                  buttonText="Get Free Support"
+                />
             </section>
-
+          
             {/* Step 2  applying for apob */}
             <section className="mb-16" id="apob-setup">
               {/* Heading */}
@@ -610,6 +535,7 @@ export default function HowToSellOnBlinkit() {
                   Step-by-Step Guide to Apply for APOB in GST & Link It on Blinkit Platform
                 </h2>
               </div>
+              
               <p className="text-gray-600 max-w-3xl mx-auto mb-12">
                 Dear sellers, before you can start selling on Blinkit, you need to add their warehouse as an Additional Place of Business (APOB) in your GST profile. This comprehensive guide will walk you through both the GST portal process and the Blinkit platform linking process with detailed steps and visual guidance. 🚀
               </p>
@@ -635,7 +561,7 @@ export default function HowToSellOnBlinkit() {
                   1. Login to GST Portal
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  Visit <strong>https://www.gst.gov.in</strong> and log in using your Username and Password to access your GST dashboard.
+                  Visit <a href="https://www.gst.gov.in" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:text-indigo-800 font-medium hover:underline transition-colors">www.gst.gov.in</a> and log in using your Username and Password to access your GST dashboard.
                 </p>
                 <div className="w-full overflow-hidden rounded-lg shadow-md mt-4">
                   <Image
@@ -1147,6 +1073,7 @@ export default function HowToSellOnBlinkit() {
                   />
                 </div>
               </div>
+             
             </section>
 
             {/* Step 4 ads setup  */}
@@ -1874,41 +1801,118 @@ export default function HowToSellOnBlinkit() {
 
           </main>
 
-          {/* Sidebar for desktop - hidden on mobile */}
-          <aside className="hidden lg:block lg:w-80 lg:flex-shrink-0">
-            {/* Services sidebar*/}
+          {/* Services sidebar - Responsive for both mobile and desktop */}
+          <aside className="lg:w-72 lg:flex-shrink-0 mt-8 lg:mt-0 lg:ml-8 pt-8">
             <div
-              className={`rounded-lg bg-gray-50 overflow-hidden ${scrollPosition > 250 ? "sticky top-6" : ""
+              className={`rounded-xl bg-white shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl ${scrollPosition > 250 ? "lg:sticky lg:top-6" : ""
                 }`}
             >
               {/* Header */}
-              <div className="bg-gray-50 p-6 border-b border-gray-200">
-                <h3 className="font-semibold text-lg text-gray-800">Our E-commerce Solutions</h3>
+              <div className="bg-gradient-to-r from-purple-600 to-indigo-600 p-6">
+                <h3 className="font-semibold text-lg text-white flex items-center gap-2">
+                  Our Blinkit Services
+                </h3>
               </div>
 
               {/* List of services */}
-              <div>
+              <div className="divide-y divide-gray-100">
                 {blinkitServices.map((service, index) => (
                   <a
                     key={index}
                     href={service.href}
-                    className="block px-6 py-3 text-gray-700 hover:bg-gray-100 border-b border-gray-200 last:border-0"
+                    className="block px-6 py-4 text-gray-700 hover:bg-gray-50 transition-colors duration-200 flex items-center gap-3 group"
                   >
-                    {service.title}
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 group-hover:scale-150 transition-transform duration-200"></span>
+                    <span className="group-hover:text-indigo-600 transition-colors duration-200">{service.title}</span>
                   </a>
                 ))}
               </div>
             </div>
           </aside>
         </div>
+
+        {/* Further Reading Section */}
+        <section className="py-16 bg-gray-50 mt-16 rounded-2xl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Further Reading</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Article Card 1 */}
+              <a href="/blog/how-to-create-seller-account-on-flipkart" className="group">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="https://blog.technovitasolution.com/wp-content/uploads/2025/04/flipkart-Banner.webp"
+                      alt="How to Create Seller Account on Flipkart"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                      How to Create Seller Account on Flipkart
+                    </h3>
+                    <p className="text-gray-600 text-sm line-clamp-2">
+                      Complete guide to register and start selling on Flipkart marketplace. Learn about documentation and requirements.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article Card 2 */}
+              <a href="/blog/how-to-create-seller-account-on-ajio" className="group">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="https://blog.technovitasolution.com/wp-content/uploads/2025/04/ajio-seller-onboarding-1.webp"
+                      alt="How to Create Seller Account on AJIO"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                      How to Create Seller Account on AJIO
+                    </h3>
+                    <p className="text-gray-600 text-sm line-clamp-2">
+                      Step-by-step process to become a seller on AJIO. Understand registration process and seller requirements.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              {/* Article Card 3 */}
+              <a href="/blog/how-to-create-seller-account-on-amazon" className="group">
+                <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src="https://blog.technovitasolution.com/wp-content/uploads/2022/02/SELLER-ON-AMAZON.png"
+                      alt="How to Create Seller Account on Amazon"
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">
+                      How to Create Seller Account on Amazon
+                    </h3>
+                    <p className="text-gray-600 text-sm line-clamp-2">
+                      Detailed guide on Amazon seller registration process, documentation requirements, and getting started.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Lead Generation Popup */}
+        <LeadGenPopup
+          isOpen={showPopup}
+          onClose={() => setShowPopup(false)}
+          title="🚀 Get Your Free Blinkit Seller Success Guide!"
+          subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
+          offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
+        />
       </div>
-      <LeadGenPopup
-        isOpen={showPopup}
-        onClose={() => setShowPopup(false)}
-        title="🚀 Get Your Free Blinkit Seller Success Guide!"
-        subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
-        offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
-      />
     </div>
   );
-}
+};
+
+export default HowToSellOnBlinkit;
