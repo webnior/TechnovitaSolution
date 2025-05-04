@@ -1,8 +1,20 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import LeadGenPopup from '@/src/components/LeadGenPopup';
 
 export default function HowToSellOnBlinkit() {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Show popup after 15 seconds
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   // State to track scroll position for sticky behavior
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -26,6 +38,7 @@ export default function HowToSellOnBlinkit() {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   // Blinkit service links
   const blinkitServices = [
     { title: "Warehouse Management System", href: "/services/warehouse-management" },
@@ -42,44 +55,45 @@ export default function HowToSellOnBlinkit() {
     {
       question: "How long does the application review process take?",
       answer:
-        "Once you submit your Seller Hub application, our team reviews and verifies your details. Occasionally, it may take longer due to high demand, but we work diligently to complete it as quickly as possible."
+        "Once you submit your Seller Hub application, our team reviews and verifies your details. Occasionally, it may take longer due to high demand, but we work diligently to complete it as quickly as possible.",
     },
     {
       question: "Can I sell on Blinkit without GST?",
       answer:
-        "No, your business needs to be GST-registered to sell on Blinkit. Once you have your GST number, you can start selling."
+        "No, your business needs to be GST-registered to sell on Blinkit. Once you have your GST number, you can start selling.",
     },
     {
       question: "Can I sell on Blinkit without CIN or UDYAM?",
       answer:
-        "Currently, you need either a CIN or UDYAM registration for compliance to list your products on Blinkit. We are working to remove this requirement soon."
+        "Currently, you need either a CIN or UDYAM registration for compliance to list your products on Blinkit. We are working to remove this requirement soon.",
     },
     {
       question: "Can I sell on Blinkit without a brand trademark?",
       answer:
-        "To maintain quality, Blinkit only lists brands with a trademark certificate or an authorized reseller with a trademark application certificate."
+        "To maintain quality, Blinkit only lists brands with a trademark certificate or an authorized reseller with a trademark application certificate.",
     },
     {
       question: "What are the steps to start selling on Blinkit?",
       answer:
-        "Apply through the Seller Hub, list your products, add your APOB (Additional Place of Business), send your inventory to Blinkit's fulfillment centers, and track your sales."
+        "Apply through the Seller Hub, list your products, add your APOB (Additional Place of Business), send your inventory to Blinkit's fulfillment centers, and track your sales.",
     },
     {
       question: "Is the onboarding process different for food product sellers?",
       answer:
-        "Yes, food sellers must submit FSSAI licenses for their shipping locations, Blinkit selling locations (dark stores and warehouses), and the manufacturer FSSAI license for their products."
+        "Yes, food sellers must submit FSSAI licenses for their shipping locations, Blinkit selling locations (dark stores and warehouses), and the manufacturer FSSAI license for their products.",
     },
     {
       question: "Why do I need to share my shipping location in my application?",
       answer:
-        "Sharing your stock origin helps Blinkit track product movement for accounting, compliance, and taxation purposes."
+        "Sharing your stock origin helps Blinkit track product movement for accounting, compliance, and taxation purposes.",
     },
     {
       question: "Can brands and resellers sell on Blinkit?",
       answer:
-        "Yes, both brands and resellers can sell on Blinkit. You’ll need to provide a brand trademark and an authorization letter to complete onboarding."
-    }
+        "Yes, both brands and resellers can sell on Blinkit. You’ll need to provide a brand trademark and an authorization letter to complete onboarding.",
+    },
   ];
+
   const steps = [
     {
       title: "Visit the Blinkit Seller Portal.",
@@ -166,6 +180,7 @@ export default function HowToSellOnBlinkit() {
       alt: "Submit Application for Blinkit Seller",
     },
   ];
+
   return (
     <div className="bg-white min-h-screen">
       <Head>
@@ -331,15 +346,6 @@ export default function HowToSellOnBlinkit() {
               </div>
             </section>
 
-
-            <section className="mb-8">
-              <div className="flex justify-center">
-                <div className="bg-yellow-300 px-6 py-2 rounded-lg font-bold text-2xl text-gray-900 whitespace-nowrap text-center">
-                  Guide to sell on Blinkit
-                </div>
-              </div>
-            </section>
-
             {/* Step 1 - Blinkit Seller Registration */}
             <section className="mb-10" id="registration">
               <header className="flex items-center gap-3 mb-4">
@@ -396,7 +402,6 @@ export default function HowToSellOnBlinkit() {
                   </li>
                 </ul>
               </section>
-
 
               {/* Step-by-Step Registration Process */}
               <section className="mb-16">
@@ -595,7 +600,6 @@ export default function HowToSellOnBlinkit() {
                 </div>
               </section>
             </section>
-
 
             {/* Step 2  applying for apob */}
             <section className="mb-16" id="apob-setup">
@@ -1145,8 +1149,6 @@ export default function HowToSellOnBlinkit() {
               </div>
             </section>
 
-
-
             {/* Step 4 ads setup  */}
             <section className="mb-16" id="ads-guide">
               {/* Heading */}
@@ -1328,7 +1330,6 @@ export default function HowToSellOnBlinkit() {
                 />
               </div>
 
-
               <div className="mt-6 space-y-4 text-base leading-relaxed">
                 <p><strong>Here’s a detailed breakdown of Blinkit's Seller Fees in 2025:</strong></p>
 
@@ -1389,7 +1390,6 @@ export default function HowToSellOnBlinkit() {
               </div>
             </section>
 
-
             {/* Step 6 inventory dispatch*/}
             <section className="mb-16" id="inventory-dispatch">
               {/* Heading */}
@@ -1431,7 +1431,7 @@ export default function HowToSellOnBlinkit() {
                   2. Click on “Ship to Blinkit”
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  On the inventory page, click the <strong>“Ship to Blinkit”</strong> button on the top-right corner. You'll see a list of Blinkit warehouses verified on your account. Select the warehouse where you want to send the stock.
+                  On the inventory page, click the green <strong>“Ship to Blinkit”</strong> button on the top-right corner. You'll see a list of Blinkit warehouses verified on your account. Select the warehouse where you want to send the stock.
                   <br /><br />
                   <strong>Need Help?</strong> Contact our support team via the number listed on our website if you don’t see a verified warehouse.
                 </p>
@@ -1528,8 +1528,6 @@ export default function HowToSellOnBlinkit() {
               </div>
             </section>
 
-
-
             {/* Step 7 payment cycle*/}
             <section className="mb-10" id="payment-cycle">
               <div className="flex items-center gap-3">
@@ -1557,7 +1555,6 @@ export default function HowToSellOnBlinkit() {
               </ul>
 
             </section>
-
 
             {/* Step 8  growth strategy*/}
             <section className="mb-16" id="growth-strategy">
@@ -1875,7 +1872,6 @@ export default function HowToSellOnBlinkit() {
               </div>
             </section>
 
-
           </main>
 
           {/* Sidebar for desktop - hidden on mobile */}
@@ -1906,6 +1902,13 @@ export default function HowToSellOnBlinkit() {
           </aside>
         </div>
       </div>
+      <LeadGenPopup
+        isOpen={showPopup}
+        onClose={() => setShowPopup(false)}
+        title="🚀 Get Your Free Blinkit Seller Success Guide!"
+        subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
+        offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
+      />
     </div>
   );
 }

@@ -72,7 +72,7 @@ export default async function handler(req, res) {
     const template = emailTemplates[formType](formData);
 
     const data = await resend.emails.send({
-      from: 'Your Website <onboarding@resend.dev>', // Replace with your verified domain
+      from: 'TechnovitaSolution <onboarding@resend.dev>', // Replace with your verified domain
       to: ['technovitasolution@gmail.com'],
       subject: template.subject,
       html: template.html
