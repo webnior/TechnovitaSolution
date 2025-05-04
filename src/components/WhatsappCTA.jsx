@@ -39,9 +39,9 @@ export default WhatsAppCTA;
 // />
 
 //  Just the button without message
-// <WhatsAppCTA 
-//   showMessage={false}
-// />
+{/* <WhatsAppCTA 
+  showMessage={false}
+/> */}
 
 // With custom button text
 // <WhatsAppCTA 

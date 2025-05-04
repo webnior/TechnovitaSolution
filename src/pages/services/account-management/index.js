@@ -240,7 +240,10 @@ const MarketplaceMasterHero = () => {
     { name: 'AJIO', logo: '/ajio-logo.svg', icon: Store },
     { name: 'Tata Cliq', logo: '/tata-cliq-logo.svg', icon: Store },
     { name: 'FirstCry', logo: '/firstcry-logo.svg', icon: Store },
-    { name: 'AZA Fashion', logo: '/aza-fashion-logo.svg', icon: Store }
+    { name: 'AZA Fashion', logo: '/aza-fashion-logo.svg', icon: Store },
+    { name: 'Blinkit', logo: '/blinkit-logo.svg', icon: Store },
+    
+
   ];
 
   const togglePlatform = (platformName) => {
