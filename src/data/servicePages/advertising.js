@@ -3474,4 +3474,376 @@ export const advertisingPages = {
  
   // Add more service pages
 },
+blinkit: {
+  platform: "blinkit",
+  title: "Blinkit Marketing & Advertising Services",
+  metaTitle: "Technovita Solution | Expert Blinkit Marketing & Visibility Services",
+  metaDescription: "Transform your product sales on Blinkit with our data-driven marketing specialists and proven visibility strategies. Expert Blinkit optimization services.",
+  metaKeywords: "blinkit marketing, blinkit advertising services, blinkit visibility, blinkit optimization",
+  heroConfig: {
+    badge: {
+      text: "Blinkit Marketing Experts since 2021",
+      company: "Technovita Solution",
+    },
+    mainHeading: "Blinkit Marketing & Visibility Management Services",
+    description: [
+      "Managing your Blinkit presence and visibility can feel overwhelming. At Technovita Solution, we take the complexity out of Blinkit marketing. Our complete management service handles everything from product listing optimization to promotional strategy, making your Blinkit efforts profitable from day one.",
+      "Think of us as your dedicated Blinkit marketing team. We develop targeted visibility strategies, optimize product listings, manage promotional budgets effectively, and position your products for maximum exposure. Our certified Blinkit experts use data-driven strategies to help your products achieve optimal ROI and sustained marketplace success.",
+      "Whether you're new to Blinkit or looking to scale existing product listings, our experienced specialists at Technovita Solution know exactly what it takes to succeed. We've helped hundreds of brands across all categories dramatically improve their performance and build sustainable growth on the fast-growing quick commerce platform.",
+    ],
+    stats: [
+      { label: "Revenue Generated", value: "₹200M+" },
+      { label: "Average Sales Growth", value: "275%" },
+      { label: "Monthly Marketing Budget Managed", value: "₹40M+" },
+    ],
+  },
+  whyChooseUsConfig: {
+    badge: {
+      trustedSellers: "300+",
+    },
+    title: "Why TechnovitaSolution is Your Best Choice for Blinkit Marketing Management",
+    description: "In today's competitive quick commerce landscape, successful Blinkit visibility requires more than just basic listing knowledge. Our comprehensive marketing services are designed to navigate the complexities of Blinkit's ecosystem while maximizing your return on marketing spend.",
+    features: [
+      {
+        title: "Expert Visibility Management",
+        description: "Dedicated marketing specialists with proven track records in successful Blinkit optimization and promotional campaign management.",
+      },
+      {
+        title: "Data-Driven Strategy",
+        description: "Advanced performance analysis and competitive insights to make informed decisions about your marketing spend on Blinkit.",
+      },
+      {
+        title: "Complete Campaign Support",
+        description: "End-to-end marketing management including listing optimization, promotional planning, visibility enhancement, and performance tracking.",
+      },
+      {
+        title: "Proven Results",
+        description: "275% average sales growth with consistent improvement trajectories for managed accounts.",
+      },
+    ],
+  },
+  featuresConfig: {
+    features: [
+      {
+        iconName: "TrendingUp",
+        title: "Strategic Visibility Planning",
+        description: "Our expert Blinkit services focus on developing comprehensive marketing strategies tailored to your business goals. We analyze market opportunities, competitor listings, and customer behavior to create a roadmap for success on the platform.",
+      },
+      {
+        iconName: "ShieldCheck",
+        title: "Listing Setup & Compliance",
+        description: "As your dedicated Blinkit partner, we ensure your product listings are properly configured and compliant with Blinkit's policies. Our proactive approach to listing management helps prevent issues before they affect your performance.",
+      },
+      {
+        iconName: "BarChart",
+        title: "Performance Analytics",
+        description: "Our Blinkit experts utilize advanced analytics tools to track and optimize your marketing metrics. We provide detailed insights into listing performance, promotional effectiveness, and ROI to optimize your strategy.",
+      },
+      {
+        iconName: "Users",
+        title: "Dedicated Marketing Team",
+        description: "When you choose our Blinkit services, you get a dedicated team of specialists who manage every aspect of your presence. We act as your marketing partners, optimizing every element of your Blinkit strategy.",
+      },
+    ],
+  },
+  servicesConfig: {
+    title: "Best Blinkit Marketing & Visibility Services In India",
+    services: [
+      {
+        iconName: "Search",
+        title: "Product Listing Optimization",
+        blogLink: "/blog/The-Ultimate-Guide-to-Blinkit-Listings",
+        description: "Maximize your product visibility with our expert listing optimization services. Our comprehensive approach ensures your products not only appear in relevant searches but convert views into sales:",
+        features: [
+          {
+            subtitle: "Search Optimization",
+            points: [
+              "In-depth keyword research and integration",
+              "Category optimization",
+              "Search performance analysis",
+            ],
+          },
+          {
+            subtitle: "Content Enhancement",
+            points: [
+              "Compelling product descriptions",
+              "High-quality image optimization",
+              "Pricing strategy consultation",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Settings",
+        title: "Featured Placement Optimization",
+        blogLink: "/blog/Mastering-Blinkit-Featured-Placements",
+        description: "Secure prime positions for your products with our specialized featured placement services:",
+        features: [
+          {
+            subtitle: "Placement Strategy",
+            points: [
+              "Category highlight positioning",
+              "Promotional slot optimization",
+              "Visibility enhancement techniques",
+            ],
+          },
+          {
+            subtitle: "Performance Optimization",
+            points: [
+              "Position performance tracking",
+              "Competitive placement analysis",
+              "ROI optimization for featured slots",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Star",
+        title: "In-App Promotional Campaigns",
+        blogLink: "/blog/Blinkit-Promotional-Strategy-Guide",
+        description: "Expand your reach with our targeted in-app promotional services:",
+        features: [
+          {
+            subtitle: "Promotion Strategy",
+            points: [
+              "Flash deal optimization",
+              "Bundle offer development",
+              "Special discount campaigns",
+            ],
+          },
+          {
+            subtitle: "Performance Management",
+            points: [
+              "Promotion conversion tracking",
+              "Timing optimization",
+              "Budget utilization analysis",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "Target",
+        title: "Advanced Customer Targeting",
+        blogLink: "/blog/Advanced-Blinkit-Targeting-Guide",
+        description: "Maximize campaign effectiveness with our advanced targeting services:",
+        features: [
+          {
+            subtitle: "Audience Development",
+            points: [
+              "Customer behavior analysis",
+              "Location-based targeting",
+              "Time-sensitive promotions",
+            ],
+          },
+          {
+            subtitle: "Category Strategy",
+            points: [
+              "Category-specific optimization",
+              "Cross-category promotion",
+              "Competitive analysis",
+            ],
+          },
+        ],
+      },
+      {
+        iconName: "DollarSign",
+        title: "Budget Management & ROI Optimization",
+        blogLink: "/blog/Blinkit-Budget-Optimization",
+        description: "Maximize your marketing ROI with our expert budget management services:",
+        features: [
+          {
+            subtitle: "Budget Strategy",
+            points: [
+              "Promotional budget allocation",
+              "Placement investment planning",
+              "Seasonal budget optimization",
+            ],
+          },
+          {
+            subtitle: "ROI Management",
+            points: [
+              "Target ROI tracking",
+              "Investment adjustment strategy",
+              "Performance-based allocation",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  processConfig: {
+    title: "Our Proven Blinkit Marketing Management Process",
+    items: [
+      {
+        iconName: "Search",
+        title: "Initial Account Analysis & Strategy Development",
+        description: "Our Blinkit process begins with a thorough analysis of your product performance and goals. Our expert team conducts a comprehensive evaluation of your current visibility, market opportunities, and competitor strategies.",
+        details: [
+          "Historical performance assessment",
+          "Competitor listing analysis",
+          "Market opportunity evaluation",
+          "Strategy development",
+          "Custom marketing planning",
+        ],
+      },
+      {
+        iconName: "Settings",
+        title: "Listing Structure & Setup",
+        description: "We implement proven listing structures designed for optimal performance and discoverability. Our team establishes organized product categorization, content strategies, and tracking systems.",
+        details: [
+          "Product hierarchy creation",
+          "Targeting strategy implementation",
+          "Keyword integration",
+          "Budget allocation planning",
+          "Performance tracking setup",
+        ],
+      },
+      {
+        iconName: "TrendingUp",
+        title: "Performance Optimization",
+        description: "Our team continuously optimizes your listings using data-driven insights and proven techniques to maximize visibility and achieve your sales goals.",
+        details: [
+          "Visibility optimization",
+          "Content refinement",
+          "Placement adjustment",
+          "Budget utilization improvement",
+          "Performance tracking and adjustment",
+        ],
+      },
+      {
+        iconName: "BarChart",
+        title: "Analytics & Reporting",
+        description: "We provide comprehensive performance analytics and actionable insights through detailed reporting and performance dashboards.",
+        details: [
+          "Performance metric tracking",
+          "ROI analysis",
+          "Competitive benchmark reporting",
+          "Trend analysis",
+          "Strategy recommendations",
+        ],
+      },
+      {
+        iconName: "Repeat",
+        title: "Continuous Improvement",
+        description: "Our team implements ongoing optimizations based on performance data, market changes, and emerging opportunities to ensure sustained success on Blinkit.",
+        details: [
+          "Regular performance reviews",
+          "Strategy refinement",
+          "Market adaptation",
+          "Opportunity identification",
+          "Growth planning",
+        ],
+      },
+    ],
+  },
+  reviewConfig: {
+    header: {
+      badge: {
+        text: ["Client Success Stories", "₹200M+ Revenue Generated"],
+        className: "bg-green-100 text-green-600",
+      },
+      title: "Trusted by Brands Across India",
+      description: "See why hundreds of brands choose Technovita Solution for their Blinkit marketing needs",
+    },
+    customerReviews: [
+      {
+        name: "Vikram Singh",
+        company: "Fresh Foods India",
+        rating: 5,
+        review: "Technovita Solution transformed our Blinkit performance. Their strategic approach helped us achieve a 300% sales growth within three months. The dedicated specialist provided excellent guidance and optimization for our products.",
+        position: "Marketing Director",
+        location: "Delhi",
+      },
+      {
+        name: "Priya Sharma",
+        company: "QuickMart Essentials",
+        rating: 5,
+        review: "Our marketing costs were inefficient before partnering with Technovita. Their team not only improved our visibility but also significantly increased our order volume. Best Blinkit optimization service in India!",
+        position: "E-commerce Manager",
+        location: "Mumbai",
+      },
+      {
+        name: "Karan Mehta",
+        company: "Daily Essentials Co.",
+        rating: 5,
+        review: "The results with Technovita exceeded our expectations. Their deep understanding of Blinkit's algorithm helped us achieve better placement and conversion rates than ever before.",
+        position: "Founder",
+        location: "Bangalore",
+      },
+    ],
+    platformReviews: [
+      {
+        platform: "Trustpilot",
+        rating: 4.7,
+        totalReviews: 325,
+        className: "bg-[#00b67a]",
+      },
+      {
+        platform: "Google",
+        rating: 4.8,
+        totalReviews: 467,
+        className: "bg-[#4285f4]",
+      },
+      {
+        platform: "Facebook",
+        rating: 4.6,
+        totalReviews: 289,
+        className: "bg-[#1877f2]",
+      },
+    ],
+  },
+  faqConfig: {
+    title: "Blinkit Marketing & Visibility FAQ",
+    faqs: [
+      {
+        iconName: "ShieldCheck",
+        question: "What does your Blinkit marketing management service include?",
+        answer: "Our comprehensive Blinkit management services cover all aspects of marketing strategy and execution. This includes listing optimization, product categorization, promotional planning, visibility enhancement, performance tracking, and continuous optimization. We provide dedicated specialists who ensure your products perform optimally across the platform.",
+        keywords: ["blinkit marketing management", "visibility services"],
+      },
+      {
+        iconName: "TrendingUp",
+        question: "How can your agency improve my Blinkit performance?",
+        answer: "As a specialized quick commerce marketing agency, we implement data-driven strategies to boost your product performance. This includes advanced listing optimization, strategic promotional planning, target audience refinement, and continuous performance monitoring. Our team adjusts strategies based on real-time data to maximize your marketing ROI.",
+        keywords: ["blinkit marketing agency", "performance optimization"],
+      },
+      {
+        iconName: "DollarSign",
+        question: "What is your approach to budget management and ROI?",
+        answer: "We take a strategic approach to marketing budget management, focusing on maximizing ROI while maintaining optimal spending levels. Our team implements dynamic allocation adjustments, timing strategies, and placement optimizations to ensure every marketing rupee generates maximum returns.",
+        keywords: ["blinkit marketing budget", "roi optimization"],
+      },
+      {
+        iconName: "Settings",
+        question: "How do you handle listing structure and optimization?",
+        answer: "Our listing structure approach focuses on visibility and performance. We create optimized product descriptions, implement strategic keyword integration, and establish clear categorization strategies. Regular optimization includes content refinement, image enhancement, and placement optimization.",
+        keywords: ["listing structure", "product optimization"],
+      },
+      {
+        iconName: "BarChart",
+        question: "What kind of reporting and analytics do you provide?",
+        answer: "We provide comprehensive performance analytics including detailed visibility metrics, ROI analysis, competitive benchmarking, and trend analysis. Our custom dashboards offer real-time insights into your product performance, and we deliver regular reports with actionable recommendations.",
+        keywords: ["performance analytics", "marketing reports"],
+      },
+      {
+        iconName: "Clock",
+        question: "How frequently do you optimize listings and promotions?",
+        answer: "We perform daily monitoring and weekly optimization of all active listings and promotions. This includes content adjustments, visibility enhancements, promotional updates, and budget reallocation. Major strategy reviews and adjustments are conducted monthly to ensure long-term performance improvement.",
+        keywords: ["listing optimization", "promotion management"],
+      },
+      {
+        iconName: "Target",
+        question: "How do you handle product positioning and targeting?",
+        answer: "Our positioning process combines competitor analysis, customer behavior evaluation, and performance data to identify the most effective visibility opportunities. We continuously refine listings, implement strategic placements, and adjust promotional timing to optimize performance.",
+        keywords: ["product positioning", "customer targeting"],
+      },
+      {
+        iconName: "CreditCard",
+        question: "What are your pricing models for Blinkit marketing services?",
+        answer: "We offer flexible pricing models based on your monthly sales volume and service requirements. Options include percentage of revenue, flat monthly fees, or hybrid pricing models. All our Blinkit services are transparent with no hidden charges, and we provide custom quotes after a detailed account analysis.",
+        keywords: ["marketing services pricing", "optimization services cost"],
+      },
+    ],
+  },
+},
 }

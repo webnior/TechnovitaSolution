@@ -49,6 +49,11 @@ const SERVICES = [
       id: 'aza',
       name: "AZA Fashion Store Setup & Branding",
       description: "Premium store setup and branding assistance for luxury and designer brands looking to establish their presence on AZA Fashion.",
+    },
+    {
+      id:'blinkit',
+      name:"Blinkit Store Setup & Branding",
+      description:"Premium Store Setup with High quality Product Listings"
     }
   ];
   

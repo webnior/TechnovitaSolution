@@ -49,6 +49,10 @@ const SERVICES = [
       id: 'aza',
       name: "AZA Fashion SEO Strategy",
       description: "Luxury fashion-focused SEO services for AZA including premium product optimization, category enhancement, and organic visibility improvement.",
+    },{
+      id:'blinkit',
+      name:"Blinkit SEO Strategy",
+      description:"Blinkit Organic SEO services focusing on product visibility, category optimization, and organic search rankings enhancement."
     }
   ];
   

@@ -48,6 +48,11 @@ const SERVICES = [
       id: 'aza',
       name: "AZA Luxury Product Advertising",
       description: "Exclusive advertising strategies for luxury fashion products on AZA, including premium placements and curated collection promotions.",
+    },
+    {
+      id:'blinkit',
+      name:"Blinkit Product Promotion",
+      description:"Targeted advertising campaigns for Blinkit marketplace including product boost campaigns and promotional listings to increase reach and sales velocity."
     }
   ];
   

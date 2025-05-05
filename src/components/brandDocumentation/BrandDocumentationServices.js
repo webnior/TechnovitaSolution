@@ -49,6 +49,11 @@ const SERVICES = [
       id: 'aza',
       name: "AZA Brand Documentation",
       description: "Luxury fashion brand documentation including authenticity certificates, designer brand authorizations, and premium category verification documents.",
+    },
+    {
+      id:'blinkit',
+      name:"Blinkit Brand Documentation",
+      description:"Blinkit brand documentation including business registration, GST documentation, and brand ownership proof for seller verification."
     }
   ];
   

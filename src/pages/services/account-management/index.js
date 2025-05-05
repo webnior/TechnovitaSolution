@@ -975,6 +975,11 @@ const SERVICES = [
     id: 'aza',
     name: "AZA Fashion Account Management",
     description: "Specialized account management for AZA Fashion, focusing on luxury and designer brand representation and growth strategies.",
+  },
+  {
+    id: 'blinkit',
+    name: "Blinkit Account Management",
+    description: "Specialized account management for Blinkit best platform for quick commerce",
   }
 ];
 

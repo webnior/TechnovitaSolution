@@ -11,7 +11,11 @@ const LeadGenPopup = ({
   onClose,
   title = 'E-commerce Growth Offer',
   subtitle = 'Get a FREE 10-minute consultation worth ₹3,000 to accelerate your e-commerce business!',
-  phoneNumber = '+919876543210'
+  phoneNumber = '+917451073504',
+  guideUrl = '/path-to-your-guide.pdf',
+  guideTitle = 'E-commerce Growth Guide',
+  timerDuration = 51,
+  successMessage = 'Your free guide has been sent to your email. You can also download it directly below:'
 }) => {
   const [formData, setFormData] = useState({
     name: '',
@@ -20,7 +24,7 @@ const LeadGenPopup = ({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(50);
+  const [timeLeft, setTimeLeft] = useState(timerDuration);
 
   useEffect(() => {
     if (!isSubmitted && timeLeft > 0) {
@@ -69,8 +73,8 @@ const LeadGenPopup = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
-      <div className="w-full max-w-md bg-white rounded-lg shadow-xl relative">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/50 overflow-y-auto">
+      <div className="w-full max-w-[95%] sm:max-w-md bg-white rounded-lg shadow-xl relative my-2 sm:my-0">
         {/* Close button */}
         <button
           onClick={onClose}
@@ -80,16 +84,16 @@ const LeadGenPopup = ({
           <X className="w-5 h-5 transition-transform group-hover:rotate-90" />
         </button>
 
-        <div className="p-6">
+        <div className="p-4 sm:p-6">
           {!isSubmitted ? (
             <>
 
               {/* Header */}
               <div className="text-center mb-3">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-2">
                   {title}
                 </h2>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm">
                   {subtitle}
                 </p>
               </div>
@@ -118,7 +122,7 @@ const LeadGenPopup = ({
                     name="phone"
                     placeholder="Phone Number"
                     required
-                    pattern="[0-9]{10}"
+                    pattern="^[\+\d][\d\s\-]{8,15}$"
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors placeholder-gray-400 text-gray-900"
@@ -138,7 +142,7 @@ const LeadGenPopup = ({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-11/12 mx-auto block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium text-lg py-4 px-10 rounded-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/30 border border-indigo-400/30"
+                  className="w-full sm:w-11/12 mx-auto block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-medium text-base sm:text-lg py-3 sm:py-4 px-6 sm:px-10 rounded-lg sm:rounded-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/30 border border-indigo-400/30"
                 >
                   {isSubmitting ? 'Just a moment...' : '🚀 Get Your Free Guide'}
                 </button>
@@ -147,20 +151,20 @@ const LeadGenPopup = ({
               </form>
 
               {/* Contact buttons */}
-              <div className="grid grid-cols-2 gap-4 mt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 mt-4">
                 <button
                   onClick={() => window.location.href = `tel:${phoneNumber}`}
-                  className="flex items-center justify-center gap-2 border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium py-3 px-4 rounded-lg transition-colors"
+                  className="flex items-center justify-center gap-2 border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg text-sm sm:text-base transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   <span>Call Expert</span>
                 </button>
                 <button
                   onClick={() => {
-                    const message = encodeURIComponent("Hi, I'm interested in the free consultation. Can you help me?");
+                    const message = encodeURIComponent("Hi, I'm interested in the free blinkit consultation. Can you help me?");
                     window.location.href = `https://wa.me/${phoneNumber.replace('+', '')}?text=${message}`;
                   }}
-                  className="flex items-center justify-center gap-2 border border-green-500 text-green-600 hover:bg-green-50 font-medium py-3 px-4 rounded-lg transition-colors"
+                  className="flex items-center justify-center gap-2 border border-green-500 text-green-600 hover:bg-green-50 font-medium py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg text-sm sm:text-base transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>WhatsApp</span>
@@ -172,15 +176,15 @@ const LeadGenPopup = ({
               <div className="text-center mb-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">Thank You!</h3>
                 <p className="text-gray-600 mb-6">
-                  Your free guide has been sent to your email. You can also download it directly below:
+                  {successMessage}
                 </p>
                 <a 
-                  href="/path-to-your-guide.pdf"
+                  href={guideUrl}
                   target="_blank"
                   className="inline-flex items-center gap-2 bg-green-50 text-green-600 hover:bg-green-100 font-medium py-3 px-6 rounded-lg transition-colors mb-8"
                 >
                   <Download className="w-5 h-5" />
-                  Download Guide Now
+                  Download {guideTitle}
                 </a>
               </div>
             </div>
@@ -192,3 +196,18 @@ const LeadGenPopup = ({
 };
 
 export default LeadGenPopup;
+
+
+
+// how to use guide
+{/* <LeadGenPopup
+  isOpen={isOpen}
+  onClose={handleClose}
+  title="Your Custom Title"
+  subtitle="Your Custom Subtitle"
+  phoneNumber="+919876543210"
+  guideUrl="/path-to-your-guide.pdf"
+  guideTitle="Your Guide Title"
+  timerDuration={60}
+  successMessage="Your custom success message"
+/> */}
