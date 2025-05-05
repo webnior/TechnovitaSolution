@@ -54,7 +54,11 @@ const LeadGenPopup = ({
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          guideUrl,
+          guideTitle
+        }),
       });
 
       if (response.ok) {
@@ -122,7 +126,6 @@ const LeadGenPopup = ({
                     name="phone"
                     placeholder="Phone Number"
                     required
-                    pattern="^[\+\d][\d\s\-]{8,15}$"
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors placeholder-gray-400 text-gray-900"

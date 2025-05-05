@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method not allowed' });
   }
 
-  const { name, phone, email } = req.body;
+  const { name, phone, email ,guideUrl,guideTitle} = req.body;
 
   try {
     // Send email notification
@@ -37,8 +37,8 @@ export default async function handler(req, res) {
               <p style="color: #4B5563; font-size: 16px; line-height: 1.6; margin-bottom: 24px;">
                 We're excited to help you grow your business. As promised, here's your free guide to help you get started.
               </p>
-              <a href="https://drive.google.com/file/d/1Y4fW8YkgQA2Bpy4pbUpGTA4SzPJUYmb_/view?usp=sharing" style="display: inline-block; background: linear-gradient(to right, #7C3AED, #4F46E5); color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; margin-bottom: 32px;">
-                📚 Download Your Free Guide
+              <a href="${guideUrl}" style="display: inline-block; background: linear-gradient(to right, #7C3AED, #4F46E5); color: white; text-decoration: none; padding: 16px 32px; border-radius: 8px; font-weight: 600; margin-bottom: 32px;">
+                ${guideTitle || 'Download Your Free Guide'}
               </a>
             </div>
 

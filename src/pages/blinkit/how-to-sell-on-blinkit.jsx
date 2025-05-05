@@ -1910,7 +1910,7 @@ function HowToSellOnBlinkit() {
           subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
           offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
           phoneNumber="+917451073504"
-          guideUrl="https://blog.technovitasolution.com/wp-content/uploads/2025/04/blinkit-seller-success-guide.pdf"
+          guideUrl="https://drive.google.com/file/d/1Y4fW8YkgQA2Bpy4pbUpGTA4SzPJUYmb_/view?usp=sharing"
           guideTitle="Blinkit Seller Success Guide"
           timerDuration={60}
           successMessage="Thank you for your interest! Check your email for the free guide."
