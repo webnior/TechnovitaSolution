@@ -11,7 +11,7 @@ function HowToSellOnBlinkit() {
     // Show popup after 15 seconds
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 5000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
