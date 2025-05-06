@@ -96,12 +96,12 @@ function HowToSellOnBlinkit() {
   return (
     <div className="bg-white min-h-screen">
       <Head>
-        <title>Complete Guide to Sell on Blinkit | How to Sell On Blinkit</title>
-        <meta name="description" content="Learn how to sell on Blinkit with this step-by-step guide. Covers blinkit seller registration, commissions, product listing, ads and everything you need to start selling successfully on Blinkit." />
+        <title>How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)</title>
+        <meta name="description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Open Graph SEO */}
-        <meta property="og:title" content="Guide to Sell on Blinkit" />
-        <meta property="og:description" content="Step-by-step guide for sellers to start and grow their business on Blinkit." />
+        <meta property="og:title" content="How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)" />
+        <meta property="og:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
         <meta property="og:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
@@ -110,13 +110,13 @@ function HowToSellOnBlinkit() {
         <meta property="og:image:height" content="630" />
         {/* Twitter SEO */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Guide to Sell on Blinkit" />
-        <meta name="twitter:description" content="Step-by-step guide for sellers to start and grow their business on Blinkit." />
+        <meta name="twitter:title" content="How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)" />
+        <meta name="twitter:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
         <meta name="twitter:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
         <meta name="twitter:image:alt" content="Blinkit Seller Guide Featured Image" />
         {/* Additional SEO metadata */}
         <meta name="keywords" content="Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce" />
-        <meta name="author" content="Your Brand Name" />
+        <meta name="author" content="Mukesh Bagaria" />
         <link rel="canonical" href="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
         {/* Structured data for article */}
         <script type="application/ld+json">
@@ -124,8 +124,8 @@ function HowToSellOnBlinkit() {
             {
               "@context": "https://schema.org",
               "@type": "Article",
-              "headline": "Complete Guide to Sell on Blinkit | How to Sell On Blinkit",
-              "description": "Learn how to sell on Blinkit with this step-by-step guide. Covers blinkit seller registration, commissions, product listing, ads and everything you need to start selling successfully on Blinkit.",
+              "headline": "How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)",
+              "description": "Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing.",
               "image": {
                 "@type": "ImageObject",
                 "url": "https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp",
@@ -134,7 +134,7 @@ function HowToSellOnBlinkit() {
               },
               "author": {
                 "@type": "Organization",
-                "name": "Technovita Solution",
+                "name": "Mukesh Bagaria",
                 "url": "https://technovitasolution.in"
               },
               "publisher": {
