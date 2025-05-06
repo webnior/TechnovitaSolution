@@ -96,69 +96,124 @@ function HowToSellOnBlinkit() {
   return (
     <div className="bg-white min-h-screen">
       <Head>
-        <title>How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)</title>
-        <meta name="description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* Open Graph SEO */}
-        <meta property="og:title" content="How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)" />
-        <meta property="og:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
-        <meta property="og:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
-        <meta property="og:image:alt" content="Blinkit Seller Guide Featured Image" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        {/* Twitter SEO */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)" />
-        <meta name="twitter:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
-        <meta name="twitter:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
-        <meta name="twitter:image:alt" content="Blinkit Seller Guide Featured Image" />
-        {/* Additional SEO metadata */}
-        <meta name="keywords" content="Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce" />
-        <meta name="author" content="Mukesh Bagaria" />
-        <link rel="canonical" href="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
-        {/* Structured data for article */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)",
-              "description": "Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing.",
-              "image": {
+      {/* Technical Meta Tags */}
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+      {/* Primary Meta Tags */}
+      <title>How to Sell on Blinkit: Seller Onboarding &amp; Step-by-Step Guide (2025)</title>
+      <meta name="description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing process in 2025." />
+      <meta name="keywords" content="Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce, how to sell on blinkit, blinkit product listing" />
+      <meta name="author" content="Mukesh Bagaria" />
+      
+      {/* Canonical URL */}
+      <link rel="canonical" href="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
+      
+      {/* Favicon */}
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+      
+      {/* Mobile Meta Tags */}
+      <meta name="HandheldFriendly" content="true" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <meta name="theme-color" content="#F5A841" />
+      
+      {/* Open Graph / Facebook Meta Tags */}
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="How to Sell on Blinkit: Seller Onboarding &amp; Step-by-Step Guide (2025)" />
+      <meta property="og:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
+      <meta property="og:url" content="https://technovitasolution.in/blinkit/how-to-sell-on-blinkit" />
+      <meta property="og:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
+      <meta property="og:image:alt" content="Blinkit Seller Guide Featured Image" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Technovita Solution" />
+      
+      {/* Twitter Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="How to Sell on Blinkit: Seller Onboarding &amp; Step-by-Step Guide (2025)" />
+      <meta name="twitter:description" content="Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing." />
+      <meta name="twitter:image" content="https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp" />
+      <meta name="twitter:image:alt" content="Blinkit Seller Guide Featured Image" />
+      
+      {/* Geo Meta Tags */}
+      <meta name="geo.region" content="IN" />
+      <meta name="geo.placename" content="India" />
+      
+      {/* Additional SEO Meta Tags */}
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="language" content="en" />
+      <meta name="distribution" content="global" />
+      <meta name="revisit-after" content="7 days" />
+      
+      {/* Structured data for article */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Sell on Blinkit: Seller Onboarding & Step-by-Step Guide (2025)",
+            "description": "Want to sell on Blinkit? Learn how to become a seller with our step-by-step guide covering onboarding, registration, and product listing.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp",
+              "width": "1200",
+              "height": "630"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "Mukesh Bagaria",
+              "url": "https://technovitasolution.in"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "logo": {
                 "@type": "ImageObject",
-                "url": "https://technovitasolution.in/images/blinkit/how-to-sell-on-blinkit.webp",
-                "width": "1200",
-                "height": "630"
-              },
-              "author": {
-                "@type": "Organization",
-                "name": "Mukesh Bagaria",
-                "url": "https://technovitasolution.in"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Technovita Solution",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://technovitasolution.in/images/logo-main.png",
-                  "width": "112",
-                  "height": "112"
-                }
-              },
-              "datePublished": "2025-05-05",
-              "dateModified": "2025-05-05",
-              "keywords": "Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce,how to sell on blinkit ,blinkit product listing",
-              "articleSection": "E-commerce",
-              "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://technovitasolution.in/blinkit/how-to-sell-on-blinkit"
+                "url": "https://technovitasolution.in/images/logo-main.png",
+                "width": "112",
+                "height": "112"
               }
+            },
+            "datePublished": "2025-05-05",
+            "dateModified": "2025-05-05",
+            "keywords": "Blinkit seller, Blinkit marketplace, sell on Blinkit, Blinkit registration, Blinkit commission, quick commerce, how to sell on blinkit, blinkit product listing",
+            "articleSection": "E-commerce",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://technovitasolution.in/blinkit/how-to-sell-on-blinkit"
             }
-          `}
-        </script>
-      </Head>
+          }
+        `}
+      </script>
+      
+      {/* BreadcrumbList Schema */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://technovitasolution.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "How to Sell on Blinkit",
+                "item": "https://technovitasolution.in/blinkit/how-to-sell-on-blinkit"
+              }
+            ]
+          }
+        `}
+      </script>
+    </Head>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-screen-xl">
         <div className="lg:flex lg:gap-8">
