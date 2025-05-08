@@ -3,8 +3,9 @@
  * Fetches data from WordPress REST API
  */
 
-// Replace with your WordPress site URL
-const WORDPRESS_API_URL = 'https://blog.technovitasolution.com/wp-json/wp/v2';
+import axios from 'axios';
+
+const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_API_URL;
 
 /**
  * Fetch all posts with pagination support
@@ -15,37 +16,19 @@ const WORDPRESS_API_URL = 'https://blog.technovitasolution.com/wp-json/wp/v2';
  */
 export async function getPosts(page = 1, perPage = 10, categoryId = null) {
   try {
-    // Build query parameters
-    let queryParams = `?_embed=true&page=${page}&per_page=${perPage}`;
+    let url = `${API_URL}/posts?page=${page}&per_page=${perPage}&_embed`;
+    
     if (categoryId) {
-      queryParams += `&categories=${categoryId}`;
+      url += `&categories=${categoryId}`;
     }
 
-    const apiUrl = `${WORDPRESS_API_URL}/posts${queryParams}`;
-    console.log('Fetching posts from:', apiUrl); // Debug log
+    const response = await axios.get(url);
+    const totalPages = parseInt(response.headers['x-wp-totalpages'] || '1', 10);
 
-    // Fetch posts with embedded featured media, categories, and authors
-    const response = await fetch(
-      apiUrl,
-      { 
-        next: { revalidate: 3600 },
-        headers: {
-          'Accept': 'application/json',
-        }
-      }
-    );
-    
-    // Get total pages from headers
-    const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '0', 10);
-    
-    if (!response.ok) {
-      console.error('API Response not OK:', response.status, response.statusText);
-      throw new Error(`Failed to fetch posts: ${response.status} ${response.statusText}`);
-    }
-    
-    const posts = await response.json();
-    console.log('Received posts:', posts.length); // Debug log
-    return { posts, totalPages };
+    return {
+      posts: response.data,
+      totalPages,
+    };
   } catch (error) {
     console.error('Error fetching posts:', error);
     return { posts: [], totalPages: 0 };
@@ -57,21 +40,17 @@ export async function getPosts(page = 1, perPage = 10, categoryId = null) {
  * @param {string} slug - Post slug
  * @returns {Promise<Object>} - Post data
  */
-export async function getPostBySlug(slug) {
+export async function getPost(slug) {
   try {
-    const response = await fetch(
-      `${WORDPRESS_API_URL}/posts?slug=${slug}&_embed=true`,
-      { next: { revalidate: 3600 } }
-    );
+    const response = await axios.get(`${API_URL}/posts?slug=${slug}&_embed`);
     
-    if (!response.ok) {
-      throw new Error(`Failed to fetch post: ${response.status}`);
+    if (!response.data || response.data.length === 0) {
+      return null;
     }
-    
-    const posts = await response.json();
-    return posts[0] || null; // Return first post or null
+
+    return response.data[0];
   } catch (error) {
-    console.error('Error fetching post by slug:', error);
+    console.error('Error fetching post:', error);
     return null;
   }
 }
@@ -82,16 +61,8 @@ export async function getPostBySlug(slug) {
  */
 export async function getCategories() {
   try {
-    const response = await fetch(
-      `${WORDPRESS_API_URL}/categories`,
-      { next: { revalidate: 86400 } } // Revalidate daily
-    );
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch categories: ${response.status}`);
-    }
-    
-    return await response.json();
+    const response = await axios.get(`${API_URL}/categories`);
+    return response.data;
   } catch (error) {
     console.error('Error fetching categories:', error);
     return [];
@@ -107,21 +78,17 @@ export async function getCategories() {
  */
 export async function getPostsByCategory(categoryId, page = 1, perPage = 10) {
   try {
-    const response = await fetch(
-      `${WORDPRESS_API_URL}/posts?categories=${categoryId}&_embed=true&page=${page}&per_page=${perPage}`,
-      { next: { revalidate: 3600 } }
+    const response = await axios.get(
+      `${API_URL}/posts?categories=${categoryId}&page=${page}&per_page=${perPage}&_embed`
     );
-    
-    const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '0', 10);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch posts by category: ${response.status}`);
-    }
-    
-    const posts = await response.json();
-    return { posts, totalPages };
+    const totalPages = parseInt(response.headers['x-wp-totalpages'] || '1', 10);
+
+    return {
+      posts: response.data,
+      totalPages,
+    };
   } catch (error) {
-    console.error('Error fetching posts by category:', error);
+    console.error('Error fetching category posts:', error);
     return { posts: [], totalPages: 0 };
   }
 }
@@ -133,53 +100,29 @@ export async function getPostsByCategory(categoryId, page = 1, perPage = 10) {
  */
 export function formatPostData(post) {
   if (!post) return null;
-  
-  // Extract featured image if available
-  const featuredImage = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || null;
-  
-  // Extract author info
-  const author = post._embedded?.['author']?.[0] || {};
-  
-  // Extract categories
-  const categories = post._embedded?.['wp:term']?.[0] || [];
-  
-  // Calculate reading time (rough estimate: 200 words per minute)
-  const wordCount = post.content.rendered.split(/\s+/).length;
-  const readingTime = Math.ceil(wordCount / 200);
 
-  // Get meta description from WordPress meta or fallback to excerpt
-  const metaDescription = post.meta?.description || 
-    post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
-  
-  // Process content to ensure proper link styling
-  const processedContent = post.content.rendered
-    .replace(/<a\s+(?:[^>]*?\s+)?href="([^"]*)"([^>]*)>/g, 
-      '<a href="$1" class="text-blue-600 hover:text-blue-800 underline"$2>');
-  
   return {
     id: post.id,
     title: post.title.rendered,
-    content: processedContent,
-    excerpt: post.excerpt.rendered,
-    metaDescription,
     slug: post.slug,
+    content: post.content.rendered,
+    excerpt: post.excerpt.rendered,
     date: new Date(post.date).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     }),
-    modified: new Date(post.modified).toISOString(),
-    featuredImage,
     author: {
-      id: author.id,
-      name: author.name,
-      avatar: author.avatar_urls?.['96'] || null,
+      name: post._embedded?.author?.[0]?.name || 'Unknown Author',
+      avatar: post._embedded?.author?.[0]?.avatar_urls?.['96'] || null,
     },
-    categories: categories.map(cat => ({
+    categories: post._embedded?.['wp:term']?.[0]?.map(cat => ({
       id: cat.id,
       name: cat.name,
       slug: cat.slug,
-    })),
-    readingTime,
+    })) || [],
+    featuredImage: post._embedded?.['wp:featuredmedia']?.[0]?.source_url || null,
+    readingTime: Math.ceil(post.content.rendered.split(' ').length / 200), // Assuming 200 words per minute
+    metaDescription: post.excerpt.rendered.replace(/<[^>]*>/g, '').substring(0, 160),
   };
 }

@@ -1,8 +1,20 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import LeadGenPopup from '@/src/components/LeadGenPopup';
 
 export default function BlogLayout({ children, title, description }) {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Show popup after 15 seconds
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="min-h-screen bg-gray-50">
       <Head>
@@ -29,6 +41,19 @@ export default function BlogLayout({ children, title, description }) {
       {/* Main Content */}
       <main>
         {children}
+         {/* Lead Generation Popup */}
+         <LeadGenPopup
+          isOpen={showPopup}
+          onClose={() => setShowPopup(false)}
+          title="🚀 Get Your Free Blinkit Seller Success Guide!"
+          subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
+          offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
+          phoneNumber="+917451073504"
+          guideUrl="https://drive.google.com/file/d/1Y4fW8YkgQA2Bpy4pbUpGTA4SzPJUYmb_/view?usp=sharing"
+          guideTitle="Blinkit Seller Success Guide"
+          timerDuration={60}
+          successMessage="Thank you for your interest! Check your email for the free guide."
+        />
       </main>
 
       {/* Footer */}

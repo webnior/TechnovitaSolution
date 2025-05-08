@@ -1,47 +1,49 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import useSWR from 'swr';
 import BlogLayout from '../../layouts/BlogLayout';
 import { getPost, getPosts, formatPostData } from '../../lib/wordpress';
 import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
 
 // Create a fetcher function for SWR
-const fetcher = async (url) => {
-  const post = await getPost(url);
+const fetcher = async (slug) => {
+  const post = await getPost(slug);
+  if (!post) throw new Error('Post not found');
   return formatPostData(post);
 };
 
 export default function BlogPost({ post: initialPost, relatedPosts }) {
-  // Use SWR for real-time updates
-  const { data: post, error } = useSWR(initialPost.slug, fetcher, {
-    fallbackData: initialPost,
-    revalidateOnFocus: true,
-    revalidateOnReconnect: true,
-    refreshInterval: 60000, // Refresh every minute
-  });
+  const router = useRouter();
+  const { slug } = router.query;
 
-  if (error) {
+  // Use SWR for real-time updates
+  const { data: post, error, isLoading } = useSWR(
+    slug ? `post-${slug}` : null,
+    () => fetcher(slug),
+    {
+      fallbackData: initialPost,
+      revalidateOnFocus: true,
+      revalidateOnReconnect: true,
+      refreshInterval: 60000, // Refresh every minute
+    }
+  );
+
+  if (isLoading) {
     return (
-      <BlogLayout title="Error">
+      <BlogLayout title="Loading...">
         <div className="container mx-auto px-4 py-20">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              Error Loading Post
-            </h1>
-            <p className="text-gray-600 mb-6">
-              There was an error loading this post. Please try again later.
-            </p>
-            <Link href="/blog" className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
-              Back to Blog
-            </Link>
+          <div className="animate-pulse">
+            <div className="h-8 bg-gray-200 rounded mb-4"></div>
+            <div className="h-4 bg-gray-200 rounded mb-4"></div>
           </div>
         </div>
       </BlogLayout>
     );
   }
 
-  if (!post) {
+  if (error || !post) {
     return (
       <BlogLayout title="Post Not Found">
         <div className="container mx-auto px-4 py-20">
