@@ -1,21 +1,40 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import useSWR from 'swr';
 import BlogLayout from '../../layouts/BlogLayout';
-import { getPosts, getPostBySlug, formatPostData } from '../../lib/wordpress';
+import { getPost, getPosts, formatPostData } from '../../lib/wordpress';
 import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
 
-export default function BlogPost({ post, relatedPosts }) {
-  const router = useRouter();
+// Create a fetcher function for SWR
+const fetcher = async (url) => {
+  const post = await getPost(url);
+  return formatPostData(post);
+};
 
-  if (router.isFallback) {
+export default function BlogPost({ post: initialPost, relatedPosts }) {
+  // Use SWR for real-time updates
+  const { data: post, error } = useSWR(initialPost.slug, fetcher, {
+    fallbackData: initialPost,
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    refreshInterval: 60000, // Refresh every minute
+  });
+
+  if (error) {
     return (
-      <BlogLayout title="Loading...">
+      <BlogLayout title="Error">
         <div className="container mx-auto px-4 py-20">
-          <div className="animate-pulse">
-            <div className="h-8 bg-gray-200 rounded mb-4"></div>
-            <div className="h-4 bg-gray-200 rounded mb-4"></div>
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Error Loading Post
+            </h1>
+            <p className="text-gray-600 mb-6">
+              There was an error loading this post. Please try again later.
+            </p>
+            <Link href="/blog" className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+              Back to Blog
+            </Link>
           </div>
         </div>
       </BlogLayout>
@@ -52,7 +71,7 @@ export default function BlogPost({ post, relatedPosts }) {
   return (
     <BlogLayout
       title={`${post.title} | Technovita Solution`}
-      description={post.excerpt.replace(/<[^>]*>/g, '').substring(0, 160)}
+      description={post.metaDescription}
     >
       {/* Breadcrumb */}
       <div className="py-4">
@@ -144,7 +163,7 @@ export default function BlogPost({ post, relatedPosts }) {
               </div>
             )}
             {/* Content */}
-            <div className="prose prose-lg max-w-none">
+            <div className="prose prose-lg max-w-none prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline prose-headings:text-gray-900 prose-p:text-gray-600">
               {contentParagraphs.map((para, index) => (
                 <div key={index} className="mb-8">
                   <p dangerouslySetInnerHTML={{ __html: para }} />
@@ -279,46 +298,53 @@ export default function BlogPost({ post, relatedPosts }) {
 export async function getStaticPaths() {
   try {
     const { posts } = await getPosts(1, 100);
-
+    
     const paths = posts.map((post) => ({
       params: { slug: post.slug },
     }));
-
+    
     return {
       paths,
-      fallback: true,
+      fallback: 'blocking',
     };
   } catch (error) {
     console.error('Error in getStaticPaths:', error);
     return {
       paths: [],
-      fallback: true,
+      fallback: 'blocking',
     };
   }
 }
 
 export async function getStaticProps({ params }) {
   try {
-    const post = await getPostBySlug(params.slug);
-    const relatedPosts = await getPosts(1, 3, post.categories[0].id);
-
+    const post = await getPost(params.slug);
+    
     if (!post) {
       return {
         notFound: true,
+        revalidate: 60,
       };
     }
-
+    
+    const { posts } = await getPosts(1, 3);
+    const relatedPosts = posts
+      .filter(p => p.id !== post.id)
+      .slice(0, 3)
+      .map(formatPostData);
+    
     return {
       props: {
         post: formatPostData(post),
-        relatedPosts: relatedPosts.posts.map(formatPostData),
+        relatedPosts,
       },
-      revalidate: 3600,
+      revalidate: 60, // Revalidate every 60 seconds
     };
   } catch (error) {
     console.error('Error in getStaticProps:', error);
     return {
       notFound: true,
+      revalidate: 60,
     };
   }
 }

@@ -1,25 +1,80 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import useSWR from 'swr';
 import BlogLayout from '../../../layouts/BlogLayout';
 import { getCategories, getPostsByCategory, formatPostData } from '../../../lib/wordpress';
 
+// Create a fetcher function for SWR
+const fetcher = async (url) => {
+  const [categorySlug] = url.split('|');
+  const categories = await getCategories();
+  const category = categories.find(cat => cat.slug === categorySlug);
+  if (!category) return { posts: [], totalPages: 0 };
+  
+  const { posts, totalPages } = await getPostsByCategory(category.id, 1, 10);
+  return { posts: posts.map(formatPostData), totalPages };
+};
+
 export default function CategoryPage({ category, initialPosts, totalPages }) {
-  const router = useRouter();
-  const [posts, setPosts] = useState(initialPosts);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredPosts, setFilteredPosts] = useState(initialPosts);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredPosts, setFilteredPosts] = useState(posts);
 
-  if (router.isFallback) {
+  // Use SWR for real-time updates
+  const { data, error } = useSWR(`${category.slug}|posts`, fetcher, {
+    fallbackData: { posts: initialPosts, totalPages },
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    refreshInterval: 60000, // Refresh every minute
+  });
+
+  const posts = data?.posts || initialPosts;
+  const totalPagesCount = data?.totalPages || totalPages;
+
+  const loadMorePosts = async () => {
+    if (currentPage >= totalPagesCount || loading) return;
+    
+    setLoading(true);
+    try {
+      const nextPage = currentPage + 1;
+      const { posts: newPosts } = await getPostsByCategory(category.id, nextPage);
+      
+      setFilteredPosts([...filteredPosts, ...newPosts.map(formatPostData)]);
+      setCurrentPage(nextPage);
+    } catch (error) {
+      console.error('Error loading more posts:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    if (searchTerm) {
+      const filtered = posts.filter(post =>
+        post.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setFilteredPosts(filtered);
+    } else {
+      setFilteredPosts(posts);
+    }
+  }, [searchTerm, posts]);
+
+  if (error) {
     return (
-      <BlogLayout title="Loading...">
+      <BlogLayout title="Error">
         <div className="container mx-auto px-4 py-20">
-          <div className="animate-pulse">
-            <div className="h-8 bg-gray-200 rounded mb-4"></div>
-            <div className="h-4 bg-gray-200 rounded mb-4"></div>
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              Error
+            </h1>
+            <p className="text-gray-600 mb-6">
+              An error occurred while loading the category page.
+            </p>
+            <Link href="/blog" className="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors">
+              Back to Blog
+            </Link>
           </div>
         </div>
       </BlogLayout>
@@ -45,41 +100,6 @@ export default function CategoryPage({ category, initialPosts, totalPages }) {
       </BlogLayout>
     );
   }
-
-  const loadMorePosts = async () => {
-    if (currentPage >= totalPages || loading) return;
-    
-    setLoading(true);
-    try {
-      const nextPage = currentPage + 1;
-      const { posts: newPosts } = await getPostsByCategory(category.id, nextPage);
-      
-      setPosts([...posts, ...newPosts.map(formatPostData)]);
-      setCurrentPage(nextPage);
-      
-      if (searchTerm) {
-        const filtered = [...posts, ...newPosts.map(formatPostData)].filter(post =>
-          post.title.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredPosts(filtered);
-      }
-    } catch (error) {
-      console.error('Error loading more posts:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    if (searchTerm) {
-      const filtered = posts.filter(post =>
-        post.title.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setFilteredPosts(filtered);
-    } else {
-      setFilteredPosts(posts);
-    }
-  }, [searchTerm, posts]);
 
   return (
     <BlogLayout 
@@ -204,7 +224,7 @@ export default function CategoryPage({ category, initialPosts, totalPages }) {
           </div>
 
           {/* Load More Button */}
-          {currentPage < totalPages && (
+          {currentPage < totalPagesCount && (
             <div className="text-center mt-8">
               <button 
                 onClick={loadMorePosts}
@@ -231,13 +251,13 @@ export async function getStaticPaths() {
     
     return {
       paths,
-      fallback: true,
+      fallback: 'blocking',
     };
   } catch (error) {
     console.error('Error in getStaticPaths:', error);
     return {
       paths: [],
-      fallback: true,
+      fallback: 'blocking',
     };
   }
 }
@@ -250,6 +270,7 @@ export async function getStaticProps({ params }) {
     if (!category) {
       return {
         notFound: true,
+        revalidate: 60,
       };
     }
     
@@ -261,12 +282,13 @@ export async function getStaticProps({ params }) {
         initialPosts: posts.map(formatPostData),
         totalPages,
       },
-      revalidate: 3600,
+      revalidate: 60, // Revalidate every 60 seconds
     };
   } catch (error) {
     console.error('Error in getStaticProps:', error);
     return {
       notFound: true,
+      revalidate: 60,
     };
   }
 }

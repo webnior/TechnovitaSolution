@@ -1,33 +1,43 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useSWR from 'swr';
 import BlogLayout from '../../layouts/BlogLayout';
 import { getPosts, getCategories, formatPostData } from '../../lib/wordpress';
 
+// Create a fetcher function for SWR
+const fetcher = async (url) => {
+  const { posts, totalPages } = await getPosts(1, 10);
+  return { posts: posts.map(formatPostData), totalPages };
+};
+
 export default function Blog({ initialPosts, totalPages, categories }) {
-  const [posts, setPosts] = useState(initialPosts);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredPosts, setFilteredPosts] = useState(initialPosts);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredPosts, setFilteredPosts] = useState(posts);
+
+  // Use SWR for real-time updates
+  const { data, error } = useSWR('blog-posts', fetcher, {
+    fallbackData: { posts: initialPosts, totalPages },
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    refreshInterval: 60000, // Refresh every minute
+  });
+
+  const posts = data?.posts || initialPosts;
+  const totalPagesCount = data?.totalPages || totalPages;
 
   const loadMorePosts = async () => {
-    if (currentPage >= totalPages || loading) return;
+    if (currentPage >= totalPagesCount || loading) return;
     
     setLoading(true);
     try {
       const nextPage = currentPage + 1;
       const { posts: newPosts } = await getPosts(nextPage);
       
-      setPosts([...posts, ...newPosts.map(formatPostData)]);
+      setFilteredPosts([...filteredPosts, ...newPosts.map(formatPostData)]);
       setCurrentPage(nextPage);
-      
-      if (searchTerm) {
-        const filtered = [...posts, ...newPosts.map(formatPostData)].filter(post =>
-          post.title.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        setFilteredPosts(filtered);
-      }
     } catch (error) {
       console.error('Error loading more posts:', error);
     } finally {
@@ -210,7 +220,7 @@ export default function Blog({ initialPosts, totalPages, categories }) {
           </div>
 
           {/* Load More Button */}
-          {currentPage < totalPages && (
+          {currentPage < totalPagesCount && (
             <div className="text-center mt-12">
               <button 
                 onClick={loadMorePosts}
@@ -245,7 +255,7 @@ export async function getStaticProps() {
         totalPages,
         categories,
       },
-      revalidate: 3600,
+      revalidate: 60, // Revalidate every 60 seconds
     };
   } catch (error) {
     console.error('Error in getStaticProps:', error);

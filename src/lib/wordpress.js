@@ -4,7 +4,7 @@
  */
 
 // Replace with your WordPress site URL
-const WORDPRESS_API_URL = 'http://blog.technovitasolution.com/wp-json/wp/v2';
+const WORDPRESS_API_URL = 'https://blog.technovitasolution.com/wp-json/wp/v2';
 
 /**
  * Fetch all posts with pagination support
@@ -21,20 +21,30 @@ export async function getPosts(page = 1, perPage = 10, categoryId = null) {
       queryParams += `&categories=${categoryId}`;
     }
 
+    const apiUrl = `${WORDPRESS_API_URL}/posts${queryParams}`;
+    console.log('Fetching posts from:', apiUrl); // Debug log
+
     // Fetch posts with embedded featured media, categories, and authors
     const response = await fetch(
-      `${WORDPRESS_API_URL}/posts${queryParams}`,
-      { next: { revalidate: 3600 } }
+      apiUrl,
+      { 
+        next: { revalidate: 3600 },
+        headers: {
+          'Accept': 'application/json',
+        }
+      }
     );
     
     // Get total pages from headers
     const totalPages = parseInt(response.headers.get('X-WP-TotalPages') || '0', 10);
     
     if (!response.ok) {
-      throw new Error(`Failed to fetch posts: ${response.status}`);
+      console.error('API Response not OK:', response.status, response.statusText);
+      throw new Error(`Failed to fetch posts: ${response.status} ${response.statusText}`);
     }
     
     const posts = await response.json();
+    console.log('Received posts:', posts.length); // Debug log
     return { posts, totalPages };
   } catch (error) {
     console.error('Error fetching posts:', error);
@@ -136,12 +146,22 @@ export function formatPostData(post) {
   // Calculate reading time (rough estimate: 200 words per minute)
   const wordCount = post.content.rendered.split(/\s+/).length;
   const readingTime = Math.ceil(wordCount / 200);
+
+  // Get meta description from WordPress meta or fallback to excerpt
+  const metaDescription = post.meta?.description || 
+    post.excerpt.rendered.replace(/<[^>]*>/g, '').trim();
+  
+  // Process content to ensure proper link styling
+  const processedContent = post.content.rendered
+    .replace(/<a\s+(?:[^>]*?\s+)?href="([^"]*)"([^>]*)>/g, 
+      '<a href="$1" class="text-blue-600 hover:text-blue-800 underline"$2>');
   
   return {
     id: post.id,
     title: post.title.rendered,
-    content: post.content.rendered,
+    content: processedContent,
     excerpt: post.excerpt.rendered,
+    metaDescription,
     slug: post.slug,
     date: new Date(post.date).toLocaleDateString('en-US', {
       year: 'numeric',

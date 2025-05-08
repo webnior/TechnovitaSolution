@@ -30,4 +30,8 @@ module.exports = {
   corePlugins: {
     preflight: false, // This prevents Tailwind from resetting existing styles
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+    // ... other plugins ...
+  ],
 }
