@@ -52,35 +52,60 @@ const LazyHorizontalImage = ({ src, alt, className }) => {
 // Shoot types (add more as needed)
 const shootTypes = [
   { title: "Footwear Shoots", img: "/images/product-photoshoot/shoes.webp" },
-  { title: "Lingerie Shoots", img: "/images/product-photoshoot/lingeries.webp" },
+  {
+    title: "Lingerie Shoots",
+    img: "/images/product-photoshoot/lingeries.webp",
+  },
   { title: "Apparel's Shoot", img: "/images/product-photoshoot/cloths.webp" },
-  { title: "Electronic Shoots", img: "/images/product-photoshoot/electronics.webp" },
-  { title: "Jewellery Shoots", img: "/images/product-photoshoot/jwellery.webp" },
-  { title: "Accessories Shoots", img: "/images/product-photoshoot/fashion-accessories.webp" },
-  { title: "Cosmetics Shoots", img: "/images/product-photoshoot/cosmatic.webp" },
-  { title: "Home Decor Shoots", img: "/images/product-photoshoot/home-decor.webp" },
+  {
+    title: "Electronic Shoots",
+    img: "/images/product-photoshoot/electronics.webp",
+  },
+  {
+    title: "Jewellery Shoots",
+    img: "/images/product-photoshoot/jwellery.webp",
+  },
+  {
+    title: "Accessories Shoots",
+    img: "/images/product-photoshoot/fashion-accessories.webp",
+  },
+  {
+    title: "Cosmetics Shoots",
+    img: "/images/product-photoshoot/cosmatic.webp",
+  },
+  {
+    title: "Home Decor Shoots",
+    img: "/images/product-photoshoot/home-decor.webp",
+  },
 ];
 
 // Model portfolio (add more as needed)
 const models = [
   {
-    name: "brena",
+    name: "elisa",
     photos: [
-      "/images/models/Brena/Brena-1.webp",
-      "/images/models/Brena/Brena-2.webp",
-      "/images/models/Brena/Brena-3.webp",
-      "/images/models/Brena/Brena-4.webp",
-      "/images/models/Brena/Brena-5.webp",
-      "/images/models/Brena/Brena-6.webp",
-      "/images/models/Brena/Brena-7.webp",
-      "/images/models/Brena/Brena-8.webp",
-      "/images/models/Brena/Brena-9.webp",
-      "/images/models/Brena/Brena-10.webp",
-      "/images/models/Brena/Brena-11.webp",
-      "/images/models/Brena/Brena-12.webp",
-      "/images/models/Brena/Brena-13.webp",
-      "/images/models/Brena/Brena-14.webp",
-      "/images/models/Brena/Brena-15.webp",
+      "/images/models/Elisa/Elisa-1.webp",
+      "/images/models/Elisa/Elisa-2.webp",
+      "/images/models/Elisa/Elisa-3.webp",
+      "/images/models/Elisa/Elisa-4.webp",
+      "/images/models/Elisa/Elisa-5.webp",
+      "/images/models/Elisa/Elisa-6.webp",
+      "/images/models/Elisa/Elisa-7.webp",
+      "/images/models/Elisa/Elisa-8.webp",
+      "/images/models/Elisa/Elisa-9.webp",
+      "/images/models/Elisa/Elisa-10.webp",
+      "/images/models/Elisa/Elisa-11.webp",
+      "/images/models/Elisa/Elisa-12.webp",
+      "/images/models/Elisa/Elisa-13.webp",
+      "/images/models/Elisa/Elisa-14.webp",
+      "/images/models/Elisa/Elisa-15.webp",
+      "/images/models/Elisa/Elisa-16.webp",
+      "/images/models/Elisa/Elisa-17.webp",
+      "/images/models/Elisa/Elisa-18.webp",
+      "/images/models/Elisa/Elisa-19.webp",
+      "/images/models/Elisa/Elisa-20.webp",
+      "/images/models/Elisa/Elisa-21.webp",
+      "/images/models/Elisa/Elisa-22.webp",
     ],
   },
   {
@@ -120,30 +145,23 @@ const models = [
     ],
   },
   {
-    name: "elisa",
+    name: "brena",
     photos: [
-      "/images/models/Elisa/Elisa-1.webp",
-      "/images/models/Elisa/Elisa-2.webp",
-      "/images/models/Elisa/Elisa-3.webp",
-      "/images/models/Elisa/Elisa-4.webp",
-      "/images/models/Elisa/Elisa-5.webp",
-      "/images/models/Elisa/Elisa-6.webp",
-      "/images/models/Elisa/Elisa-7.webp",
-      "/images/models/Elisa/Elisa-8.webp",
-      "/images/models/Elisa/Elisa-9.webp",
-      "/images/models/Elisa/Elisa-10.webp",
-      "/images/models/Elisa/Elisa-11.webp",
-      "/images/models/Elisa/Elisa-12.webp",
-      "/images/models/Elisa/Elisa-13.webp",
-      "/images/models/Elisa/Elisa-14.webp",
-      "/images/models/Elisa/Elisa-15.webp",
-      "/images/models/Elisa/Elisa-16.webp",
-      "/images/models/Elisa/Elisa-17.webp",
-      "/images/models/Elisa/Elisa-18.webp",
-      "/images/models/Elisa/Elisa-19.webp",
-      "/images/models/Elisa/Elisa-20.webp",
-      "/images/models/Elisa/Elisa-21.webp",
-      "/images/models/Elisa/Elisa-22.webp",
+      "/images/models/Brena/Brena-1.webp",
+      "/images/models/Brena/Brena-2.webp",
+      "/images/models/Brena/Brena-3.webp",
+      "/images/models/Brena/Brena-4.webp",
+      "/images/models/Brena/Brena-5.webp",
+      "/images/models/Brena/Brena-6.webp",
+      "/images/models/Brena/Brena-7.webp",
+      "/images/models/Brena/Brena-8.webp",
+      "/images/models/Brena/Brena-9.webp",
+      "/images/models/Brena/Brena-10.webp",
+      "/images/models/Brena/Brena-11.webp",
+      "/images/models/Brena/Brena-12.webp",
+      "/images/models/Brena/Brena-13.webp",
+      "/images/models/Brena/Brena-14.webp",
+      "/images/models/Brena/Brena-15.webp",
     ],
   },
   {
@@ -390,13 +408,21 @@ const TechnovitaStudio = () => {
           ECommerce Product Shoot Services by Technovita Studio
         </h2>
         <p className="text-black text-lg md:text-xl max-w-2xl mx-auto">
-          We provide expert product photography for <b>Myntra</b>, <b>Amazon</b>, <b>Flipkart</b>, <b>Ajio</b> and more. <span className="font-semibold">Technovita Studio is a <b>Myntra Certified Studio</b> for product shoots</span>—trusted by top brands for e-commerce excellence.
+          We provide expert product photography for <b>Myntra</b>, <b>Amazon</b>
+          , <b>Flipkart</b>, <b>Ajio</b> and more.{" "}
+          <span className="font-semibold">
+            Technovita Studio is a <b>Myntra Certified Studio</b> for product
+            shoots
+          </span>
+          —trusted by top brands for e-commerce excellence.
         </p>
       </div>
 
       {/* 1. Shoot Types Cards */}
       <div className="mb-16">
-        <h3 className="text-2xl font-bold text-black mb-6 text-center">Types of Shoots</h3>
+        <h3 className="text-2xl font-bold text-black mb-6 text-center">
+          Types of Shoots
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {shootTypes.map((shoot) => (
             <div
@@ -415,7 +441,9 @@ const TechnovitaStudio = () => {
                 />
               </div>
               <div className="flex-1 flex flex-col justify-between w-full p-4">
-                <div className="font-semibold text-black text-center mb-3 text-lg md:text-xl">{shoot.title}</div>
+                <div className="font-semibold text-black text-center mb-3 text-lg md:text-xl">
+                  {shoot.title}
+                </div>
                 <button
                   onClick={() => {
                     setSelectedShootType(shoot.title);
@@ -433,22 +461,27 @@ const TechnovitaStudio = () => {
 
       {/* 2. Model Portfolio */}
       <div>
-        <h3 className="text-2xl font-bold text-black mb-6 text-center">Our Models Portfolio</h3>
+        <h3 className="text-2xl font-bold text-black mb-6 text-center">
+          Our Models Portfolio
+        </h3>
         <div className="flex flex-wrap justify-center gap-6">
           {models.slice(0, visibleModelsCount).map((model) => (
             <div
               key={model.name}
               className="bg-white rounded-3xl border border-gray-200 p-4 w-full max-w-md flex flex-col mb-8 shadow-sm"
             >
-              <div className="font-semibold text-black text-center text-lg md:text-xl mb-3">{model.name}</div>
-              <div className="flex overflow-x-auto gap-3 pb-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
-                style={{ WebkitOverflowScrolling: 'touch' }}
+              <div className="font-semibold text-black text-center text-lg md:text-xl mb-3">
+                {model.name}
+              </div>
+              <div
+                className="flex overflow-x-auto gap-3 pb-2 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100"
+                style={{ WebkitOverflowScrolling: "touch" }}
               >
                 {model.photos.map((photo, pidx) => (
                   <LazyHorizontalImage
-                    key={model.name + '-' + pidx}
+                    key={model.name + "-" + pidx}
                     src={photo}
-                    alt={model.name + ' photo ' + (pidx + 1)}
+                    alt={model.name + " photo " + (pidx + 1)}
                     className=""
                   />
                 ))}
@@ -468,14 +501,18 @@ const TechnovitaStudio = () => {
         {visibleModelsCount < models.length && (
           <div className="flex flex-col items-center justify-center mt-4">
             {loadingMore && (
-              <span className="mb-1 text-sm font-medium text-sky-500">loading..</span>
+              <span className="mb-1 text-sm font-medium text-sky-500">
+                loading..
+              </span>
             )}
             <button
               onClick={() => {
                 if (!loadingMore) {
                   setLoadingMore(true);
                   setTimeout(() => {
-                    setVisibleModelsCount((c) => Math.min(c + 4, models.length));
+                    setVisibleModelsCount((c) =>
+                      Math.min(c + 4, models.length)
+                    );
                     setLoadingMore(false);
                   }, 500);
                 }
@@ -483,13 +520,19 @@ const TechnovitaStudio = () => {
               className="flex items-center justify-center w-10 h-8 rounded-full bg-[#F5A841] focus:outline-none border-none shadow-none"
               aria-label="Load more models"
               disabled={loadingMore}
-              style={{border: 'none', boxShadow: 'none'}}
+              style={{ border: "none", boxShadow: "none" }}
             >
               {loadingMore ? (
                 <div className="flex items-center gap-1">
-                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-0`}></span>
-                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-1`}></span>
-                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-2`}></span>
+                  <span
+                    className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-0`}
+                  ></span>
+                  <span
+                    className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-1`}
+                  ></span>
+                  <span
+                    className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-2`}
+                  ></span>
                 </div>
               ) : (
                 // Static arrows SVG icon, blue color
@@ -500,9 +543,24 @@ const TechnovitaStudio = () => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <g>
-                    <path d="m126 15.2-5-1.3-9.4 35.2-35.2-9.5-1.3 5.1 40.1 10.7h.1z" stroke="#2196F3" strokeWidth="4" fill="none"/>
-                    <path d="M54.6 80.2 18.8 68.4l-5-1.6-13 40.1 5 1.7 11.3-35.1L53 85.2z" stroke="#2196F3" strokeWidth="4" fill="none"/>
-                    <path d="M65.2 18.3c21.8 0 40.1 15.3 44.7 35.7h5.2c-4.7-23.3-25.3-40.8-49.9-40.8-23.7 0-43.7 16.3-49.3 38.3h5.3c5.5-19.2 23.1-33.2 44-33.2zm0 91.9c-22.7 0-41.6-16.6-45.2-38.3h-5.2c3.7 24.6 24.8 43.4 50.4 43.4 22.8 0 42.1-15 48.6-35.7h-5.4c-6.2 17.8-23.2 30.6-43.2 30.6z" stroke="#2196F3" strokeWidth="4" fill="none"/>
+                    <path
+                      d="m126 15.2-5-1.3-9.4 35.2-35.2-9.5-1.3 5.1 40.1 10.7h.1z"
+                      stroke="#2196F3"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      d="M54.6 80.2 18.8 68.4l-5-1.6-13 40.1 5 1.7 11.3-35.1L53 85.2z"
+                      stroke="#2196F3"
+                      strokeWidth="4"
+                      fill="none"
+                    />
+                    <path
+                      d="M65.2 18.3c21.8 0 40.1 15.3 44.7 35.7h5.2c-4.7-23.3-25.3-40.8-49.9-40.8-23.7 0-43.7 16.3-49.3 38.3h5.3c5.5-19.2 23.1-33.2 44-33.2zm0 91.9c-22.7 0-41.6-16.6-45.2-38.3h-5.2c3.7 24.6 24.8 43.4 50.4 43.4 22.8 0 42.1-15 48.6-35.7h-5.4c-6.2 17.8-23.2 30.6-43.2 30.6z"
+                      stroke="#2196F3"
+                      strokeWidth="4"
+                      fill="none"
+                    />
                   </g>
                 </svg>
               )}
