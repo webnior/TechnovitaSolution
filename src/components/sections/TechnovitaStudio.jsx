@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import LeadGenPopup from "../LeadGenPopup";
+// import LeadGenPopup from "../LeadGenPopup";
 import Image from "next/image";
+import BookShootPopup from "../BookShootPopup";
+import BookModelPopup from "../BookModelPopup";
 
 // LazyHorizontalImage component for horizontal lazy loading
 const LazyHorizontalImage = ({ src, alt, className }) => {
@@ -172,24 +174,10 @@ const models = [
 ];
 
 const TechnovitaStudio = () => {
-  const [popupOpen, setPopupOpen] = useState(false);
-  const [selectedShoot, setSelectedShoot] = useState(null);
-  const [modelPopupOpen, setModelPopupOpen] = useState(false);
-  const [selectedModel, setSelectedModel] = useState(null);
-
-  const handleBookShoot = (shoot) => {
-    setModelPopupOpen(false);
-    setSelectedModel(null);
-    setSelectedShoot(shoot);
-    setPopupOpen(true);
-  };
-
-  const handleBookModel = (model) => {
-    setPopupOpen(false);
-    setSelectedShoot(null);
-    setSelectedModel(model);
-    setModelPopupOpen(true);
-  };
+  const [showShootPopup, setShowShootPopup] = useState(false);
+  const [selectedShootType, setSelectedShootType] = useState("");
+  const [showModelPopup, setShowModelPopup] = useState(false);
+  const [selectedModelName, setSelectedModelName] = useState("");
 
   return (
     <section className="py-16 px-2 sm:px-4 bg-white rounded-3xl max-w-7xl mx-auto my-12 overflow-hidden">
@@ -226,7 +214,10 @@ const TechnovitaStudio = () => {
               <div className="flex-1 flex flex-col justify-between w-full p-4">
                 <div className="font-semibold text-black text-center mb-3 text-lg md:text-xl">{shoot.title}</div>
                 <button
-                  onClick={() => handleBookShoot(shoot)}
+                  onClick={() => {
+                    setSelectedShootType(shoot.title);
+                    setShowShootPopup(true);
+                  }}
                   className="mx-auto mt-2 px-3 py-1.5 text-sm bg-[#F5A841] text-black rounded-full font-medium transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
                 >
                   Book Shoot
@@ -260,7 +251,10 @@ const TechnovitaStudio = () => {
                 ))}
               </div>
               <button
-                onClick={() => handleBookModel(model)}
+                onClick={() => {
+                  setSelectedModelName(model.name);
+                  setShowModelPopup(true);
+                }}
                 className="mx-auto mt-4 px-4 py-2 text-sm bg-[#F5A841] text-black rounded-full font-semibold transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
               >
                 Book Model
@@ -270,34 +264,17 @@ const TechnovitaStudio = () => {
         </div>
       </div>
 
-      {/* LeadGenPopup for Book Shoot */}
-      <LeadGenPopup
-        isOpen={popupOpen}
-        onClose={() => {
-          setPopupOpen(false);
-          setSelectedShoot(null);
-        }}
-        title={selectedShoot ? `Book a ${selectedShoot.title}` : "Book a Shoot"}
-        subtitle="Get a free consultation and quote for your next product shoot!"
-        guideUrl="/path-to-your-guide.pdf"
-        guideTitle="E-commerce Shoot Guide"
-        timerDuration={60}
-        successMessage="Our team will contact you soon with all the details."
+      <BookShootPopup
+        isOpen={showShootPopup}
+        onClose={() => setShowShootPopup(false)}
+        shootType={selectedShootType}
       />
-      {/* LeadGenPopup for Book Model */}
-      <LeadGenPopup
-        isOpen={modelPopupOpen}
-        onClose={() => {
-          setModelPopupOpen(false);
-          setSelectedModel(null);
-        }}
-        title={selectedModel ? `Book Model: ${selectedModel.name}` : "Book a Model"}
-        subtitle="Special Offer: Get an exclusive discount on your first model shoot booking!"
-        guideUrl="/path-to-your-guide.pdf"
-        guideTitle="Model Booking Guide"
-        timerDuration={60}
-        successMessage="Thank you for booking! Our team will contact you soon with all the details."
+      <BookModelPopup
+        isOpen={showModelPopup}
+        onClose={() => setShowModelPopup(false)}
+        modelName={selectedModelName}
       />
+
       {/* Explore More Button */}
       <div className="flex justify-center mt-10">
         <a
