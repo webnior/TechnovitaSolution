@@ -98,7 +98,7 @@ const BookModelPopup = ({ isOpen, onClose, modelName }) => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-orange-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-full transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center bg-orange-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-full transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed text-center"
             >
               {isSubmitting ? "Booking..." : "Book Model & Get Discount"}
             </button>
