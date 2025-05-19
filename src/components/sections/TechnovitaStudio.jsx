@@ -255,8 +255,8 @@ const TechnovitaStudio = () => {
                   setSelectedModelName(model.name);
                   setShowModelPopup(true);
                 }}
-                className="w-full flex items-center justify-center h-14 bg-orange-500 hover:bg-blue-600 text-white font-semibold rounded-full transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed text-center text-base"
-              >
+                className="mx-auto mt-2 px-3 py-1.5 text-sm bg-[#F5A841] text-black rounded-full font-medium transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
+                >
                 Book Model
               </button>
             </div>
