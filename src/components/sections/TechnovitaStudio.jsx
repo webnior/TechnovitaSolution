@@ -82,6 +82,24 @@ const shootTypes = [
 // Model portfolio (add more as needed)
 const models = [
   {
+    name: "sasha",
+    photos: [
+      "/images/models/SASHA/SASHA-1.webp",
+      "/images/models/SASHA/SASHA-2.webp",
+      "/images/models/SASHA/SASHA-3.webp",
+      "/images/models/SASHA/SASHA-4.webp",
+      "/images/models/SASHA/SASHA-5.webp",
+      "/images/models/SASHA/SASHA-6.webp",
+      "/images/models/SASHA/SASHA-7.webp",
+      "/images/models/SASHA/SASHA-8.webp",
+      "/images/models/SASHA/SASHA-9.webp",
+      "/images/models/SASHA/SASHA-10.webp",
+      "/images/models/SASHA/SASHA-11.webp",
+      "/images/models/SASHA/SASHA-12.webp",
+      "/images/models/SASHA/SASHA-13.webp",
+    ],
+  },
+  {
     name: "elisa",
     photos: [
       "/images/models/Elisa/Elisa-1.webp",
@@ -304,24 +322,6 @@ const models = [
       "/images/models/Talaina/Talaina-17.webp",
       "/images/models/Talaina/Talaina-18.webp",
       "/images/models/Talaina/Talaina-19.webp",
-    ],
-  },
-  {
-    name: "sasha",
-    photos: [
-      "/images/models/SASHA/SASHA-1.webp",
-      "/images/models/SASHA/SASHA-2.webp",
-      "/images/models/SASHA/SASHA-3.webp",
-      "/images/models/SASHA/SASHA-4.webp",
-      "/images/models/SASHA/SASHA-5.webp",
-      "/images/models/SASHA/SASHA-6.webp",
-      "/images/models/SASHA/SASHA-7.webp",
-      "/images/models/SASHA/SASHA-8.webp",
-      "/images/models/SASHA/SASHA-9.webp",
-      "/images/models/SASHA/SASHA-10.webp",
-      "/images/models/SASHA/SASHA-11.webp",
-      "/images/models/SASHA/SASHA-12.webp",
-      "/images/models/SASHA/SASHA-13.webp",
     ],
   },
   {
