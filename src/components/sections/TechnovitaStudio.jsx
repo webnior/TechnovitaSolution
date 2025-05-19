@@ -302,13 +302,13 @@ const models = [
   {
     name: "juju",
     photos: [
-      "/images/models/juju/Juju-1.webp",
-      "/images/models/juju/Juju-2   .webp",
-      "/images/models/juju/Juju-3.webp",
-      "/images/models/juju/Juju-4.webp",
-      "/images/models/juju/Juju-5.webp",
-      "/images/models/juju/Juju-6.webp",
-      "/images/models/juju/Juju-7.webp",
+      "/images/models/juju/juju-1.webp",
+      "/images/models/juju/juju-2.webp",
+      "/images/models/juju/juju-3.webp",
+      "/images/models/juju/juju-4.webp",
+      "/images/models/juju/juju-5.webp",
+      "/images/models/juju/juju-6.webp",
+      "/images/models/juju/juju-7.webp",
       "/images/models/juju/Juju-8.webp",
       "/images/models/juju/Juju-9.webp",
       "/images/models/juju/Juju-10.webp",
@@ -447,7 +447,7 @@ const TechnovitaStudio = () => {
               >
                 {model.photos.map((photo, pidx) => (
                   <LazyHorizontalImage
-                    key={pidx}
+                    key={model.name + '-' + pidx}
                     src={photo}
                     alt={model.name + ' photo ' + (pidx + 1)}
                     className=""
