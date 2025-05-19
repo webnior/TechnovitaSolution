@@ -171,6 +171,208 @@ const models = [
       "/images/models/lazar/Lazar-6.webp",
     ],
   },
+  {
+    name: "brena",
+    photos: [
+      "/images/models/brena/Brena-1.webp",
+      "/images/models/brena/Brena-2.webp",
+      "/images/models/brena/Brena-3.webp",
+      "/images/models/brena/Brena-4.webp",
+      "/images/models/brena/Brena-5.webp",
+      "/images/models/brena/Brena-6.webp",
+      "/images/models/brena/Brena-7.webp",
+      "/images/models/brena/Brena-8.webp",
+      "/images/models/brena/Brena-9.webp",
+      "/images/models/brena/Brena-10.webp",
+      "/images/models/brena/Brena-11.webp",
+      "/images/models/brena/Brena-12.webp",
+      "/images/models/brena/Brena-13.webp",
+      "/images/models/brena/Brena-14.webp",
+      "/images/models/brena/Brena-15.webp",
+    ],
+  },
+  {
+    name: "bruna",
+    photos: [
+      "/images/models/bruna/Bruna-1.webp",
+      "/images/models/bruna/Bruna-2.webp",
+      "/images/models/bruna/Bruna-3.webp",
+      "/images/models/bruna/Bruna-4.webp",
+      "/images/models/bruna/Bruna-5.webp",
+      "/images/models/bruna/Bruna-6.webp",
+      "/images/models/bruna/Bruna-7.webp",
+      "/images/models/bruna/Bruna-8.webp",
+      "/images/models/bruna/Bruna-9.webp",
+      "/images/models/bruna/Bruna-10.webp",
+      "/images/models/bruna/Bruna-11.webp",
+      "/images/models/bruna/Bruna-12.webp",
+      "/images/models/bruna/Bruna-13.webp",
+      "/images/models/bruna/Bruna-14.webp",
+      "/images/models/bruna/Bruna-15.webp",
+    ],
+  },
+  {
+    name: "ashwak",
+    photos: [
+      "/images/models/ashwak/Ashwak-1.webp",
+      "/images/models/ashwak/Ashwak-2.webp",
+      "/images/models/ashwak/Ashwak-3.webp",
+      "/images/models/ashwak/Ashwak-4.webp",
+      "/images/models/ashwak/Ashwak-5.webp",
+      "/images/models/ashwak/Ashwak-6.webp",
+      "/images/models/ashwak/Ashwak-7.webp",
+      "/images/models/ashwak/Ashwak-8.webp",
+      "/images/models/ashwak/Ashwak-9.webp",
+      "/images/models/ashwak/Ashwak-10.webp",
+      "/images/models/ashwak/Ashwak-11.webp",
+    ],
+  },
+  {
+    name: "elisa",
+    photos: [
+      "/images/models/elisa/Elisa-1.webp",
+      "/images/models/elisa/Elisa-2.webp",
+      "/images/models/elisa/Elisa-3.webp",
+      "/images/models/elisa/Elisa-4.webp",
+      "/images/models/elisa/Elisa-5.webp",
+      "/images/models/elisa/Elisa-6.webp",
+      "/images/models/elisa/Elisa-7.webp",
+      "/images/models/elisa/Elisa-8.webp",
+      "/images/models/elisa/Elisa-9.webp",
+      "/images/models/elisa/Elisa-10.webp",
+      "/images/models/elisa/Elisa-11.webp",
+      "/images/models/elisa/Elisa-12.webp",
+      "/images/models/elisa/Elisa-13.webp",
+      "/images/models/elisa/Elisa-14.webp",
+      "/images/models/elisa/Elisa-15.webp",
+      "/images/models/elisa/Elisa-16.webp",
+      "/images/models/elisa/Elisa-17.webp",
+      "/images/models/elisa/Elisa-18.webp",
+      "/images/models/elisa/Elisa-19.webp",
+      "/images/models/elisa/Elisa-20.webp",
+      "/images/models/elisa/Elisa-21.webp",
+      "/images/models/elisa/Elisa-22.webp",
+    ],
+  },
+  {
+    name: "emily",
+    photos: [
+      "/images/models/emily/EMILY-1.webp",
+      "/images/models/emily/EMILY-2.webp",
+      "/images/models/emily/EMILY-3.webp",
+      "/images/models/emily/EMILY-4.webp",
+      "/images/models/emily/EMILY-5.webp",
+      "/images/models/emily/EMILY-6.webp",
+      "/images/models/emily/EMILY-7.webp",
+      "/images/models/emily/EMILY-8.webp",
+      "/images/models/emily/EMILY-9.webp",
+      "/images/models/emily/EMILY-10.webp",
+      "/images/models/emily/EMILY-11.webp",
+    ],
+  },
+  {
+    name: "hazim",
+    photos: [
+      "/images/models/hazim/hazim-1.webp",
+      "/images/models/hazim/hazim-2.webp",
+      "/images/models/hazim/hazim-3.webp",
+      "/images/models/hazim/hazim-4.webp",
+      "/images/models/hazim/hazim-5.webp",
+      "/images/models/hazim/hazim-6.webp",
+      "/images/models/hazim/hazim-7.webp",
+      "/images/models/hazim/hazim-8.webp",
+      "/images/models/hazim/hazim-9.webp",
+      "/images/models/hazim/hazim-10.webp",
+      "/images/models/hazim/hazim-11.webp",
+      "/images/models/hazim/hazim-12.webp",
+      "/images/models/hazim/hazim-13.webp",
+      "/images/models/hazim/hazim-14.webp",
+      "/images/models/hazim/hazim-15.webp",
+      "/images/models/hazim/hazim-16.webp",
+      "/images/models/hazim/hazim-17.webp",
+      "/images/models/hazim/hazim-18.webp",
+      "/images/models/hazim/hazim-19.webp",
+      "/images/models/hazim/hazim-20.webp",
+      "/images/models/hazim/hazim-21.webp",
+      "/images/models/hazim/hazim-22.webp",
+      "/images/models/hazim/hazim-23.webp",
+      "/images/models/hazim/hazim-24.webp",
+    ],
+  },
+  {
+    name: "juju",
+    photos: [
+      "/images/models/juju/Juju-1.webp",
+      "/images/models/juju/Juju-2   .webp",
+      "/images/models/juju/Juju-3.webp",
+      "/images/models/juju/Juju-4.webp",
+      "/images/models/juju/Juju-5.webp",
+      "/images/models/juju/Juju-6.webp",
+      "/images/models/juju/Juju-7.webp",
+      "/images/models/juju/Juju-8.webp",
+      "/images/models/juju/Juju-9.webp",
+      "/images/models/juju/Juju-10.webp",
+      "/images/models/juju/Juju-11.webp",
+      "/images/models/juju/Juju-12.webp",
+      "/images/models/juju/Juju-13.webp",
+      "/images/models/juju/Juju-14.webp",
+      "/images/models/juju/Juju-15.webp",
+    ],
+  },
+  {
+    name: "margarita",
+    photos: [
+      "/images/models/margarita/Margarita-1.webp",
+      "/images/models/margarita/Margarita-2.webp",
+      "/images/models/margarita/Margarita-3.webp",
+      "/images/models/margarita/Margarita-4.webp",
+      "/images/models/margarita/Margarita-5.webp",
+      "/images/models/margarita/Margarita-6.webp",
+      "/images/models/margarita/Margarita-7.webp",
+      "/images/models/margarita/Margarita-8.webp",
+      "/images/models/margarita/Margarita-9.webp",
+      "/images/models/margarita/Margarita-10.webp",
+      "/images/models/margarita/Margarita-11.webp",
+      "/images/models/margarita/Margarita-12.webp",
+      "/images/models/margarita/Margarita-13.webp",
+      "/images/models/margarita/Margarita-14.webp",
+      "/images/models/margarita/Margarita-15.webp",
+      "/images/models/margarita/Margarita-16.webp",
+      "/images/models/margarita/Margarita-17.webp",
+      "/images/models/margarita/Margarita-18.webp",
+      "/images/models/margarita/Margarita-19.webp",
+    ],
+  },
+  {
+    name: "natalia",
+    photos: [
+      "/images/models/natalia/Natalia-1.webp",
+      "/images/models/natalia/Natalia-2.webp",
+      "/images/models/natalia/Natalia-3.webp",
+      "/images/models/natalia/Natalia-4.webp",
+      "/images/models/natalia/Natalia-5.webp",
+      "/images/models/natalia/Natalia-6.webp",
+      "/images/models/natalia/Natalia-7.webp",
+      "/images/models/natalia/Natalia-8.webp",
+      "/images/models/natalia/Natalia-9.webp",
+    ],
+  },
+  {
+    name: "natt",
+    photos: [
+      "/images/models/natt/NATT-1.webp",
+      "/images/models/natt/NATT-2.webp",
+      "/images/models/natt/NATT-3.webp",
+      "/images/models/natt/NATT-4.webp",
+      "/images/models/natt/NATT-5.webp",
+      "/images/models/natt/NATT-6.webp",
+      "/images/models/natt/NATT-7.webp",
+      "/images/models/natt/NATT-8.webp",
+      "/images/models/natt/NATT-9.webp",
+      "/images/models/natt/NATT-10.webp",
+      "/images/models/natt/NATT-11.webp",
+    ],
+  },
 ];
 
 const TechnovitaStudio = () => {
@@ -178,6 +380,8 @@ const TechnovitaStudio = () => {
   const [selectedShootType, setSelectedShootType] = useState("");
   const [showModelPopup, setShowModelPopup] = useState(false);
   const [selectedModelName, setSelectedModelName] = useState("");
+  const [visibleModelsCount, setVisibleModelsCount] = useState(4);
+  const [loadingMore, setLoadingMore] = useState(false);
 
   return (
     <section className="py-16 px-2 sm:px-4 bg-white rounded-3xl max-w-7xl mx-auto my-12 overflow-hidden">
@@ -232,7 +436,7 @@ const TechnovitaStudio = () => {
       <div>
         <h3 className="text-2xl font-bold text-black mb-6 text-center">Our Models Portfolio</h3>
         <div className="flex flex-wrap justify-center gap-6">
-          {models.map((model) => (
+          {models.slice(0, visibleModelsCount).map((model) => (
             <div
               key={model.name}
               className="bg-white rounded-3xl border border-gray-200 p-4 w-full max-w-md flex flex-col mb-8 shadow-sm"
@@ -256,12 +460,56 @@ const TechnovitaStudio = () => {
                   setShowModelPopup(true);
                 }}
                 className="mx-auto mt-2 px-3 py-1.5 text-sm bg-[#F5A841] text-black rounded-full font-medium transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
-                >
+              >
                 Book Model
               </button>
             </div>
           ))}
         </div>
+        {visibleModelsCount < models.length && (
+          <div className="flex flex-col items-center justify-center mt-4">
+            {loadingMore && (
+              <span className="mb-1 text-sm font-medium text-sky-500">loading..</span>
+            )}
+            <button
+              onClick={() => {
+                if (!loadingMore) {
+                  setLoadingMore(true);
+                  setTimeout(() => {
+                    setVisibleModelsCount((c) => Math.min(c + 4, models.length));
+                    setLoadingMore(false);
+                  }, 500);
+                }
+              }}
+              className="flex items-center justify-center w-10 h-8 rounded-full bg-[#F5A841] focus:outline-none border-none shadow-none"
+              aria-label="Load more models"
+              disabled={loadingMore}
+              style={{border: 'none', boxShadow: 'none'}}
+            >
+              {loadingMore ? (
+                <div className="flex items-center gap-1">
+                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-0`}></span>
+                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-1`}></span>
+                  <span className={`block w-2 h-2 rounded-full bg-white dot-bounce dot-delay-2`}></span>
+                </div>
+              ) : (
+                // Static arrows SVG icon, blue color
+                <svg
+                  className="w-7 h-7"
+                  viewBox="0 0 128 128"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path d="m126 15.2-5-1.3-9.4 35.2-35.2-9.5-1.3 5.1 40.1 10.7h.1z" stroke="#2196F3" strokeWidth="4" fill="none"/>
+                    <path d="M54.6 80.2 18.8 68.4l-5-1.6-13 40.1 5 1.7 11.3-35.1L53 85.2z" stroke="#2196F3" strokeWidth="4" fill="none"/>
+                    <path d="M65.2 18.3c21.8 0 40.1 15.3 44.7 35.7h5.2c-4.7-23.3-25.3-40.8-49.9-40.8-23.7 0-43.7 16.3-49.3 38.3h5.3c5.5-19.2 23.1-33.2 44-33.2zm0 91.9c-22.7 0-41.6-16.6-45.2-38.3h-5.2c3.7 24.6 24.8 43.4 50.4 43.4 22.8 0 42.1-15 48.6-35.7h-5.4c-6.2 17.8-23.2 30.6-43.2 30.6z" stroke="#2196F3" strokeWidth="4" fill="none"/>
+                  </g>
+                </svg>
+              )}
+            </button>
+          </div>
+        )}
       </div>
 
       <BookShootPopup

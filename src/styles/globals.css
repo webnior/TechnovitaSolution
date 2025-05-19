@@ -20,3 +20,11 @@ img.mfp-img {
 }
 
 
+@keyframes bounceY {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .dot-bounce { animation: bounceY 0.7s infinite; }
+  .dot-delay-0 { animation-delay: 0ms; }
+  .dot-delay-1 { animation-delay: 120ms; }
+  .dot-delay-2 { animation-delay: 240ms; }
