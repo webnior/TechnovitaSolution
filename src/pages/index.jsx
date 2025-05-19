@@ -11,7 +11,6 @@ import { circleText } from "@common/utilits";
 //import HeroSection from "@components/sections/Hero";
 import ServicesSection from "@components/sections/Services";
 import AboutSection from "@components/sections/About";
-import ShowcaseSection from "@components/sections/Showcase";
 import VideoSection from "@components/sections/Video";
 import CountersSection from "@components/sections/Counters";
 import CallToActionSection from "@components/sections/CallToAction";
@@ -31,11 +30,10 @@ const Home1 = (props) => {
     <Layouts>
       <>
         <HeroSection />
-        <TechnovitaStudio />
         <ServicesSection />
         <AboutSection />
+        <TechnovitaStudio />
         <TickerSlider />
-        <ShowcaseSection projects={props.projects} />
         <TestimonialSlider />
         <VideoSection />
         <BlogWidget />

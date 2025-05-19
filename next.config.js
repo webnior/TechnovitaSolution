@@ -8,7 +8,8 @@ const nextConfig = {
       'technovitasolution.com',
       'www.technovitasolution.com',
       'secure.gravatar.com',
-      'technovitasolution.in'
+      'technovitasolution.in',
+      'images.unsplash.com'
     ],
     formats: ['image/webp'],
     minimumCacheTTL: 60,

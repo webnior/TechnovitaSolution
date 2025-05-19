@@ -1,20 +1,62 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useRef, useEffect } from "react";
 import LeadGenPopup from "../LeadGenPopup";
 import Image from "next/image";
 
+// LazyHorizontalImage component for horizontal lazy loading
+const LazyHorizontalImage = ({ src, alt, className }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const imgRef = useRef();
 
+  useEffect(() => {
+    let observer;
+    if (imgRef.current) {
+      observer = new window.IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect();
+          }
+        },
+        { rootMargin: "100px" }
+      );
+      observer.observe(imgRef.current);
+    }
+    return () => observer && observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={imgRef}
+      className={`bg-gray-200 rounded-xl border border-gray-100 flex-shrink-0 overflow-hidden ${className} aspect-[2/3] w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48`}
+      style={{ position: "relative" }}
+    >
+      {isVisible ? (
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          style={{ objectFit: "cover" }}
+          className="rounded-xl border-none transition-transform duration-200 hover:scale-105 focus:scale-105"
+          sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, 144px"
+          priority={false}
+        />
+      ) : (
+        <div className="w-full h-full" />
+      )}
+    </div>
+  );
+};
 
 // Shoot types (add more as needed)
 const shootTypes = [
-  { title: "Footwear Shoots", img: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" },
-  { title: "Lingerie Shoots", img: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" },
-  { title: "Apparel's Shoot", img: "https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=400&q=80" },
-  { title: "Electronic Shoots", img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" },
-  { title: "Jewellery Shoots", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" },
-  { title: "Accessories Shoots", img: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=400&q=80" },
-  { title: "Cosmetics Shoots", img: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" },
-  { title: "Home Decor Shoots", img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" },
+  { title: "Footwear Shoots", img: "/images/product-photoshoot/shoes.webp" },
+  { title: "Lingerie Shoots", img: "/images/product-photoshoot/lingeries.webp" },
+  { title: "Apparel's Shoot", img: "/images/product-photoshoot/cloths.webp" },
+  { title: "Electronic Shoots", img: "/images/product-photoshoot/electronics.webp" },
+  { title: "Jewellery Shoots", img: "/images/product-photoshoot/jwellery.webp" },
+  { title: "Accessories Shoots", img: "/images/product-photoshoot/fashion-accessories.webp" },
+  { title: "Cosmetics Shoots", img: "/images/product-photoshoot/cosmatic.webp" },
+  { title: "Home Decor Shoots", img: "/images/product-photoshoot/home-decor.webp" },
 ];
 
 // Model portfolio (add more as needed)
@@ -136,11 +178,15 @@ const TechnovitaStudio = () => {
   const [selectedModel, setSelectedModel] = useState(null);
 
   const handleBookShoot = (shoot) => {
+    setModelPopupOpen(false);
+    setSelectedModel(null);
     setSelectedShoot(shoot);
     setPopupOpen(true);
   };
 
   const handleBookModel = (model) => {
+    setPopupOpen(false);
+    setSelectedShoot(null);
     setSelectedModel(model);
     setModelPopupOpen(true);
   };
@@ -148,65 +194,54 @@ const TechnovitaStudio = () => {
   return (
     <section className="py-16 px-2 sm:px-4 bg-white rounded-3xl max-w-7xl mx-auto my-12 overflow-hidden">
       {/* Title & Description */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-        className="text-center mb-10"
-      >
+      <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-black mb-4 leading-tight">
           ECommerce Product Shoot Services by Technovita Studio
         </h2>
         <p className="text-black text-lg md:text-xl max-w-2xl mx-auto">
           We provide expert product photography for <b>Myntra</b>, <b>Amazon</b>, <b>Flipkart</b>, <b>Ajio</b> and more. <span className="font-semibold">Technovita Studio is a <b>Myntra Certified Studio</b> for product shoots</span>—trusted by top brands for e-commerce excellence.
         </p>
-      </motion.div>
-
+      </div>
 
       {/* 1. Shoot Types Cards */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="mb-16"
-      >
+      <div className="mb-16">
         <h3 className="text-2xl font-bold text-black mb-6 text-center">Types of Shoots</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-          {shootTypes.map((shoot, idx) => (
-            <motion.div
+          {shootTypes.map((shoot) => (
+            <div
               key={shoot.title}
-              whileHover={{ scale: 1.04, backgroundColor: "#FFF3E0", boxShadow: "0 8px 32px rgba(245,168,65,0.10)" }}
-              className="group bg-white rounded-3xl p-0 flex flex-col items-center justify-between border border-gray-200 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg"
+              className="group bg-white rounded-3xl p-0 flex flex-col items-center justify-between border border-gray-200 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-lg hover:bg-[#FFF3E0] focus-within:bg-[#FFF3E0]"
             >
               <div className="w-full h-40 sm:h-48 md:h-52 lg:h-56 relative overflow-hidden">
-                <img src={shoot.img} alt={shoot.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                <Image
+                  src={shoot.img}
+                  alt={shoot.title}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  className="transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  priority={false}
+                />
               </div>
               <div className="flex-1 flex flex-col justify-between w-full p-4">
                 <div className="font-semibold text-black text-center mb-3 text-lg md:text-xl">{shoot.title}</div>
                 <button
                   onClick={() => handleBookShoot(shoot)}
-                  className="mx-auto mt-2 px-3 py-1.5 text-sm bg-[#F5A841] text-black rounded-full font-medium transition-all duration-200 border-none shadow-none"
+                  className="mx-auto mt-2 px-3 py-1.5 text-sm bg-[#F5A841] text-black rounded-full font-medium transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
                 >
                   Book Shoot
                 </button>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
 
       {/* 2. Model Portfolio */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.3 }}
-        viewport={{ once: true }}
-      >
+      <div>
         <h3 className="text-2xl font-bold text-black mb-6 text-center">Our Models Portfolio</h3>
         <div className="flex flex-wrap justify-center gap-6">
-          {models.map((model, idx) => (
+          {models.map((model) => (
             <div
               key={model.name}
               className="bg-white rounded-3xl border border-gray-200 p-4 w-full max-w-md flex flex-col mb-8 shadow-sm"
@@ -216,24 +251,24 @@ const TechnovitaStudio = () => {
                 style={{ WebkitOverflowScrolling: 'touch' }}
               >
                 {model.photos.map((photo, pidx) => (
-                  <img
+                  <LazyHorizontalImage
                     key={pidx}
                     src={photo}
                     alt={model.name + ' photo ' + (pidx + 1)}
-                    className="h-32 w-24 sm:h-40 sm:w-32 md:h-48 md:w-36 object-cover rounded-xl border border-gray-100 flex-shrink-0 transition-transform duration-200 hover:scale-105"
+                    className=""
                   />
                 ))}
               </div>
               <button
                 onClick={() => handleBookModel(model)}
-                className="mx-auto mt-4 px-4 py-2 text-sm bg-[#F5A841] text-black rounded-full font-semibold transition-all duration-200 border-none shadow-none hover:scale-105"
+                className="mx-auto mt-4 px-4 py-2 text-sm bg-[#F5A841] text-black rounded-full font-semibold transition-all duration-200 border-none shadow-none hover:scale-105 focus:scale-105"
               >
                 Book Model
               </button>
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
 
       {/* LeadGenPopup for Book Shoot */}
       <LeadGenPopup
