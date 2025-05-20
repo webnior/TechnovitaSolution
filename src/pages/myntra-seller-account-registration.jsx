@@ -199,11 +199,11 @@ export default function MyntraSellerLanding() {
                 Apply for Seller Verification
               </button>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-2 text-gray-600 text-xs md:text-sm">
+            <div className="flex items-center justify-center gap-1 text-gray-600 text-[10px] sm:text-xs md:text-sm whitespace-nowrap mt-3">
               <span>✓ No hidden fees</span>
-              <span className="mx-2">•</span>
+              <span className="mx-1 sm:mx-2">•</span>
               <span>✓ 15-day support</span>
-              <span className="mx-2">•</span>
+              <span className="mx-1 sm:mx-2">•</span>
               <span>✓ 100+ brands launched</span>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default function MyntraSellerLanding() {
         </section>
 
         {/* Video Testimonials Section */}
-        <section className="w-full py-12 md:py-20 px-4 bg-white" aria-labelledby="testimonial-heading">
+        <section className="w-full py-8 md:py-20 px-4 bg-white" aria-labelledby="testimonial-heading">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <span className="text-pink-600 font-medium text-sm uppercase tracking-wider mb-2 inline-block">Real Seller Success Stories</span>
@@ -290,7 +290,7 @@ export default function MyntraSellerLanding() {
         </section>
 
         {/* Services Section (Previously Benefits Section) */}
-        <section className="w-full py-10 md:py-16 px-4" aria-labelledby="services-heading">
+        <section className="w-full py-8 md:py-16 px-4" aria-labelledby="services-heading">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 id="services-heading" className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Your Complete Myntra Launch Solution</h2>
@@ -351,7 +351,7 @@ export default function MyntraSellerLanding() {
         </section>    
 
         {/* Application Form Section */}
-        <section id="apply-form" ref={formSectionRef} className="w-full py-12 md:py-20 px-4 bg-gradient-to-br from-pink-50 to-white" aria-labelledby="form-heading">
+        <section id="apply-form" ref={formSectionRef} className="w-full py-8 md:py-20 px-4 bg-gradient-to-br from-pink-50 to-white" aria-labelledby="form-heading">
           <div className="max-w-xs sm:max-w-lg mx-auto">
             <div className="text-center mb-12">
               <span className="text-pink-600 font-medium text-sm uppercase tracking-wider mb-2 inline-block">Start Selling Today</span>
@@ -371,15 +371,15 @@ export default function MyntraSellerLanding() {
                   <div key={step} className="flex flex-col items-center">
                     <div 
                       className={`w-8 h-8 rounded-full flex items-center justify-center font-semibold text-sm ${
-                        step < formStep ? 'bg-green-500 text-white' : 
+                        submitSuccess || step < formStep ? 'bg-green-500 text-white' : 
                         step === formStep ? 'bg-pink-600 text-white' : 
                         'bg-gray-200 text-gray-500'
                       }`}
                     >
-                      {step < formStep ? '✓' : step + 1}
+                      {submitSuccess || step < formStep ? '✓' : step + 1}
                     </div>
                     {step < 3 && (
-                      <div className={`h-1 w-16 mt-2 ${step < formStep ? 'bg-green-500' : 'bg-gray-200'}`}></div>
+                      <div className={`h-1 w-16 mt-2 ${submitSuccess || step < formStep ? 'bg-green-500' : 'bg-gray-200'}`}></div>
                     )}
                   </div>
                 ))}
@@ -474,9 +474,9 @@ export default function MyntraSellerLanding() {
                         <button 
                           type="button" 
                           onClick={handlePrevStep}
-                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-2 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-1 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 hidden sm:inline" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                           Back
@@ -484,7 +484,7 @@ export default function MyntraSellerLanding() {
                         <button 
                           type="button" 
                           onClick={handleNextStep}
-                          className="w-2/3 bg-pink-600 text-white py-3 px-2 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-2/3 bg-pink-600 text-white py-3 px-1 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                         >
                           Continue
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -531,9 +531,9 @@ export default function MyntraSellerLanding() {
                         <button 
                           type="button" 
                           onClick={handlePrevStep}
-                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-2 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-1 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 hidden sm:inline" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                           Back
@@ -541,7 +541,7 @@ export default function MyntraSellerLanding() {
                         <button 
                           type="button" 
                           onClick={handleNextStep}
-                          className="w-2/3 bg-pink-600 text-white py-3 px-2 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-2/3 bg-pink-600 text-white py-3 px-1 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                         >
                           Continue
                           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
@@ -583,16 +583,16 @@ export default function MyntraSellerLanding() {
                         <button 
                           type="button" 
                           onClick={handlePrevStep}
-                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-2 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-1/3 bg-gray-200 text-gray-800 py-3 px-1 md:px-4 rounded-full font-medium hover:bg-gray-300 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-1 hidden sm:inline" viewBox="0 0 20 20" fill="currentColor">
                             <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                           Back
                         </button>
                         <button 
                           type="submit" 
-                          className="w-2/3 bg-pink-600 text-white py-3 px-2 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
+                          className="w-2/3 bg-pink-600 text-white py-3 px-1 md:px-6 rounded-full font-medium hover:bg-pink-700 transition-all duration-300 text-sm md:text-base flex items-center justify-center"
                           disabled={isSubmitting}
                         >
                           {isSubmitting ? (
@@ -619,7 +619,7 @@ export default function MyntraSellerLanding() {
         </section>
 
         {/* Final Guarantee Section */}
-        <section className="w-full py-12 md:py-20 px-4 bg-white text-gray-800 relative" aria-labelledby="guarantee-heading" style={{ 
+        <section className="w-full py-8 md:py-20 px-4 bg-white text-gray-800 relative" aria-labelledby="guarantee-heading" style={{ 
           backgroundImage: "radial-gradient(circle, #e5e5e5 1px, transparent 1px)", 
           backgroundSize: "20px 20px" 
         }}>
