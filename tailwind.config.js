@@ -15,16 +15,22 @@ module.exports = {
         twinkle: {
           '0%, 100%': { opacity: 0.7 },
           '50%': { opacity: 0.2 }
+        },
+        'gradient-x': {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' }
         }
       },
       animation: {
-        twinkle: 'twinkle 3s infinite'
+        twinkle: 'twinkle 3s infinite',
+        'gradient-x': 'gradient-x 3s ease infinite'
       }
     }
   },
   // This ensures Tailwind doesn't purge styles from your existing CSS
   safelist: [
     // Add any dynamic classes that shouldn't be purged
+    'animate-gradient-x'
   ],
   // Disable any Tailwind features that might conflict with your existing styles
   corePlugins: {

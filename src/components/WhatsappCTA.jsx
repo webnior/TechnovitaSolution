@@ -16,10 +16,10 @@ const WhatsAppCTA = ({
         </p>
       )}
       <a 
-        href={`https://wa.me/${phoneNumber}`}
+        href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message || '')}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-full hover:bg-green-700 transition-colors"
+        className="inline-flex items-center justify-center px-8 py-4 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition border-2 border-green-600"
       >
         <MessageCircle className="w-5 h-5 mr-2" />
         {buttonText}
