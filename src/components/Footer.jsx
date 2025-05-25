@@ -5,6 +5,7 @@ import {
     Youtube,
      
   } from "lucide-react";
+import Link from 'next/link';
   
 const Footer = () => {
     return (
@@ -58,6 +59,14 @@ const Footer = () => {
             Technovita Solution
           </a>
         </p>
+        
+        <div className="mt-4 flex justify-center space-x-6">
+          <Link href="/privacy-policy">
+            <span className="text-white hover:text-[#F5A841] transition-colors duration-300 cursor-pointer">
+              Privacy Policy
+            </span>
+          </Link>
+        </div>
       </footer>
     );
   };
