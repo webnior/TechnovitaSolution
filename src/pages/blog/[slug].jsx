@@ -6,6 +6,7 @@ import useSWR from 'swr';
 import BlogLayout from '../../layouts/BlogLayout';
 import { getPost, getPosts, formatPostData } from '../../lib/wordpress';
 import { FacebookShareButton, TwitterShareButton, LinkedinShareButton } from 'react-share';
+import ProtectedContentWrapper from '@components/ProtectedContentWrapper'
 
 // Create a fetcher function for SWR
 const fetcher = async (slug) => {
@@ -71,6 +72,7 @@ export default function BlogPost({ post: initialPost, relatedPosts }) {
   const contentParagraphs = post.content.split(/<\/p>/).map(p => p.replace(/<p>/, ''));
 
   return (
+    <ProtectedContentWrapper>
     <BlogLayout
       title={`${post.title} | Technovita Solution`}
       description={post.metaDescription}
@@ -294,6 +296,7 @@ export default function BlogPost({ post: initialPost, relatedPosts }) {
         </div>
       </div>
     </BlogLayout>
+    </ProtectedContentWrapper>
   );
 }
 
