@@ -1939,7 +1939,7 @@ function HowToSellOnBlinkit() {
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src="https://blog.technovitasolution.com/wp-content/uploads/2022/02/SELLER-ON-AMAZON.png"
-                      alt="How to Create Seller Account on Amazon"
+                      alt="How to Create a Seller Account on Amazon"
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                     />
                   </div>
