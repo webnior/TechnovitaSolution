@@ -87,6 +87,22 @@
                 ]
             },
             {
+                "label": "Seller Registration",
+                "link": "/myntra-seller-account-registration",
+                "children": [
+                    {
+                        "label": "Myntra Seller Registration",
+                        "link": "/myntra-seller-account-registration",
+                        "children": 0
+                    },
+                    {
+                        "label": "Ajio Seller Registration",
+                        "link": "/ajio-seller-account-registration",
+                        "children": 0
+                    }
+                ]
+            },
+            {
                 "label": "Blog",
                 "link": "/blog",
                 "children": [
