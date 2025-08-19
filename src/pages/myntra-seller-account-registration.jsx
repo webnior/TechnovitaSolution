@@ -182,7 +182,7 @@ export default function MyntraSellerLanding() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8">
               <a 
-                href={`https://wa.me/917451073504?text=${encodeURIComponent("I want to launch my brand on myntra")}`}
+                href={`https://wa.me/917042163504?text=${encodeURIComponent("I want to launch my brand on myntra")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center bg-green-600 border-2 border-green-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-green-700 hover:border-green-700 transition w-full sm:w-auto"
@@ -397,7 +397,7 @@ export default function MyntraSellerLanding() {
                     Thank you for your interest in selling on Myntra. Our team will contact you shortly to guide you through the next steps.
                   </p>
                   <WhatsAppCTA 
-                    phoneNumber="917451073504"
+                    phoneNumber="917042163504"
                     message="Hi, I just submitted my Myntra seller application and would like to know the next steps."
                     showMessage={false}
                     buttonText="Contact Us on WhatsApp"

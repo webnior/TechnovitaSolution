@@ -181,7 +181,7 @@ const Contact = () => {
                             <ul>
                                 <li>
                                     <h5>Contact Info</h5>
-                                    <a href="tel:+917451073504" className="onovo-lnk lnk--white" target="_blank">+91 7451073504</a><br/>
+                                    <a href="tel:+917042163504" className="onovo-lnk lnk--white" target="_blank">+91 7042163504</a><br/>
                                     <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a>
                                     
                                     <div className="onovo-social-1 onovo-social-active" style={{"marginTop": "10px"}}>

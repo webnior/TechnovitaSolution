@@ -45,10 +45,10 @@ export default async function handler(req, res) {
             <div style="background-color: #F3F4F6; border-radius: 8px; padding: 24px; margin-bottom: 32px;">
               <p style="color: #1F2937; font-size: 18px; font-weight: 600; margin-bottom: 16px;">Need help? We're here for you!</p>
               <div style="display: flex; gap: 16px; justify-content: center;">
-                <a href="tel:+917451073504" style="display: inline-block; background-color: #FB923C; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 500; text-align: center; width: 45%;">
+                <a href="tel:+917042163504" style="display: inline-block; background-color: #FB923C; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 500; text-align: center; width: 45%;">
                   📞 Call Expert
                 </a>
-                <a href="https://wa.me/917451073504?text=Hi,%20I%20just%20downloaded%20the%20guide.%20Can%20you%20help%20me%20with%20some%20questions?" style="display: inline-block; background-color: #22C55E; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 500; text-align: center; width: 45%;">
+                <a href="https://wa.me/917042163504?text=Hi,%20I%20just%20downloaded%20the%20guide.%20Can%20you%20help%20me%20with%20some%20questions?" style="display: inline-block; background-color: #22C55E; color: white; text-decoration: none; padding: 12px 24px; border-radius: 6px; font-weight: 500; text-align: center; width: 45%;">
                   💬 WhatsApp
                 </a>
               </div>

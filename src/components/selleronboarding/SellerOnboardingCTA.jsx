@@ -94,7 +94,7 @@ const SellerOnboardingCTA = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <a
-              href="tel:+917451073504"
+              href="tel:+917042163504"
               className="inline-flex items-center justify-center gap-3 
                 bg-gradient-to-r from-red-500 to-red-600 
                 text-white text-xl font-bold

@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 
 const TechnovitaCTA = () => {
-  const phoneNumber = '+917451073504';
+  const phoneNumber = '+917042163504';
   const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {

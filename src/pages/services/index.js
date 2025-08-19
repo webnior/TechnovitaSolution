@@ -520,7 +520,7 @@ const HeroSection = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'tel:+917451073504'}
+                onClick={() => window.location.href = 'tel:+917042163504'}
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white
                   px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg shadow-lg hover:shadow-xl 
                   transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
@@ -532,7 +532,7 @@ const HeroSection = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => window.location.href = 'https://wa.me/917451073504?text=hi%20i%20want%20to%20know%20more%20about%20ecommerce%20services'}
+                onClick={() => window.location.href = 'https://wa.me/917042163504?text=hi%20i%20want%20to%20know%20more%20about%20ecommerce%20services'}
                 className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-green-600 text-white
                   px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg shadow-lg hover:shadow-xl 
                   transition-all duration-300 w-full sm:w-auto text-sm sm:text-base"
@@ -715,7 +715,7 @@ const CTASection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <a
-              href="tel:+917451073504"
+              href="tel:+917042163504"
               className="inline-flex items-center justify-center gap-3 
                 bg-gradient-to-r from-red-500 to-red-600 
                 text-white text-xl font-bold
@@ -887,7 +887,7 @@ const CTASection2 = () => (
     transition: { duration: 0.2 }
   }}
   whileTap={{ scale: 0.98 }}
-  onClick={() => window.location.href = 'tel:+917451073504'}
+  onClick={() => window.location.href = 'tel:+917042163504'}
   className={`
     px-12 py-5 rounded-lg font-bold text-xl
     bg-gradient-to-r from-[#F5A841] to-orange-500 
@@ -1069,7 +1069,7 @@ export default function TechnovitaSellerPage() {
 
         {/* Call-to-Action Button */}
         <motion.a
-          href="tel:+917451073504"
+          href="tel:+917042163504"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.8 }}

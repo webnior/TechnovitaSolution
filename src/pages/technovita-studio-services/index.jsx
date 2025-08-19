@@ -167,7 +167,7 @@ const StudioServices = () => {
           {/* CTA Section */}
           <div className="text-center">
             <a
-              href={`https://wa.me/917451073504?text=Hi,%20I%20am%20interested%20in%20getting%20photoshoot%20services`}
+              href={`https://wa.me/917042163504?text=Hi,%20I%20am%20interested%20in%20getting%20photoshoot%20services`}
               target="_blank"
               rel="noopener noreferrer"
             >

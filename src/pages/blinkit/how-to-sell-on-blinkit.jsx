@@ -1965,7 +1965,7 @@ function HowToSellOnBlinkit() {
           title="🚀 Get Your Free Blinkit Seller Success Guide!"
           subtitle="Learn expert strategies to boost your sales and stand out on Blinkit"
           offerText="Plus: Get a FREE PDF guide on optimizing your Blinkit store for maximum profits"
-          phoneNumber="+917451073504"
+          phoneNumber="+917042163504"
           guideUrl="https://drive.google.com/file/d/1Y4fW8YkgQA2Bpy4pbUpGTA4SzPJUYmb_/view?usp=sharing"
           guideTitle="Blinkit Seller Success Guide"
           timerDuration={60}

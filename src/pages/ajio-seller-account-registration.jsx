@@ -184,7 +184,7 @@ export default function AjioSellerLanding() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8">
               <a 
-                href={`https://wa.me/917451073504?text=${encodeURIComponent("I want to launch my brand on Ajio")}`}
+                href={`https://wa.me/917042163504?text=${encodeURIComponent("I want to launch my brand on Ajio")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center bg-green-600 border-2 border-green-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-green-700 hover:border-green-700 transition w-full sm:w-auto"
@@ -370,7 +370,7 @@ export default function AjioSellerLanding() {
               {/* Progress indicator */}
               <div className="flex justify-between items-center mb-8">
                 {[0, 1, 2, 3].map((step) => (
-                  <div key={step} className="flex items-center">
+                  <div key={step} className="flex flex-col items-center">
                     <div 
                       className={`w-8 h-8 rounded-full flex items-center justify-center font-semibold text-sm ${
                         submitSuccess || step < formStep ? 'bg-green-500 text-white' : 
@@ -381,7 +381,7 @@ export default function AjioSellerLanding() {
                       {submitSuccess || step < formStep ? '✓' : step + 1}
                     </div>
                     {step < 3 && (
-                      <div className={`h-1 w-16 ml-2 ${submitSuccess || step < formStep ? 'bg-green-500' : 'bg-gray-200'}`}></div>
+                      <div className={`h-1 w-16 mt-2 ${submitSuccess || step < formStep ? 'bg-green-500' : 'bg-gray-200'}`}></div>
                     )}
                   </div>
                 ))}
@@ -399,7 +399,7 @@ export default function AjioSellerLanding() {
                     Thank you for your interest in selling on Ajio. Our team will contact you shortly to guide you through the next steps.
                   </p>
                   <WhatsAppCTA 
-                    phoneNumber="917451073504"
+                    phoneNumber="917042163504"
                     message="Hi, I just submitted my Ajio seller application and would like to know the next steps."
                     showMessage={false}
                     buttonText="Contact Us on WhatsApp"

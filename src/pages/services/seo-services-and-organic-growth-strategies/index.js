@@ -337,12 +337,12 @@ const ServicesSection = () => {
 //cta
 const SeoServicesCTA = () => {
   const handleCallClick = () => {
-    window.location.href = "tel:+917451073504";
+    window.location.href = "tel:+917042163504";
   };
 
   const handleWhatsAppClick = () => {
     window.open(
-      "https://wa.me/917451073504?text=Hi,%20I%20am%20interested%20in%20getting%20a%20free%20SEO%20audit",
+      "https://wa.me/917042163504?text=Hi,%20I%20am%20interested%20in%20getting%20a%20free%20SEO%20audit",
       "_blank"
     );
   };
@@ -424,7 +424,7 @@ const SeoServicesCTA = () => {
               >
                 <div className="flex items-center justify-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>Call Now: +91 7451073504</span>
+                  <span>Call Now: +91 7042163504</span>
                 </div>
               </motion.button>
 
@@ -466,10 +466,10 @@ const SeoServicesCTA = () => {
             <div className="mt-8 text-gray-700">
               <p>For immediate SEO consultation, contact us:</p>
               <a
-                href="tel:+917451073504"
+                href="tel:+917042163504"
                 className="text-gray-900 font-semibold hover:underline"
               >
-                +91 7451073504
+                +91 7042163504
               </a>
             </div>
           </div>

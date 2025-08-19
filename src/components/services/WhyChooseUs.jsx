@@ -48,7 +48,7 @@ const WhyChooseUs = ({ config }) => {
 
           {/* WhatsApp CTA */}
           <WhatsAppCTA
-            phoneNumber="917451073504"
+            phoneNumber="917042163504"
             message="Have questions about our services?"
             showMessage={true}
             buttonText="Message Us"

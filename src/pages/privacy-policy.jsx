@@ -108,17 +108,17 @@ export default function PrivacyPolicy() {
           <p className="mb-4">If you have any questions or concerns about our Privacy Policy or data practices, please contact us:</p>
           
           <a 
-            href="https://wa.me/917451073504?text=Hi, I have a question about your privacy policy" 
+            href="https://wa.me/917042163504?text=Hi, I have a question about your privacy policy" 
             className="inline-block bg-green-700 text-white font-bold py-3 px-6 rounded mb-4"
           >
             📱 Contact Us on WhatsApp
           </a>
           <br />
           <a 
-            href="tel:+917451073504" 
+            href="tel:+917042163504" 
             className="inline-block bg-blue-700 text-white font-bold py-3 px-6 rounded"
           >
-            📞 Call: +91 7451073504
+            📞 Call: +91 7042163504
           </a>
           
           <p className="mt-4 italic">Available 6 days a week</p>

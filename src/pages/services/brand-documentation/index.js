@@ -383,12 +383,12 @@ const ServicesSection = () => {
 // CTA Section Component with improved mobile responsiveness
 const BrandDocumentationCTA = () => {
     const handleCallClick = () => {
-      window.location.href = "tel:+917451073504";
+      window.location.href = "tel:+917042163504";
     };
   
     const handleWhatsAppClick = () => {
       window.open(
-        "https://wa.me/917451073504?text=Hi,%20I%20need%20help%20with%20brand%20documentation",
+        "https://wa.me/917042163504?text=Hi,%20I%20need%20help%20with%20brand%20documentation",
         "_blank"
       );
     };
@@ -474,7 +474,7 @@ const BrandDocumentationCTA = () => {
                 >
                   <div className="flex items-center justify-center space-x-2">
                     <Phone className="w-5 h-5" />
-                    <span className="text-base md:text-lg">Call: +91 7451073504</span>
+                    <span className="text-base md:text-lg">Call: +91 7042163504</span>
                   </div>
                 </motion.button>
   

@@ -11,7 +11,7 @@ const LeadGenPopup = ({
   onClose,
   title = 'E-commerce Growth Offer',
   subtitle = 'Get a FREE 10-minute consultation worth ₹3,000 to accelerate your e-commerce business!',
-  phoneNumber = '+917451073504',
+  phoneNumber = '+917042163504',
   guideUrl = '/path-to-your-guide.pdf',
   guideTitle = 'E-commerce Growth Guide',
   timerDuration = 51,

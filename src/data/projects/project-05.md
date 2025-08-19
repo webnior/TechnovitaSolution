@@ -12,13 +12,13 @@ date: 2022-2023
 details:
     items:
         - label: "connectUs:"
-          value: +91 7451073504
+          value: +91 7042163504
 
         - label: "email:"
           value: info@technovitasolution.com
         
         - label: "whatsapp 👈:"
-          value: +91 7451073504
+          value: +91 7042163504
         
         - label: "Website:"
           value: WWW.technovitasolution.com

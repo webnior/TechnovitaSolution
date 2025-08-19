@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppCTA = ({
-  phoneNumber = "917451073504",
+  phoneNumber = "917042163504",
   message,
   showMessage = true,
   buttonText = "Chat on WhatsApp",
@@ -51,7 +51,7 @@ export default WhatsAppCTA;
 
 // Full customization
 // <WhatsAppCTA 
-//   phoneNumber="917451073504"
+//   phoneNumber="917042163504"
 //   message="Have questions about our services?"
 //   showMessage={true}
 //   buttonText="Message Us"

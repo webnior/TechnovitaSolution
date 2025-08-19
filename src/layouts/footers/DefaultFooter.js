@@ -36,7 +36,7 @@ Grow your business with Technovita.</p>
                                 <h5>Get in Touch</h5>
                                 <p style={{"opacity": "0.6"}}> D-41, C Block, Sector 59, Noida, <br /> Uttar Pradesh 201301 </p>
                                 <p style={{"opacity": "0.6"}}>
-                                    <a href="tel:+91 7451073504" className="onovo-lnk lnk--white" target="_blank">+91 7451073504</a><br />
+                                    <a href="tel:+91 7042163504" className="onovo-lnk lnk--white" target="_blank">+91 7042163504</a><br />
                                     <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a>
                                 </p>
                             </div>
