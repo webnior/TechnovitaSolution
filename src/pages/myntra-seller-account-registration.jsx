@@ -189,7 +189,7 @@ export default function MyntraSellerLanding() {
           <div className="max-w-5xl z-10">
             <span className="bg-pink-600 text-white font-semibold px-4 py-1 rounded-full text-sm mb-4 inline-block">MYNTRA SELLER EXPERTS</span>
             <h1 id="hero-heading" className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-6 md:mb-8 leading-tight">
-              Launch Your Fashion Brand on <span className="relative inline-block bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 bg-[length:200%_auto] animate-gradient-x text-transparent bg-clip-text">Myntra</span> Today!
+              Launch Your Brand on <span className="relative inline-block bg-gradient-to-r from-purple-500 via-pink-400 to-pink-600 bg-[length:200%_auto] animate-gradient-x text-transparent bg-clip-text">Myntra</span> Today!
             </h1>
             <p className="text-base md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
               From account setup to your first sale, our end-to-end service makes selling on Myntra simple, profitable, and hassle-free.
