@@ -194,6 +194,29 @@ export default function MyntraSellerLanding() {
             `,
           }}
         />
+        
+        {/* Google Analytics Conversion Tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Helper function to delay opening a URL until a gtag event is sent.
+              // Call it in response to an action that should navigate to a URL.
+              function gtagSendEvent(url) {
+                var callback = function () {
+                  if (typeof url === 'string') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion_event_contact', {
+                  'event_callback': callback,
+                  'event_timeout': 2000,
+                  // <event_parameters>
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
