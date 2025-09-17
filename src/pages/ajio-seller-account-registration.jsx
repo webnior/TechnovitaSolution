@@ -132,6 +132,20 @@ export default function AjioSellerLanding() {
       title: "From Startup to 150 Orders/Day",
       videoUrl: "https://www.youtube.com/embed/eoCYSK0p-A8",
       description: "Their Ajio listing optimization and photography services transformed our brand visibility."
+    },
+    {
+      id: 3,
+      name: "Mohit - Founder of Oddgrab",
+      title: "Successfully Onboarded on Myntra",
+      videoUrl: "https://www.youtube.com/embed/piYVKoZGVww",
+      description: "Technovita's Myntra onboarding service was exceptional! They handled everything from product photography to listing optimization perfectly. Our brand presence on Myntra has never been stronger."
+    },
+    {
+      id: 4,
+      name: "Sayali - Founder of Luxerra",
+      title: "Successfully Onboarded on Myntra & Ajio",
+      videoUrl: "https://www.youtube.com/embed/GxjBEfcQliQ",
+      description: "Outstanding service! Technovita helped us launch Luxerra on both Myntra and Ajio with incredible attention to detail. Their product listing services and catalog management expertise made the entire process smooth and successful."
     }
   ];
 
