@@ -183,6 +183,19 @@ export default function AjioSellerLanding() {
         <meta property="og:image" content="/images/ajio/ajio-seller-registration.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://technovitasolution.com/ajio-seller-account-registration" />
+        
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5ZHMCB34E"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Q5ZHMCB34E');
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
@@ -191,7 +204,7 @@ export default function AjioSellerLanding() {
           <div className="max-w-5xl z-10">
             <span className="bg-orange-600 text-white font-semibold px-4 py-1 rounded-full text-sm mb-4 inline-block">AJIO SELLER EXPERTS</span>
             <h1 id="hero-heading" className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 mb-6 md:mb-8 leading-tight">
-              Launch Your Fashion Brand on <span className="relative inline-block bg-gradient-to-r from-orange-500 via-red-400 to-orange-600 bg-[length:200%_auto] animate-gradient-x text-transparent bg-clip-text">Ajio</span> Today!
+              Launch Your Brand on <span className="relative inline-block bg-gradient-to-r from-orange-500 via-red-400 to-orange-600 bg-[length:200%_auto] animate-gradient-x text-transparent bg-clip-text">Ajio</span> Today!
             </h1>
             <p className="text-base md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto">
               From account setup to your first sale, our end-to-end service makes selling on Ajio simple, profitable, and hassle-free.

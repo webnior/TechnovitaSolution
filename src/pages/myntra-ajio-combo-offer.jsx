@@ -184,6 +184,19 @@ export default function MyntraAjioComboOffer() {
         <meta property="og:image" content="/images/myntra-ajio-combo-offer.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://technovitasolution.com/myntra-ajio-combo-offer" />
+        
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5ZHMCB34E"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Q5ZHMCB34E');
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
