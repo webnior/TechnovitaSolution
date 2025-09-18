@@ -91,6 +91,9 @@ export default function MyntraAjioComboOffer() {
       return;
     }
     
+    // Track form submission
+    gtag('event', 'conversion_event_contact', {});
+    
     setIsSubmitting(true);
     setSubmitError('');
     
@@ -197,6 +200,29 @@ export default function MyntraAjioComboOffer() {
             `,
           }}
         />
+        
+        {/* Google Analytics Conversion Tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Helper function to delay opening a URL until a gtag event is sent.
+              // Call it in response to an action that should navigate to a URL.
+              function gtagSendEvent(url) {
+                var callback = function () {
+                  if (typeof url === 'string') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion_event_contact', {
+                  'event_callback': callback,
+                  'event_timeout': 2000,
+                  // <event_parameters>
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
@@ -248,19 +274,20 @@ export default function MyntraAjioComboOffer() {
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-              <a 
-                href={`https://wa.me/917042163504?text=${encodeURIComponent("I want the Myntra + FREE Ajio combo offer!")}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => gtagSendEvent(`https://wa.me/917042163504?text=${encodeURIComponent("I want the Myntra + FREE Ajio combo offer!")}`)}
                 className="flex items-center justify-center bg-green-600 border-4 border-yellow-300 text-white font-black px-8 py-4 rounded-full hover:bg-green-700 transition w-full sm:w-auto shadow-2xl text-lg animate-bounce"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
                 CLAIM COMBO OFFER NOW!
-              </a>
+              </button>
               <button 
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="bg-white border-4 border-red-500 text-red-600 font-black px-8 py-4 rounded-full hover:bg-red-50 transition w-full sm:w-auto shadow-xl text-lg"
               >
                 GET INSTANT ACCESS
@@ -410,7 +437,10 @@ export default function MyntraAjioComboOffer() {
             
             <div className="mt-12 text-center">
               <button 
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="inline-flex items-center justify-center bg-gradient-to-r from-red-600 to-orange-600 border-4 border-yellow-300 text-white font-black px-10 py-5 rounded-full hover:from-red-700 hover:to-orange-700 transition cursor-pointer shadow-2xl text-xl animate-pulse"
               >
                 Join The Combo Success Club!
@@ -750,7 +780,10 @@ export default function MyntraAjioComboOffer() {
             
             <div className="mb-8">
               <button
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-black py-5 px-10 rounded-full shadow-2xl text-xl md:text-2xl transition-all duration-300 border-4 border-yellow-400 animate-pulse"
               >
                 🚀 GRAB COMBO OFFER NOW!
