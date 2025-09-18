@@ -91,6 +91,9 @@ export default function MyntraSellerOnboardingGuarantee() {
       return;
     }
     
+    // Track form submission
+    gtag('event', 'conversion_event_contact', {});
+    
     setIsSubmitting(true);
     setSubmitError('');
     
@@ -194,6 +197,29 @@ export default function MyntraSellerOnboardingGuarantee() {
             `,
           }}
         />
+        
+        {/* Google Analytics Conversion Tracking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Helper function to delay opening a URL until a gtag event is sent.
+              // Call it in response to an action that should navigate to a URL.
+              function gtagSendEvent(url) {
+                var callback = function () {
+                  if (typeof url === 'string') {
+                    window.location = url;
+                  }
+                };
+                gtag('event', 'conversion_event_contact', {
+                  'event_callback': callback,
+                  'event_timeout': 2000,
+                  // <event_parameters>
+                });
+                return false;
+              }
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
@@ -231,19 +257,20 @@ export default function MyntraSellerOnboardingGuarantee() {
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-6 md:mb-8">
-              <a 
-                href={`https://wa.me/917042163504?text=${encodeURIComponent("I want the 5-day Myntra onboarding guarantee service")}`}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => gtagSendEvent(`https://wa.me/917042163504?text=${encodeURIComponent("I want the 5-day Myntra onboarding guarantee service")}`)}
                 className="flex items-center justify-center bg-green-600 border-2 border-green-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-green-700 hover:border-green-700 transition w-full sm:w-auto shadow-lg"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
                 </svg>
                 Get Guarantee Service Now
-              </a>
+              </button>
               <button 
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="bg-transparent border-2 border-blue-600 text-blue-600 font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition w-full sm:w-auto"
               >
                 Apply with Money Back Guarantee
@@ -398,7 +425,10 @@ export default function MyntraSellerOnboardingGuarantee() {
             
             <div className="mt-12 text-center">
               <button 
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="inline-flex items-center justify-center bg-green-600 border-2 border-green-600 text-white font-bold px-8 py-4 rounded-lg hover:bg-green-700 hover:border-green-700 transition cursor-pointer shadow-lg"
               >
                 Get Your 5-Day Guarantee Now
@@ -774,7 +804,10 @@ export default function MyntraSellerOnboardingGuarantee() {
             
             <div className="mb-8">
               <button
-                onClick={scrollToForm}
+                onClick={() => {
+                  gtag('event', 'conversion_event_contact', {});
+                  scrollToForm();
+                }}
                 className="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-3 px-6 md:py-4 md:px-8 rounded-full shadow-lg text-base md:text-lg transition-colors"
               >
                 Claim Your 5-Day Guarantee Now
