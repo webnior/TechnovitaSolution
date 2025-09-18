@@ -181,6 +181,19 @@ export default function MyntraSellerOnboardingGuarantee() {
         <meta property="og:image" content="/images/myntra/myntra-guarantee-onboarding.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="canonical" href="https://technovitasolution.com/myntra-seller-onboarding-guarantee" />
+        
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5ZHMCB34E"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Q5ZHMCB34E');
+            `,
+          }}
+        />
       </Head>
 
       <div className="bg-white min-h-screen flex flex-col items-center justify-start">
