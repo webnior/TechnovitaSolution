@@ -99,7 +99,7 @@ export default function MyntraAjioAccountManagement() {
     setSubmitError('');
     
     try {
-      const response = await fetch('/api/myntra-seller', {
+      const response = await fetch('/api/account-management', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
