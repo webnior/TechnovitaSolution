@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         
         <p>
-          Copyright 2019-2024 @
+          Copyright 2019-2025 @
           <a 
             href="https://technovitasolution.com/" 
             target="_blank" 
