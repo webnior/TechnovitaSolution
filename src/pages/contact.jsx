@@ -182,7 +182,9 @@ const Contact = () => {
                                 <li>
                                     <h5>Contact Info</h5>
                                     <a href="tel:+917042163504" className="onovo-lnk lnk--white" target="_blank">+91 7042163504</a><br/>
-                                    <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a>
+                                    <a href="mailto:info@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">info@technovitasolution.com</a><br/>
+                                    <a href="mailto:hr@technovitasolution.com" className="onovo-lnk lnk--white" target="_blank">hr@technovitasolution.com</a>
+                                    <div style={{"fontSize": "12px", "marginTop": "5px", "opacity": "0.8"}}>(Only for HR related works)</div>
                                     
                                     <div className="onovo-social-1 onovo-social-active" style={{"marginTop": "10px"}}>
                                         <ul>
@@ -197,8 +199,8 @@ const Contact = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <h5>D-41, C Block,</h5>
-                                    <div> Sector 59, <br/>Noida, Uttar Pradesh 201301</div>
+                                    <h5>Office Address</h5>
+                                    <div>A-82, Sector 4,<br/>Noida, Uttar Pradesh,<br/>201301</div>
                                 </li>
                                
                             </ul>
